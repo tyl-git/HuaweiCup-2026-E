@@ -1,0 +1,24 @@
+{
+  "schema": "q3_evidence_time_v1.0",
+  "automatic_not_human_verified": true,
+  "method": "Wav2Vec2 CTC forced transcript alignment, token-char overlap, nearest decoded frame timestamp",
+  "ctc_model": "D:\\06_Apps\\huggingface-data\\hub\\models--facebook--wav2vec2-base-960h\\snapshots\\22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "bert_tokenizer": "D:\\06_Apps\\huggingface-data\\hub\\models--google-bert--bert-base-uncased\\snapshots\\86b5e0934494bd15c9632b12f734a8a67f723594",
+  "sample_count": 20,
+  "position_count": 1662,
+  "status_counts": {
+    "automatic_candidate": 12,
+    "review": 8,
+    "unmapped": 0
+  },
+  "input_sha256": {
+    "attachment4_explanations.csv": "7b6fb25ecb1c5895b25d1ed04a7201f5bd2befa1d7dc61694ad6eec82ea0fc21",
+    "attachment4_position_effects.csv": "4ec490681592ebce1b8abb1075fe0ccc827b14ec51ba80d4b10d4d74c886db1d",
+    "attachment4_predictions.csv": "2ec2b5cad1c80a85d6d59be0ff688ec5f746ad85a1c98d9e396c7f41a38f2588"
+  },
+  "output_sha256": {
+    "attachment4_evidence_times.csv": "d93a01ff26df182b10048d6f0caf9e526cbb4112992e5f71a6dc713b879a2560",
+    "attachment4_time_quality.csv": "281c8d422e8ac23aafc4fe70ef18574d8a545b7a7360ab7a6b6c0f7659f8ed70",
+    "attachment4_word_times.csv": "a67ff2b9cfb5ee1fe2cca483c7e86c19e7be874ef04d2de5d6334d02943dcc7e"
+  }
+}

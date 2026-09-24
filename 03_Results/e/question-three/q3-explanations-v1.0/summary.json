@@ -1,0 +1,121 @@
+{
+  "schema": "q3_explanations_v1.0",
+  "checkpoint": {
+    "variant": "temporal",
+    "seed": 20260926,
+    "checkpoint": "D:\\01_Projects\\HuaweiCup-2026\\03_Results\\e\\question-two\\q2-temporal-v1.0\\temporal\\seed_20260926\\best.pt",
+    "checkpoint_sha256": "facfec6adfd1badd6af8e19e313c98ac1575d65af268e48cdb78ae006889dbbf",
+    "best_epoch": 3
+  },
+  "aligned_only": true,
+  "specialist_label_use": false,
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "bert_model": {
+    "snapshot": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "path": "D:\\06_Apps\\huggingface-data\\hub\\models--google-bert--bert-base-uncased\\snapshots\\86b5e0934494bd15c9632b12f734a8a67f723594",
+    "files": {
+      "config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+      "model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3"
+    }
+  },
+  "attachment4_source_sha256": {
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\01.pkl": "5a08410ee779863238edcf349556a2f8e10490a70e02fc95001a64f6c8d17452",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\02.pkl": "88ed34a500bd7f11027ffc97205e23fdcde162b32bee9c447367b026b41608ac",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\03.pkl": "237a657ffb78b451b4e504ab8021e6072de404afd83d3b08be1560e98ca62860",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\04.pkl": "f7d7291b6ed0050ad3fd439bd3f85ce6fafb230a6399366a76e0b52f017bf4a7",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\05.pkl": "c6948e101e25656832290edf03daaf400b9a566e912775193d5f3ecdf9388eec",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\06.pkl": "8c432420054ac28bfcacbbee18d0e8397bc87fa0c7e8cbb11f525d6e366fdd57",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\07.pkl": "f16e44523bd82862435489552910ef3b801dd5b7501d67b84b83ee1496b0c5a0",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\08.pkl": "a1cccd885234d22478f30d0a3b253277e0567abaecc6ac683734b7e3dfc255c4",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\09.pkl": "f00ad50bdc14a4c9fe58fb4e421d6c8ee052d281d917766314f2846e48af8ff7",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\10.pkl": "693326817b8253fc907a3c1df1b05dd1f10c7bc756a86ce125bb903b01eaf571",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\11.pkl": "6e4c4b2fe76d6bbc56d1d21447ec9dff5309adb1227de8adab116ff703f42ffb",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\12.pkl": "5d003f471f20ac8d51553c3b217fc594075067a4c806fc07139839d681a97032",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\13.pkl": "e2d3d3c55bc52e7178e6e7f9b28e677018f14c76966d9ec5ac486d8fbbfd8281",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\14.pkl": "5a07719d0610e979be9cc58f4137c951259048fe6ab9918cafd9e27d62f0b5dd",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\15.pkl": "1fd8521f61b769038a991088f11a9693e0ad9f05ad92f9924d502cc147a7cd1f",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\16.pkl": "5528f121c021c3648f41e013e829c0a73870eafbbde73415147a074be81d722f",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\17.pkl": "7b841ea3fdea42ef7d0ba607d90ea61a86a44066eb4ee3d1a70e8180a7b47796",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\18.pkl": "1fc0a00c832183dceeae626937716da6c4c096f621a7706c9268b76dedfa7f06",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\19.pkl": "ef099682c44a9e6ba5135a74d4babf12a91ba5ee2895b32d191679244dd1c221",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\20.pkl": "c9aed197e075fa99518e71cbb2ed17406178d9237d40c785409eacf1fa7f1a68"
+  },
+  "attachment4_bert_reference_max_absolute_error": 2.0623207092285156e-05,
+  "valid_report": {
+    "cross_entropy": 0.8010752646477668,
+    "l1": 0.5604020396431724,
+    "selection_loss": 1.3614773042909392,
+    "classification": {
+      "n": 728,
+      "accuracy": 0.6318681318681318,
+      "macro_f1": 0.568719683866325,
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          135,
+          23,
+          48
+        ],
+        [
+          38,
+          44,
+          102
+        ],
+        [
+          33,
+          24,
+          281
+        ]
+      ],
+      "per_class": [
+        {
+          "id": 0,
+          "name": "Negative",
+          "support": 206,
+          "precision": 0.6553398058252428,
+          "recall": 0.6553398058252428,
+          "f1": 0.6553398058252428
+        },
+        {
+          "id": 1,
+          "name": "Neutral",
+          "support": 184,
+          "precision": 0.4835164835164835,
+          "recall": 0.2391304347826087,
+          "f1": 0.32
+        },
+        {
+          "id": 2,
+          "name": "Positive",
+          "support": 338,
+          "precision": 0.6519721577726219,
+          "recall": 0.8313609467455622,
+          "f1": 0.7308192457737321
+        }
+      ],
+      "zero_division_policy": 0
+    },
+    "regression": {
+      "n": 728,
+      "mae": 0.5604020472319162,
+      "pearson_r": 0.6925693771604581,
+      "pearson_status": "defined"
+    }
+  },
+  "valid_fidelity": {
+    "sample_rule": "first_100_valid_ids_by_sha256",
+    "sample_count": 100,
+    "target": "predicted_class_probability",
+    "comparison_modality": "text",
+    "gate_time_top1_mean_drop": 0.042692688703536985,
+    "deterministic_random_mean_drop": 0.007375965118408203,
+    "gate_time_top1_above_random_fraction": 0.69
+  },
+  "explanation_rule": "absolute leave-one-modality-out class-probability change, normalized across modalities; signed deltas retained",
+  "position_rule": "single observed-position occlusion after frozen BERT; gate times time attention is a candidate only",
+  "time_mapping_status": "Token offsets and aligned indices are verified; exact seconds and video frames require separate audio/video alignment and review",
+  "output_sha256": {
+    "attachment4_explanations.csv": "7b6fb25ecb1c5895b25d1ed04a7201f5bd2befa1d7dc61694ad6eec82ea0fc21",
+    "attachment4_position_effects.csv": "4ec490681592ebce1b8abb1075fe0ccc827b14ec51ba80d4b10d4d74c886db1d",
+    "attachment4_predictions.csv": "2ec2b5cad1c80a85d6d59be0ff688ec5f746ad85a1c98d9e396c7f41a38f2588"
+  }
+}
