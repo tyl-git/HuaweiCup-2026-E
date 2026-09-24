@@ -1,0 +1,118 @@
+{
+  "fit_split": "train",
+  "train_samples": 3395,
+  "statistics": {
+    "text": {
+      "count": 76882,
+      "dimensions": 768,
+      "floored_scale_dimensions": 0
+    },
+    "audio": {
+      "count": 76817,
+      "dimensions": 74,
+      "floored_scale_dimensions": 0
+    },
+    "vision": {
+      "count": 72633,
+      "dimensions": 35,
+      "floored_scale_dimensions": 0
+    }
+  },
+  "statistics_file_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "cache_feature_sha256": {
+    "train": "8cbe458c1baeced964ce8dcb04a7b78f3ce769a509ccd66fbbf2b8a458647f03",
+    "valid": "b48450e04601502c5284d33be41584c8c4bc3b7870b09545737fa802ba74ce76"
+  },
+  "test_transformed": false,
+  "specialists_transformed": false,
+  "transforms": {
+    "train": {
+      "text": {
+        "shape": [
+          3395,
+          50,
+          768
+        ],
+        "observed_positions": 76882,
+        "samples_without_observation": 0,
+        "all_finite": true,
+        "masked_output_exact_zero": true,
+        "observation_mask_unchanged": true,
+        "max_absolute_observed_mean": 3.050780390172647e-10,
+        "max_absolute_value": 9.305506706237793
+      },
+      "audio": {
+        "shape": [
+          3395,
+          50,
+          74
+        ],
+        "observed_positions": 76817,
+        "samples_without_observation": 0,
+        "all_finite": true,
+        "masked_output_exact_zero": true,
+        "observation_mask_unchanged": true,
+        "max_absolute_observed_mean": 3.538552950957359e-08,
+        "max_absolute_value": 59.755279541015625
+      },
+      "vision": {
+        "shape": [
+          3395,
+          50,
+          35
+        ],
+        "observed_positions": 72633,
+        "samples_without_observation": 110,
+        "all_finite": true,
+        "masked_output_exact_zero": true,
+        "observation_mask_unchanged": true,
+        "max_absolute_observed_mean": 2.6567912348707072e-09,
+        "max_absolute_value": 8.839037895202637
+      }
+    },
+    "valid": {
+      "text": {
+        "shape": [
+          728,
+          50,
+          768
+        ],
+        "observed_positions": 17172,
+        "samples_without_observation": 0,
+        "all_finite": true,
+        "masked_output_exact_zero": true,
+        "observation_mask_unchanged": true,
+        "max_absolute_observed_mean": 0.09553305839660706,
+        "max_absolute_value": 9.33519458770752
+      },
+      "audio": {
+        "shape": [
+          728,
+          50,
+          74
+        ],
+        "observed_positions": 17126,
+        "samples_without_observation": 0,
+        "all_finite": true,
+        "masked_output_exact_zero": true,
+        "observation_mask_unchanged": true,
+        "max_absolute_observed_mean": 0.08210568855865535,
+        "max_absolute_value": 169.5187225341797
+      },
+      "vision": {
+        "shape": [
+          728,
+          50,
+          35
+        ],
+        "observed_positions": 16192,
+        "samples_without_observation": 15,
+        "all_finite": true,
+        "masked_output_exact_zero": true,
+        "observation_mask_unchanged": true,
+        "max_absolute_observed_mean": 0.17071288767952478,
+        "max_absolute_value": 8.734529495239258
+      }
+    }
+  }
+}

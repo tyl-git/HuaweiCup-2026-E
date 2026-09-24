@@ -1,0 +1,5923 @@
+{
+  "title": "Aligned special dataset input contract audit",
+  "report_date": "2026-09-24",
+  "schema_version": "1.0",
+  "scope": "Read-only structural inspection of attachment 3 and 4 aligned files. No labels, video inspection, inference, training, hyperparameter choice, threshold choice or performance estimates.",
+  "index_convention": "All sequence indices are zero-based. All reported ranges are half-open [start,end).",
+  "source_root": "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E",
+  "reference_attachment_2_audit": "D:\\01_Projects\\HuaweiCup-2026\\03_Results\\e\\question-two\\2026-09-24_attachment-two-audit_v1.0.json",
+  "canonical_input_contract": {
+    "audio": "float32 [B,50,74]",
+    "vision": "float32 [B,50,35]",
+    "text_bert": "int64 [B,3,50] after finite/integer/range checks",
+    "sequence_mask": "bool [B,50] from provided text_bert attention channel, retained independently of modality values",
+    "content_mask": "sequence_mask excluding CLS and SEP, with special IDs verified",
+    "modality_zero_mask": "Within content_mask only; whole-feature-vector exact zeros recorded separately from padding and never deleted or compacted",
+    "text_route": "Attachment 3 has no precomputed 768-dimensional text. A deployment-consistent text_bert encoding route must also be used during train/validation, or equivalence to stored text must be explicitly established before mixed routes. Selecting architecture/thresholds on special files is prohibited.",
+    "text_missing_semantics": "No internal text token/attention gaps observed in attachment 3. This does not establish a general text-missing encoding. Retain pre-corruption sequence_mask separately when simulating text missingness."
+  },
+  "groups": {
+    "attachment_3": {
+      "summary": {
+        "file_count": 30,
+        "schema_signatures": [
+          {
+            "arrays": {
+              "audio": [
+                [
+                  1,
+                  50,
+                  74
+                ],
+                "float32"
+              ],
+              "text_bert": [
+                [
+                  1,
+                  3,
+                  50
+                ],
+                "float32"
+              ],
+              "vision": [
+                [
+                  1,
+                  50,
+                  35
+                ],
+                "float32"
+              ]
+            },
+            "file_count": 30
+          }
+        ],
+        "active_attention_min": 8,
+        "active_attention_max": 50,
+        "files_with_explicit_lengths": 0,
+        "files_with_internal_attention_gaps": 0,
+        "zero_token_id_inside_attention_total": 0,
+        "numeric_finite_all_files": true,
+        "modalities": {
+          "audio": {
+            "files_present": 30,
+            "zero_content_positions": 131,
+            "files_with_zero_content": 27,
+            "nonzero_outside_attention_positions": 0
+          },
+          "vision": {
+            "files_present": 30,
+            "zero_content_positions": 135,
+            "files_with_zero_content": 27,
+            "nonzero_outside_attention_positions": 0
+          }
+        }
+      },
+      "files": [
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_01.pkl",
+          "sha256": "b45b89a7eea55278abb130d44a6ee21128df5aa3239e68c968f9ac7743cfa0ea",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  7,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  7,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 8,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 6
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_02.pkl",
+          "sha256": "6a628897c4b8c5e94e37f23bce680aad500fa8545414234f3564a58577c1023b",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  29,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  9,
+                  11
+                ]
+              ],
+              "all_zero_content_count": 5,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  29,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  9,
+                  11
+                ]
+              ],
+              "all_zero_content_count": 5,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 30,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 28
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_03.pkl",
+          "sha256": "52bb6e11f4bba301e1bd90916dc9ad3a0d2d0885fec4598e3e737e2c4d100b6f",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  16,
+                  17
+                ],
+                [
+                  20,
+                  21
+                ],
+                [
+                  23,
+                  24
+                ],
+                [
+                  31,
+                  32
+                ],
+                [
+                  33,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  7
+                ],
+                [
+                  16,
+                  17
+                ],
+                [
+                  20,
+                  21
+                ],
+                [
+                  23,
+                  24
+                ],
+                [
+                  31,
+                  32
+                ]
+              ],
+              "all_zero_content_count": 5,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  16,
+                  17
+                ],
+                [
+                  20,
+                  22
+                ],
+                [
+                  23,
+                  27
+                ],
+                [
+                  31,
+                  32
+                ],
+                [
+                  33,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  7
+                ],
+                [
+                  16,
+                  17
+                ],
+                [
+                  20,
+                  22
+                ],
+                [
+                  23,
+                  27
+                ],
+                [
+                  31,
+                  32
+                ]
+              ],
+              "all_zero_content_count": 9,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 34,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 32
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_04.pkl",
+          "sha256": "ee1f4781ee7b7bc37e71a13e4bc53eedc8327d96a69c246964d0e84a8aa99f72",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  8,
+                  9
+                ],
+                [
+                  32,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  7
+                ],
+                [
+                  8,
+                  9
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  8,
+                  9
+                ],
+                [
+                  32,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  7
+                ],
+                [
+                  8,
+                  9
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 33,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 31
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_05.pkl",
+          "sha256": "9f8e5bae8488d8ee1576b1686864b7d8fc9970cfa720758fb040b9293b7e3619",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  13,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  13,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 14,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 12
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_06.pkl",
+          "sha256": "9e973621f141b1af24fc3686ac329a10b66ba2b84d18c21918e86bf0429f790d",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  25,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  14,
+                  15
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  25,
+                  26
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  25,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  14,
+                  15
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  25,
+                  26
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 27,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 25
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_07.pkl",
+          "sha256": "62dd394e23c80af2898e039d7eb6f47556d747887331fa2853dad72e13bb223b",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  22,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  10,
+                  11
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  14,
+                  15
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  22,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  10,
+                  11
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  14,
+                  15
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 23,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 21
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_08.pkl",
+          "sha256": "e668faea97f9a338051c19ee66383df799b2e461d6d079df8c5f92b32bd6437e",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  16,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  9,
+                  11
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  16,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  9,
+                  11
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 17,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 15
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_09.pkl",
+          "sha256": "ef57769eaa05f53a7d588948d565876356898658d9945202058ca763e53748b2",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  3,
+                  5
+                ],
+                [
+                  15,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  3,
+                  5
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  3,
+                  5
+                ],
+                [
+                  15,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  3,
+                  5
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 16,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 14
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_10.pkl",
+          "sha256": "7c87d84d69e0e68b9252c9839747558d07a91fd2d079a9a0850683d0d197241e",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  7,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  7,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 8,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 6
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_11.pkl",
+          "sha256": "10e9d5443cecf2de9170deaa56995de0cf9c52580a74cd334de8fea0e4a735f2",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  14,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  4,
+                  6
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  14,
+                  15
+                ]
+              ],
+              "all_zero_content_count": 4,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  14,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  4,
+                  6
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  14,
+                  15
+                ]
+              ],
+              "all_zero_content_count": 4,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 16,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 14
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_12.pkl",
+          "sha256": "d0342f4931a05e40fb0a3220010f1ac801a2f06d123bc4d9a7dc5355794347ba",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  13,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  5,
+                  6
+                ],
+                [
+                  13,
+                  14
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  13,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  5,
+                  6
+                ],
+                [
+                  13,
+                  14
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 15,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 13
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_13.pkl",
+          "sha256": "9e2144ab4385636b259d9e358c7e511be5242c89340f894473317b7757f218b7",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  20,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  5,
+                  6
+                ],
+                [
+                  14,
+                  15
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  20,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  5,
+                  6
+                ],
+                [
+                  14,
+                  15
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 21,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 19
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_14.pkl",
+          "sha256": "f6d45e8fa882062f70fd48ee1f7584b0a75ea0ed1c85a9eb218684e954dc1b82",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  24,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  21,
+                  23
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  24,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  21,
+                  23
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 25,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 23
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_15.pkl",
+          "sha256": "263b960d4d66b25a3db447fb7a16aee7b7d735e8bee3fe55c7869ad3103bf9d4",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  28,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  18,
+                  19
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  28,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  18,
+                  19
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 29,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 27
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_16.pkl",
+          "sha256": "df8b4c881e3fc971d532988bbd161d8d9bf8c5d16c3e7a559bb7a4045e96547f",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  25,
+                  26
+                ],
+                [
+                  35,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  5,
+                  6
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  25,
+                  26
+                ]
+              ],
+              "all_zero_content_count": 4,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  25,
+                  26
+                ],
+                [
+                  35,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  5,
+                  6
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  25,
+                  26
+                ]
+              ],
+              "all_zero_content_count": 4,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 36,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 34
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_17.pkl",
+          "sha256": "b6c64a55fb8050cb9fda15b0245df8f16b20d2a25d9368485dd1229e213fdba5",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  23,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  21,
+                  22
+                ]
+              ],
+              "all_zero_content_count": 8,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  23,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  21,
+                  22
+                ]
+              ],
+              "all_zero_content_count": 8,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 24,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 22
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_18.pkl",
+          "sha256": "dc8eb37586b93bdd4debe895041275fdabb94c3392bde667b4e0ccdc6429fab1",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  18,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  18,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 19,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 17
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_19.pkl",
+          "sha256": "d3a912bc3c70b60c1021babc521f28a6a34f9e916c164ad0191182e587c2385a",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  3,
+                  5
+                ],
+                [
+                  7,
+                  9
+                ],
+                [
+                  13,
+                  14
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  25,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  3,
+                  5
+                ],
+                [
+                  7,
+                  9
+                ],
+                [
+                  13,
+                  14
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  21,
+                  22
+                ]
+              ],
+              "all_zero_content_count": 7,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  3,
+                  5
+                ],
+                [
+                  7,
+                  9
+                ],
+                [
+                  13,
+                  14
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  25,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  3,
+                  5
+                ],
+                [
+                  7,
+                  9
+                ],
+                [
+                  13,
+                  14
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  21,
+                  22
+                ]
+              ],
+              "all_zero_content_count": 7,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 26,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 24
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_20.pkl",
+          "sha256": "bf24c7189bba3904e911dd452266078d8ff15768438a9069e6596ff73a4b925e",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  8,
+                  10
+                ],
+                [
+                  11,
+                  12
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  26,
+                  27
+                ],
+                [
+                  31,
+                  32
+                ],
+                [
+                  38,
+                  42
+                ],
+                [
+                  43,
+                  45
+                ],
+                [
+                  48,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  7
+                ],
+                [
+                  8,
+                  10
+                ],
+                [
+                  11,
+                  12
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  26,
+                  27
+                ],
+                [
+                  31,
+                  32
+                ],
+                [
+                  38,
+                  42
+                ],
+                [
+                  43,
+                  45
+                ],
+                [
+                  48,
+                  49
+                ]
+              ],
+              "all_zero_content_count": 14,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  8,
+                  10
+                ],
+                [
+                  11,
+                  12
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  26,
+                  27
+                ],
+                [
+                  31,
+                  32
+                ],
+                [
+                  38,
+                  42
+                ],
+                [
+                  43,
+                  45
+                ],
+                [
+                  48,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  7
+                ],
+                [
+                  8,
+                  10
+                ],
+                [
+                  11,
+                  12
+                ],
+                [
+                  21,
+                  22
+                ],
+                [
+                  26,
+                  27
+                ],
+                [
+                  31,
+                  32
+                ],
+                [
+                  38,
+                  42
+                ],
+                [
+                  43,
+                  45
+                ],
+                [
+                  48,
+                  49
+                ]
+              ],
+              "all_zero_content_count": 14,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 50,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 48
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_21.pkl",
+          "sha256": "c0605bd5757ff0c5dea345c96236ed7168ff976d37843572143efe11d6454600",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  8,
+                  9
+                ],
+                [
+                  10,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  8,
+                  9
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  8,
+                  9
+                ],
+                [
+                  10,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  8,
+                  9
+                ]
+              ],
+              "all_zero_content_count": 3,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 11,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 9
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_22.pkl",
+          "sha256": "6f9dc33f9d3e5680ee3a3b2b0c53b1bac51fb98f1d75375a2cb1224cd7bd4d43",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  16,
+                  17
+                ],
+                [
+                  18,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  7,
+                  8
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  16,
+                  17
+                ]
+              ],
+              "all_zero_content_count": 4,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  16,
+                  17
+                ],
+                [
+                  18,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  7,
+                  8
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  16,
+                  17
+                ]
+              ],
+              "all_zero_content_count": 4,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 19,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 17
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_23.pkl",
+          "sha256": "5200bd05e2611777875eb1d88826bb56bb71dee4c708fec9d9f851222d243aae",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  10,
+                  13
+                ],
+                [
+                  14,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  7
+                ],
+                [
+                  10,
+                  13
+                ]
+              ],
+              "all_zero_content_count": 4,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  7
+                ],
+                [
+                  10,
+                  13
+                ],
+                [
+                  14,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  7
+                ],
+                [
+                  10,
+                  13
+                ]
+              ],
+              "all_zero_content_count": 4,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 15,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 13
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_24.pkl",
+          "sha256": "76b1c126e2043f90afd5af00d51299bc8f5bf1bee8148f5ff904ccbeb931a5e5",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  9,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  7,
+                  8
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  9,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  7,
+                  8
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 10,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 8
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_25.pkl",
+          "sha256": "88d52e2d0b0229ad6ec638e6e7463f6852f127ae9308fbee1cbc2405d8ebc4c8",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  10,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  5,
+                  6
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  10,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  5,
+                  6
+                ]
+              ],
+              "all_zero_content_count": 2,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 11,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 9
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_26.pkl",
+          "sha256": "e483daa1391987552f9ee7f21bffec918dd61267af36885a9ae3073813193234",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  11,
+                  12
+                ],
+                [
+                  15,
+                  17
+                ],
+                [
+                  22,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  11,
+                  12
+                ],
+                [
+                  15,
+                  17
+                ],
+                [
+                  22,
+                  23
+                ]
+              ],
+              "all_zero_content_count": 6,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  11,
+                  12
+                ],
+                [
+                  15,
+                  17
+                ],
+                [
+                  22,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  11,
+                  12
+                ],
+                [
+                  15,
+                  17
+                ],
+                [
+                  22,
+                  23
+                ]
+              ],
+              "all_zero_content_count": 6,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 24,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 22
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_27.pkl",
+          "sha256": "27f16bbd4541196bb33f4caa36e038b2ff66fa72649f1b22f2328a5630de37ad",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  20,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  5
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  20,
+                  22
+                ]
+              ],
+              "all_zero_content_count": 8,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  20,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  5
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  20,
+                  22
+                ]
+              ],
+              "all_zero_content_count": 8,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 23,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 21
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_28.pkl",
+          "sha256": "81def781fa8fa5aebb555631b59ce48ee71a10c9e4226f1a5b6d91a2078f8f32",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  8
+                ],
+                [
+                  10,
+                  13
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  26,
+                  28
+                ],
+                [
+                  29,
+                  30
+                ],
+                [
+                  31,
+                  32
+                ],
+                [
+                  34,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  8
+                ],
+                [
+                  10,
+                  13
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  26,
+                  28
+                ],
+                [
+                  29,
+                  30
+                ],
+                [
+                  31,
+                  32
+                ]
+              ],
+              "all_zero_content_count": 11,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  8
+                ],
+                [
+                  10,
+                  13
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  26,
+                  28
+                ],
+                [
+                  29,
+                  30
+                ],
+                [
+                  31,
+                  32
+                ],
+                [
+                  34,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  6,
+                  8
+                ],
+                [
+                  10,
+                  13
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  26,
+                  28
+                ],
+                [
+                  29,
+                  30
+                ],
+                [
+                  31,
+                  32
+                ]
+              ],
+              "all_zero_content_count": 11,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 35,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 33
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_29.pkl",
+          "sha256": "8caf12e71117bd7334be12aba5af6322fb02a2397f8e2402e75391f4f9ef3686",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  17,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  17,
+                  19
+                ]
+              ],
+              "all_zero_content_count": 8,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  17,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  17,
+                  19
+                ]
+              ],
+              "all_zero_content_count": 8,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 20,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 18
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_30.pkl",
+          "sha256": "a6b272abb5d083804b6902054d4180d55d3c1d5822c483967e70e6a9657546d3",
+          "root_keys": [
+            "test"
+          ],
+          "sample_fields": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "all_finite": true
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  20,
+                  24
+                ],
+                [
+                  25,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  20,
+                  24
+                ]
+              ],
+              "all_zero_content_count": 12,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  20,
+                  24
+                ],
+                [
+                  25,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  20,
+                  24
+                ]
+              ],
+              "all_zero_content_count": 12,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 26,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 24
+        }
+      ]
+    },
+    "attachment_4": {
+      "summary": {
+        "file_count": 20,
+        "schema_signatures": [
+          {
+            "arrays": {
+              "audio": [
+                [
+                  50,
+                  74
+                ],
+                "float64"
+              ],
+              "text": [
+                [
+                  50,
+                  768
+                ],
+                "float32"
+              ],
+              "text_bert": [
+                [
+                  3,
+                  50
+                ],
+                "int64"
+              ],
+              "vision": [
+                [
+                  50,
+                  35
+                ],
+                "float64"
+              ]
+            },
+            "file_count": 20
+          }
+        ],
+        "active_attention_min": 13,
+        "active_attention_max": 50,
+        "files_with_explicit_lengths": 0,
+        "files_with_internal_attention_gaps": 0,
+        "zero_token_id_inside_attention_total": 0,
+        "numeric_finite_all_files": true,
+        "modalities": {
+          "text": {
+            "files_present": 20,
+            "zero_content_positions": 0,
+            "files_with_zero_content": 0,
+            "nonzero_outside_attention_positions": 396
+          },
+          "audio": {
+            "files_present": 20,
+            "zero_content_positions": 0,
+            "files_with_zero_content": 0,
+            "nonzero_outside_attention_positions": 0
+          },
+          "vision": {
+            "files_present": 20,
+            "zero_content_positions": 30,
+            "files_with_zero_content": 1,
+            "nonzero_outside_attention_positions": 0
+          }
+        }
+      },
+      "files": [
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\01.pkl",
+          "sha256": "5a08410ee779863238edcf349556a2f8e10490a70e02fc95001a64f6c8d17452",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 26
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  23,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  23,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 24,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 22
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\02.pkl",
+          "sha256": "88ed34a500bd7f11027ffc97205e23fdcde162b32bee9c447367b026b41608ac",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 29
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  20,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  20,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 21,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 19
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\03.pkl",
+          "sha256": "237a657ffb78b451b4e504ab8021e6072de404afd83d3b08be1560e98ca62860",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 15
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  34,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  34,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 35,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 33
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\04.pkl",
+          "sha256": "f7d7291b6ed0050ad3fd439bd3f85ce6fafb230a6399366a76e0b52f017bf4a7",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 22
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  27,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  27,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 28,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 26
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\05.pkl",
+          "sha256": "c6948e101e25656832290edf03daaf400b9a566e912775193d5f3ecdf9388eec",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 33
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  16,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  16,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 17,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 15
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\06.pkl",
+          "sha256": "8c432420054ac28bfcacbbee18d0e8397bc87fa0c7e8cbb11f525d6e366fdd57",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 13
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  36,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  36,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 37,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 35
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\07.pkl",
+          "sha256": "f16e44523bd82862435489552910ef3b801dd5b7501d67b84b83ee1496b0c5a0",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  49,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  49,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 50,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 48
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\08.pkl",
+          "sha256": "a1cccd885234d22478f30d0a3b253277e0567abaecc6ac683734b7e3dfc255c4",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 37
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  12,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  12,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 13,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 11
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\09.pkl",
+          "sha256": "f00ad50bdc14a4c9fe58fb4e421d6c8ee052d281d917766314f2846e48af8ff7",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 30
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  19,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  19,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 20,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 18
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\10.pkl",
+          "sha256": "693326817b8253fc907a3c1df1b05dd1f10c7bc756a86ce125bb903b01eaf571",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 18
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  31,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  31,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 32,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 30
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\11.pkl",
+          "sha256": "6e4c4b2fe76d6bbc56d1d21447ec9dff5309adb1227de8adab116ff703f42ffb",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 34
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  15,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  15,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 16,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 14
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\12.pkl",
+          "sha256": "5d003f471f20ac8d51553c3b217fc594075067a4c806fc07139839d681a97032",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 6
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  43,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  43,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 44,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 42
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\13.pkl",
+          "sha256": "e2d3d3c55bc52e7178e6e7f9b28e677018f14c76966d9ec5ac486d8fbbfd8281",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 18
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  31,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [
+                [
+                  1,
+                  31
+                ]
+              ],
+              "all_zero_content_count": 30,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 32,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 30
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\14.pkl",
+          "sha256": "5a07719d0610e979be9cc58f4137c951259048fe6ab9918cafd9e27d62f0b5dd",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 13
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  36,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  36,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 37,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 35
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\15.pkl",
+          "sha256": "1fd8521f61b769038a991088f11a9693e0ad9f05ad92f9924d502cc147a7cd1f",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 27
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  22,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  22,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 23,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 21
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\16.pkl",
+          "sha256": "5528f121c021c3648f41e013e829c0a73870eafbbde73415147a074be81d722f",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 37
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  12,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  12,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 13,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 11
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\17.pkl",
+          "sha256": "7b841ea3fdea42ef7d0ba607d90ea61a86a44066eb4ee3d1a70e8180a7b47796",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 24
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  25,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  25,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 26,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 24
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\18.pkl",
+          "sha256": "1fc0a00c832183dceeae626937716da6c4c096f621a7706c9268b76dedfa7f06",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  49,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  49,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 50,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 48
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\19.pkl",
+          "sha256": "ef099682c44a9e6ba5135a74d4babf12a91ba5ee2895b32d191679244dd1c221",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 9
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  40,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  40,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 41,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 39
+        },
+        {
+          "file": "01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\20.pkl",
+          "sha256": "c9aed197e075fa99518e71cbb2ed17406178d9237d40c785409eacf1fa7f1a68",
+          "root_keys": [
+            "raw_text",
+            "audio",
+            "vision",
+            "id",
+            "text",
+            "text_bert"
+          ],
+          "sample_fields": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "explicit_lengths_present": false,
+          "arrays": {
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "all_finite": true
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 5
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  44,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "all_finite": true,
+              "all_zero_sequence_ranges": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  44,
+                  50
+                ]
+              ],
+              "all_zero_content_ranges": [],
+              "all_zero_content_count": 0,
+              "nonzero_outside_attention_count": 0
+            }
+          },
+          "active_attention_positions": 45,
+          "attention_is_binary": true,
+          "attention_is_contiguous_prefix": true,
+          "internal_attention_zero_positions": [],
+          "zero_token_id_inside_attention_positions": [],
+          "nonzero_token_id_outside_attention_positions": [],
+          "bert_finite_integer_valued": true,
+          "cls_at_start": true,
+          "sep_at_last_active": true,
+          "token_type_all_zero": true,
+          "content_positions": 43
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "All-zero content vectors are an observable numeric property. These files provide no explicit corruption/provenance mask proving each zero was introduced by a specific synthetic missingness mechanism.",
+    "CLS/SEP audio and vision rows are zero by observed convention and are not counted as missing content.",
+    "Precomputed text padding embeddings in attachment 4 can be nonzero. Neither text embedding values nor a corrupted text feature mask determines sequence padding.",
+    "Attachment 4 13.pkl has vision all zero at positions [0,50), including all 30 content positions [1,31). This is preserved and flagged without modifying source data.",
+    "No timestamps or per-feature physical meanings are inferred from shared sequence shape."
+  ]
+}

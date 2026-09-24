@@ -1,0 +1,149 @@
+{
+  "source_relpath": "01_Source\\E\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl",
+  "source_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+  "fit_split": "train",
+  "evaluated_splits": [
+    "train",
+    "valid"
+  ],
+  "test_evaluated": false,
+  "specialists_evaluated": false,
+  "constants": {
+    "majority_class": 2,
+    "class_counts": [
+      967,
+      758,
+      1670
+    ],
+    "intensity_mean": 0.16583210777639465,
+    "intensity_median": 0.0
+  },
+  "results": {
+    "train": {
+      "majority_class": {
+        "n": 3395,
+        "accuracy": 0.49189985272459497,
+        "macro_f1": 0.21980914774596907,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            0,
+            0,
+            967
+          ],
+          [
+            0,
+            0,
+            758
+          ],
+          [
+            0,
+            0,
+            1670
+          ]
+        ],
+        "per_class": [
+          {
+            "id": 0,
+            "name": "Negative",
+            "support": 967,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "id": 1,
+            "name": "Neutral",
+            "support": 758,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "id": 2,
+            "name": "Positive",
+            "support": 1670,
+            "precision": 0.49189985272459497,
+            "recall": 1.0,
+            "f1": 0.6594274432379073
+          }
+        ],
+        "zero_division_policy": 0
+      },
+      "mean_intensity": {
+        "n": 3395,
+        "mae": 0.8381308147948425,
+        "pearson_r": null,
+        "pearson_status": "undefined_constant_or_too_few_values"
+      },
+      "median_intensity": {
+        "n": 3395,
+        "mae": 0.8354442858028833,
+        "pearson_r": null,
+        "pearson_status": "undefined_constant_or_too_few_values"
+      }
+    },
+    "valid": {
+      "majority_class": {
+        "n": 728,
+        "accuracy": 0.4642857142857143,
+        "macro_f1": 0.21138211382113822,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            0,
+            0,
+            206
+          ],
+          [
+            0,
+            0,
+            184
+          ],
+          [
+            0,
+            0,
+            338
+          ]
+        ],
+        "per_class": [
+          {
+            "id": 0,
+            "name": "Negative",
+            "support": 206,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "id": 1,
+            "name": "Neutral",
+            "support": 184,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "id": 2,
+            "name": "Positive",
+            "support": 338,
+            "precision": 0.4642857142857143,
+            "recall": 1.0,
+            "f1": 0.6341463414634146
+          }
+        ],
+        "zero_division_policy": 0
+      },
+      "mean_intensity": {
+        "n": 728,
+        "mae": 0.7808469868401244,
+        "pearson_r": null,
+        "pearson_status": "undefined_constant_or_too_few_values"
+      },
+      "median_intensity": {
+        "n": 728,
+        "mae": 0.7690018362846676,
+        "pearson_r": null,
+        "pearson_status": "undefined_constant_or_too_few_values"
+      }
+    }
+  }
+}

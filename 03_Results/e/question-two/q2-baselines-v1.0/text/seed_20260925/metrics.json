@@ -1,0 +1,169 @@
+{
+  "model": "text",
+  "modalities": [
+    "text"
+  ],
+  "seed": 20260925,
+  "best_epoch": 2,
+  "epochs_run": 10,
+  "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1",
+  "config": {
+    "max_epochs": 40,
+    "patience": 8,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.2,
+    "hidden_dim": 64,
+    "fusion_dim": 128,
+    "classification_loss_weight": 1.0,
+    "regression_loss_weight": 1.0,
+    "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1"
+  },
+  "train_priors": {
+    "class_counts": [
+      967,
+      758,
+      1670
+    ],
+    "class_probabilities": [
+      0.2848306332842415,
+      0.2232695139911635,
+      0.49189985272459497
+    ],
+    "intensity_mean": 0.16583210777639465
+  },
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "valid": {
+    "cross_entropy": 0.8439279388595413,
+    "l1": 0.593828023135007,
+    "selection_loss": 1.4377559619945484,
+    "classification": {
+      "n": 728,
+      "accuracy": 0.6085164835164835,
+      "macro_f1": 0.5368830923765252,
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          129,
+          21,
+          56
+        ],
+        [
+          35,
+          35,
+          114
+        ],
+        [
+          36,
+          23,
+          279
+        ]
+      ],
+      "per_class": [
+        {
+          "id": 0,
+          "name": "Negative",
+          "support": 206,
+          "precision": 0.645,
+          "recall": 0.6262135922330098,
+          "f1": 0.6354679802955665
+        },
+        {
+          "id": 1,
+          "name": "Neutral",
+          "support": 184,
+          "precision": 0.4430379746835443,
+          "recall": 0.19021739130434784,
+          "f1": 0.2661596958174905
+        },
+        {
+          "id": 2,
+          "name": "Positive",
+          "support": 338,
+          "precision": 0.621380846325167,
+          "recall": 0.8254437869822485,
+          "f1": 0.7090216010165185
+        }
+      ],
+      "zero_division_policy": 0
+    },
+    "regression": {
+      "n": 728,
+      "mae": 0.5938280357027447,
+      "pearson_r": 0.640216330354246,
+      "pearson_status": "defined"
+    }
+  },
+  "train": {
+    "cross_entropy": 0.6325259025388332,
+    "l1": 0.5302302100345909,
+    "selection_loss": 1.1627561125734243,
+    "classification": {
+      "n": 3395,
+      "accuracy": 0.73519882179676,
+      "macro_f1": 0.6723859160925126,
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          753,
+          54,
+          160
+        ],
+        [
+          125,
+          248,
+          385
+        ],
+        [
+          108,
+          67,
+          1495
+        ]
+      ],
+      "per_class": [
+        {
+          "id": 0,
+          "name": "Negative",
+          "support": 967,
+          "precision": 0.7636916835699797,
+          "recall": 0.7786970010341262,
+          "f1": 0.7711213517665131
+        },
+        {
+          "id": 1,
+          "name": "Neutral",
+          "support": 758,
+          "precision": 0.6720867208672087,
+          "recall": 0.32717678100263853,
+          "f1": 0.4401064773735581
+        },
+        {
+          "id": 2,
+          "name": "Positive",
+          "support": 1670,
+          "precision": 0.7328431372549019,
+          "recall": 0.8952095808383234,
+          "f1": 0.8059299191374663
+        }
+      ],
+      "zero_division_policy": 0
+    },
+    "regression": {
+      "n": 3395,
+      "mae": 0.5302302096264001,
+      "pearson_r": 0.761753484019022,
+      "pearson_status": "defined"
+    }
+  },
+  "checkpoint_reload_predictions_identical": true,
+  "checkpoint_sha256": "ded4be0b86efd95dc0214ae0d72d219461ade67cf5eda1260d265f645528852f",
+  "prediction_files_sha256": {
+    "train": "a43390cd02da601aca45e3e44b8e25d8677529403b11a86fab5c030728aa6bcb",
+    "valid": "b1ad8683b7d1ff2dd2e487734cce920c49a0ec6e7d32d0ec2d0e838b52ce6164"
+  },
+  "empty_observation_samples": {
+    "train": 0,
+    "valid": 0
+  },
+  "test_evaluated": false,
+  "specialists_evaluated": false
+}

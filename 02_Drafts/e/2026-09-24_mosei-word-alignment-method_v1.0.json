@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "model_snapshot": "D:\\06_Apps\\huggingface-data\\hub\\models--facebook--wav2vec2-base-960h\\snapshots\\22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "timing": "CTC bin [start,end) * convolution stride / 16000; no duration/T scaling",
+  "source_words": "Original whitespace tokens, 1-based index; original text unchanged",
+  "normalization": "Uppercase; curly apostrophes normalized; punctuation stripped; hyphens split",
+  "speaker_annotation": "sample_0006 bracketed label masked as presumed metadata, requires review",
+  "numbers": {
+    "2008": "TWO THOUSAND EIGHT",
+    "10TH": "TENTH",
+    "1500": "ONE THOUSAND FIVE HUNDRED",
+    "100000": "ONE HUNDRED THOUSAND",
+    "20000": "TWENTY THOUSAND",
+    "50": "FIFTY",
+    "1989": "NINETEEN EIGHTY NINE"
+  },
+  "numeric_readings": "Provisional; all numeric samples require listening review",
+  "untimed_words": "Pure punctuation and speaker metadata have blank times and alignable=false",
+  "qc_rules": "Review if ASR WER>0.35, word mean CTC probability<0.20, long span>2s, or >=4 letters in <=20ms",
+  "qc_interpretation": "Heuristics for triage only; probabilities/WER are not measured alignment accuracy",
+  "original_transcript_issue": "sample_0001 source answers retained; listener suggested matters; unverified",
+  "torch_version": "2.7.1+cu128",
+  "torchaudio_version": "2.7.1+cu128",
+  "device": "cuda",
+  "script_sha256": "105fd9f1f4aeac7b006327067233bf1ea3fde085f16d36d5ad9595f5c23c683f",
+  "run_signature": "4e15b7da5463324011343ca7a9ee3575608344358584c7653cb7cc8d9f7384d1",
+  "pilot_max_boundary_difference_s": 0.0,
+  "completed": 100,
+  "failed": 0,
+  "needs_review": 63,
+  "aligned_words": 1923
+}

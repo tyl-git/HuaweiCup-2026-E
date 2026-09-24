@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "word_axis": "All original whitespace tokens, 1-based index, unchanged spelling/punctuation",
+  "untimed_words": "Retained; NaN timestamps, zero audio/vision, false audio/vision masks",
+  "audio_pooling": "Normalized intersection duration with actual openSMILE intervals",
+  "audio_coverage": "Union of intersected valid audio windows divided by word duration",
+  "vision_pooling": "Normalized intersection duration with valid frame display intervals",
+  "vision_intervals": "Actual ffprobe PTS_i to PTS_(i+1); last frame ends at PTS+reported duration",
+  "vision_validity": "OpenFace success==1, confidence>=0.8, all 49 features finite",
+  "vision_coverage": "Union of intersected valid frame intervals divided by word duration",
+  "vision_mask": "True if any positive valid-frame overlap; partial coverage retained separately",
+  "invalid_features": "Zero placeholders and false modality mask; zero does not mean observed neutral behavior",
+  "ctc_review": "Existing alignment flags retained; timed does not mean manually verified",
+  "time_origin": "Decoded audio start at zero; actual video PTS converted using source stream start offset",
+  "sequence_length": "Variable original length; no resampling, truncation, padding or normalization",
+  "visual_scope": "OpenFace tracks one detected face; speaker identity is not verified",
+  "summary": {
+    "samples_verified": 100,
+    "failed": 0,
+    "newly_created": 100,
+    "reused": 0,
+    "source_words": 1932,
+    "timed_words": 1923,
+    "all_modalities_valid_words": 1828,
+    "alignment_review_samples": 63,
+    "merge_review_samples": 19,
+    "needs_review_samples": 65,
+    "no_valid_visual_samples": 4
+  },
+  "script_sha256": "172a2f8783a7b81c128524489e561258f31b05f4960d57f5d8e52b2dc49f440d"
+}

@@ -1,0 +1,23 @@
+# Original and generated media/data that are intentionally kept outside this compact repository
+01_Source/E/**/*.mp4
+01_Source/E/**/*.pkl
+01_Source/E/**/*.wav
+02_Drafts/e/mosei-stage-v1.0/
+02_Drafts/e/mosei-audio-v1.0/
+02_Drafts/e/mosei-audio-egemaps-v1.0/
+02_Drafts/e/mosei-openface-pilot-v1.0/
+02_Drafts/e/mosei-word-times-v1.0/
+02_Drafts/e/mosei-text-bert-v1.0/
+02_Drafts/e/openface-test/
+02_Drafts/e/pilot-sample/
+02_Drafts/e/progress-showcase/
+02_Drafts/e/2026-09-24_q1-p1-review-contact_v1.0.png
+02_Drafts/e/**/__pycache__/
+03_Results/e/question-two/bert-cache-v1.0/
+03_Results/e/question-two/q2-baselines-v1.0/*/seed_*/best.pt
+03_Results/e/question-two/q2-robust-v1.0/*/seed_*/best.pt
+03_Results/e/question-two/q2-baselines-v1.0/*/seed_*/*predictions*.npz
+03_Results/e/question-two/q2-robust-v1.0/*/seed_*/*predictions*.npz
+03_Results/e/question-two/q2-robust-v1.0/*/seed_*/*masks*.npz
+*.pyc
+*.pyo

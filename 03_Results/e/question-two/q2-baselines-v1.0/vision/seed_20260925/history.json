@@ -1,0 +1,98 @@
+[
+  {
+    "epoch": 1,
+    "valid_cross_entropy": 1.0421319296071818,
+    "valid_l1": 0.7550870193229927,
+    "valid_selection_loss": 1.7972189489301744
+  },
+  {
+    "epoch": 2,
+    "valid_cross_entropy": 1.0417979994972983,
+    "valid_l1": 0.7520839670202234,
+    "valid_selection_loss": 1.7938819665175219
+  },
+  {
+    "epoch": 3,
+    "valid_cross_entropy": 1.042409849690867,
+    "valid_l1": 0.7565307355189062,
+    "valid_selection_loss": 1.798940585209773
+  },
+  {
+    "epoch": 4,
+    "valid_cross_entropy": 1.042448376561259,
+    "valid_l1": 0.7558789620032678,
+    "valid_selection_loss": 1.7983273385645269
+  },
+  {
+    "epoch": 5,
+    "valid_cross_entropy": 1.041882404914269,
+    "valid_l1": 0.7575862722082453,
+    "valid_selection_loss": 1.7994686771225141
+  },
+  {
+    "epoch": 6,
+    "valid_cross_entropy": 1.0460948446294764,
+    "valid_l1": 0.7588649005680294,
+    "valid_selection_loss": 1.8049597451975057
+  },
+  {
+    "epoch": 7,
+    "valid_cross_entropy": 1.042135558285556,
+    "valid_l1": 0.7532584981603937,
+    "valid_selection_loss": 1.7953940564459496
+  },
+  {
+    "epoch": 8,
+    "valid_cross_entropy": 1.0403710145216722,
+    "valid_l1": 0.7524418149675641,
+    "valid_selection_loss": 1.7928128294892365
+  },
+  {
+    "epoch": 9,
+    "valid_cross_entropy": 1.0470790915436796,
+    "valid_l1": 0.7560712216974614,
+    "valid_selection_loss": 1.803150313241141
+  },
+  {
+    "epoch": 10,
+    "valid_cross_entropy": 1.0563491648370094,
+    "valid_l1": 0.7603068561344356,
+    "valid_selection_loss": 1.816656020971445
+  },
+  {
+    "epoch": 11,
+    "valid_cross_entropy": 1.0533900391924513,
+    "valid_l1": 0.7706238201686314,
+    "valid_selection_loss": 1.8240138593610826
+  },
+  {
+    "epoch": 12,
+    "valid_cross_entropy": 1.0579639398134673,
+    "valid_l1": 0.7639576628967956,
+    "valid_selection_loss": 1.8219216027102627
+  },
+  {
+    "epoch": 13,
+    "valid_cross_entropy": 1.0603652969821469,
+    "valid_l1": 0.76617615039532,
+    "valid_selection_loss": 1.8265414473774668
+  },
+  {
+    "epoch": 14,
+    "valid_cross_entropy": 1.0640249435718243,
+    "valid_l1": 0.7698739570575756,
+    "valid_selection_loss": 1.8338989006294
+  },
+  {
+    "epoch": 15,
+    "valid_cross_entropy": 1.067113852762914,
+    "valid_l1": 0.7689338673602094,
+    "valid_selection_loss": 1.8360477201231236
+  },
+  {
+    "epoch": 16,
+    "valid_cross_entropy": 1.0793373637147001,
+    "valid_l1": 0.7843590254312033,
+    "valid_selection_loss": 1.8636963891459035
+  }
+]

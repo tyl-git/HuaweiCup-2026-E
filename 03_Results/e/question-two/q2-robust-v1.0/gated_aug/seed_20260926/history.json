@@ -1,0 +1,5862 @@
+[
+  {
+    "epoch": 1,
+    "augmentation": {
+      "epoch": 1,
+      "complete_samples": 1696,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521857,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1661,
+                "removed": 357,
+                "actual_fraction": 0.21493076459963878
+              }
+            }
+          },
+          "sample_indices_sha256": "d0e7a04e47646b588d862b71a0a0928f782fd7de25ed3bb78e371e29dc32e491",
+          "removed_masks_sha256": "d795589ff6ba74f34970e6a82f35f4451b93cc29a1825bb7eec967781d24c1b4"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 56,
+          "summary": {
+            "samples": 56,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521857,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1355,
+                "removed": 296,
+                "actual_fraction": 0.21845018450184503
+              }
+            }
+          },
+          "sample_indices_sha256": "a79d422e5206ab6b452c31b5031abe158aafa1710647aa7d1966da511ae7cb72",
+          "removed_masks_sha256": "c0770d9be141118e6c172a03e00bb540c89551ad371a11dd0f50021296259543"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521857,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1682,
+                "removed": 368,
+                "actual_fraction": 0.21878715814506539
+              }
+            }
+          },
+          "sample_indices_sha256": "b5a261158697f9cb8b6ba3a74db12e3d157e0861a99863b7afb7fbe9afdfd5dd",
+          "removed_masks_sha256": "0f3edb499403be57e9b2ca899d95e372cac7e69125776b6b676d75e17d6c13b3"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 63,
+          "summary": {
+            "samples": 63,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521857,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1387,
+                "removed": 303,
+                "actual_fraction": 0.21845710165825521
+              }
+            }
+          },
+          "sample_indices_sha256": "3be728812ee47d077db5034fe15c74c65851eef9e30b7a4d92885fd9158dd8d6",
+          "removed_masks_sha256": "14a03c13a21b0563da8b351684336b7f4b5f99d47fcd44f3e0990830eea7bb7b"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 77,
+          "summary": {
+            "samples": 77,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521857,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1708,
+                "removed": 719,
+                "actual_fraction": 0.42096018735363
+              }
+            }
+          },
+          "sample_indices_sha256": "0efcdb2cd5d6e2530f62572a666e83425a1eac35e2bc3109ec529af71de8a03a",
+          "removed_masks_sha256": "568f66ac27871a2c84759c2381c12583dbe44acf2fd9ac97bc544591a8f22a29"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 80,
+          "summary": {
+            "samples": 80,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521857,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1824,
+                "removed": 761,
+                "actual_fraction": 0.41721491228070173
+              }
+            }
+          },
+          "sample_indices_sha256": "419a4a83945e10373b1249929cd9ce61e8ef2e03550c6f91576116f13743f2e2",
+          "removed_masks_sha256": "0a90784d3726a2eb91e796e49b1631de5ffa206f2d8efa8cf0279ca954997a8e"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 78,
+          "summary": {
+            "samples": 78,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521857,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1813,
+                "removed": 760,
+                "actual_fraction": 0.41919470490899063
+              }
+            }
+          },
+          "sample_indices_sha256": "cd942c86b5ece5711a2978ac32df378a37039d25004a3ee32eb6d22c2a09e75c",
+          "removed_masks_sha256": "1fabdf898d2e91493e1865eba973036cb9ca5e32c5355e8da7ff8e76458e587c"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521857,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1865,
+                "removed": 781,
+                "actual_fraction": 0.41876675603217156
+              }
+            }
+          },
+          "sample_indices_sha256": "78dd929f6ebe7b988cc55665da32fdc75eec4832868f9f52e8b9899eb6c4516f",
+          "removed_masks_sha256": "82c3b0db3433dfbc42311983926f58c02060fd182f634c41c148d418be661239"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 77,
+          "summary": {
+            "samples": 77,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521857,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1721,
+                "removed": 373,
+                "actual_fraction": 0.2167344567112144
+              }
+            }
+          },
+          "sample_indices_sha256": "d27be9483adbaf9d010cfcbb0fdd1d5f5e8cad5a4e5e27cb23d74ae11f423307",
+          "removed_masks_sha256": "77bb5ed05a8d50cd92cccfa0f1b35baa8b8c658e9e28980cb35586a8bc30cea5"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 56,
+          "summary": {
+            "samples": 56,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521857,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1177,
+                "removed": 259,
+                "actual_fraction": 0.22005097706032287
+              }
+            }
+          },
+          "sample_indices_sha256": "bdba4c58d2e7688e48436627206f846d7bc271f400b66403593a7cb8ac9ab0b4",
+          "removed_masks_sha256": "aadd58fb69198b90a40e81d6d405d8efd8ea3fb4686a6d3c728c49beb2d9406e"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 63,
+          "summary": {
+            "samples": 63,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521857,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1375,
+                "removed": 297,
+                "actual_fraction": 0.216
+              }
+            }
+          },
+          "sample_indices_sha256": "22561ed200826b12d3362d92d5bd6857a8bddf6874c2f0dae609abf2dc08d1c9",
+          "removed_masks_sha256": "b169ddb82b15017ee6e6548985d939e0937993ee18cd9c89c3fe8c66764612ae"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 63,
+          "summary": {
+            "samples": 63,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521857,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1381,
+                "removed": 306,
+                "actual_fraction": 0.22157856625633598
+              }
+            }
+          },
+          "sample_indices_sha256": "361be7163c445340d3b1be1c20d7bb7f9383d0df0b2688677774a344e664b88e",
+          "removed_masks_sha256": "aa34278727475fc47dbc79d136ecb2c6a7f2cc0cb9758f4bdf8249a4942de3c6"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 63,
+          "summary": {
+            "samples": 63,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521857,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1345,
+                "removed": 564,
+                "actual_fraction": 0.41933085501858736
+              }
+            }
+          },
+          "sample_indices_sha256": "4f74b41f45cde17219425c8afd8843705bcb0af15aef2417bc81ef74fcc1b3db",
+          "removed_masks_sha256": "a58338d16c9d4c820fd03ce85719ca563d33b84cc072491ff4ddf6f06f778a77"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521857,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1476,
+                "removed": 614,
+                "actual_fraction": 0.4159891598915989
+              }
+            }
+          },
+          "sample_indices_sha256": "94b0461bff1cc41b4d9928c2e8318a1c2c1d9c6c3cb93f03c3bd06e7e34e96cf",
+          "removed_masks_sha256": "0d596bfc39eb8a67b57817fc9ca2a004f4d325b5ec6c0b534340f30cdc838d35"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 78,
+          "summary": {
+            "samples": 78,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521857,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1708,
+                "removed": 714,
+                "actual_fraction": 0.4180327868852459
+              }
+            }
+          },
+          "sample_indices_sha256": "8fb88f82434b4f8bbe7ecc0650a2c94ab5c0c720b944e697ab041a64e7eff382",
+          "removed_masks_sha256": "9faae38ef6c26738d944f421aa6513cbc92fa954de19fd611909c8e7e7e9d8fc"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521857,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1602,
+                "removed": 670,
+                "actual_fraction": 0.418227215980025
+              }
+            }
+          },
+          "sample_indices_sha256": "505992aed951e6e688c4e0825964277312072184b833809486a49f13f66139e7",
+          "removed_masks_sha256": "7a51017c444f35b2df45e649800b13c8929bf41c86529e61ccfe379c4c2785be"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 82,
+          "summary": {
+            "samples": 82,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521857,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1598,
+                "removed": 352,
+                "actual_fraction": 0.2202753441802253
+              }
+            }
+          },
+          "sample_indices_sha256": "3e1ec91d3a7629a755c66d6b8f8a1af70b90fd7b78c917a4f03ec841f3fbfcdb",
+          "removed_masks_sha256": "ec02f8e78ad588fc5c1c2487da772df8f180b5e7ccc6b31d31cfe7f0400ff481"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521857,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1421,
+                "removed": 312,
+                "actual_fraction": 0.21956368754398312
+              }
+            }
+          },
+          "sample_indices_sha256": "f7480895f4ae1f9427e5d64fc63b30c15309faed656645fe6fe07f3ce6ecfec6",
+          "removed_masks_sha256": "85dd9507c03ee047d11168ad55b79b3e8c8bf2f9fc43cb2571673e6e99189769"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 79,
+          "summary": {
+            "samples": 79,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521857,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1709,
+                "removed": 373,
+                "actual_fraction": 0.21825629022820361
+              }
+            }
+          },
+          "sample_indices_sha256": "abb56b3472df6e35569c5ff13e11c226b3688bbe70c2e10b932ab0215e90cac4",
+          "removed_masks_sha256": "1d280cac57ed762dc615f694a4ca2b59812c36be2d5d2b24748ca51cfd37a53f"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 87,
+          "summary": {
+            "samples": 87,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521857,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1821,
+                "removed": 397,
+                "actual_fraction": 0.21801208127402527
+              }
+            }
+          },
+          "sample_indices_sha256": "07489117aff60506d44605b93d0f0a40e267664b7b7f4fa36fbc4e7dc3d88d78",
+          "removed_masks_sha256": "f7e4dec09f991a0f59dcfa7aa07f3c3e9f73346f994796987423f2bf6a3ae8a2"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521857,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1239,
+                "removed": 524,
+                "actual_fraction": 0.42292171105730425
+              }
+            }
+          },
+          "sample_indices_sha256": "3af7dc28857109b531e1e4db807ce81870ecb417c28c14da92bd70118615bbb5",
+          "removed_masks_sha256": "1ea198deb8df0557700f7b5b17d110c54e086d325f460cd48e9a3f84d7253c91"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 54,
+          "summary": {
+            "samples": 54,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521857,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1302,
+                "removed": 545,
+                "actual_fraction": 0.4185867895545315
+              }
+            }
+          },
+          "sample_indices_sha256": "c624b4ee8506e60041e09ed1fb6392037c1eb2ea56149ecba185ff0f3bbd788c",
+          "removed_masks_sha256": "8c9ef8071bc04456834a9afd3709d5b1792d3c2a8dc43d6c776d568503014afd"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 87,
+          "summary": {
+            "samples": 87,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521857,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1879,
+                "removed": 789,
+                "actual_fraction": 0.4199042043640234
+              }
+            }
+          },
+          "sample_indices_sha256": "de0d18002bf97389ccc2618a4561a03f093c0de1e483a873b8882fb82c35820d",
+          "removed_masks_sha256": "cf4e9eae985d34f8a291f6c1d19eff0e206e52b7dcd4be2f3e7273c31f46fd3c"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 79,
+          "summary": {
+            "samples": 79,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521857,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1913,
+                "removed": 802,
+                "actual_fraction": 0.41923680083638265
+              }
+            }
+          },
+          "sample_indices_sha256": "45279df4f1d39a552175a367c9423ae2a4c4faafaadb785029a7fef175b49f39",
+          "removed_masks_sha256": "044fe0abe7b65f837944396bd1c6e867862d12f97f33cece12c28faa627468e8"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 1.459924307498303
+  },
+  {
+    "epoch": 2,
+    "augmentation": {
+      "epoch": 2,
+      "complete_samples": 1690,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 78,
+          "summary": {
+            "samples": 78,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521858,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1869,
+                "removed": 403,
+                "actual_fraction": 0.21562332798287853
+              }
+            }
+          },
+          "sample_indices_sha256": "4c10e4ac4a906c11c87ad9cd7343485e7d11b6bf1ab354cb454560abc677909b",
+          "removed_masks_sha256": "422ff2df00d06dac6dedded925d3352448ac974a3cd0573b302b1e2f2173ddad"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521858,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1503,
+                "removed": 329,
+                "actual_fraction": 0.21889554224883567
+              }
+            }
+          },
+          "sample_indices_sha256": "cadad8b17187124d0ec14daefae5901e19f64e2ed51d041f4376d065e65c511e",
+          "removed_masks_sha256": "0bff2eb257b7339f32a036de95fe56849b07c8682eeda6946f3c29f8c3f9c305"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521858,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1692,
+                "removed": 368,
+                "actual_fraction": 0.21749408983451538
+              }
+            }
+          },
+          "sample_indices_sha256": "3fd91e2cc753d5204d7514d60b5dded2870b5cdfc5fe3f3d100d493a38532746",
+          "removed_masks_sha256": "f83a73d088238054446f5019561f5a02548afcf222eef725980d78806d61ef2b"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 76,
+          "summary": {
+            "samples": 76,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521858,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1639,
+                "removed": 356,
+                "actual_fraction": 0.21720561317876755
+              }
+            }
+          },
+          "sample_indices_sha256": "a70fb66d75a6dbfe3f6007eafa9aa6d79ae3e1d165117fc5bf09b1de0386e43b",
+          "removed_masks_sha256": "a51a60d495c9f270b8944b68e42f01dbfa5bbdbdf576a35d33886bd9744fdda8"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521858,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1804,
+                "removed": 756,
+                "actual_fraction": 0.4190687361419069
+              }
+            }
+          },
+          "sample_indices_sha256": "c725014bf63946cb18cefe8c46d626384c58ab3cc2177881b94afd408cc84bd1",
+          "removed_masks_sha256": "02fdfa292fb2e146b59b4d37050efd7cc79d493a5d18a1f8593a000fbed500a1"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521858,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1577,
+                "removed": 661,
+                "actual_fraction": 0.41915028535193405
+              }
+            }
+          },
+          "sample_indices_sha256": "e61aad36e71aff2611276e753deff2464c02c46718030177be44c30a7a943587",
+          "removed_masks_sha256": "fcf0fb81a54198aef03af69053723187b3895f7b2191c6de3378675bfbfea0ad"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521858,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1546,
+                "removed": 645,
+                "actual_fraction": 0.41720569210866754
+              }
+            }
+          },
+          "sample_indices_sha256": "62892402714e29aaa1ab95d942026ba808b9388d2b4ec76ae9f48e61a9559afa",
+          "removed_masks_sha256": "33fde4a1d728f290f1f9c57392682131b1e4e7834f91409f43d25e3e85107932"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 75,
+          "summary": {
+            "samples": 75,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521858,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1735,
+                "removed": 730,
+                "actual_fraction": 0.4207492795389049
+              }
+            }
+          },
+          "sample_indices_sha256": "e8370c7d0ac38d92cec3b417aa5c7fad49bbe7d4c8e4094376e6db8feb25a55b",
+          "removed_masks_sha256": "4386f20eaa71d57eb061bcd5a10e08a8db627931fa22e4c4a8bb163b126ec0d4"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 83,
+          "summary": {
+            "samples": 83,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521858,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1927,
+                "removed": 419,
+                "actual_fraction": 0.21743642968344576
+              }
+            }
+          },
+          "sample_indices_sha256": "da2dfdfe26750a7e9fd5de8dd4f757f5a0debea25f09a4e8379af9d98e9f2311",
+          "removed_masks_sha256": "6e7550bda4087e95d99a84013d4da58db96a4ace225d3f3a90654acce1b4fcd3"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 55,
+          "summary": {
+            "samples": 55,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521858,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1358,
+                "removed": 294,
+                "actual_fraction": 0.21649484536082475
+              }
+            }
+          },
+          "sample_indices_sha256": "f283a919dc6b8260827b5c517796b741ecc17e0733fa7344fd66f89c1d309142",
+          "removed_masks_sha256": "5e7bbc66c7acea49c61d584ac6ef1346a110921ffacb07058f7bf62fd1079d4c"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521858,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1630,
+                "removed": 353,
+                "actual_fraction": 0.2165644171779141
+              }
+            }
+          },
+          "sample_indices_sha256": "8492af059aeb9a3f1f243a45201b466ecdaae1de238d19f3d0dc6c6fc6dbcf85",
+          "removed_masks_sha256": "12e6221118140c18bd632a7d7dfba9f8d971041c93d781d76791f5605207e190"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 65,
+          "summary": {
+            "samples": 65,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521858,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1385,
+                "removed": 302,
+                "actual_fraction": 0.21805054151624548
+              }
+            }
+          },
+          "sample_indices_sha256": "e2574be3a14b66c7c1f0cf6686cb846188ac44cd52e8cab694846dfaf5301543",
+          "removed_masks_sha256": "09a3260bc9cfded8ee972b2a03218995efb6796cd89e1fc819e43cb876896eb8"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521858,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1505,
+                "removed": 641,
+                "actual_fraction": 0.42591362126245846
+              }
+            }
+          },
+          "sample_indices_sha256": "5d306793a6a3e7487f91c0bd9266a688bc84a1d9a7f8126385ff02a8ea92b395",
+          "removed_masks_sha256": "b55924a65023c10b438b36bc5b020374dcf162798aa3609431f434b68d75da91"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 77,
+          "summary": {
+            "samples": 77,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521858,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1655,
+                "removed": 701,
+                "actual_fraction": 0.42356495468277944
+              }
+            }
+          },
+          "sample_indices_sha256": "0ba7ab75ce9f86e8107497105f2237eb14020964548757002979209ea616b485",
+          "removed_masks_sha256": "017e473a49b0a01b77455bd240ceadd22e1f60341aca09fbcbc27ade310c6c4d"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 84,
+          "summary": {
+            "samples": 84,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521858,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1940,
+                "removed": 815,
+                "actual_fraction": 0.42010309278350516
+              }
+            }
+          },
+          "sample_indices_sha256": "c27e8f7e4c623c7fbed8b1bc67cf874ca8f6748ce6e03f8542864175fff11a07",
+          "removed_masks_sha256": "6406f0617906474ed0e3ebcd9b234b93fe9d48a5b50b31bc486cae3c0ab59485"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 65,
+          "summary": {
+            "samples": 65,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521858,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1551,
+                "removed": 647,
+                "actual_fraction": 0.41715022566086396
+              }
+            }
+          },
+          "sample_indices_sha256": "6eae1d624ccf2e32d8112db7f7cd3dca0e0b3d035be2c5fe49b171edce3fa0d6",
+          "removed_masks_sha256": "ca52d88c79a66b2f427ab7b6760e44d2d91f6ee02d2829876c93b5b98d0c8580"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 65,
+          "summary": {
+            "samples": 65,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521858,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1523,
+                "removed": 330,
+                "actual_fraction": 0.21667760998030203
+              }
+            }
+          },
+          "sample_indices_sha256": "846fcdd4ca8d169c5e140f9e26a417d326df956962834e89ca65f26d8b47b9bb",
+          "removed_masks_sha256": "ed55e88659297f6788f1967dad6dd44df1058392753aa198a5704cb9675df6b8"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521858,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1588,
+                "removed": 345,
+                "actual_fraction": 0.2172544080604534
+              }
+            }
+          },
+          "sample_indices_sha256": "f4b9bb822266b69bfc1cce423e908f46174f5e1d71c2ae22f8cca93445dcec7a",
+          "removed_masks_sha256": "784321cccbb5f8209fd0333be8b53183f3c67764311dad5152b054e9c90c724a"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521858,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1502,
+                "removed": 325,
+                "actual_fraction": 0.21637816245006658
+              }
+            }
+          },
+          "sample_indices_sha256": "27258c0dd3729a5ae63f3802d9ae653af1d2873e8ac988caae84750a1f3f334d",
+          "removed_masks_sha256": "80cc42f0a238ffa908232d7d5033d6a72eaedb04ee99c9a322ea7adbfc036c67"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521858,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1140,
+                "removed": 255,
+                "actual_fraction": 0.2236842105263158
+              }
+            }
+          },
+          "sample_indices_sha256": "84f2f079f28bd20da5b492dc14054891d419a1fa3f002f38045086f35a0f47c1",
+          "removed_masks_sha256": "97645e78acec834145060372b5f9da077e346d077f5a35c819021486da9fb5ac"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 75,
+          "summary": {
+            "samples": 75,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521858,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1575,
+                "removed": 657,
+                "actual_fraction": 0.41714285714285715
+              }
+            }
+          },
+          "sample_indices_sha256": "3670298ccd40bd1bee5e8aec5c6058dd6f7d54284e58118f54b00c9d811f490c",
+          "removed_masks_sha256": "b6c13ad65e2e974b88782f4cfe91973753334415e7b438d0591e30c4f5160764"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521858,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1545,
+                "removed": 647,
+                "actual_fraction": 0.41877022653721685
+              }
+            }
+          },
+          "sample_indices_sha256": "1301a9a0509068d08fd6263a678e47c82749df704481be0d66dc9243ace7b1ef",
+          "removed_masks_sha256": "1998bdfbbb62f6eee8bf00b9d1745d71d3b2c033993179da1c04e89392534eaa"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 62,
+          "summary": {
+            "samples": 62,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521858,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1369,
+                "removed": 574,
+                "actual_fraction": 0.4192841490138787
+              }
+            }
+          },
+          "sample_indices_sha256": "b669f1da2d3f6f132ba351443e417ac646c27e9d2c6f9390bcdb3088a5590867",
+          "removed_masks_sha256": "98f4ce16d015cc6df843d256cfff71250518ff0c9f5e3eb6aab833ad8e618e90"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 72,
+          "summary": {
+            "samples": 72,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521858,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1468,
+                "removed": 615,
+                "actual_fraction": 0.4189373297002725
+              }
+            }
+          },
+          "sample_indices_sha256": "7561f1e07200959aeaff5d43a1276201fbdf534e9fe826b2f3391efc4e331400",
+          "removed_masks_sha256": "6c80a1c4d34c22dff7ab050f94ed220e7ce14e76c306108db33185d128ddd457"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 1.4213753375378284
+  },
+  {
+    "epoch": 3,
+    "augmentation": {
+      "epoch": 3,
+      "complete_samples": 1710,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 55,
+          "summary": {
+            "samples": 55,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521859,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1254,
+                "removed": 277,
+                "actual_fraction": 0.22089314194577353
+              }
+            }
+          },
+          "sample_indices_sha256": "4b4f7d412cb15d14480f14de0a9152c18e9bbac0c5505924fcb2597b2d449376",
+          "removed_masks_sha256": "431d585b651b8d80a695d289d2592aa6409ab8d2d77cd3feff52f98944a6a58c"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 81,
+          "summary": {
+            "samples": 81,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521859,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1832,
+                "removed": 400,
+                "actual_fraction": 0.2183406113537118
+              }
+            }
+          },
+          "sample_indices_sha256": "d151eaa90eb93969a7108b3e37070ca25da6c8e60adeb370578a6ff117f3067c",
+          "removed_masks_sha256": "4d05b4fd32711e8446e64ce594413c6054bac7f4b86a752756850e37ac8eecc0"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521859,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1512,
+                "removed": 330,
+                "actual_fraction": 0.21825396825396826
+              }
+            }
+          },
+          "sample_indices_sha256": "d75e9427f656fd8d805ddbfa0b57d058b34d0716a7c34ddd96aea4155c3b3b3a",
+          "removed_masks_sha256": "9505943e83024f8d184f8c31bc2a57eb15f676af9ffaba3c4fd75d7267f628f5"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 59,
+          "summary": {
+            "samples": 59,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521859,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1457,
+                "removed": 316,
+                "actual_fraction": 0.21688400823610157
+              }
+            }
+          },
+          "sample_indices_sha256": "191cdaa1a9a598e027b08b484e454d4bae2603c701144da9b0cbdc1dd6344548",
+          "removed_masks_sha256": "d34821f57cb0fc9002745ab10e0d46e2387d86d493e63e9cb6456df5bae690e0"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 75,
+          "summary": {
+            "samples": 75,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521859,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1685,
+                "removed": 713,
+                "actual_fraction": 0.42314540059347183
+              }
+            }
+          },
+          "sample_indices_sha256": "2408cf6080726672ad6aa2668bbc19baf8e445af4989fed1d2c8bc0622a2c97c",
+          "removed_masks_sha256": "bafdedd6420991717270fd415d219ca7960fbee2f3b11e2c0d9662ee18272524"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 93,
+          "summary": {
+            "samples": 93,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521859,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 2120,
+                "removed": 886,
+                "actual_fraction": 0.4179245283018868
+              }
+            }
+          },
+          "sample_indices_sha256": "edd31f54c5ed9fca1d75bb767d5767c3ed8ceeef5ac5586046631844102f6e80",
+          "removed_masks_sha256": "9b0da74c333cc44e1570ee1380e47b74d00cb9a9ebbb1e85b4997f1336310555"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521859,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1718,
+                "removed": 717,
+                "actual_fraction": 0.41734575087310827
+              }
+            }
+          },
+          "sample_indices_sha256": "c9c8515d2438852bc0a9fb515670b6761ae91bae7eee418c769b66a30d036f67",
+          "removed_masks_sha256": "11534ca67408bfc04c49737695c9174cbe60ec012a5fd7d39a72f9a4a869ba7d"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 87,
+          "summary": {
+            "samples": 87,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521859,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 2035,
+                "removed": 853,
+                "actual_fraction": 0.41916461916461917
+              }
+            }
+          },
+          "sample_indices_sha256": "ce90ca71449096e361c6c2d1e3602fe147da629c00572dc6cf5fdefb88e1c8c9",
+          "removed_masks_sha256": "98a0d13e7a0993b01eb66379db32d6b743d86f174c0898decb48131a19bb43e9"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 85,
+          "summary": {
+            "samples": 85,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521859,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1991,
+                "removed": 428,
+                "actual_fraction": 0.21496735308890005
+              }
+            }
+          },
+          "sample_indices_sha256": "b8711167a6bd08665e4f8e28b2c2a55a6a2f007381027268a10b4eecbe3bef45",
+          "removed_masks_sha256": "f9ffb530b08c721bf87699ee6033c5ac3e17f1cebf371031ea0655e30e28ca5f"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 77,
+          "summary": {
+            "samples": 77,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521859,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1931,
+                "removed": 420,
+                "actual_fraction": 0.21750388399792853
+              }
+            }
+          },
+          "sample_indices_sha256": "3cc32b0feb7dc250391215c5a2f643c7d38c3c0907fd69c0b863f56861f8c4b2",
+          "removed_masks_sha256": "527b4a2342064fc7d17ed509497491ed39f2ece16bb504f77bfd217fa59654bd"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521859,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1547,
+                "removed": 335,
+                "actual_fraction": 0.21654815772462832
+              }
+            }
+          },
+          "sample_indices_sha256": "be7fc0e71b07f0b09310ceed603a558f289786cfa00111cce05a0ffdf0673029",
+          "removed_masks_sha256": "8ec164952bc22d99294a58ab5ec8b01b715dfcf26643a52c689099d99140f4be"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 63,
+          "summary": {
+            "samples": 63,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521859,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1413,
+                "removed": 312,
+                "actual_fraction": 0.2208067940552017
+              }
+            }
+          },
+          "sample_indices_sha256": "3949444fbdef5770796416d2a99bd9fbd48c95dadc0fccc78f90f36749e54a79",
+          "removed_masks_sha256": "2c9a1e8c9fa2a9099c746057a858596295b01670ed50cdaa45a2831d0ab716fe"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 58,
+          "summary": {
+            "samples": 58,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521859,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1261,
+                "removed": 529,
+                "actual_fraction": 0.4195083267248216
+              }
+            }
+          },
+          "sample_indices_sha256": "1b90fd853dd4da77a16819cc03db4733061c4cc132f371e5bc8d9ede24fdc9ec",
+          "removed_masks_sha256": "48308f2ab80c065099020ad5310ee06b96a27aeaae744964ba3e509297159a91"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 60,
+          "summary": {
+            "samples": 60,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521859,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1367,
+                "removed": 570,
+                "actual_fraction": 0.41697147037307974
+              }
+            }
+          },
+          "sample_indices_sha256": "2429117c38e8086ca4143e8acf85f904b6eeb500945081bfd7e1c862c10e2e81",
+          "removed_masks_sha256": "5e5cf3838a9647e14dbc48db3be7edfc3b7cbb125c72341880e4e04009458e94"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521859,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1756,
+                "removed": 737,
+                "actual_fraction": 0.41970387243735763
+              }
+            }
+          },
+          "sample_indices_sha256": "05135a72e68ac28ae7664029670cb9057bc25329d638eddfe23b317c5a377995",
+          "removed_masks_sha256": "b68bc1c628daddf05c79732bc230b2971dee96e390a74738c0821f7e40246686"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521859,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1436,
+                "removed": 604,
+                "actual_fraction": 0.4206128133704735
+              }
+            }
+          },
+          "sample_indices_sha256": "a9b9413087899d66f2d62289de5f2a732c4b0a75d878315c088a1bce8ece90ff",
+          "removed_masks_sha256": "ae7eaaf160433bc2baef4cadfce87169fbd284d343d0dca8e087cc6ad7ee1af0"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 72,
+          "summary": {
+            "samples": 72,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521859,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1272,
+                "removed": 285,
+                "actual_fraction": 0.2240566037735849
+              }
+            }
+          },
+          "sample_indices_sha256": "7759d03df6c715a79ad0e13dd340c06e4067aebbcb9b7d3faaa89ff06b2bbe2f",
+          "removed_masks_sha256": "89b2eb7ecceb08b8fe5d6ba6b97723e40a06637c6c7dcfb4a28972d7fb5d6b2b"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 72,
+          "summary": {
+            "samples": 72,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521859,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1654,
+                "removed": 356,
+                "actual_fraction": 0.21523579201934703
+              }
+            }
+          },
+          "sample_indices_sha256": "6e89d78a9eca6a3813ff4e1ce413dc7bcc5767a06e016a7df0b1c435a6e0adbf",
+          "removed_masks_sha256": "e449714ec3d40a75f913e9f1ff930126e1fe0334654dc7fee5883ea41ad21b0d"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521859,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1509,
+                "removed": 328,
+                "actual_fraction": 0.21736249171636846
+              }
+            }
+          },
+          "sample_indices_sha256": "425419afdbd59b4e30c491802720e42913da871e79e7dcd3dd5e1acc42e4647b",
+          "removed_masks_sha256": "5eaafb5e0a0adbd63b294c7251d60791b1c9548c121666864db873aa8a349477"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 61,
+          "summary": {
+            "samples": 61,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521859,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1382,
+                "removed": 299,
+                "actual_fraction": 0.21635311143270622
+              }
+            }
+          },
+          "sample_indices_sha256": "f302415377332abe0d09ac7d6f0d2b6b06f1270f8712de8e2f3d5128ac79287c",
+          "removed_masks_sha256": "e9bfb1b076c8de05203a79b7c550f3313c3a8458d95ef7c1e7d9f95f3ecc13ca"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 49,
+          "summary": {
+            "samples": 49,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521859,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1095,
+                "removed": 460,
+                "actual_fraction": 0.4200913242009132
+              }
+            }
+          },
+          "sample_indices_sha256": "45425539018279d81e3aa0cb5ce5bb5e65d75071ade5e8e479b290265be8e9a5",
+          "removed_masks_sha256": "8361d4f35ad5c8606c53e0a594375d90108b5fd37cccdcac88f7c3da2d2e674b"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 78,
+          "summary": {
+            "samples": 78,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521859,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1437,
+                "removed": 604,
+                "actual_fraction": 0.42032011134307584
+              }
+            }
+          },
+          "sample_indices_sha256": "63eba871768d64cbf8faf051aa3f522e3cac88a68a974c5d9f6b0276a678fe3d",
+          "removed_masks_sha256": "a371ae4ca0d778fae4c34279ddab8f79c2ffbddd0c482e80fe84ee7246350d1e"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521859,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1307,
+                "removed": 552,
+                "actual_fraction": 0.4223412394797246
+              }
+            }
+          },
+          "sample_indices_sha256": "95c5f241bdf44959cc3df52107b5f68695b5c127ba038a17af7f3126357654b2",
+          "removed_masks_sha256": "cb420d2470945c4906ec8f59048f8d8d8dfc379a741edf9bd1ff57ee6910cc91"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521859,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1590,
+                "removed": 666,
+                "actual_fraction": 0.4188679245283019
+              }
+            }
+          },
+          "sample_indices_sha256": "53db6295d06237254e2c85ff70ef1ec74934d862754d74bc0ef7eb718a13cc4c",
+          "removed_masks_sha256": "1b980dabc6d21a4f82109fbc928cb6a37dc0c0992d700603d00bffba984c03d5"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 1.4217610018593922
+  },
+  {
+    "epoch": 4,
+    "augmentation": {
+      "epoch": 4,
+      "complete_samples": 1708,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 76,
+          "summary": {
+            "samples": 76,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521860,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1696,
+                "removed": 367,
+                "actual_fraction": 0.21639150943396226
+              }
+            }
+          },
+          "sample_indices_sha256": "9a438783eaa56ba884b3455c0955e96436fcf5a1e5da0b2aca5b0e02231ada67",
+          "removed_masks_sha256": "c3e93ab6a7b1547d85d2cd1bddb05b21714840bb832eb06e56600287781cf2d7"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521860,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1668,
+                "removed": 360,
+                "actual_fraction": 0.2158273381294964
+              }
+            }
+          },
+          "sample_indices_sha256": "54de443650f3e786c9cfffeb93921c97a6a5a7c508f2c20f2d1ffe4400f013e3",
+          "removed_masks_sha256": "a9c631f807eaee912e407ec62cf92e7a52ae2ea9925a33cd117e6f7443ddfd76"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521860,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1539,
+                "removed": 336,
+                "actual_fraction": 0.21832358674463936
+              }
+            }
+          },
+          "sample_indices_sha256": "79d02a48a3ba6bb11a6f84c1f509e97fd10f319b26ea8b9f28a3b25f4c681b95",
+          "removed_masks_sha256": "f7bbba9ebcd0abcffc387594d17108c2f6da777a08e4920e268a980b9032aa98"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 59,
+          "summary": {
+            "samples": 59,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521860,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1307,
+                "removed": 286,
+                "actual_fraction": 0.21882172915072687
+              }
+            }
+          },
+          "sample_indices_sha256": "b099f310fcd7e5a6bb7b160737677b0b83e9e840dfa04ba6e9489bade187140b",
+          "removed_masks_sha256": "40b0595aec56afdddf8af71e1f8d46297e5148846d7bafb57116fd3adf018b2e"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521860,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1748,
+                "removed": 733,
+                "actual_fraction": 0.4193363844393593
+              }
+            }
+          },
+          "sample_indices_sha256": "c66764d30e3e6bcf1208ba176b41e754e7ab8ea499f668950c4aa6f8c9230ece",
+          "removed_masks_sha256": "e31f9d621920ef7c944651e07945205a819b9b7e0e70203e00aab824ef9a6971"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 76,
+          "summary": {
+            "samples": 76,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521860,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1662,
+                "removed": 700,
+                "actual_fraction": 0.42117930204572807
+              }
+            }
+          },
+          "sample_indices_sha256": "dbfb59422818766a814f4999fb08d8ea75603d30030ebf2f0647af50720cc7eb",
+          "removed_masks_sha256": "cba6e80f6072e86168c10ca930cc9e70c2704b857feb1611fa2f9b3db58d80b0"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521860,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1499,
+                "removed": 628,
+                "actual_fraction": 0.418945963975984
+              }
+            }
+          },
+          "sample_indices_sha256": "638d19735d42bd31215104d9ca221ef516285d14fabaa2dd8a79af0e42833a6b",
+          "removed_masks_sha256": "fc4971ea3f8764a250a634085141be7209a2c278d68117fb623517c9cf1b03c3"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521860,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1494,
+                "removed": 627,
+                "actual_fraction": 0.41967871485943775
+              }
+            }
+          },
+          "sample_indices_sha256": "72ee9e50c1143f59c1dfd7b029d79e9b56b8b6bccfa17830edb24d41f43d57af",
+          "removed_masks_sha256": "e40bf300ad321d005fcb1d7c5a07e4ce39d96cd41763c495d12c643d8aeb53f0"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 60,
+          "summary": {
+            "samples": 60,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521860,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1480,
+                "removed": 319,
+                "actual_fraction": 0.21554054054054053
+              }
+            }
+          },
+          "sample_indices_sha256": "459e7a764339f31377e7b01fdfb2e58c0346f1f0c25446183c4f364813ecf3bd",
+          "removed_masks_sha256": "6a31f245019e581890647e197a7d36492a40c60d941c52590457227c72b64c8f"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521860,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1494,
+                "removed": 325,
+                "actual_fraction": 0.2175368139223561
+              }
+            }
+          },
+          "sample_indices_sha256": "3cf11591a1724811565a570683dc9e61a56bef6987669e021c12ba2ba3bd2c19",
+          "removed_masks_sha256": "d9358fd020380b53ea42ee54857172f79d9f14a373d6e476d9f8345d78423196"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 62,
+          "summary": {
+            "samples": 62,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521860,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1495,
+                "removed": 324,
+                "actual_fraction": 0.21672240802675585
+              }
+            }
+          },
+          "sample_indices_sha256": "fb6a0f521308648ce9376b7bd6b2c5ea8af2df4b56d04caecf6fa6d2c5db056c",
+          "removed_masks_sha256": "e80e8071ed0814142367e64bac2ac1700f791b7505ec0d8f1859784eb940ef1d"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 75,
+          "summary": {
+            "samples": 75,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521860,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1967,
+                "removed": 421,
+                "actual_fraction": 0.21403152008134216
+              }
+            }
+          },
+          "sample_indices_sha256": "7927c94dea0f30327a656db6bbb31e712536c2a3894c9f3590426a4fe0931b35",
+          "removed_masks_sha256": "e551bf154ca709910e75185a222e4f26d61eb141ef0f0db4ffa6c0657c410c6a"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 89,
+          "summary": {
+            "samples": 89,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521860,
+            "per_modality": {
+              "text": {
+                "originally_observed": 2103,
+                "removed": 877,
+                "actual_fraction": 0.4170233000475511
+              }
+            }
+          },
+          "sample_indices_sha256": "0d358655108517a173b8e3f4f60981702ccd25ccbb9a7290288e1d414e8ab122",
+          "removed_masks_sha256": "39d1fb3de9283a1131ce6a4ce0fbdd4cf63d28e6026d781d82c8025ec47f8d54"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 75,
+          "summary": {
+            "samples": 75,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521860,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1725,
+                "removed": 718,
+                "actual_fraction": 0.416231884057971
+              }
+            }
+          },
+          "sample_indices_sha256": "d0131d3399e088c5c660bd2c10bd07551eb66c99ab495a13bbd52e100aa9a0f7",
+          "removed_masks_sha256": "5a5ceb699cae196527cb88991a6a10bbdf871d77244140992f53e5a8a06918ad"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521860,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1477,
+                "removed": 621,
+                "actual_fraction": 0.42044685172647256
+              }
+            }
+          },
+          "sample_indices_sha256": "3da5c2cc2f45f8a51390cae08f3924df6df20e3c6172a5fc7b427a69396e2863",
+          "removed_masks_sha256": "29b01d63ad75c5a0746e8e9c571b914213388d0ba5e74f79936107c477607951"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521860,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1563,
+                "removed": 657,
+                "actual_fraction": 0.42034548944337813
+              }
+            }
+          },
+          "sample_indices_sha256": "6e6fcaac21c0b7515965e9f0868e747d0a96a7449f982482b989365aa5e88dfa",
+          "removed_masks_sha256": "21dc713a2944da990fd53cb7441ba74d2efb534d1331f7da55b1f1f9017e571c"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 76,
+          "summary": {
+            "samples": 76,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521860,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1728,
+                "removed": 378,
+                "actual_fraction": 0.21875
+              }
+            }
+          },
+          "sample_indices_sha256": "2b3b1d9ae8ccc66dc45549d9860dacb48dbb9399c2a6273d5458c899e823746f",
+          "removed_masks_sha256": "17536bd03e570f3749c1178a26b29d477fb4b9739acbb923ae89a6f7009e6c03"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521860,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1257,
+                "removed": 277,
+                "actual_fraction": 0.2203659506762132
+              }
+            }
+          },
+          "sample_indices_sha256": "773d4de2a3cbc7ad78ab804efc2901b9f1ac79bceea2d84dd9908fcca2bfe4ca",
+          "removed_masks_sha256": "0154e76b642c3d23cd10e708640ea631c7c48e16b56b0ac5880063419295c844"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 54,
+          "summary": {
+            "samples": 54,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521860,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1139,
+                "removed": 248,
+                "actual_fraction": 0.2177348551360843
+              }
+            }
+          },
+          "sample_indices_sha256": "8cd85ac5de218a5cdda1a4e0214d04f47d05bb05fe3bd10974e51609c86bbab0",
+          "removed_masks_sha256": "e287e58f6ebd62accebdc57d25ea7231fa0ca3d64c8c346cb7ef0901c3cdb091"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 76,
+          "summary": {
+            "samples": 76,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521860,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1523,
+                "removed": 336,
+                "actual_fraction": 0.2206172028890348
+              }
+            }
+          },
+          "sample_indices_sha256": "9d08af0b28956c35c0181eb45ff59ddb70c16310ff114397005ecf316f3be043",
+          "removed_masks_sha256": "94f5b0e770d89e8d43659d83fb488e32f90b0970ba89fa5c635db113e8379b1a"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521860,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1720,
+                "removed": 718,
+                "actual_fraction": 0.4174418604651163
+              }
+            }
+          },
+          "sample_indices_sha256": "e9d04d638a699953bfbba8175b75605825ba615a29abc0a118f890664894c744",
+          "removed_masks_sha256": "3065e65bad11c27f0bc3ffdd6d31e47543255b9564cd2c45e7678e8c64084a83"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521860,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1661,
+                "removed": 691,
+                "actual_fraction": 0.4160144491270319
+              }
+            }
+          },
+          "sample_indices_sha256": "9aa69ed7449652b2805a43ab48aabe60dc94ca2d2585163f5c34deb3766e28a7",
+          "removed_masks_sha256": "f49c7a18cce94b3ea571b161436d503fa7c4715a03760b4813fd66d1f2623999"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521860,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1617,
+                "removed": 678,
+                "actual_fraction": 0.41929499072356213
+              }
+            }
+          },
+          "sample_indices_sha256": "54ae56aaeec7ef195f59e3497858bf06d7ec860d9f450872ae7f47cbf9734cc9",
+          "removed_masks_sha256": "c9546373c3379af9e7fc9339f675a1ed573a0694537224a5d67e5ab7f06ce9d1"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521860,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1361,
+                "removed": 576,
+                "actual_fraction": 0.42321822189566494
+              }
+            }
+          },
+          "sample_indices_sha256": "ec0503fa9caad27c2da5863cb6f2399b2b61f79e380ec9938a8581fb658fd254",
+          "removed_masks_sha256": "1c54aa774015a2ad4470e3c1f7f017068f01a1535045fa2441d9789c628a914c"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 1.4565041117615753
+  },
+  {
+    "epoch": 5,
+    "augmentation": {
+      "epoch": 5,
+      "complete_samples": 1748,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 72,
+          "summary": {
+            "samples": 72,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521861,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1834,
+                "removed": 393,
+                "actual_fraction": 0.21428571428571427
+              }
+            }
+          },
+          "sample_indices_sha256": "4ba5823230cfe8057fab5cb9ebc9a94a146ecfabd73803f9ee7b71bb52596d66",
+          "removed_masks_sha256": "7e2862a1775e57927aa0200d43e0b0cdcd616efa4c1ffc28e828f307d6eb73a6"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521861,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1585,
+                "removed": 345,
+                "actual_fraction": 0.21766561514195584
+              }
+            }
+          },
+          "sample_indices_sha256": "5e0e2d9ec21cb636716cc8a239415225cb205d4c6c619f930d84e17993fc4bc9",
+          "removed_masks_sha256": "a4c82d90325b3a23d0d8dcb3973be2aa9b01e34d04e8d5236e9a9a9ef279ac42"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521861,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1332,
+                "removed": 287,
+                "actual_fraction": 0.21546546546546547
+              }
+            }
+          },
+          "sample_indices_sha256": "6a02049b64c568238ecb46fb69ce4a57620240b40ac397be593912a405bddcba",
+          "removed_masks_sha256": "d589cab8689a2e2d6005bbe00062d67bdb3a9cbb7e76d7acaac40a863c1447c7"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 56,
+          "summary": {
+            "samples": 56,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521861,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1285,
+                "removed": 278,
+                "actual_fraction": 0.21634241245136188
+              }
+            }
+          },
+          "sample_indices_sha256": "8470be9128251f6f9aef8dd4ec576eb8c02d176f56e37bd89ba0e5e7cbd0821a",
+          "removed_masks_sha256": "2d2e730aca907c1ab0bd92d4ae16fe56e9dcd6ade5ce3a28cac7e452eaf75b4b"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521861,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1513,
+                "removed": 639,
+                "actual_fraction": 0.42233972240581624
+              }
+            }
+          },
+          "sample_indices_sha256": "e02be93def9c6173df6d2f09171286194855036d3065baa7f85aed7a7bcd33c3",
+          "removed_masks_sha256": "11ccc7c51c32b3be122daa6521ad1c7dfd034602cad8d674fe7b14653f6fb0a6"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 79,
+          "summary": {
+            "samples": 79,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521861,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1786,
+                "removed": 747,
+                "actual_fraction": 0.41825307950727886
+              }
+            }
+          },
+          "sample_indices_sha256": "4e5005633e66434f0339d2f8c8858a7771d8da97ad36ed8f955ecbfb7fb6bf5b",
+          "removed_masks_sha256": "86a8fbfa45f208bcb8ec469ce1517c1aebbcf058d3981227e1e61c7c0efebeaa"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 65,
+          "summary": {
+            "samples": 65,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521861,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1377,
+                "removed": 582,
+                "actual_fraction": 0.4226579520697168
+              }
+            }
+          },
+          "sample_indices_sha256": "22fc888c10c2d49366ea14c7d4e2ff53eaf57a257e51331e313f44414717994c",
+          "removed_masks_sha256": "4a936527dcf1de10be289db2b64105136be527773da287a71ebe84d81618aa49"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 49,
+          "summary": {
+            "samples": 49,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521861,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1150,
+                "removed": 483,
+                "actual_fraction": 0.42
+              }
+            }
+          },
+          "sample_indices_sha256": "eac01d25d07ec1c1a1998050c556303be556fa0d15f21ef718793aba92e3ab2f",
+          "removed_masks_sha256": "adc65cb26007e561cbc565967a808a674a1159829d9531274c90e5274714367a"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521861,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1478,
+                "removed": 322,
+                "actual_fraction": 0.2178619756427605
+              }
+            }
+          },
+          "sample_indices_sha256": "98706074021fa56a45d877e5a5d85e75071fd7bb8095531574d1f9e211cb07f4",
+          "removed_masks_sha256": "89b8287787b4916c1a4db78781242307bc35689c44278fa2e401d1e348c0f312"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521861,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1446,
+                "removed": 317,
+                "actual_fraction": 0.21922544951590595
+              }
+            }
+          },
+          "sample_indices_sha256": "df3a3f43333118dd23e0edac977150936a726e9cfde92100903a48836872b434",
+          "removed_masks_sha256": "23241f3f153519c735d0ce4c45ae9b152f09085c5441b21a306abba96d944e80"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 59,
+          "summary": {
+            "samples": 59,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521861,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1321,
+                "removed": 287,
+                "actual_fraction": 0.21725965177895534
+              }
+            }
+          },
+          "sample_indices_sha256": "db3bf3d52abb07f76e5d828f95edba9afff0172fb88a70a54eb2d0e6b4274b9e",
+          "removed_masks_sha256": "3f2a0bcc542da1e896a1d957ca3d1635a69788ae10cc4996dd1d038feb2012a8"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521861,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1654,
+                "removed": 363,
+                "actual_fraction": 0.21946795646916567
+              }
+            }
+          },
+          "sample_indices_sha256": "3bacd905d694cf4ed148d8cbe48b845b072fb8d0f31b2e3994f37d902081258f",
+          "removed_masks_sha256": "587a3b50b25c3ac9d42ccb489144f44d8dd6a0db9bdf493c8deb200de628801b"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 76,
+          "summary": {
+            "samples": 76,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521861,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1673,
+                "removed": 702,
+                "actual_fraction": 0.41960549910340705
+              }
+            }
+          },
+          "sample_indices_sha256": "734eb836e79453b31d6d186e89c4ccbfcbdfc08f46b60b250311ee5cc88c4222",
+          "removed_masks_sha256": "7ecc802cf7f480c724f1df737d1c6e975037d9c8ca82d561a0eeaff8bfeac2fc"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521861,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1666,
+                "removed": 699,
+                "actual_fraction": 0.41956782713085233
+              }
+            }
+          },
+          "sample_indices_sha256": "70a125871604cec30d24bbfe40ff01b8b5bc3892cba15127a740a46c6f6883f0",
+          "removed_masks_sha256": "2f5a5a780dfddf0412fa659571e900614f0a9a21bb5a922f129e39f276fb3d2b"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521861,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1666,
+                "removed": 700,
+                "actual_fraction": 0.42016806722689076
+              }
+            }
+          },
+          "sample_indices_sha256": "623becadd0c5074636041759b48e566d76db2a1d876d8bb92162d6a83547e8fd",
+          "removed_masks_sha256": "c0af00ae7490c3989c5e10c999be7071e6cc2e607c90e1d9eb36e2c2751631d1"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521861,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1498,
+                "removed": 630,
+                "actual_fraction": 0.4205607476635514
+              }
+            }
+          },
+          "sample_indices_sha256": "d471f211e16585ab39946235b726084428317955bbdef94be4b520c89b7b69ae",
+          "removed_masks_sha256": "29d921e046c1a1732a7476fb9b395d64e9b5d045ab49e27f6ca03e7fc4839c42"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521861,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1394,
+                "removed": 309,
+                "actual_fraction": 0.22166427546628406
+              }
+            }
+          },
+          "sample_indices_sha256": "ef3352adbdd332437f839fa784d15a099d1767e3b0a48708b80171e7d1734350",
+          "removed_masks_sha256": "cd9737b90629cca0f1489373ce5bc09182fe5a8b88f65dcc4a809b1b33f19e49"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 53,
+          "summary": {
+            "samples": 53,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521861,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1254,
+                "removed": 271,
+                "actual_fraction": 0.21610845295055822
+              }
+            }
+          },
+          "sample_indices_sha256": "39d531eb891469ef7a830cf2a15eac78b02d0e38cc22bd36593af8798d103f0a",
+          "removed_masks_sha256": "de2a5703483bf04331d00fc3320232fbf4f2c9eb8275e06204b3a8bde3b3afd8"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 81,
+          "summary": {
+            "samples": 81,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521861,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1882,
+                "removed": 406,
+                "actual_fraction": 0.2157279489904357
+              }
+            }
+          },
+          "sample_indices_sha256": "77a05d792da34eb98030cb74d2ce378f521c5a9c509f2d6abb6ec7982d0fea81",
+          "removed_masks_sha256": "378285de22c2eaedb12e167353a9b4b9ccee1f4a221fb5688f725ad846b56746"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521861,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1495,
+                "removed": 324,
+                "actual_fraction": 0.21672240802675585
+              }
+            }
+          },
+          "sample_indices_sha256": "339bd057947ea9b4b592ad7cc85a5cbfdc3e34ffb3c3d443546b6a75f56665d6",
+          "removed_masks_sha256": "145b03b750347ff25dd1829c6e1bc95cec2ab4fb1c5b47c240a91302a3442228"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 72,
+          "summary": {
+            "samples": 72,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521861,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1524,
+                "removed": 639,
+                "actual_fraction": 0.41929133858267714
+              }
+            }
+          },
+          "sample_indices_sha256": "366c059866c1b2cfd17fa1e4ce5cd602bd83cd186a9c1adfb29edc13bde40ab1",
+          "removed_masks_sha256": "158e1d322672310b0da37a19fdf90f4d82642377205e426e355e556b9540b914"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521861,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1387,
+                "removed": 584,
+                "actual_fraction": 0.42105263157894735
+              }
+            }
+          },
+          "sample_indices_sha256": "cd4f14ac20f3d7498deb777b9e77aece727825207f2e3b2dd9ede845812cb4d5",
+          "removed_masks_sha256": "926b293728319fa974116857cb6e4877b450503f98672a3d1bc44ec6ae5aa968"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 89,
+          "summary": {
+            "samples": 89,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521861,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1895,
+                "removed": 799,
+                "actual_fraction": 0.4216358839050132
+              }
+            }
+          },
+          "sample_indices_sha256": "70b43afc6a9807cb62cc5472f004b87bbbcc938ec1f7445b7f12a4fa2933e9fd",
+          "removed_masks_sha256": "ab7211bd7c656a142ebb0d2305c371d195503b6d5e6ea845f9b7da8f9efe51d8"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521861,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1473,
+                "removed": 617,
+                "actual_fraction": 0.41887304820095045
+              }
+            }
+          },
+          "sample_indices_sha256": "deaac06f067b7a26288cfa7c6b96d7a72766ed30c9f891c1463a21182a28ecdc",
+          "removed_masks_sha256": "8652664ccef6f99d1c9be47cb9bb5c3b865ef403881f8af44b20ba5d1a3e62fe"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 1.4893856598780706
+  },
+  {
+    "epoch": 6,
+    "augmentation": {
+      "epoch": 6,
+      "complete_samples": 1730,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 86,
+          "summary": {
+            "samples": 86,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521862,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 2017,
+                "removed": 433,
+                "actual_fraction": 0.21467526028755576
+              }
+            }
+          },
+          "sample_indices_sha256": "9073b1f2ad0133aa37c5b3d24a7d5f110ab15985722869757250eaf374c343fa",
+          "removed_masks_sha256": "41792fe971c1a37d2748b091527877d3c6e08746a7952451cd86e9cd0a3518b5"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 60,
+          "summary": {
+            "samples": 60,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521862,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1491,
+                "removed": 321,
+                "actual_fraction": 0.2152917505030181
+              }
+            }
+          },
+          "sample_indices_sha256": "a8f577df174f9ff2fd99a3f5c08526c2a9b200b9deca6de960195c8ff178b543",
+          "removed_masks_sha256": "8615d67f2170fc5a8a200ae3c953351853733aef210428c70c54b9b2ce38ad20"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 61,
+          "summary": {
+            "samples": 61,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521862,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1427,
+                "removed": 308,
+                "actual_fraction": 0.2158374211632796
+              }
+            }
+          },
+          "sample_indices_sha256": "1d4ff9e646db6cfd60aa2a2b24f3167083cc593f80b6f2a23be3848cb461a5ca",
+          "removed_masks_sha256": "b342e0165b29c3309013377bfc1c0e7d2a562bdc77cc76142954022cbc301cb1"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 77,
+          "summary": {
+            "samples": 77,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521862,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1655,
+                "removed": 368,
+                "actual_fraction": 0.22235649546827796
+              }
+            }
+          },
+          "sample_indices_sha256": "d387b062c1123a0db6a2d7b17faa494e04ef8d5819b0336813aade20e57fe29a",
+          "removed_masks_sha256": "e63d88cc2ebc0c34ba7fe66ea90963c9f5a3455ec05379e6ae21563a4fb9d5d1"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 62,
+          "summary": {
+            "samples": 62,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521862,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1419,
+                "removed": 595,
+                "actual_fraction": 0.4193093727977449
+              }
+            }
+          },
+          "sample_indices_sha256": "7e662699ae89c88909c8bc53b966095b7d2dd1288d6e0e58f2dd8c7bb1e0149e",
+          "removed_masks_sha256": "fca90a172f4172952293a242b63472b484f8dc2bea63337c4f584b0260bc5e8e"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 60,
+          "summary": {
+            "samples": 60,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521862,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1250,
+                "removed": 525,
+                "actual_fraction": 0.42
+              }
+            }
+          },
+          "sample_indices_sha256": "fd5900948915b343c6ee5a350d3b69ce4e2b8c06ec3114b204c1a206b674b2ac",
+          "removed_masks_sha256": "8b05a76810ea810dce5d0afcde2aa05cc229a18ebe4ac88bcff5d2f9a98a0f3a"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521862,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1537,
+                "removed": 648,
+                "actual_fraction": 0.4216005204944697
+              }
+            }
+          },
+          "sample_indices_sha256": "40400dcd720041acf8e56778d50373ba05d7ff1bf226735cace0771c3c422625",
+          "removed_masks_sha256": "0f1455ae14234bf78eab772061031b517fe845eecea3b32c144bfd4b4a4ab7b1"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 78,
+          "summary": {
+            "samples": 78,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521862,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1629,
+                "removed": 681,
+                "actual_fraction": 0.4180478821362799
+              }
+            }
+          },
+          "sample_indices_sha256": "3e239ecab61e1d1ba0b0f048206bbbf2b60350e49f72d1dd241300fccb5fe4f9",
+          "removed_masks_sha256": "073b0302416eb732eb22e67e9e7a73590e1dcd8e3d4bdcc4c6c00e6728f9bd9b"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 56,
+          "summary": {
+            "samples": 56,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521862,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1174,
+                "removed": 258,
+                "actual_fraction": 0.21976149914821125
+              }
+            }
+          },
+          "sample_indices_sha256": "20aee41e281f8844c132e8b2fe55755951ddfb0f6a8c0225cf4273a7622ec097",
+          "removed_masks_sha256": "1db53ae3956c8c56758f94de657ae72aabc7e79fd37a0f06fe7253b9a8278495"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521862,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1673,
+                "removed": 361,
+                "actual_fraction": 0.21578003586371788
+              }
+            }
+          },
+          "sample_indices_sha256": "5821f70ecfa1dfbdd6ff3ec76740653d9fe297e31fbbcf032bf57358a3676637",
+          "removed_masks_sha256": "d7672d7121af987637129702e092f2b0d1d66f0e2cc68fb363a9622b07f10b3e"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521862,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1621,
+                "removed": 354,
+                "actual_fraction": 0.21838371375694016
+              }
+            }
+          },
+          "sample_indices_sha256": "14d331d774173c14de5ad72e0cca97525fff476be0b045eaf0d93c604a39a2fb",
+          "removed_masks_sha256": "7920b19c54d95035d9851776c8ee9605b5b8b850e140e9e88d8b22e5960e3233"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521862,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1543,
+                "removed": 339,
+                "actual_fraction": 0.21970187945560596
+              }
+            }
+          },
+          "sample_indices_sha256": "d4a38c0962c23b13b36f8e8c0e328dd047e83d71e696c384293c26435e38ef92",
+          "removed_masks_sha256": "bcb29d4769d73e9f926da09210b2de54cdeca3d66380b9f1abe291956119f7f8"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 61,
+          "summary": {
+            "samples": 61,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521862,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1344,
+                "removed": 564,
+                "actual_fraction": 0.41964285714285715
+              }
+            }
+          },
+          "sample_indices_sha256": "cf9b7a2de24b2eb321e153cb1f06a82bb44cd84932c9b9871e86be17d36372dc",
+          "removed_masks_sha256": "3dc7b9398434b586c8624e4d9b726c0bfa151b9ce6bccb9d5577bd26c01ce2b0"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521862,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1553,
+                "removed": 651,
+                "actual_fraction": 0.4191886670959433
+              }
+            }
+          },
+          "sample_indices_sha256": "2f60cc8359f8372eeedc00c24fd83ddc02703339e055b07a77e1fa5b12008448",
+          "removed_masks_sha256": "1415893d89a12135cd6a3d8480ee7d6de92eb59cbe0451d92b0e5b5190cb49ef"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521862,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1395,
+                "removed": 586,
+                "actual_fraction": 0.42007168458781363
+              }
+            }
+          },
+          "sample_indices_sha256": "82991a2a4a9fdf24647a767d7627e0f68e5f7847614b231d6feafa2f62d2d156",
+          "removed_masks_sha256": "74945a72d836a2bdb5b0e60d037419824439883a256228dcd954f13430f375e4"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521862,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1784,
+                "removed": 745,
+                "actual_fraction": 0.41760089686098656
+              }
+            }
+          },
+          "sample_indices_sha256": "e4a05cd3f4f6fceb8e2398f8fabe4bcdaa52e886c20fb9eb7dc708b5a9108269",
+          "removed_masks_sha256": "5fc274af6445133d6d2a89feb73620707b0de49aaf214f21185bae719a8d327a"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521862,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1227,
+                "removed": 271,
+                "actual_fraction": 0.2208638956805216
+              }
+            }
+          },
+          "sample_indices_sha256": "2e1c66f253594cd2ead6d9b0a61fa1ff91e3d48fa62877b90498d45b4686a0c3",
+          "removed_masks_sha256": "5f65c994054ae78f925e4479353f81f35998eda00b12210eceb75e81ce446d11"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 81,
+          "summary": {
+            "samples": 81,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521862,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1624,
+                "removed": 354,
+                "actual_fraction": 0.21798029556650247
+              }
+            }
+          },
+          "sample_indices_sha256": "3471eba23dd025a24275559fc5905bfec5eb8972ed68b82657ef2aae2dcfdbb7",
+          "removed_masks_sha256": "cd654a434460887eabb68d81a7dc61df9d50faf994d6fe9d8d61223d4d47cda8"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 77,
+          "summary": {
+            "samples": 77,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521862,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1821,
+                "removed": 395,
+                "actual_fraction": 0.21691378363536518
+              }
+            }
+          },
+          "sample_indices_sha256": "ffbad33d26fe1d278a3422a72abd88224eac7372268bc12c745bca8fa8a69253",
+          "removed_masks_sha256": "9a9896b98d4f38647ecd396b4abaa7d75c42105bedc923d6deba127b15b46540"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521862,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1603,
+                "removed": 347,
+                "actual_fraction": 0.2164691203992514
+              }
+            }
+          },
+          "sample_indices_sha256": "43b2c0f3ccd6a34b513e8b96c4eecadb0b3d4785cc129bca285e8ef67c01ec1e",
+          "removed_masks_sha256": "89bee66fd6e3b52254e4d51c004622186a6cc7f2e7bf0b5dc097ca3dd999f19b"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 82,
+          "summary": {
+            "samples": 82,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521862,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1810,
+                "removed": 757,
+                "actual_fraction": 0.41823204419889504
+              }
+            }
+          },
+          "sample_indices_sha256": "7a0950ef7dbd20cb16f6d18053cac7bd3e7acdb4d03748648cf3ef4afc3178a7",
+          "removed_masks_sha256": "2a7112e6794272de23fdaf07a5c647e62c4dbc5a1e815463c9a7368b5bff4f21"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 63,
+          "summary": {
+            "samples": 63,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521862,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1449,
+                "removed": 607,
+                "actual_fraction": 0.4189095928226363
+              }
+            }
+          },
+          "sample_indices_sha256": "bedebedf3c18fc08dd4a24b3135b41e2a0bc5ce5afdbce59d658a55a5150bef2",
+          "removed_masks_sha256": "5055c655bc53c294725335afbe1a43fa201e78e7830b42a67da723f942256690"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521862,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1366,
+                "removed": 578,
+                "actual_fraction": 0.42313323572474376
+              }
+            }
+          },
+          "sample_indices_sha256": "7d7673aad024e5e88074496d4d9deb56dd67153c1f0ad21de5c393458e0fb104",
+          "removed_masks_sha256": "6926171feefc9d80d32d8a805321388bb87738b7d69d70805af2f3f0c52fb002"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521862,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1489,
+                "removed": 623,
+                "actual_fraction": 0.41840161182001345
+              }
+            }
+          },
+          "sample_indices_sha256": "2483a49e9b2561ce7292defb6eddb0bd83b033b7b9246cf40594f18f456aa80a",
+          "removed_masks_sha256": "ca57f91430f6427a1b460c13f5acae70dd31bed50c87ab6111ace2f0ee7ab461"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 1.5641907597636129
+  },
+  {
+    "epoch": 7,
+    "augmentation": {
+      "epoch": 7,
+      "complete_samples": 1738,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 57,
+          "summary": {
+            "samples": 57,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521863,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1315,
+                "removed": 289,
+                "actual_fraction": 0.21977186311787072
+              }
+            }
+          },
+          "sample_indices_sha256": "168562b45cacae95db8c550c6758506529f1f679f2c343c692a451e9a254305e",
+          "removed_masks_sha256": "acd062b239551861d629cd5ac54ee7821e90351e92cdb9606d728855d579f2ed"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 60,
+          "summary": {
+            "samples": 60,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521863,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1382,
+                "removed": 301,
+                "actual_fraction": 0.2178002894356006
+              }
+            }
+          },
+          "sample_indices_sha256": "380a68ec3fee6f5bc10fea10d6e3345230abf89e7ebc9b55dc001f98c8851919",
+          "removed_masks_sha256": "4a87c3143e48cba10c3fad1d25bb92cc5bc0838f7b22cdc82357d4e6e56e36a7"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 56,
+          "summary": {
+            "samples": 56,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521863,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1243,
+                "removed": 269,
+                "actual_fraction": 0.2164119066773934
+              }
+            }
+          },
+          "sample_indices_sha256": "22d6e367138384a9736bff0ed4927b06a9aa5b8f870c26af34521160efd26b40",
+          "removed_masks_sha256": "e24d97a93efb8ff767226e1ac00af95b6963e918667a2577cd6820bf2bd73f4f"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521863,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1671,
+                "removed": 360,
+                "actual_fraction": 0.21543985637342908
+              }
+            }
+          },
+          "sample_indices_sha256": "f4379a4e9a94ba9aac64ca814c616c70bf49019a21081e14bcd40de890b4aa06",
+          "removed_masks_sha256": "6cd7ef5b90aecb35d498607c729dc0b0ee35582ddc3172ba9d848572a3cfbfaa"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 54,
+          "summary": {
+            "samples": 54,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521863,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1297,
+                "removed": 543,
+                "actual_fraction": 0.41865844255975326
+              }
+            }
+          },
+          "sample_indices_sha256": "dc27dc6ac51e1c1fef1dcf359a24640325f71043c83e70c38b7cde7ef9740b46",
+          "removed_masks_sha256": "385a733a74af4db49af522f678b7c5102598750bddc5ba90b5767a9e7aedcdb7"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 53,
+          "summary": {
+            "samples": 53,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521863,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1269,
+                "removed": 530,
+                "actual_fraction": 0.4176516942474389
+              }
+            }
+          },
+          "sample_indices_sha256": "20b038087e300032039a6a193605fc9f291aad2e752ceaff82bb20306fcabcb0",
+          "removed_masks_sha256": "3f5cf99431fbbf70460f2a6d2ef9d1a991bba4f0d68a3065cc28d28bd6e5960e"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521863,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1629,
+                "removed": 685,
+                "actual_fraction": 0.42050337630448126
+              }
+            }
+          },
+          "sample_indices_sha256": "183ff410b0df803353f9cb8362e460b3adaa04c625c7047a19d4363f2a922640",
+          "removed_masks_sha256": "437e72b80d761d868143fd3d7233492de7a0d8d102fdb473a796068bfcc8cbea"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521863,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1632,
+                "removed": 682,
+                "actual_fraction": 0.4178921568627451
+              }
+            }
+          },
+          "sample_indices_sha256": "debf3708efd159f77da92cc1767b1f6247e38a22e2dc480fb0dbcc394d2b1671",
+          "removed_masks_sha256": "bdb768a6ea09dc9bc5575fcea8f0b272e57b16d24506c2230c462af3e8cbd35d"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521863,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1690,
+                "removed": 367,
+                "actual_fraction": 0.21715976331360948
+              }
+            }
+          },
+          "sample_indices_sha256": "95d4accffd1ac90b59395ed2a5ec55417989cf2aab609620f1ee2f6dec778725",
+          "removed_masks_sha256": "db5f201321fc7c6e579cca5e4ed1baeff70dcb1e6d720abbca05105b9f1295ba"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 75,
+          "summary": {
+            "samples": 75,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521863,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1667,
+                "removed": 366,
+                "actual_fraction": 0.21955608878224356
+              }
+            }
+          },
+          "sample_indices_sha256": "b246b1fe4d0d3090819663519c322f530d2ea3fd62fd442aa12afdbce6105d7a",
+          "removed_masks_sha256": "cc742e7aee33cafa0fb710ceabbc13bfc002ed2540ea017c732498b4719d6414"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 83,
+          "summary": {
+            "samples": 83,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521863,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1763,
+                "removed": 391,
+                "actual_fraction": 0.2217810550198525
+              }
+            }
+          },
+          "sample_indices_sha256": "b6f1d41106473effe259bf64e94731f82e2ba6dbb4b82083de44302179120aa1",
+          "removed_masks_sha256": "7750fef4e325e3a76ec331cd3585a74353b47e7da01a54ed2ca7b666f29536f2"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 60,
+          "summary": {
+            "samples": 60,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521863,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1291,
+                "removed": 283,
+                "actual_fraction": 0.21920991479473276
+              }
+            }
+          },
+          "sample_indices_sha256": "e32180280f2d8a6309a5e94a0261df2720d30ebabb8cd2430c51915c12a8485a",
+          "removed_masks_sha256": "e349cd1c40878daee3055047d9889cd1a12336e348704ff0317909ef8725c7b4"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 90,
+          "summary": {
+            "samples": 90,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521863,
+            "per_modality": {
+              "text": {
+                "originally_observed": 2045,
+                "removed": 855,
+                "actual_fraction": 0.4180929095354523
+              }
+            }
+          },
+          "sample_indices_sha256": "128559b760d6368ba07c2e5483d95f74ab52c791b8fd67661011905eccedc8b9",
+          "removed_masks_sha256": "87bd369e35abaa6aa4f57619ef5296119b1d332fff9c0ee37f04db7f792ac5f8"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 81,
+          "summary": {
+            "samples": 81,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521863,
+            "per_modality": {
+              "text": {
+                "originally_observed": 2018,
+                "removed": 849,
+                "actual_fraction": 0.4207135777998018
+              }
+            }
+          },
+          "sample_indices_sha256": "d906cb95278645bf68f82cbe82e23eab7d2dadce81cef9613ebd8d66863d28e8",
+          "removed_masks_sha256": "397750b7ce98120a585db121b1c250ee206a28b28f587241169ae674927b8ccb"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 77,
+          "summary": {
+            "samples": 77,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521863,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1510,
+                "removed": 637,
+                "actual_fraction": 0.42185430463576157
+              }
+            }
+          },
+          "sample_indices_sha256": "c2c892306cf3e62278a766b754c66ce1f6819aedde7a11ede0a2d060f8bf37c8",
+          "removed_masks_sha256": "a669c1722baab302d45cdf2eb67514a20bdcbd1b89128991bfc9dc8914c7533f"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521863,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1381,
+                "removed": 584,
+                "actual_fraction": 0.4228819695872556
+              }
+            }
+          },
+          "sample_indices_sha256": "08e210cfffb392382d79f15d3276d6f72d8eac17ddac6dcddcc337aeb22ffc62",
+          "removed_masks_sha256": "9301e7d994aa35e299f38abb68c5031c621e89263114116df40a3bcfa590b66c"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 80,
+          "summary": {
+            "samples": 80,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521863,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1706,
+                "removed": 377,
+                "actual_fraction": 0.22098475967174677
+              }
+            }
+          },
+          "sample_indices_sha256": "d836a822b21a5759d7a368de432a84493a9a85473a0fdc2ecf7e7598ce0b4eca",
+          "removed_masks_sha256": "d9a5287b029d897d768560f7b7fcec08f1482a6936d0cbe3330c5b94c5a2a46a"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 70,
+          "summary": {
+            "samples": 70,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521863,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1508,
+                "removed": 330,
+                "actual_fraction": 0.21883289124668434
+              }
+            }
+          },
+          "sample_indices_sha256": "4942caf824332c945082c1aaa099545b076630e38aba7053a8dc6d5ecc6c6088",
+          "removed_masks_sha256": "afbdf4d2ddcc3154b39e7dbc11d005fdc97e594f8825115a186c5a1bd46ee38f"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521863,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1593,
+                "removed": 346,
+                "actual_fraction": 0.21720025109855617
+              }
+            }
+          },
+          "sample_indices_sha256": "6e89916bf502e65613c811bb637ef64021cff4615e71baf3c6a82ac53a1f5612",
+          "removed_masks_sha256": "a8e52d2f97517ea6b1be54a3bd8ca36d6a644b27a3caac8a95d5b0b59e1b9238"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521863,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1499,
+                "removed": 328,
+                "actual_fraction": 0.218812541694463
+              }
+            }
+          },
+          "sample_indices_sha256": "851e7e6be88da8939aafcae17d9c3b81abadd698dca5cacbd5947bdfa6fe2556",
+          "removed_masks_sha256": "162db43c538d1a5cb6c56e57a475a745764a807355f9d295305fe1d372a50cc7"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 59,
+          "summary": {
+            "samples": 59,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521863,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1354,
+                "removed": 568,
+                "actual_fraction": 0.4194977843426883
+              }
+            }
+          },
+          "sample_indices_sha256": "5d98d6be714c59927217d641e0cd6f5537f0f75f474e733896917ab028b3e5f0",
+          "removed_masks_sha256": "dd0baec1322ff7ed15f763b39c37002181d3b564a6e50517c690b15ea20f9bec"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521863,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1320,
+                "removed": 553,
+                "actual_fraction": 0.41893939393939394
+              }
+            }
+          },
+          "sample_indices_sha256": "56716dfaaf8d5da8f6c75d13a2be7687c4f3607f9113a9e86766006588343c56",
+          "removed_masks_sha256": "a9a8d49f739b753407998f6215cb4c626596b10c9b322ea4df19b0c622d18ffd"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521863,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1435,
+                "removed": 600,
+                "actual_fraction": 0.4181184668989547
+              }
+            }
+          },
+          "sample_indices_sha256": "faf149358af7a44cada04dedc1aef7e8f52a60d174ddb8561163b8b9665686d4",
+          "removed_masks_sha256": "1e5bf8643a6eb812246df07a3b6ebd4a2fe6dc97a0468021c7792da6a6056a1e"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 70,
+          "summary": {
+            "samples": 70,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521863,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1584,
+                "removed": 662,
+                "actual_fraction": 0.41792929292929293
+              }
+            }
+          },
+          "sample_indices_sha256": "f466dc9410594e0945d0dcac45361fbb022e32b3bc019b2029845eae1c4d956f",
+          "removed_masks_sha256": "413927e5eabca51bca54615c501527a0a4f854fae4e5a41c87b175386988dbd8"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 1.7258399004464622
+  },
+  {
+    "epoch": 8,
+    "augmentation": {
+      "epoch": 8,
+      "complete_samples": 1703,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521864,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1451,
+                "removed": 317,
+                "actual_fraction": 0.21847002067539628
+              }
+            }
+          },
+          "sample_indices_sha256": "f135b85f429edc18a5f49903b49f622ac178004ffa50127408781a5ca6972d03",
+          "removed_masks_sha256": "8694d4a38aecda7dde19bae0a01f000363d9e2738732f6dd9bbafc15cf689529"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 79,
+          "summary": {
+            "samples": 79,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521864,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1819,
+                "removed": 397,
+                "actual_fraction": 0.2182517866959868
+              }
+            }
+          },
+          "sample_indices_sha256": "ab72031cc03562a28781fd41cb30b223cadc975dce01aea704cf8c705a0e16a7",
+          "removed_masks_sha256": "1e411f129402185e4b9ee5f11ea041c8fad8c4c895822cc753378ab9f1393940"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521864,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1342,
+                "removed": 297,
+                "actual_fraction": 0.22131147540983606
+              }
+            }
+          },
+          "sample_indices_sha256": "314e99db052336168450a0f424b71e76af1cae1010e258ca4e49a693d6dee517",
+          "removed_masks_sha256": "396ea86e1127dfc0160c893d6f9c3c06d4f9f7318ab061d24c00677b2c742dcf"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 58,
+          "summary": {
+            "samples": 58,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521864,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1371,
+                "removed": 300,
+                "actual_fraction": 0.2188183807439825
+              }
+            }
+          },
+          "sample_indices_sha256": "505522a61976bd7e4e03f288e6eb3dbf8fe324e3b30238bb44b2c7a21e48227c",
+          "removed_masks_sha256": "84316d8b7a64502298fb7913098fa8a5cc61f13f12da8d3e92118e7c2f1f2e81"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521864,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1559,
+                "removed": 654,
+                "actual_fraction": 0.41949967928159076
+              }
+            }
+          },
+          "sample_indices_sha256": "028a6dc281fc354a517d77331bee6daf94cccf4709a30495325b3921a412efd1",
+          "removed_masks_sha256": "c0a7fe318cb7fddd4ba690aa3cf94c815997fbffef44fa12b74f5b7c091e4134"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 72,
+          "summary": {
+            "samples": 72,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521864,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1692,
+                "removed": 708,
+                "actual_fraction": 0.41843971631205673
+              }
+            }
+          },
+          "sample_indices_sha256": "49c0129544a7a68e7a4f0c47b9eb8cedd5ed520bd83ed37fd4ee844b18d903c4",
+          "removed_masks_sha256": "ab46afdb8d3f6d6c2c5f261a58366d98ea37b32fda2715d4ba595148c500b5b3"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521864,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1603,
+                "removed": 671,
+                "actual_fraction": 0.4185901434809732
+              }
+            }
+          },
+          "sample_indices_sha256": "b7279d22b2209cafc910d62b8595f1f9d636e62a84ad09758ae012168b5c9364",
+          "removed_masks_sha256": "81c1ee471383bb384ea9e4838d47ca12270083a22d2c1b95e9de622b9bd21772"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 65,
+          "summary": {
+            "samples": 65,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521864,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1276,
+                "removed": 540,
+                "actual_fraction": 0.4231974921630094
+              }
+            }
+          },
+          "sample_indices_sha256": "26f553b314583f93b93e952fffc37c7f36b07e94c70ea20fd318a553951c7722",
+          "removed_masks_sha256": "52f9fb43f8e3d1c40be65b955bcd55945cc99226c1551a6e8584528c22e550a8"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 72,
+          "summary": {
+            "samples": 72,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521864,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1657,
+                "removed": 359,
+                "actual_fraction": 0.21665660832830416
+              }
+            }
+          },
+          "sample_indices_sha256": "3b13004e063c43ce0cc1a7b983029b3f2a809cd4ec44c6ab2609326f62eff605",
+          "removed_masks_sha256": "2ac1bc23a638d70809b558ff930ac08221f3531d7df19ceaf914f483676f3502"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521864,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1445,
+                "removed": 314,
+                "actual_fraction": 0.21730103806228374
+              }
+            }
+          },
+          "sample_indices_sha256": "07223e41ead879295480aff17335571e946d9680fb5e2b830aa9811fcafb2358",
+          "removed_masks_sha256": "a8f8d90a0ecefc1923a028a489f7b8ef082fcaad0a552cf99e2a9531d6c19325"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521864,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1520,
+                "removed": 334,
+                "actual_fraction": 0.21973684210526315
+              }
+            }
+          },
+          "sample_indices_sha256": "fc3d39b8413b1465b0f263f380cb81b051c1b293808db2d9213c6ad82dad85bc",
+          "removed_masks_sha256": "670fad32182ac01b5fc8962e68f59821aea92f3579848f1f9b9f602d6ce81e0d"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521864,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1799,
+                "removed": 389,
+                "actual_fraction": 0.2162312395775431
+              }
+            }
+          },
+          "sample_indices_sha256": "2294cd44f6f71ffa14d471c2f98fd1ebae0078387deb8c637c24d1d286f34d28",
+          "removed_masks_sha256": "4fdd4409f71b8bf87fce90e815aa50026d8d30ff128567f51ffd7a60ad8d7902"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521864,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1560,
+                "removed": 654,
+                "actual_fraction": 0.41923076923076924
+              }
+            }
+          },
+          "sample_indices_sha256": "474b7b8954baf1b39ee3ba5c852b400c882e354a28289fb27ac7c18e2da0defd",
+          "removed_masks_sha256": "8ab82c56f063a3ac48b13d585d7a11d4fd03d9dd73991453312cc93dbfe6a2d6"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 83,
+          "summary": {
+            "samples": 83,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521864,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1887,
+                "removed": 791,
+                "actual_fraction": 0.41918388977212506
+              }
+            }
+          },
+          "sample_indices_sha256": "e94dc98eac55c8bc71249bc89eee8f0e0d52dbf5ae539a09f7e19bcdeb2dc0a7",
+          "removed_masks_sha256": "d8367833a2d71647df241bd1bd09e1e4ce0381d69c0e28fb5ca365b9da33379c"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 82,
+          "summary": {
+            "samples": 82,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521864,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1796,
+                "removed": 751,
+                "actual_fraction": 0.41815144766146994
+              }
+            }
+          },
+          "sample_indices_sha256": "ce37eca108e85bbb83226ba12b1114b980104bd2a61e53f163d01db0f4fd85f2",
+          "removed_masks_sha256": "25d701555a4f181b18733cb626cdb453faa7814663f087c73a20682031e1a791"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 62,
+          "summary": {
+            "samples": 62,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521864,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1417,
+                "removed": 595,
+                "actual_fraction": 0.4199011997177135
+              }
+            }
+          },
+          "sample_indices_sha256": "1c6c908030a87a541abe1936ed0cfd00f0e1df92329874a1f066215c486b4d6e",
+          "removed_masks_sha256": "4579606f783c5dbbe0fa360c56c807c8f5f668a0b3529d7f14bdb744be026c80"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 82,
+          "summary": {
+            "samples": 82,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521864,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1818,
+                "removed": 394,
+                "actual_fraction": 0.21672167216721672
+              }
+            }
+          },
+          "sample_indices_sha256": "0fec68749e084c4b887736f5eba0ddd5734c656982c32e4bd22efcb03f52ef29",
+          "removed_masks_sha256": "28df8f5bfeca835b24d25201754e56360ac7e34205581e3d25fa6110d5a74539"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 61,
+          "summary": {
+            "samples": 61,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521864,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1207,
+                "removed": 261,
+                "actual_fraction": 0.21623860811930407
+              }
+            }
+          },
+          "sample_indices_sha256": "5c4c87c9afe4c31f8dd8c9e4db7e6caeaa8be8dd40ff1435db236b6f1635f42a",
+          "removed_masks_sha256": "08edb51d7fbc5d05aed1b10561acd92bcb33689b22fff4214622a38e82e12bc9"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 62,
+          "summary": {
+            "samples": 62,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521864,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1289,
+                "removed": 284,
+                "actual_fraction": 0.22032583397982933
+              }
+            }
+          },
+          "sample_indices_sha256": "3837439dcd9a910a9a8bb695a3e020d1e46d50cde731f6efda4c30a4d407c630",
+          "removed_masks_sha256": "4cc0101547fbd056c470b30a46fe9efc7eb92b11294c9837bffe22fa145c445c"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521864,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1499,
+                "removed": 326,
+                "actual_fraction": 0.21747831887925284
+              }
+            }
+          },
+          "sample_indices_sha256": "731f30b113f7188e74be55521a3300a0f47d0acd93c8ee0886ac4264b3817a05",
+          "removed_masks_sha256": "f0b261f5ac10897c48d5088bae1c690bcd67648ca3bdec8c614f6babf811f134"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 63,
+          "summary": {
+            "samples": 63,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521864,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1388,
+                "removed": 582,
+                "actual_fraction": 0.41930835734870314
+              }
+            }
+          },
+          "sample_indices_sha256": "bd2cd888f79c41880fc9a077b6392731c97f4bbda5dfb96f88c7c43b7fe02d0d",
+          "removed_masks_sha256": "96766879165de0d9816fb21a87ec76c8c7de6ef4d3d5b466bc75b0107c8728e3"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 76,
+          "summary": {
+            "samples": 76,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521864,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1897,
+                "removed": 794,
+                "actual_fraction": 0.41855561412756986
+              }
+            }
+          },
+          "sample_indices_sha256": "d0b13cec6996eafdb4b6e9e4516fa62e63515385c6427bd027514003e9582b68",
+          "removed_masks_sha256": "820962b9cfdcc0fba8e58d7cb14b29d213daf1cb8adbffa17ab5444e15d9d599"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 65,
+          "summary": {
+            "samples": 65,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521864,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1233,
+                "removed": 516,
+                "actual_fraction": 0.41849148418491483
+              }
+            }
+          },
+          "sample_indices_sha256": "1ad065614a66cb8a9c4d0777611c6f1120a56038434eefe7a6d55d4ac9db9a4c",
+          "removed_masks_sha256": "1a09b61a7626c9fa1d24f12949febd9a6c0aa8f3890af3b91a8435ff6a65bab3"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 83,
+          "summary": {
+            "samples": 83,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521864,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1852,
+                "removed": 778,
+                "actual_fraction": 0.4200863930885529
+              }
+            }
+          },
+          "sample_indices_sha256": "6845497dfe6f481087aa4b7fd2e125a442aa4ee297fe9fd96feed91072a4236f",
+          "removed_masks_sha256": "0650af1c28a3716927c572e61a95fc2b8fc1df6006d90bb4f871efed53edf6e2"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 1.8281220341776754
+  },
+  {
+    "epoch": 9,
+    "augmentation": {
+      "epoch": 9,
+      "complete_samples": 1721,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521865,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1729,
+                "removed": 376,
+                "actual_fraction": 0.21746674378253325
+              }
+            }
+          },
+          "sample_indices_sha256": "9ee564786b23599ee02a5dab8b0717c50091afd17fb8d150647eeaeead403412",
+          "removed_masks_sha256": "1b3137b43f0730bcbb74c752a7dbf6828c0b619ca99147dbc8c24c31e926ed00"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521865,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1720,
+                "removed": 372,
+                "actual_fraction": 0.21627906976744185
+              }
+            }
+          },
+          "sample_indices_sha256": "656e22c1a8aac3c4efd4171e2cbf6bd323c87733b1b7ce80231562d34b80cf15",
+          "removed_masks_sha256": "616721b30e7cad9fbc15791422ecdc22471c20a539217dbb796dc5e0b004ea8a"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521865,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1709,
+                "removed": 370,
+                "actual_fraction": 0.21650087770626097
+              }
+            }
+          },
+          "sample_indices_sha256": "768803783cb67f5200fdec04dfd9ad352a7c77df429babcb93269572703d00e8",
+          "removed_masks_sha256": "28b9a7834edbca0279fd1059581926674bdc45512cb704b5d73e9cea9465519c"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 65,
+          "summary": {
+            "samples": 65,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521865,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1647,
+                "removed": 353,
+                "actual_fraction": 0.2143290831815422
+              }
+            }
+          },
+          "sample_indices_sha256": "a48a42f44e5f9a0b75741b5f315d7fb3b7f41f7c6efc6420a39b4337d426b69d",
+          "removed_masks_sha256": "1d619c976e32e4b394ce4cd1e185d3e203223e8ae6661da868bc4ad71b2c794d"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521865,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1524,
+                "removed": 641,
+                "actual_fraction": 0.4206036745406824
+              }
+            }
+          },
+          "sample_indices_sha256": "9e1fc9cf25d0dc9c18aa27ebd395294bf1507064455c4fa1cf030ce80a97a833",
+          "removed_masks_sha256": "c22d411a330f65fa73cefb1bdd6c5bb8cb73339489b078afcedb26f59cd65814"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521865,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1918,
+                "removed": 800,
+                "actual_fraction": 0.4171011470281543
+              }
+            }
+          },
+          "sample_indices_sha256": "cb1a5d28fe0a16ef03be15c2ed10212fc3ae20a5de39868cb0beaffb345d43b9",
+          "removed_masks_sha256": "dd1dd0fabee4e2f71219dab86294eed636ef522e5ee5e23c00866555efa7251b"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521865,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1494,
+                "removed": 627,
+                "actual_fraction": 0.41967871485943775
+              }
+            }
+          },
+          "sample_indices_sha256": "65ac8c4e34a5beef474b5252b99d0384cf12645b5899e40f633dc9f94f69d103",
+          "removed_masks_sha256": "d85a8d2f3a6add75547de9d151e1ba25b388ad7cfcc0a3eda1657c6639fc0b67"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 82,
+          "summary": {
+            "samples": 82,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521865,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1766,
+                "removed": 745,
+                "actual_fraction": 0.4218573046432616
+              }
+            }
+          },
+          "sample_indices_sha256": "c77ca649dbdae98ff89ec87839c23bba38cc048bef1416f982f533002a1b959d",
+          "removed_masks_sha256": "899a260c132c841ecd304f41445764792538b5278b67e058f58c144670188f5d"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 72,
+          "summary": {
+            "samples": 72,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521865,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1662,
+                "removed": 357,
+                "actual_fraction": 0.2148014440433213
+              }
+            }
+          },
+          "sample_indices_sha256": "ed1786b2e6039559314d09e5d25f6ca8a83932427426dca4e2afd36dbbcb7a69",
+          "removed_masks_sha256": "3ef591ecf2c4539f14ef1497fa755801ab4e970740501e9e97eb3e1ffbdac5c7"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 88,
+          "summary": {
+            "samples": 88,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521865,
+            "per_modality": {
+              "text": {
+                "originally_observed": 2056,
+                "removed": 447,
+                "actual_fraction": 0.2174124513618677
+              }
+            }
+          },
+          "sample_indices_sha256": "2c4a7d6171f9abb46ce566df44c910b1b8573ded58ca0e40fa7fd092b82fb7bf",
+          "removed_masks_sha256": "9d878e6cc0682a882c9511f47a8ee756ed8140648601d34e6d0ca72886c5ae1a"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 59,
+          "summary": {
+            "samples": 59,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521865,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1239,
+                "removed": 275,
+                "actual_fraction": 0.22195318805488298
+              }
+            }
+          },
+          "sample_indices_sha256": "5e717067b58b1549d090bbbd23478635f23ada8b13790000b2a6804866489c47",
+          "removed_masks_sha256": "2b643c2ebf69ca9ca2465a51cedbe5856e87a9fb28a3da0124a3d8f9a28a5c6a"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521865,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1528,
+                "removed": 331,
+                "actual_fraction": 0.21662303664921467
+              }
+            }
+          },
+          "sample_indices_sha256": "d75d7c584319417b47276d667f4bb24f886fd6c5e2b098934b1f9e6e3b337923",
+          "removed_masks_sha256": "a3819691fa839d15df0aab3b95f29ead5290da10c1cba5fda5ee9a0e4482208f"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 75,
+          "summary": {
+            "samples": 75,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521865,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1747,
+                "removed": 734,
+                "actual_fraction": 0.42014882655981683
+              }
+            }
+          },
+          "sample_indices_sha256": "7e6a349643ef6b54c855d82bdd25c0d3bea12722251cb97cd3200fb18bae9a1b",
+          "removed_masks_sha256": "a8a6c78e321682695295f5d759759c1552398feae7323e85e069e72fb3d8a266"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 62,
+          "summary": {
+            "samples": 62,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521865,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1246,
+                "removed": 526,
+                "actual_fraction": 0.42215088282504015
+              }
+            }
+          },
+          "sample_indices_sha256": "21c6b107346c7b42996c6cff97c183ec2562ffd434483a1749d0566145920e4f",
+          "removed_masks_sha256": "2f1d71082a1cdcccfad90f2820c8b2fbdf7af9b5f66c9548a55d5aabea6dcfc5"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 68,
+          "summary": {
+            "samples": 68,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521865,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1373,
+                "removed": 580,
+                "actual_fraction": 0.4224326292789512
+              }
+            }
+          },
+          "sample_indices_sha256": "aed2f418777e3dc09248ee61b4e79594c6966941b34c502adc1075e5a167a149",
+          "removed_masks_sha256": "c8bb1d6576eadf3d39d2fbfe16db5d813da4b3770ec42e22c480d3cbc7d5db45"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 66,
+          "summary": {
+            "samples": 66,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521865,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1584,
+                "removed": 664,
+                "actual_fraction": 0.41919191919191917
+              }
+            }
+          },
+          "sample_indices_sha256": "dc8390d68fb38313a0563bfc34efb5407859ea9ec4c2b8f3ec61f488ac88cddb",
+          "removed_masks_sha256": "ef5610a8b41a98c696e7b7cb98f7278d6dc9a95feabb185e7b09daca40716b12"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 84,
+          "summary": {
+            "samples": 84,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521865,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1729,
+                "removed": 378,
+                "actual_fraction": 0.21862348178137653
+              }
+            }
+          },
+          "sample_indices_sha256": "fd04f2002f93036f4aa8dfef7bad43e0a16b0bfc5eb0401806f8dde6b8a00041",
+          "removed_masks_sha256": "b7c72680b21346ce6b2b9e02d8ccd68c2a56e48528e5d6b92412fc2894366bf5"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 70,
+          "summary": {
+            "samples": 70,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521865,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1507,
+                "removed": 324,
+                "actual_fraction": 0.2149966821499668
+              }
+            }
+          },
+          "sample_indices_sha256": "87da7a729bb7c8ea337c7a9a4feef33dd48823aa3379ba9194738e16c8a94f2f",
+          "removed_masks_sha256": "9201f6baf6b4726513b1772e5eb6754cfb3679974a348716bfd9e61ec93ea2ed"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521865,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1407,
+                "removed": 307,
+                "actual_fraction": 0.21819474058280028
+              }
+            }
+          },
+          "sample_indices_sha256": "0527c3d7f134586c47cb7d57c34c0c7d3e60afdb8b533d28c93980ebef60671e",
+          "removed_masks_sha256": "e56287517aa33687e956aaf9b771809ba68b70249f9a0f3a65ec9a5a50b41dc3"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521865,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1619,
+                "removed": 354,
+                "actual_fraction": 0.21865348980852378
+              }
+            }
+          },
+          "sample_indices_sha256": "35268191ad43e7b24113410676b77125c7eccd7d2921ba4fafc0bb22fa7d09fd",
+          "removed_masks_sha256": "0f82c994403f4dad2823d35b08263e0421650590d55a5fb66443b665c2087b72"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 59,
+          "summary": {
+            "samples": 59,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521865,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1208,
+                "removed": 508,
+                "actual_fraction": 0.4205298013245033
+              }
+            }
+          },
+          "sample_indices_sha256": "238f63c4811cafb59f3cdb8344b4dfd38c282205903bdf6ec5a5fd14bb705b5b",
+          "removed_masks_sha256": "ff51d41666e104dd5595bf68c20c361d18c26a64a1b52fb3b31357bf78bf2007"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521865,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1489,
+                "removed": 623,
+                "actual_fraction": 0.41840161182001345
+              }
+            }
+          },
+          "sample_indices_sha256": "417294e2d496c2f1d6b8eb5403f07f692902255fb458609a967a2765cb131558",
+          "removed_masks_sha256": "bd35287daa0769160f85d7bdbb2e86f07eebcf68a06d4d3151fdd26ba521976f"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 63,
+          "summary": {
+            "samples": 63,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521865,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1320,
+                "removed": 555,
+                "actual_fraction": 0.42045454545454547
+              }
+            }
+          },
+          "sample_indices_sha256": "9cddb8149e135f072ec53bb4b9a754192d6fdd2a35d7c6aee67d4d88b6c0bcdc",
+          "removed_masks_sha256": "a5fd9494e8fd50c4f6200bf2619b1963de9b41c478811acefb983f930e399fad"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521865,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1268,
+                "removed": 533,
+                "actual_fraction": 0.42034700315457413
+              }
+            }
+          },
+          "sample_indices_sha256": "93967fa8eec24b8c688130dc875e043007b9d7a9cc485c42367e43a39710a160",
+          "removed_masks_sha256": "6df85c0e902a467978a96f11767782f6ce2c05c6b2ae721738161c4f3144a801"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 1.9499582929925605
+  },
+  {
+    "epoch": 10,
+    "augmentation": {
+      "epoch": 10,
+      "complete_samples": 1711,
+      "conditions": [
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 70,
+          "summary": {
+            "samples": 70,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521866,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1583,
+                "removed": 344,
+                "actual_fraction": 0.21730890713834491
+              }
+            }
+          },
+          "sample_indices_sha256": "f9a480a0866a0eea8ac5fd4d49a2d100b116dbc91bbcf08fc18d4b17052b9e00",
+          "removed_masks_sha256": "13fcd6f1025bb07c3e080de53889a1e07ef2c9091c595632a90f3253feda0764"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521866,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1420,
+                "removed": 310,
+                "actual_fraction": 0.21830985915492956
+              }
+            }
+          },
+          "sample_indices_sha256": "8a76743b77a8cfd8bb240204a4270b624d6e4b599fc46eda46856342dfcbad68",
+          "removed_masks_sha256": "3eba919974ad361280a000a949a3abbb4883e61a84c98eda0c12c18f9f394fb7"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 63,
+          "summary": {
+            "samples": 63,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521866,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1478,
+                "removed": 318,
+                "actual_fraction": 0.21515561569688768
+              }
+            }
+          },
+          "sample_indices_sha256": "95819b4ffb638cf64a7e69f0b9ff64a26461f389d20ce959d3b122caa904d377",
+          "removed_masks_sha256": "4d7b92c2e7700d32076fe56f76960f730081ad6d9ed52754ee0f471bf4c51d3e"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 77,
+          "summary": {
+            "samples": 77,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521866,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1732,
+                "removed": 378,
+                "actual_fraction": 0.21824480369515012
+              }
+            }
+          },
+          "sample_indices_sha256": "5667fc15dfcbb8a30bb4ad9d791c1e9eaafe4a86fe14be08600552073c5b4192",
+          "removed_masks_sha256": "d2dddcd20042bbdd672e063a71a13f283739a397e625448aacf929b9eac8a1f9"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521866,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1476,
+                "removed": 617,
+                "actual_fraction": 0.4180216802168022
+              }
+            }
+          },
+          "sample_indices_sha256": "3a2346e0056d72df907e52fd3a65b9f189b83bb05c176b5aef7ff4303f34ca62",
+          "removed_masks_sha256": "4281c23f7b1654e78ce5f2b1fb048c74ff7f339f30764a66f358556942013c8b"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521866,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1475,
+                "removed": 622,
+                "actual_fraction": 0.4216949152542373
+              }
+            }
+          },
+          "sample_indices_sha256": "9f6576df5f6d89c5ce507f3e2d0c2b6ad5100d1ad56d98aa5b7dcba0ceaaf282",
+          "removed_masks_sha256": "06a1b6173f4ccf7a6abd61e3184d684af7a86bd5d410475a068914c718d3adee"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 65,
+          "summary": {
+            "samples": 65,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521866,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1296,
+                "removed": 548,
+                "actual_fraction": 0.4228395061728395
+              }
+            }
+          },
+          "sample_indices_sha256": "8e6482c896af7f0eeb70c4078b918f4b2cdfc4110f2b07f7e3ed13c4605500b8",
+          "removed_masks_sha256": "3eaa69ba0cdf8632692b16a9d5e940346d35021090100a92353db212dc5cd050"
+        },
+        {
+          "modality": "audio",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "audio"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521866,
+            "per_modality": {
+              "audio": {
+                "originally_observed": 1485,
+                "removed": 622,
+                "actual_fraction": 0.41885521885521887
+              }
+            }
+          },
+          "sample_indices_sha256": "964e703832ad53c71df1c5887dfda18f3ce7d668c68aea02aa71e7fe30c7a701",
+          "removed_masks_sha256": "abef866e7195b653dc50849c5cfb4c903e1d4230bdb8f2f15eb562a48380629f"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 71,
+          "summary": {
+            "samples": 71,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521866,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1476,
+                "removed": 325,
+                "actual_fraction": 0.22018970189701897
+              }
+            }
+          },
+          "sample_indices_sha256": "451dd064b58a8806393474953b8534a4a486041b2d56cbb96e64d3cedf148015",
+          "removed_masks_sha256": "c1f4450f095eb7e71914ed7babfc3fa278e6aede9a99eff96262cb7d5804626b"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 58,
+          "summary": {
+            "samples": 58,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521866,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1188,
+                "removed": 259,
+                "actual_fraction": 0.21801346801346802
+              }
+            }
+          },
+          "sample_indices_sha256": "b7c0dbf539e828e64bfedbb6b73fd1d40e2c31da7016fba7438337dd8d763a70",
+          "removed_masks_sha256": "2abc191a5a8af0da6c2e63a281eadb4394041d0bea64be0936c5ac12c5a60cde"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 70,
+          "summary": {
+            "samples": 70,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521866,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1588,
+                "removed": 347,
+                "actual_fraction": 0.21851385390428213
+              }
+            }
+          },
+          "sample_indices_sha256": "44730a5e258d4944db880fb07bb19d55a336ec55187605f2806debd3217a2de3",
+          "removed_masks_sha256": "45d6958ca12347f48217f93e812e9f1784cd4d06560800d1823c5c79235fcd25"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 74,
+          "summary": {
+            "samples": 74,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521866,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1714,
+                "removed": 372,
+                "actual_fraction": 0.21703617269544925
+              }
+            }
+          },
+          "sample_indices_sha256": "4d0ab0f405253840f6acb21d42483cadb24be58fbdba4cae37ac8e2cdc59999d",
+          "removed_masks_sha256": "e46d7cbc6741aecc20d12bc733a6ea6acfa14576d5d36de5e7f657cf9e49ec10"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 69,
+          "summary": {
+            "samples": 69,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521866,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1498,
+                "removed": 630,
+                "actual_fraction": 0.4205607476635514
+              }
+            }
+          },
+          "sample_indices_sha256": "6785a2b550331f6e60e77163bb113f006255aa2ad91adcaf5f3296d1729408e6",
+          "removed_masks_sha256": "f27950eff92452c91db284899fd6eb93de95c057ff539898af98a3151fcba93e"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 81,
+          "summary": {
+            "samples": 81,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521866,
+            "per_modality": {
+              "text": {
+                "originally_observed": 2008,
+                "removed": 841,
+                "actual_fraction": 0.41882470119521914
+              }
+            }
+          },
+          "sample_indices_sha256": "025109676efee0975d38d12cc6363a21230237166f56260beaca2780347ac68a",
+          "removed_masks_sha256": "7871461150bbc107660bf26cac0c119053c5f7a41334760c36d89deff88f410c"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 85,
+          "summary": {
+            "samples": 85,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521866,
+            "per_modality": {
+              "text": {
+                "originally_observed": 2037,
+                "removed": 853,
+                "actual_fraction": 0.41875306823760433
+              }
+            }
+          },
+          "sample_indices_sha256": "5af85dc43737f7ac0ce17e28c33d10634a2e28fbb3c64c242983b7a639b5e97c",
+          "removed_masks_sha256": "399c6c55dee2f1f5a84e083deda99f4bbf83dad551b8afd75e4a4597c4cfbd40"
+        },
+        {
+          "modality": "text",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "text"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521866,
+            "per_modality": {
+              "text": {
+                "originally_observed": 1394,
+                "removed": 585,
+                "actual_fraction": 0.41965566714490676
+              }
+            }
+          },
+          "sample_indices_sha256": "711816f6ea9325256af8ae361863577c9a5b00025eaa141d4267067cf64af38f",
+          "removed_masks_sha256": "7393ada2b1302d5dc3129cd4b530454d6d77001c285f0a580ffe1d5922d06fcc"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "end",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "end",
+            "seed": 40521866,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1573,
+                "removed": 345,
+                "actual_fraction": 0.2193261284170375
+              }
+            }
+          },
+          "sample_indices_sha256": "a133e5ba73b66ff7d737e520c55ce9a7e0f67908f883410f8b3b6a48d60af638",
+          "removed_masks_sha256": "d80e806f7f8da40b7c36baedbc879617487c3c194b6ee32efcb5b73585f5bb3d"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "middle",
+          "samples": 78,
+          "summary": {
+            "samples": 78,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "middle",
+            "seed": 40521866,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1537,
+                "removed": 338,
+                "actual_fraction": 0.2199089134677944
+              }
+            }
+          },
+          "sample_indices_sha256": "f7e0dc33fb8e9a3ec8b85959882ae203be6995cb8314dad54d5a186e4d63aa22",
+          "removed_masks_sha256": "c7cab20fc064917da02957be99be4661649ae244a260e1a631b391e995d3a2fd"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "random",
+          "samples": 59,
+          "summary": {
+            "samples": 59,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "random",
+            "seed": 40521866,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1248,
+                "removed": 275,
+                "actual_fraction": 0.2203525641025641
+              }
+            }
+          },
+          "sample_indices_sha256": "8531c0ff84427ca3716df2568ac9e28fb26fcefd6d7859557f641c063d8399c4",
+          "removed_masks_sha256": "360d18f91acc78ca6058f7d0ccb68a8fcd50477d69fdcfa552f78641064558e8"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.2,
+          "position": "start",
+          "samples": 67,
+          "summary": {
+            "samples": 67,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.2,
+            "position": "start",
+            "seed": 40521866,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1660,
+                "removed": 355,
+                "actual_fraction": 0.21385542168674698
+              }
+            }
+          },
+          "sample_indices_sha256": "3d7c66f4d8608b64358c703f55be15ef6958c561bb47645d43e659fff5fa20e6",
+          "removed_masks_sha256": "1581f22742496c78d02682178f3a13847efbbde1b6eb5f1dd57bcd4cbbe7705b"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "end",
+          "samples": 73,
+          "summary": {
+            "samples": 73,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "end",
+            "seed": 40521866,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1633,
+                "removed": 686,
+                "actual_fraction": 0.4200857317819963
+              }
+            }
+          },
+          "sample_indices_sha256": "402532effbc834622af4f305c196843bdca26b5044affae818ec5296fc2aab3b",
+          "removed_masks_sha256": "3fcbf9fc3fa3432387278c91e064ab428d866e9f5bc1aad899e8cff0bcd538fe"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "middle",
+          "samples": 64,
+          "summary": {
+            "samples": 64,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "middle",
+            "seed": 40521866,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1400,
+                "removed": 585,
+                "actual_fraction": 0.41785714285714287
+              }
+            }
+          },
+          "sample_indices_sha256": "de993c4d73bfed51adaf8ac67ff6651eedfde0b6035cc68745842351de6767d2",
+          "removed_masks_sha256": "2bf2ef18d88f8bf4d16be0174446d95ee2ad67d06615cb9af896fa4fe71f3db2"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "random",
+          "samples": 70,
+          "summary": {
+            "samples": 70,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "random",
+            "seed": 40521866,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1495,
+                "removed": 624,
+                "actual_fraction": 0.41739130434782606
+              }
+            }
+          },
+          "sample_indices_sha256": "804e30982b39bbda68e03f010552030045b3fccf855cbd634ef7e08de3978885",
+          "removed_masks_sha256": "c87b4ad48790b984f126c4078a07e2e9429ab460a0b376d9a0df07f859536346"
+        },
+        {
+          "modality": "vision",
+          "fraction": 0.4,
+          "position": "start",
+          "samples": 78,
+          "summary": {
+            "samples": 78,
+            "modalities": [
+              "vision"
+            ],
+            "target_fraction": 0.4,
+            "position": "start",
+            "seed": 40521866,
+            "per_modality": {
+              "vision": {
+                "originally_observed": 1726,
+                "removed": 725,
+                "actual_fraction": 0.4200463499420626
+              }
+            }
+          },
+          "sample_indices_sha256": "02c49a01e7a0c67b78e6aad396a819311b3e7f4b61665853085d2b17d99fb107",
+          "removed_masks_sha256": "7cd29c85366f4ec8b12ce818222cd8671b1e1a38bc8a75d8ff768e4e3b0b4efe"
+        }
+      ]
+    },
+    "valid_complete_selection_loss": 2.0377814376747216
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "sample_id": "-3g5yACwYnA$_$4",
+  "model_snapshot": "D:\\06_Apps\\huggingface-data\\hub\\models--google-bert--bert-base-uncased\\snapshots\\86b5e0934494bd15c9632b12f734a8a67f723594",
+  "device": "cuda",
+  "active_tokens": 41,
+  "official_dtype": "float32",
+  "computed_dtype": "float32",
+  "max_absolute_difference_active": 6.198883056640625e-06,
+  "mean_absolute_difference_active": 4.357062834969838e-07,
+  "cosine_active_min": 0.9999998807907104,
+  "cosine_active_mean": 1.0,
+  "max_absolute_difference_padding": 3.2261013984680176e-06,
+  "mean_absolute_difference_padding": 3.965460280141997e-07
+}

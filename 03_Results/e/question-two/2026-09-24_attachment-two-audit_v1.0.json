@@ -1,0 +1,637 @@
+{
+  "source": "01_Source\\E\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl",
+  "source_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+  "tokenizer_snapshot": "D:\\06_Apps\\huggingface-data\\hub\\models--google-bert--bert-base-uncased\\snapshots\\86b5e0934494bd15c9632b12f734a8a67f723594",
+  "splits": {
+    "train": {
+      "count": 3395,
+      "keys": [
+        "audio",
+        "classification_labels",
+        "id",
+        "raw_text",
+        "regression_labels",
+        "text",
+        "text_bert",
+        "vision"
+      ],
+      "missing_expected_keys": [],
+      "extra_keys": [],
+      "ids_unique": 3395,
+      "duplicate_ids_within_split": [],
+      "raw_text_unique": 3382,
+      "raw_text_empty": 0,
+      "fields": {
+        "text": {
+          "shape": [
+            3395,
+            50,
+            768
+          ],
+          "dtype": "float32",
+          "expected_dimension": 768,
+          "nonfinite_values": 0,
+          "nonfinite_active_values": 0,
+          "zero_steps_total": 0,
+          "zero_steps_inside_bert_mask": 0,
+          "zero_steps_at_special_tokens": 0,
+          "zero_steps_at_content_tokens": 0,
+          "zero_steps_outside_bert_mask": 0,
+          "nonzero_steps_outside_bert_mask": 86078,
+          "samples_all_zero_inside_bert_mask": 0,
+          "samples_all_zero_at_content_tokens": 0,
+          "samples_all_zero_at_content_tokens_ids": [],
+          "finite_min": -9.978325843811035,
+          "finite_max": 4.965427398681641
+        },
+        "audio": {
+          "shape": [
+            3395,
+            50,
+            74
+          ],
+          "dtype": "float64",
+          "expected_dimension": 74,
+          "nonfinite_values": 0,
+          "nonfinite_active_values": 0,
+          "zero_steps_total": 92933,
+          "zero_steps_inside_bert_mask": 6855,
+          "zero_steps_at_special_tokens": 6790,
+          "zero_steps_at_content_tokens": 65,
+          "zero_steps_outside_bert_mask": 86078,
+          "nonzero_steps_outside_bert_mask": 0,
+          "samples_all_zero_inside_bert_mask": 0,
+          "samples_all_zero_at_content_tokens": 0,
+          "samples_all_zero_at_content_tokens_ids": [],
+          "finite_min": -47.73226547241211,
+          "finite_max": 500.0
+        },
+        "vision": {
+          "shape": [
+            3395,
+            50,
+            35
+          ],
+          "dtype": "float64",
+          "expected_dimension": 35,
+          "nonfinite_values": 0,
+          "nonfinite_active_values": 0,
+          "zero_steps_total": 97117,
+          "zero_steps_inside_bert_mask": 11039,
+          "zero_steps_at_special_tokens": 6790,
+          "zero_steps_at_content_tokens": 4249,
+          "zero_steps_outside_bert_mask": 86078,
+          "nonzero_steps_outside_bert_mask": 0,
+          "samples_all_zero_inside_bert_mask": 110,
+          "samples_all_zero_at_content_tokens": 110,
+          "samples_all_zero_at_content_tokens_ids": [
+            "-NFrJFQijFE$_$0",
+            "-WXXTNIJcVM$_$0",
+            "122842$_$1",
+            "140317$_$5",
+            "15Wu4U2VPLw$_$6",
+            "1ESU5ONMMxs$_$6",
+            "1ESU5ONMMxs$_$8",
+            "1JQ9UCBEmCU$_$0",
+            "208416$_$0",
+            "209354$_$1",
+            "209775$_$0",
+            "21137$_$1",
+            "213619$_$0",
+            "213619$_$3",
+            "218708$_$1",
+            "234053$_$17",
+            "244261$_$24",
+            "247382$_$1",
+            "248837$_$6",
+            "254298$_$0",
+            "266396$_$55",
+            "268836$_$6",
+            "275620$_$12",
+            "2HmBM3GGTlg$_$2",
+            "33439$_$0",
+            "3OMgvtWNHp4$_$10",
+            "3gA34VxBijI$_$1",
+            "44780$_$2",
+            "44780$_$6",
+            "46604$_$2",
+            "47472$_$4",
+            "5qxZFmIaynE$_$24",
+            "5qxZFmIaynE$_$17",
+            "5qxZFmIaynE$_$7",
+            "5qxZFmIaynE$_$9",
+            "6xvVFYR5di0$_$9",
+            "72017$_$9",
+            "72tXTrSXoMk$_$6",
+            "73449$_$4",
+            "7eWclVCXOtk$_$0",
+            "7eWclVCXOtk$_$8",
+            "80866$_$2",
+            "8qCNtqjygW8$_$7",
+            "8qCNtqjygW8$_$8",
+            "98187$_$12",
+            "9K5mYSaoBL4$_$9",
+            "AVScVfLgNmw$_$1",
+            "C3lDRFu1ZcI$_$3",
+            "Cb8ay6WtJuM$_$1",
+            "Cb8ay6WtJuM$_$4",
+            "DbAppk7xT0Y$_$0",
+            "EoC83JhkCAw$_$10",
+            "FmIS69vB12I$_$13",
+            "FylhSeozvG8$_$5",
+            "FylhSeozvG8$_$6",
+            "GRFXnnrQaB4$_$0",
+            "H26MMmrHTlQ$_$7",
+            "JW3OfSCZlhc$_$5",
+            "MsjnLoTKAXo$_$0",
+            "N3QuD26DuCI$_$5",
+            "NOl0v54DaXo$_$10",
+            "OBaMn1-x7jQ$_$7",
+            "TWMFQED1Myk$_$3",
+            "TWMFQED1Myk$_$6",
+            "WTF9xgqLIvI$_$2",
+            "WTF9xgqLIvI$_$7",
+            "Wo1RxRjXyYw$_$2",
+            "X7-Gbk8gAD0$_$0",
+            "XPoY4LD-A1I$_$8",
+            "YGeVGXXK3ao$_$4",
+            "YcyHQQXGXWA$_$4",
+            "ZQuGizjoCTY$_$4",
+            "ZQuGizjoCTY$_$8",
+            "Zs8x712Y-CM$_$8",
+            "_HanACduNJk$_$10",
+            "_HanACduNJk$_$12",
+            "_HanACduNJk$_$2",
+            "aCwLQrJz4Bo$_$0",
+            "aI1tdJPHz2I$_$1",
+            "aIUF3QJJOF4$_$12",
+            "bkP-BNW4oMg$_$0",
+            "c6wuh0NRG1s$_$1",
+            "c6wuh0NRG1s$_$9",
+            "c7xUcM68IFE$_$9",
+            "dXMAS2tIknw$_$6",
+            "gAMbkJk6gnE$_$2",
+            "gXuiIWRxrw4$_$0",
+            "gZF-YNQHqwI$_$13",
+            "ge071m9bGeY$_$0",
+            "ge071m9bGeY$_$4",
+            "hSgKOKK3L8M$_$0",
+            "hSgKOKK3L8M$_$5",
+            "hlBOP5NskhM$_$2",
+            "hlBOP5NskhM$_$8",
+            "hyazktfsZew$_$22",
+            "iREkcXde5ds$_$0",
+            "ipLoS44xfO4$_$1",
+            "jqKzaEniiKo$_$13",
+            "kqXpf26EL-s$_$5",
+            "l8LTcZJ-_8k$_$17",
+            "luQfWSfb1s0$_$4",
+            "mHIvH6Nnrls$_$1",
+            "mxa4KXSz9rw$_$0",
+            "n4xRx0J3rYQ$_$0",
+            "sFLTjqVS7AE$_$0",
+            "sPxoGNvnVzg$_$7",
+            "u94VPxEIJPg$_$3",
+            "wfLrS6CdFs4$_$0",
+            "xXIq7YPkdUQ$_$2",
+            "xXIq7YPkdUQ$_$4"
+          ],
+          "finite_min": -37.746498107910156,
+          "finite_max": 29.028600692749023
+        }
+      },
+      "bert_tokens": {
+        "shape": [
+          3395,
+          3,
+          50
+        ],
+        "dtype": "int64",
+        "attention_values": [
+          0,
+          1
+        ],
+        "token_type_values": [
+          0
+        ],
+        "non_prefix_attention_samples": 0,
+        "length_min": 3,
+        "length_median": 22.0,
+        "length_max": 50,
+        "length_50_count": 253,
+        "content_steps": 76882,
+        "special_steps": 6790,
+        "inactive_token_id_nonzero": 0,
+        "active_token_id_zero": 0,
+        "inactive_token_type_nonzero": 0,
+        "tokenizer_reproduction_mismatch_samples": 0,
+        "raw_token_length_min": 3,
+        "raw_token_length_max": 345,
+        "raw_token_length_gt_50_count": 234,
+        "raw_token_length_eq_50_count": 19
+      },
+      "labels": {
+        "classification_values": {
+          "0": 967,
+          "1": 758,
+          "2": 1670
+        },
+        "regression_sign_counts": {
+          "-1.0": 967,
+          "0.0": 758,
+          "1.0": 1670
+        },
+        "classification_vs_regression_sign": {
+          "0:-1": 967,
+          "1:0": 758,
+          "2:1": 1670
+        },
+        "regression_min": -3.0,
+        "regression_median": 0.0,
+        "regression_mean": 0.16583210777639465,
+        "regression_std": 1.1149631461954514,
+        "regression_quartiles": [
+          -0.3333333432674408,
+          0.0,
+          0.6666666865348816
+        ],
+        "regression_max": 3.0,
+        "nonfinite_classification": 0,
+        "nonfinite_regression": 0
+      },
+      "excel": {
+        "missing_count": 0,
+        "missing_examples": [],
+        "mismatch_count": 0,
+        "mismatch_examples": []
+      }
+    },
+    "valid": {
+      "count": 728,
+      "keys": [
+        "audio",
+        "classification_labels",
+        "id",
+        "raw_text",
+        "regression_labels",
+        "text",
+        "text_bert",
+        "vision"
+      ],
+      "missing_expected_keys": [],
+      "extra_keys": [],
+      "ids_unique": 728,
+      "duplicate_ids_within_split": [],
+      "raw_text_unique": 728,
+      "raw_text_empty": 0,
+      "fields": {
+        "text": {
+          "shape": [
+            728,
+            50,
+            768
+          ],
+          "dtype": "float32",
+          "expected_dimension": 768,
+          "nonfinite_values": 0,
+          "nonfinite_active_values": 0,
+          "zero_steps_total": 0,
+          "zero_steps_inside_bert_mask": 0,
+          "zero_steps_at_special_tokens": 0,
+          "zero_steps_at_content_tokens": 0,
+          "zero_steps_outside_bert_mask": 0,
+          "nonzero_steps_outside_bert_mask": 17772,
+          "samples_all_zero_inside_bert_mask": 0,
+          "samples_all_zero_at_content_tokens": 0,
+          "samples_all_zero_at_content_tokens_ids": [],
+          "finite_min": -9.845565795898438,
+          "finite_max": 4.626781940460205
+        },
+        "audio": {
+          "shape": [
+            728,
+            50,
+            74
+          ],
+          "dtype": "float64",
+          "expected_dimension": 74,
+          "nonfinite_values": 0,
+          "nonfinite_active_values": 0,
+          "zero_steps_total": 19274,
+          "zero_steps_inside_bert_mask": 1502,
+          "zero_steps_at_special_tokens": 1456,
+          "zero_steps_at_content_tokens": 46,
+          "zero_steps_outside_bert_mask": 17772,
+          "nonzero_steps_outside_bert_mask": 0,
+          "samples_all_zero_inside_bert_mask": 0,
+          "samples_all_zero_at_content_tokens": 0,
+          "samples_all_zero_at_content_tokens_ids": [],
+          "finite_min": -44.918243408203125,
+          "finite_max": 499.0
+        },
+        "vision": {
+          "shape": [
+            728,
+            50,
+            35
+          ],
+          "dtype": "float64",
+          "expected_dimension": 35,
+          "nonfinite_values": 0,
+          "nonfinite_active_values": 0,
+          "zero_steps_total": 20208,
+          "zero_steps_inside_bert_mask": 2436,
+          "zero_steps_at_special_tokens": 1456,
+          "zero_steps_at_content_tokens": 980,
+          "zero_steps_outside_bert_mask": 17772,
+          "nonzero_steps_outside_bert_mask": 0,
+          "samples_all_zero_inside_bert_mask": 15,
+          "samples_all_zero_at_content_tokens": 15,
+          "samples_all_zero_at_content_tokens_ids": [
+            "80855$_$15",
+            "Fy0Uid9afM8$_$5",
+            "H1DpVwktfDQ$_$0",
+            "JAnRCQ9A0vI$_$5",
+            "N5xfBtD6rLY$_$7",
+            "Q4WzApjaCNI$_$0",
+            "Q7S0tX4FUNA$_$7",
+            "UlTJmndbGHM$_$4",
+            "XIGpuL-Kkyk$_$0",
+            "XIGpuL-Kkyk$_$7",
+            "Y7qkyMyanjU$_$2",
+            "Y7qkyMyanjU$_$4",
+            "sPremsknoLM$_$1",
+            "tQ-CIfgj-Js$_$3",
+            "zjYEBwXGD8I$_$4"
+          ],
+          "finite_min": -30.58169937133789,
+          "finite_max": 26.221500396728516
+        }
+      },
+      "bert_tokens": {
+        "shape": [
+          728,
+          3,
+          50
+        ],
+        "dtype": "int64",
+        "attention_values": [
+          0,
+          1
+        ],
+        "token_type_values": [
+          0
+        ],
+        "non_prefix_attention_samples": 0,
+        "length_min": 3,
+        "length_median": 23.5,
+        "length_max": 50,
+        "length_50_count": 47,
+        "content_steps": 17172,
+        "special_steps": 1456,
+        "inactive_token_id_nonzero": 0,
+        "active_token_id_zero": 0,
+        "inactive_token_type_nonzero": 0,
+        "tokenizer_reproduction_mismatch_samples": 0,
+        "raw_token_length_min": 3,
+        "raw_token_length_max": 422,
+        "raw_token_length_gt_50_count": 44,
+        "raw_token_length_eq_50_count": 3
+      },
+      "labels": {
+        "classification_values": {
+          "0": 206,
+          "1": 184,
+          "2": 338
+        },
+        "regression_sign_counts": {
+          "-1.0": 206,
+          "0.0": 184,
+          "1.0": 338
+        },
+        "classification_vs_regression_sign": {
+          "0:-1": 206,
+          "1:0": 184,
+          "2:1": 338
+        },
+        "regression_min": -3.0,
+        "regression_median": 0.0,
+        "regression_mean": 0.16094322484191304,
+        "regression_std": 1.0428864926774235,
+        "regression_quartiles": [
+          -0.3333333432674408,
+          0.0,
+          0.6666666865348816
+        ],
+        "regression_max": 3.0,
+        "nonfinite_classification": 0,
+        "nonfinite_regression": 0
+      },
+      "excel": {
+        "missing_count": 0,
+        "missing_examples": [],
+        "mismatch_count": 0,
+        "mismatch_examples": []
+      }
+    },
+    "test": {
+      "count": 727,
+      "keys": [
+        "audio",
+        "classification_labels",
+        "id",
+        "raw_text",
+        "regression_labels",
+        "text",
+        "text_bert",
+        "vision"
+      ],
+      "missing_expected_keys": [],
+      "extra_keys": [],
+      "ids_unique": 727,
+      "duplicate_ids_within_split": [],
+      "raw_text_unique": 727,
+      "raw_text_empty": 0,
+      "fields": {
+        "text": {
+          "shape": [
+            727,
+            50,
+            768
+          ],
+          "dtype": "float32",
+          "expected_dimension": 768,
+          "nonfinite_values": 0,
+          "nonfinite_active_values": 0,
+          "zero_steps_total": 0,
+          "zero_steps_inside_bert_mask": 0,
+          "zero_steps_at_special_tokens": 0,
+          "zero_steps_at_content_tokens": 0,
+          "zero_steps_outside_bert_mask": 0,
+          "nonzero_steps_outside_bert_mask": 18041,
+          "samples_all_zero_inside_bert_mask": 0,
+          "samples_all_zero_at_content_tokens": 0,
+          "samples_all_zero_at_content_tokens_ids": [],
+          "finite_min": -9.85290241241455,
+          "finite_max": 5.553917407989502
+        },
+        "audio": {
+          "shape": [
+            727,
+            50,
+            74
+          ],
+          "dtype": "float64",
+          "expected_dimension": 74,
+          "nonfinite_values": 0,
+          "nonfinite_active_values": 0,
+          "zero_steps_total": 19495,
+          "zero_steps_inside_bert_mask": 1454,
+          "zero_steps_at_special_tokens": 1454,
+          "zero_steps_at_content_tokens": 0,
+          "zero_steps_outside_bert_mask": 18041,
+          "nonzero_steps_outside_bert_mask": 0,
+          "samples_all_zero_inside_bert_mask": 0,
+          "samples_all_zero_at_content_tokens": 0,
+          "samples_all_zero_at_content_tokens_ids": [],
+          "finite_min": -50.873077392578125,
+          "finite_max": 500.0
+        },
+        "vision": {
+          "shape": [
+            727,
+            50,
+            35
+          ],
+          "dtype": "float64",
+          "expected_dimension": 35,
+          "nonfinite_values": 0,
+          "nonfinite_active_values": 0,
+          "zero_steps_total": 20519,
+          "zero_steps_inside_bert_mask": 2478,
+          "zero_steps_at_special_tokens": 1454,
+          "zero_steps_at_content_tokens": 1024,
+          "zero_steps_outside_bert_mask": 18041,
+          "nonzero_steps_outside_bert_mask": 0,
+          "samples_all_zero_inside_bert_mask": 28,
+          "samples_all_zero_at_content_tokens": 28,
+          "samples_all_zero_at_content_tokens_ids": [
+            "-s9qJ7ATP7w$_$6",
+            "136196$_$0",
+            "23656$_$1",
+            "23656$_$9",
+            "23656$_$15",
+            "273207$_$0",
+            "53609$_$10",
+            "88791$_$15",
+            "AB1PbMaW03s$_$13",
+            "AB1PbMaW03s$_$3",
+            "AB1PbMaW03s$_$8",
+            "AHiA9hohKr8$_$0",
+            "EyoMU2yoJPY$_$7",
+            "UjqA6KVW2m8$_$3",
+            "VDkBM0ZG4q8$_$7",
+            "XKyumlBmix8$_$2",
+            "Y8dI1GTWCk4$_$6",
+            "ZznoGQVwTtw$_$4",
+            "a4PHWxILDp0$_$15",
+            "cW-aX4dPVfk$_$30",
+            "eFV7iFPYZB4$_$12",
+            "kg-W6-hP2Do$_$3",
+            "lYwgLa4R5XQ$_$1",
+            "lkIe41StoGI$_$10",
+            "lkIe41StoGI$_$3",
+            "lkIe41StoGI$_$2",
+            "lwL4hjhkid4$_$1",
+            "wznRBN1fWj4$_$6"
+          ],
+          "finite_min": -29.1875,
+          "finite_max": 27.900800704956055
+        }
+      },
+      "bert_tokens": {
+        "shape": [
+          727,
+          3,
+          50
+        ],
+        "dtype": "int64",
+        "attention_values": [
+          0,
+          1
+        ],
+        "token_type_values": [
+          0
+        ],
+        "non_prefix_attention_samples": 0,
+        "length_min": 4,
+        "length_median": 23.0,
+        "length_max": 50,
+        "length_50_count": 52,
+        "content_steps": 16855,
+        "special_steps": 1454,
+        "inactive_token_id_nonzero": 0,
+        "active_token_id_zero": 0,
+        "inactive_token_type_nonzero": 0,
+        "tokenizer_reproduction_mismatch_samples": 0,
+        "raw_token_length_min": 4,
+        "raw_token_length_max": 134,
+        "raw_token_length_gt_50_count": 49,
+        "raw_token_length_eq_50_count": 3
+      },
+      "labels": {
+        "classification_values": {
+          "0": 207,
+          "1": 158,
+          "2": 362
+        },
+        "regression_sign_counts": {
+          "-1.0": 207,
+          "0.0": 158,
+          "1.0": 362
+        },
+        "classification_vs_regression_sign": {
+          "0:-1": 207,
+          "1:0": 158,
+          "2:1": 362
+        },
+        "regression_min": -3.0,
+        "regression_median": 0.0,
+        "regression_mean": 0.14121962741447774,
+        "regression_std": 1.1573125385208927,
+        "regression_quartiles": [
+          -0.3333333432674408,
+          0.0,
+          1.0
+        ],
+        "regression_max": 3.0,
+        "nonfinite_classification": 0,
+        "nonfinite_regression": 0
+      },
+      "excel": {
+        "missing_count": 0,
+        "missing_examples": [],
+        "mismatch_count": 0,
+        "mismatch_examples": []
+      }
+    }
+  },
+  "cross_split": {
+    "exact_id_duplicate_count": 0,
+    "exact_id_examples": [],
+    "base_video_overlap_count": 0,
+    "base_video_examples": [],
+    "raw_text_duplicate_count": 2,
+    "raw_text_examples": [
+      "Alright",
+      "Okay"
+    ]
+  },
+  "spreadsheet": {
+    "data_rows": 4850,
+    "duplicate_key_count": 0,
+    "duplicate_key_examples": [],
+    "unmatched_row_count": 0,
+    "unmatched_row_examples": []
+  }
+}

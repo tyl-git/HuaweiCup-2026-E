@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-24",
+  "scope": "Question one: three-modality feature extraction and word-level temporal alignment; no sentiment predictions",
+  "source_label_workbook": "01_Source/E/E题数据/附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/label-100.xlsx",
+  "source_label_workbook_sha256": "827334f782b1f242c84ad944a657bc7f7c63643f71ae9c977811a3eecdd3ab33",
+  "input_reports_sha256": {
+    "manifest": "5548c81e5a51fec10c7766f74e6d03e7c47d7567df665193b22f7f997a138c7f",
+    "stage": "e474dbc77440650c4eb0e07c91ac26ca3a03bcdfc0ee8bc8355d9a5cf71336a6",
+    "media": "64f073ebe623dba5c37ca654b65641e55afb167508adff8e724503d786ea6d2a",
+    "openface": "9ab44febf72f0280afc457220f9e49e7ec1c2143a2d9ee1911838aa364f8ec68",
+    "audio": "353f48f14aa5c9557faaa4c2921abfc6d1f689ce303b502ca92deafce002dace",
+    "egemaps": "82f1d48ea432f2893a0af968cc92da21da65de364270c468b69ee950bd302596",
+    "alignment": "087ec591b5097b97733fc471bf8a0a65bbe1e713f9de6ca04785e4578cccf714",
+    "bert": "b25fe7005a202fa5121db4d83fbc8361ed103106c47433fe2662d76ca319a782",
+    "merged": "8e7ac6a8d1384c0962ccdbc2d45d9930680cdb91541e0201b0640e44aa74be5b"
+  },
+  "totals": {
+    "samples": 100,
+    "source_words": 1932,
+    "timed_words": 1923,
+    "untimed_words": 9,
+    "text_valid_words": 1932,
+    "audio_valid_words": 1923,
+    "vision_valid_words": 1828,
+    "all_modalities_valid_words": 1828,
+    "needs_review_samples": 65,
+    "no_valid_visual_samples": 4,
+    "alignment_review_samples": 63,
+    "merge_review_samples": 19
+  },
+  "review_priority_counts": {
+    "P1": 6,
+    "P2": 59
+  },
+  "review_priority_rule": {
+    "P1": "Source transcript discrepancy, zero valid visual frames, or excluded speaker annotation requiring listening review.",
+    "P2": "All other samples already carrying alignment or merge review flags.",
+    "blank": "No automatic sample review flag. This does not imply manual verification."
+  },
+  "untimed_token_reason_counts": {
+    "punctuation_only": 6,
+    "speaker_annotation_excluded": 3
+  },
+  "untimed_word_records": [
+    {
+      "sample": "sample_0006",
+      "word_index": 1,
+      "word": "”",
+      "reason": "punctuation_only"
+    },
+    {
+      "sample": "sample_0006",
+      "word_index": 2,
+      "word": "[President",
+      "reason": "speaker_annotation_excluded"
+    },
+    {
+      "sample": "sample_0006",
+      "word_index": 3,
+      "word": "Ronald",
+      "reason": "speaker_annotation_excluded"
+    },
+    {
+      "sample": "sample_0006",
+      "word_index": 4,
+      "word": "Reagan:]",
+      "reason": "speaker_annotation_excluded"
+    },
+    {
+      "sample": "sample_0007",
+      "word_index": 1,
+      "word": "\"",
+      "reason": "punctuation_only"
+    },
+    {
+      "sample": "sample_0023",
+      "word_index": 6,
+      "word": "...",
+      "reason": "punctuation_only"
+    },
+    {
+      "sample": "sample_0058",
+      "word_index": 16,
+      "word": "–",
+      "reason": "punctuation_only"
+    },
+    {
+      "sample": "sample_0090",
+      "word_index": 1,
+      "word": "\"",
+      "reason": "punctuation_only"
+    },
+    {
+      "sample": "sample_0097",
+      "word_index": 1,
+      "word": "\"",
+      "reason": "punctuation_only"
+    }
+  ],
+  "alignment_flag_sample_counts": {
+    "asr_disagreement": 48,
+    "ellipsis_title_review": 1,
+    "long_word_span": 4,
+    "low_ctc_probability": 43,
+    "numeric_reading_review": 5,
+    "speaker_annotation_review": 1,
+    "transcript_review_needed": 1
+  },
+  "merge_flag_sample_counts": {
+    "no_valid_visual_frames": 4,
+    "vision_missing_words": 11,
+    "vision_partial_coverage": 13
+  },
+  "all_flag_sample_counts": {
+    "asr_disagreement": 48,
+    "ellipsis_title_review": 1,
+    "long_word_span": 4,
+    "low_ctc_probability": 43,
+    "no_valid_visual_frames": 4,
+    "numeric_reading_review": 5,
+    "speaker_annotation_review": 1,
+    "transcript_review_needed": 1,
+    "vision_missing_words": 11,
+    "vision_partial_coverage": 13
+  },
+  "pilot_human_check": {
+    "sample_id": "-THoVjtIkeU/2",
+    "transcript": "confirmed_by_listening",
+    "phrase_timing": "pauses_order_and_speaking_rate_consistent",
+    "exact_word_boundaries": "not_manually_verified",
+    "note": "Pilot phrase-level listening does not clear a flagged sample or verify exact word boundaries."
+  },
+  "checks": [
+    "original spreadsheet and manifest match by row",
+    "all 100 original and staged video hashes match",
+    "all reported source and NPZ hashes match",
+    "original words and character spans match NPZ",
+    "modality masks, dimensions, weights, and valid-frame counts reconcile",
+    "audio/vision word vectors reconstruct from recorded source weights"
+  ],
+  "limitations": [
+    "Automatic CTC timestamps are not manually verified word boundaries.",
+    "65 flagged samples await targeted human review.",
+    "OpenFace tracks one face; speaker identity is not verified.",
+    "A zero vector with a false mask is a missing-data placeholder, not a neutral measurement."
+  ]
+}

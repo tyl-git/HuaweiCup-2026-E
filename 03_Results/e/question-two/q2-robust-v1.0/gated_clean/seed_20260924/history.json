@@ -1,0 +1,101 @@
+[
+  {
+    "epoch": 1,
+    "augmentation": {
+      "epoch": 1,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 1.4804688390794691
+  },
+  {
+    "epoch": 2,
+    "augmentation": {
+      "epoch": 2,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 1.4468531896779826
+  },
+  {
+    "epoch": 3,
+    "augmentation": {
+      "epoch": 3,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 1.4365448296725094
+  },
+  {
+    "epoch": 4,
+    "augmentation": {
+      "epoch": 4,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 1.4632158122219883
+  },
+  {
+    "epoch": 5,
+    "augmentation": {
+      "epoch": 5,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 1.5180045169788403
+  },
+  {
+    "epoch": 6,
+    "augmentation": {
+      "epoch": 6,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 1.6182748459197662
+  },
+  {
+    "epoch": 7,
+    "augmentation": {
+      "epoch": 7,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 1.6693904792869483
+  },
+  {
+    "epoch": 8,
+    "augmentation": {
+      "epoch": 8,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 1.8097573165055159
+  },
+  {
+    "epoch": 9,
+    "augmentation": {
+      "epoch": 9,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 1.9450635674235586
+  },
+  {
+    "epoch": 10,
+    "augmentation": {
+      "epoch": 10,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 2.0465896601205342
+  },
+  {
+    "epoch": 11,
+    "augmentation": {
+      "epoch": 11,
+      "complete_samples": 3395,
+      "conditions": []
+    },
+    "valid_complete_selection_loss": 2.227771832392766
+  }
+]

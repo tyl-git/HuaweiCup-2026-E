@@ -1,0 +1,106 @@
+{
+  "schema": "huaweicup-q2-normalization-v1.0",
+  "created_utc": "2026-09-24T06:01:44.009809+00:00",
+  "fit_split": "train",
+  "sample_count": 3395,
+  "sequence_length": 50,
+  "algorithm": "population_zscore_float64_block_merge",
+  "variance_ddof": 0,
+  "min_scale": 1e-06,
+  "chunk_rows": 2048,
+  "fit_mask_rule": "content AND supplied_observed AND raw_row_nonzero",
+  "masked_output": "exact_float32_zero",
+  "source_metadata": {
+    "source_sha256": {
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+    },
+    "text_cache_contract": {
+      "dtype": "float32",
+      "ids_sha256": "c9602c0b6b9a8edbd8de577d59afe9c5c9ba738ea8aa22b818349b4a6cb00a96",
+      "model": {
+        "files": {
+          "config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+          "model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3"
+        },
+        "path": "D:\\06_Apps\\huggingface-data\\hub\\models--google-bert--bert-base-uncased\\snapshots\\86b5e0934494bd15c9632b12f734a8a67f723594",
+        "snapshot": "86b5e0934494bd15c9632b12f734a8a67f723594"
+      },
+      "model_mode": "eval_frozen",
+      "padding": "embeddings_retained_use_loader_content_mask",
+      "representation": "last_hidden_state",
+      "samples": 3395,
+      "shape": [
+        3395,
+        50,
+        768
+      ],
+      "source_sha256": {
+        "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+      },
+      "special_tokens": "included_for_encoding_excluded_from_content_pooling",
+      "split": "train",
+      "token_sha256": {
+        "attention_mask": "b46dd13865e4bd2c89fc3073ecc6afa0c146dd5eb4c639f919e960626b84df81",
+        "input_ids": "3bbbedcdff2ca14c704d738e6a86164902bc6d078bf9787acae21ca2d27dc791",
+        "token_type_ids": "38efef1116fbd3ccaf6c52fcf7fe97441f2bd5176bc20bdc5a896f0f05ac35d8"
+      }
+    },
+    "text_feature_sha256": "8cbe458c1baeced964ce8dcb04a7b78f3ce769a509ccd66fbbf2b8a458647f03"
+  },
+  "content_mask_sha256": "937c54ad53819e672a2611a3965b4a625f607512f5ff1b5406bc0c2e986f738e",
+  "training_inputs": {
+    "text": {
+      "shape": [
+        3395,
+        50,
+        768
+      ],
+      "dtype": "<f4",
+      "features_sha256": "f0d8411165e90ccd9a45b93e10bbac1b4b24943170f563a92a1b66ba66e2a3dc",
+      "supplied_observation_mask_sha256": "937c54ad53819e672a2611a3965b4a625f607512f5ff1b5406bc0c2e986f738e",
+      "effective_observation_mask_sha256": "937c54ad53819e672a2611a3965b4a625f607512f5ff1b5406bc0c2e986f738e"
+    },
+    "audio": {
+      "shape": [
+        3395,
+        50,
+        74
+      ],
+      "dtype": "<f4",
+      "features_sha256": "a41a8cc2612dbd2047f50fead7680f0d7a40209b8df2d4aa3221930482efb449",
+      "supplied_observation_mask_sha256": "02b748b7f528dee62c7cd89d08987816cb13be5cde2dd8d5ed04c88dede5f721",
+      "effective_observation_mask_sha256": "02b748b7f528dee62c7cd89d08987816cb13be5cde2dd8d5ed04c88dede5f721"
+    },
+    "vision": {
+      "shape": [
+        3395,
+        50,
+        35
+      ],
+      "dtype": "<f4",
+      "features_sha256": "1518bef0a72580a41dc87dcd2fa8b6d43b0efb81b49f51b4bb0dbb28d2dd488a",
+      "supplied_observation_mask_sha256": "45bab30a472375d4e0ad96d29b7bae96feb7918edfe1bd8e5dcf497189bccb03",
+      "effective_observation_mask_sha256": "45bab30a472375d4e0ad96d29b7bae96feb7918edfe1bd8e5dcf497189bccb03"
+    }
+  },
+  "statistics": {
+    "text": {
+      "count": 76882,
+      "dimensions": 768,
+      "floored_scale_dimensions": 0
+    },
+    "audio": {
+      "count": 76817,
+      "dimensions": 74,
+      "floored_scale_dimensions": 0
+    },
+    "vision": {
+      "count": 72633,
+      "dimensions": 35,
+      "floored_scale_dimensions": 0
+    }
+  },
+  "statistics_file": "2026-09-24_q2-normalization_v1.0.npz",
+  "statistics_file_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "manifest_sha256": "3fbf3be176bce4b89f18575025d06f492f7aa3dcc726a82a4b160930e9ccab27"
+}

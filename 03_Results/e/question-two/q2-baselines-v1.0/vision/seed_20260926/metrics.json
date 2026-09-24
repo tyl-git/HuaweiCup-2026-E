@@ -1,0 +1,169 @@
+{
+  "model": "vision",
+  "modalities": [
+    "vision"
+  ],
+  "seed": 20260926,
+  "best_epoch": 1,
+  "epochs_run": 9,
+  "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1",
+  "config": {
+    "max_epochs": 40,
+    "patience": 8,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.2,
+    "hidden_dim": 64,
+    "fusion_dim": 128,
+    "classification_loss_weight": 1.0,
+    "regression_loss_weight": 1.0,
+    "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1"
+  },
+  "train_priors": {
+    "class_counts": [
+      967,
+      758,
+      1670
+    ],
+    "class_probabilities": [
+      0.2848306332842415,
+      0.2232695139911635,
+      0.49189985272459497
+    ],
+    "intensity_mean": 0.16583210777639465
+  },
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "valid": {
+    "cross_entropy": 1.0443193650507665,
+    "l1": 0.7552325280158074,
+    "selection_loss": 1.799551893066574,
+    "classification": {
+      "n": 728,
+      "accuracy": 0.4684065934065934,
+      "macro_f1": 0.240835693285261,
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          10,
+          0,
+          196
+        ],
+        [
+          8,
+          0,
+          176
+        ],
+        [
+          7,
+          0,
+          331
+        ]
+      ],
+      "per_class": [
+        {
+          "id": 0,
+          "name": "Negative",
+          "support": 206,
+          "precision": 0.4,
+          "recall": 0.04854368932038835,
+          "f1": 0.08658008658008658
+        },
+        {
+          "id": 1,
+          "name": "Neutral",
+          "support": 184,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "id": 2,
+          "name": "Positive",
+          "support": 338,
+          "precision": 0.47083926031294454,
+          "recall": 0.9792899408284024,
+          "f1": 0.6359269932756965
+        }
+      ],
+      "zero_division_policy": 0
+    },
+    "regression": {
+      "n": 728,
+      "mae": 0.7552325350000871,
+      "pearson_r": 0.23570151202128406,
+      "pearson_status": "defined"
+    }
+  },
+  "train": {
+    "cross_entropy": 1.0161643388520636,
+    "l1": 0.8056047917816881,
+    "selection_loss": 1.8217691306337516,
+    "classification": {
+      "n": 3395,
+      "accuracy": 0.49661266568483065,
+      "macro_f1": 0.24615753219526804,
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          41,
+          0,
+          926
+        ],
+        [
+          17,
+          0,
+          741
+        ],
+        [
+          25,
+          0,
+          1645
+        ]
+      ],
+      "per_class": [
+        {
+          "id": 0,
+          "name": "Negative",
+          "support": 967,
+          "precision": 0.4939759036144578,
+          "recall": 0.04239917269906929,
+          "f1": 0.07809523809523809
+        },
+        {
+          "id": 1,
+          "name": "Neutral",
+          "support": 758,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "id": 2,
+          "name": "Positive",
+          "support": 1670,
+          "precision": 0.49667874396135264,
+          "recall": 0.9850299401197605,
+          "f1": 0.660377358490566
+        }
+      ],
+      "zero_division_policy": 0
+    },
+    "regression": {
+      "n": 3395,
+      "mae": 0.8056047907225315,
+      "pearson_r": 0.23343829707630498,
+      "pearson_status": "defined"
+    }
+  },
+  "checkpoint_reload_predictions_identical": true,
+  "checkpoint_sha256": "9c6404086d39b169b534c95c5f7fab3f7bf2e068b34dda83c0341133e7a6681f",
+  "prediction_files_sha256": {
+    "train": "5b8ca444df03d9c375a6b7b0af2b18f3f52d1b2fd3ba0684aaeb4de80eafd9f1",
+    "valid": "9a5c70f4839fa5f021d9298f3ed5d6b858a539a974a7009778d13af0d3f76007"
+  },
+  "empty_observation_samples": {
+    "train": 110,
+    "valid": 15
+  },
+  "test_evaluated": false,
+  "specialists_evaluated": false
+}

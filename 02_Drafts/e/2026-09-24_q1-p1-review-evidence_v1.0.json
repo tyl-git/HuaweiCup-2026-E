@@ -1,0 +1,1647 @@
+{
+  "review_status": "all_pending",
+  "samples": [
+    {
+      "sample": "sample_0001",
+      "review_status": "pending",
+      "original_transcript": "They've been able to find solutions or at least bring some answers to the table.",
+      "asr_hypothesis": "THAT WE DO O THEY'VE BEEN ABLE TO FIND SOLUTIONS OR EARTLY SOPRING SOME MANCERS TO THE TABLE",
+      "audio_duration_s": 5.399,
+      "visual_statistics": {
+        "frames": 163,
+        "success_frames": 163,
+        "valid_frames": 163,
+        "confidence_min": 0.98,
+        "confidence_max": 0.98,
+        "confidence_positive_frames": 163
+      },
+      "pcm_rms": 0.00821887367063889,
+      "pcm_peak": 0.1011962890625,
+      "direct_audio_decode_check": null,
+      "sampled_video_seek_seconds": [
+        0.54,
+        1.89,
+        3.509,
+        4.859
+      ],
+      "sampled_frames_limit": "Four sampled frames do not establish the content of the whole clip or speaker identity",
+      "word_evidence": [
+        {
+          "word": "They've",
+          "start_s": 1.44,
+          "end_s": 1.6,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "been",
+          "start_s": 1.62,
+          "end_s": 1.74,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "able",
+          "start_s": 1.76,
+          "end_s": 1.9,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "to",
+          "start_s": 1.96,
+          "end_s": 2.02,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "find",
+          "start_s": 2.18,
+          "end_s": 2.38,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "solutions",
+          "start_s": 2.44,
+          "end_s": 2.92,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "or",
+          "start_s": 3.02,
+          "end_s": 3.06,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "at",
+          "start_s": 3.16,
+          "end_s": 3.24,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "least",
+          "start_s": 3.26,
+          "end_s": 3.4,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "bring",
+          "start_s": 3.46,
+          "end_s": 3.72,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "some",
+          "start_s": 3.8,
+          "end_s": 3.96,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "answers",
+          "start_s": 4.06,
+          "end_s": 4.34,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "to",
+          "start_s": 4.38,
+          "end_s": 4.42,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "the",
+          "start_s": 4.46,
+          "end_s": 4.56,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "table.",
+          "start_s": 4.6,
+          "end_s": 4.86,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        }
+      ]
+    },
+    {
+      "sample": "sample_0006",
+      "review_status": "pending",
+      "original_transcript": "” [President Ronald Reagan:] \"Look at the record",
+      "asr_hypothesis": "MEDIOCRITY LOOK AT THE RECORD",
+      "audio_duration_s": 3.9158125,
+      "visual_statistics": {
+        "frames": 119,
+        "success_frames": 35,
+        "valid_frames": 34,
+        "confidence_min": 0.0,
+        "confidence_max": 0.98,
+        "confidence_positive_frames": 118
+      },
+      "pcm_rms": 0.04817327889304103,
+      "pcm_peak": 0.653106689453125,
+      "direct_audio_decode_check": null,
+      "sampled_video_seek_seconds": [
+        0.392,
+        1.371,
+        2.545,
+        3.524
+      ],
+      "sampled_frames_limit": "Four sampled frames do not establish the content of the whole clip or speaker identity",
+      "word_evidence": [
+        {
+          "word": "”",
+          "start_s": null,
+          "end_s": null,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "[President",
+          "start_s": null,
+          "end_s": null,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "Ronald",
+          "start_s": null,
+          "end_s": null,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "Reagan:]",
+          "start_s": null,
+          "end_s": null,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "\"Look",
+          "start_s": 2.7,
+          "end_s": 2.82,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "at",
+          "start_s": 2.88,
+          "end_s": 2.92,
+          "visual_valid": true,
+          "visual_coverage": 0.5
+        },
+        {
+          "word": "the",
+          "start_s": 2.96,
+          "end_s": 3.02,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "record",
+          "start_s": 3.08,
+          "end_s": 3.34,
+          "visual_valid": true,
+          "visual_coverage": 0.9230769230769229
+        }
+      ]
+    },
+    {
+      "sample": "sample_0010",
+      "review_status": "pending",
+      "original_transcript": "Structural mounts inside have to be properly stress analyzed so we make sure all that happens",
+      "asr_hypothesis": "",
+      "audio_duration_s": 5.658875,
+      "visual_statistics": {
+        "frames": 142,
+        "success_frames": 0,
+        "valid_frames": 0,
+        "confidence_min": 0.0,
+        "confidence_max": 0.0,
+        "confidence_positive_frames": 0
+      },
+      "pcm_rms": 0.025109486601453332,
+      "pcm_peak": 0.110137939453125,
+      "direct_audio_decode_check": null,
+      "sampled_video_seek_seconds": [
+        0.566,
+        1.981,
+        3.678,
+        5.093
+      ],
+      "sampled_frames_limit": "Four sampled frames do not establish the content of the whole clip or speaker identity",
+      "word_evidence": [
+        {
+          "word": "Structural",
+          "start_s": 0.08,
+          "end_s": 0.48,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "mounts",
+          "start_s": 0.68,
+          "end_s": 0.88,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "inside",
+          "start_s": 0.94,
+          "end_s": 1.18,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "have",
+          "start_s": 1.26,
+          "end_s": 1.44,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "to",
+          "start_s": 1.64,
+          "end_s": 1.72,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "be",
+          "start_s": 1.88,
+          "end_s": 1.96,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "properly",
+          "start_s": 2.04,
+          "end_s": 2.34,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "stress",
+          "start_s": 2.36,
+          "end_s": 2.58,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "analyzed",
+          "start_s": 2.72,
+          "end_s": 2.92,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "so",
+          "start_s": 2.94,
+          "end_s": 2.98,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "we",
+          "start_s": 3.02,
+          "end_s": 3.06,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "make",
+          "start_s": 3.1,
+          "end_s": 3.18,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "sure",
+          "start_s": 3.22,
+          "end_s": 3.4,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "all",
+          "start_s": 3.44,
+          "end_s": 3.56,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "that",
+          "start_s": 3.64,
+          "end_s": 3.72,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "happens",
+          "start_s": 3.8,
+          "end_s": 4.02,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        }
+      ]
+    },
+    {
+      "sample": "sample_0011",
+      "review_status": "pending",
+      "original_transcript": "So we coordinate with all the proper technical fields to get ready for the instrument to arrive here",
+      "asr_hypothesis": "HAWK'S SENSE OF HERING IS EXCELLENT AND THEIR EYES S",
+      "audio_duration_s": 6.698,
+      "visual_statistics": {
+        "frames": 169,
+        "success_frames": 0,
+        "valid_frames": 0,
+        "confidence_min": 0.0,
+        "confidence_max": 0.0,
+        "confidence_positive_frames": 0
+      },
+      "pcm_rms": 0.08382519749070781,
+      "pcm_peak": 0.82867431640625,
+      "direct_audio_decode_check": null,
+      "sampled_video_seek_seconds": [
+        0.67,
+        2.344,
+        4.354,
+        6.028
+      ],
+      "sampled_frames_limit": "Four sampled frames do not establish the content of the whole clip or speaker identity",
+      "word_evidence": [
+        {
+          "word": "So",
+          "start_s": 0.66,
+          "end_s": 1.8,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "we",
+          "start_s": 1.94,
+          "end_s": 2.04,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "coordinate",
+          "start_s": 2.14,
+          "end_s": 2.4,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "with",
+          "start_s": 2.42,
+          "end_s": 2.5,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "all",
+          "start_s": 2.52,
+          "end_s": 2.6,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "the",
+          "start_s": 2.64,
+          "end_s": 2.74,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "proper",
+          "start_s": 2.76,
+          "end_s": 2.9,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "technical",
+          "start_s": 3.02,
+          "end_s": 3.78,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "fields",
+          "start_s": 4.1,
+          "end_s": 4.28,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "to",
+          "start_s": 4.32,
+          "end_s": 4.36,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "get",
+          "start_s": 4.38,
+          "end_s": 4.44,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "ready",
+          "start_s": 4.48,
+          "end_s": 4.66,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "for",
+          "start_s": 4.68,
+          "end_s": 4.74,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "the",
+          "start_s": 4.76,
+          "end_s": 4.84,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "instrument",
+          "start_s": 4.88,
+          "end_s": 5.52,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "to",
+          "start_s": 6.18,
+          "end_s": 6.22,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "arrive",
+          "start_s": 6.24,
+          "end_s": 6.5,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "here",
+          "start_s": 6.58,
+          "end_s": 6.68,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        }
+      ]
+    },
+    {
+      "sample": "sample_0042",
+      "review_status": "pending",
+      "original_transcript": "There are a dozen or more hands on techniques that we can do",
+      "asr_hypothesis": "",
+      "audio_duration_s": 6.054,
+      "visual_statistics": {
+        "frames": 182,
+        "success_frames": 0,
+        "valid_frames": 0,
+        "confidence_min": 0.0,
+        "confidence_max": 0.0,
+        "confidence_positive_frames": 0
+      },
+      "pcm_rms": 0.0,
+      "pcm_peak": 0.0,
+      "direct_audio_decode_check": {
+        "samples": 96864,
+        "nonzero_samples": 0,
+        "same_as_saved_wav": true,
+        "native_no_downmix_float_values": 533962,
+        "native_no_downmix_nonzero_values": 0,
+        "native_no_downmix_peak": 0.0
+      },
+      "sampled_video_seek_seconds": [
+        0.605,
+        2.119,
+        3.935,
+        5.449
+      ],
+      "sampled_frames_limit": "Four sampled frames do not establish the content of the whole clip or speaker identity",
+      "word_evidence": [
+        {
+          "word": "There",
+          "start_s": 0.0,
+          "end_s": 0.28,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "are",
+          "start_s": 0.3,
+          "end_s": 0.36,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "a",
+          "start_s": 0.38,
+          "end_s": 0.4,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "dozen",
+          "start_s": 0.42,
+          "end_s": 0.62,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "or",
+          "start_s": 0.64,
+          "end_s": 0.68,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "more",
+          "start_s": 0.7,
+          "end_s": 0.78,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "hands",
+          "start_s": 0.8,
+          "end_s": 5.4,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "on",
+          "start_s": 5.42,
+          "end_s": 5.46,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "techniques",
+          "start_s": 5.48,
+          "end_s": 5.68,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "that",
+          "start_s": 5.7,
+          "end_s": 5.78,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "we",
+          "start_s": 5.8,
+          "end_s": 5.86,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "can",
+          "start_s": 5.92,
+          "end_s": 5.98,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "do",
+          "start_s": 6.0,
+          "end_s": 6.04,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        }
+      ]
+    },
+    {
+      "sample": "sample_0043",
+      "review_status": "pending",
+      "original_transcript": "So physical therapists and chiropractors will do joint manipulations and mobilizations",
+      "asr_hypothesis": "",
+      "audio_duration_s": 5.7016875,
+      "visual_statistics": {
+        "frames": 171,
+        "success_frames": 111,
+        "valid_frames": 74,
+        "confidence_min": 0.0,
+        "confidence_max": 0.98,
+        "confidence_positive_frames": 111
+      },
+      "pcm_rms": 0.0,
+      "pcm_peak": 0.0,
+      "direct_audio_decode_check": {
+        "samples": 91227,
+        "nonzero_samples": 0,
+        "same_as_saved_wav": true,
+        "native_no_downmix_float_values": 502888,
+        "native_no_downmix_nonzero_values": 0,
+        "native_no_downmix_peak": 0.0
+      },
+      "sampled_video_seek_seconds": [
+        0.57,
+        1.996,
+        3.706,
+        5.132
+      ],
+      "sampled_frames_limit": "Four sampled frames do not establish the content of the whole clip or speaker identity",
+      "word_evidence": [
+        {
+          "word": "So",
+          "start_s": 0.0,
+          "end_s": 0.06,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "physical",
+          "start_s": 0.08,
+          "end_s": 0.4,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "therapists",
+          "start_s": 0.44,
+          "end_s": 1.34,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "and",
+          "start_s": 1.36,
+          "end_s": 1.42,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "chiropractors",
+          "start_s": 1.44,
+          "end_s": 4.68,
+          "visual_valid": true,
+          "visual_coverage": 0.4455043209876543
+        },
+        {
+          "word": "will",
+          "start_s": 4.72,
+          "end_s": 4.82,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "do",
+          "start_s": 4.84,
+          "end_s": 4.88,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "joint",
+          "start_s": 4.9,
+          "end_s": 5.0,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "manipulations",
+          "start_s": 5.02,
+          "end_s": 5.28,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "and",
+          "start_s": 5.3,
+          "end_s": 5.36,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        },
+        {
+          "word": "mobilizations",
+          "start_s": 5.38,
+          "end_s": 5.66,
+          "visual_valid": true,
+          "visual_coverage": 1.0
+        }
+      ]
+    },
+    {
+      "sample": "sample_0088",
+      "review_status": "pending",
+      "original_transcript": "going to get married or are already married",
+      "asr_hypothesis": "AA",
+      "audio_duration_s": 2.763,
+      "visual_statistics": {
+        "frames": 67,
+        "success_frames": 0,
+        "valid_frames": 0,
+        "confidence_min": 0.0,
+        "confidence_max": 0.0,
+        "confidence_positive_frames": 0
+      },
+      "pcm_rms": 0.17731512531587718,
+      "pcm_peak": 0.7613525390625,
+      "direct_audio_decode_check": null,
+      "sampled_video_seek_seconds": [
+        0.276,
+        0.967,
+        1.796,
+        2.487
+      ],
+      "sampled_frames_limit": "Four sampled frames do not establish the content of the whole clip or speaker identity",
+      "word_evidence": [
+        {
+          "word": "going",
+          "start_s": 0.02,
+          "end_s": 0.18,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "to",
+          "start_s": 0.22,
+          "end_s": 0.32,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "get",
+          "start_s": 0.42,
+          "end_s": 0.52,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "married",
+          "start_s": 1.68,
+          "end_s": 2.0,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "or",
+          "start_s": 2.02,
+          "end_s": 2.06,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "are",
+          "start_s": 2.2,
+          "end_s": 2.26,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "already",
+          "start_s": 2.28,
+          "end_s": 2.42,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        },
+        {
+          "word": "married",
+          "start_s": 2.44,
+          "end_s": 2.74,
+          "visual_valid": false,
+          "visual_coverage": 0.0
+        }
+      ]
+    }
+  ],
+  "all_audio_silence_scan": {
+    "checked_wavs": 100,
+    "all_zero_samples": [
+      "sample_0042",
+      "sample_0043"
+    ],
+    "historical_timing_and_audio_mask_words": 1923,
+    "all_zero_sample_timed_words": 24,
+    "candidate_timed_words_excluding_verified_digital_silence": 1899,
+    "historical_all_modalities_mask_words": 1828,
+    "all_zero_sample_all_modalities_mask_words": 7,
+    "candidate_all_modalities_words_excluding_verified_digital_silence": 1821,
+    "limitation": "Nonzero samples do not establish speech presence, transcript correctness or word timing accuracy",
+    "records": [
+      {
+        "sample": "sample_0001",
+        "wav_relpath": "mosei-audio-v1.0/sample_0001.wav",
+        "wav_sha256": "64cb6003737d6b272fa34d52f7faf6b050459dcf84d92a4fba8fa9f277bab2c5",
+        "samples": 86384,
+        "nonzero_samples": 85716,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0002",
+        "wav_relpath": "mosei-audio-v1.0/sample_0002.wav",
+        "wav_sha256": "af09929a0caf3d34eeccfd36ec9033c89d23d2bb7f68dea5b8a77c16cb324e25",
+        "samples": 229246,
+        "nonzero_samples": 227592,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0003",
+        "wav_relpath": "mosei-audio-v1.0/sample_0003.wav",
+        "wav_sha256": "3445d36a91df31000f77f4c95868688478359d465435794a9d3b145baf07550a",
+        "samples": 147696,
+        "nonzero_samples": 146621,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0004",
+        "wav_relpath": "mosei-audio-v1.0/sample_0004.wav",
+        "wav_sha256": "082d9f16d07c217a1673bac79d871f82d9cbb384af9516fadcf7d365773234b7",
+        "samples": 139136,
+        "nonzero_samples": 138192,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0005",
+        "wav_relpath": "mosei-audio-v1.0/sample_0005.wav",
+        "wav_sha256": "d46e22234986a7ed18a6d48505b1dd3f58b1d57552d620f6541e63640d620acb",
+        "samples": 124608,
+        "nonzero_samples": 124383,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0006",
+        "wav_relpath": "mosei-audio-v1.0/sample_0006.wav",
+        "wav_sha256": "309a00b4e87d9364b466a9a9c56bcb1347dfb6cfe0aff3747f6cfd3738dbab2c",
+        "samples": 62653,
+        "nonzero_samples": 62604,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0007",
+        "wav_relpath": "mosei-audio-v1.0/sample_0007.wav",
+        "wav_sha256": "e4afd42d59ea92cb606c6c738133570d958374df6cda7bcfa3914def9f6c0b33",
+        "samples": 88704,
+        "nonzero_samples": 88681,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0008",
+        "wav_relpath": "mosei-audio-v1.0/sample_0008.wav",
+        "wav_sha256": "736e50af5842192533241abef0d4608ad5fcab3937303b03ce69eff9d507ca8c",
+        "samples": 52096,
+        "nonzero_samples": 52075,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0009",
+        "wav_relpath": "mosei-audio-v1.0/sample_0009.wav",
+        "wav_sha256": "d6e7190c3c13c73ac23dbd63bbf799ad3fd5f28d4004b5b5c805d44ff230944a",
+        "samples": 122181,
+        "nonzero_samples": 122109,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0010",
+        "wav_relpath": "mosei-audio-v1.0/sample_0010.wav",
+        "wav_sha256": "266d17fc01f65fe186a7b56209c44c24951b64e925551423fc89664608c6f0ac",
+        "samples": 90542,
+        "nonzero_samples": 90489,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0011",
+        "wav_relpath": "mosei-audio-v1.0/sample_0011.wav",
+        "wav_sha256": "90fac444c4595bbdca6154fdd16d0bd1a5c4b4fc1c9098e79aa7c037a4da2a28",
+        "samples": 107168,
+        "nonzero_samples": 107141,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0012",
+        "wav_relpath": "mosei-audio-v1.0/sample_0012.wav",
+        "wav_sha256": "9198354474f9aa2991e18b6e7325577af6b82ae382cd09082d02ece007f230b8",
+        "samples": 236880,
+        "nonzero_samples": 236659,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0013",
+        "wav_relpath": "mosei-audio-v1.0/sample_0013.wav",
+        "wav_sha256": "fb928edd5975bf7d512ee261efcbd6282e076f7e3d990af0dce89d020c96a197",
+        "samples": 67680,
+        "nonzero_samples": 67635,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0014",
+        "wav_relpath": "mosei-audio-v1.0/sample_0014.wav",
+        "wav_sha256": "cc962225ef6beb8b7db86ca3373d6f1211e3a8d461401ebbf2921090395f5bfe",
+        "samples": 127726,
+        "nonzero_samples": 125142,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0015",
+        "wav_relpath": "mosei-audio-v1.0/sample_0015.wav",
+        "wav_sha256": "44951f6e9014e7a142b8c39ecd67c934a643358d604954bf18bae0cc3b3a0cad",
+        "samples": 164272,
+        "nonzero_samples": 164186,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0016",
+        "wav_relpath": "mosei-audio-v1.0/sample_0016.wav",
+        "wav_sha256": "0dfd58255604475549f7fc9707fbfb37099b2988044811e4b5fd1f75ac714baa",
+        "samples": 57214,
+        "nonzero_samples": 57062,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0017",
+        "wav_relpath": "mosei-audio-v1.0/sample_0017.wav",
+        "wav_sha256": "04ed369d22bc7240b9b6c579fafd6450ab6a8551e5100efe96e55b628f22674f",
+        "samples": 64608,
+        "nonzero_samples": 64572,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0018",
+        "wav_relpath": "mosei-audio-v1.0/sample_0018.wav",
+        "wav_sha256": "e7d459bad9b6149cca05b461855ed05983603cda1db47c021b36caba32f2460a",
+        "samples": 127101,
+        "nonzero_samples": 127051,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0019",
+        "wav_relpath": "mosei-audio-v1.0/sample_0019.wav",
+        "wav_sha256": "4eea5b2fb28c306b86985e687f80ac4bd783a869cee80eca19ace2f2239c9f9b",
+        "samples": 353333,
+        "nonzero_samples": 353201,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0020",
+        "wav_relpath": "mosei-audio-v1.0/sample_0020.wav",
+        "wav_sha256": "c53608697b475ad4202771cb083beaccfbc8be90529e97d81a83c26c2c62b3e3",
+        "samples": 136603,
+        "nonzero_samples": 136309,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0021",
+        "wav_relpath": "mosei-audio-v1.0/sample_0021.wav",
+        "wav_sha256": "3e1a4e4e6912384188fcc28d2f6cc38341910485d6e5144e51fb269a82e47aad",
+        "samples": 174240,
+        "nonzero_samples": 173439,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0022",
+        "wav_relpath": "mosei-audio-v1.0/sample_0022.wav",
+        "wav_sha256": "56035419f16a506c9ef0edd2c5f8c3edee35eb05a5991d9da5304c375121a407",
+        "samples": 256290,
+        "nonzero_samples": 255823,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0023",
+        "wav_relpath": "mosei-audio-v1.0/sample_0023.wav",
+        "wav_sha256": "ddbae9e8b51aac513c126e48c1f7b7f4d09759165712349a5ede1e871a3d113e",
+        "samples": 326560,
+        "nonzero_samples": 323359,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0024",
+        "wav_relpath": "mosei-audio-v1.0/sample_0024.wav",
+        "wav_sha256": "aa064add4395e29321f3d89483a962c871c6d1f9e5805c731bc973ebed9ccfd6",
+        "samples": 266128,
+        "nonzero_samples": 265659,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0025",
+        "wav_relpath": "mosei-audio-v1.0/sample_0025.wav",
+        "wav_sha256": "6a35a4c8cc346dbd5ec4651f27605d1072e36c29af8ce8dd3d0f7f884f3d69cc",
+        "samples": 202048,
+        "nonzero_samples": 201716,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0026",
+        "wav_relpath": "mosei-audio-v1.0/sample_0026.wav",
+        "wav_sha256": "3839b31bb93b9881ee60618de8c6e96c2a4c2d72db82c620be5245a62b9a670a",
+        "samples": 94720,
+        "nonzero_samples": 94598,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0027",
+        "wav_relpath": "mosei-audio-v1.0/sample_0027.wav",
+        "wav_sha256": "f640713ddd2454390f8264f007a88b5c873f180ddba3607de2425bdadd759bad",
+        "samples": 113520,
+        "nonzero_samples": 113296,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0028",
+        "wav_relpath": "mosei-audio-v1.0/sample_0028.wav",
+        "wav_sha256": "5bcc3a7761dfe69618cd41a30de92665d746fa01ea8ec51d6ec7ecdc09e1fe29",
+        "samples": 132251,
+        "nonzero_samples": 132057,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0029",
+        "wav_relpath": "mosei-audio-v1.0/sample_0029.wav",
+        "wav_sha256": "ee3f7314700a52f2807bc889c03c663c6da85a6b88c9435a01ef30874e504e2f",
+        "samples": 87728,
+        "nonzero_samples": 87617,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0030",
+        "wav_relpath": "mosei-audio-v1.0/sample_0030.wav",
+        "wav_sha256": "20da8725f806602dec3b11423de3063bf4c1c12c8873ba2b221cb3ea183f4187",
+        "samples": 64382,
+        "nonzero_samples": 64248,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0031",
+        "wav_relpath": "mosei-audio-v1.0/sample_0031.wav",
+        "wav_sha256": "1d69f382da340612638305cb67b62d648af1ad4d209d941bcd482406171f1ef4",
+        "samples": 162496,
+        "nonzero_samples": 162309,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0032",
+        "wav_relpath": "mosei-audio-v1.0/sample_0032.wav",
+        "wav_sha256": "86998387bc31bae46149559b9be39dd7d05bbf1894b07109c846d7bd5f4c4fe0",
+        "samples": 98928,
+        "nonzero_samples": 98801,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0033",
+        "wav_relpath": "mosei-audio-v1.0/sample_0033.wav",
+        "wav_sha256": "118f8c3465875393ffbaeaf13dd8f809e6963db21e9eccfcb8ad59652acd48c1",
+        "samples": 78976,
+        "nonzero_samples": 78862,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0034",
+        "wav_relpath": "mosei-audio-v1.0/sample_0034.wav",
+        "wav_sha256": "b728c48039dc12d51b7c6e466bff357ce951296a32cdbebbd282e4701718d26c",
+        "samples": 103591,
+        "nonzero_samples": 103432,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0035",
+        "wav_relpath": "mosei-audio-v1.0/sample_0035.wav",
+        "wav_sha256": "509de02489d938baca4b4abcf99369f1b58ab2429b5a6fb9575a2e984c6df8a6",
+        "samples": 88608,
+        "nonzero_samples": 83197,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0036",
+        "wav_relpath": "mosei-audio-v1.0/sample_0036.wav",
+        "wav_sha256": "effe39b27877760a14a8b94329c6124754636267e5e91e6467c490aa50c38c1b",
+        "samples": 64092,
+        "nonzero_samples": 62719,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0037",
+        "wav_relpath": "mosei-audio-v1.0/sample_0037.wav",
+        "wav_sha256": "fcec82f1e2c510fa36e9b04cccbd7232db292ad01fc1954d6ec573d977c29e5c",
+        "samples": 45127,
+        "nonzero_samples": 44660,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0038",
+        "wav_relpath": "mosei-audio-v1.0/sample_0038.wav",
+        "wav_sha256": "70432ec512f9c60ec53bc6f27ec18924cee45669a281d04a493a9ad360fd9484",
+        "samples": 53984,
+        "nonzero_samples": 51093,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0039",
+        "wav_relpath": "mosei-audio-v1.0/sample_0039.wav",
+        "wav_sha256": "f084607358d7a2d2a7afa73528bc38259cad4012ab618081d1e26a726a91d420",
+        "samples": 128416,
+        "nonzero_samples": 122295,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0040",
+        "wav_relpath": "mosei-audio-v1.0/sample_0040.wav",
+        "wav_sha256": "2f6130d5ccf9b1959e1ca5903af2bf56397af21ac980d7cea14b7b685c7ab3d3",
+        "samples": 121115,
+        "nonzero_samples": 120755,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0041",
+        "wav_relpath": "mosei-audio-v1.0/sample_0041.wav",
+        "wav_sha256": "a8ba0b725223053e9058ca33cfc30e8e154fb492c0c6b3385f15ceab69e74380",
+        "samples": 235846,
+        "nonzero_samples": 235231,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0042",
+        "wav_relpath": "mosei-audio-v1.0/sample_0042.wav",
+        "wav_sha256": "4167be9790498f6b7add4e786068d8f8324b8f25421268d31ac464905060b9ea",
+        "samples": 96864,
+        "nonzero_samples": 0,
+        "all_samples_zero": true
+      },
+      {
+        "sample": "sample_0043",
+        "wav_relpath": "mosei-audio-v1.0/sample_0043.wav",
+        "wav_sha256": "1bfd3ec0fc3aa2179a95c29fb894d13f7ddd765d9bc6ee4efa1efce135f8506c",
+        "samples": 91227,
+        "nonzero_samples": 0,
+        "all_samples_zero": true
+      },
+      {
+        "sample": "sample_0044",
+        "wav_relpath": "mosei-audio-v1.0/sample_0044.wav",
+        "wav_sha256": "9cc453da7594ea911d6446849dbadbce718e6ec16212f626bbb91a46ae6ce479",
+        "samples": 35650,
+        "nonzero_samples": 35643,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0045",
+        "wav_relpath": "mosei-audio-v1.0/sample_0045.wav",
+        "wav_sha256": "13a0c6e4a391a492159678cd8c4270ad01b3c07d840baabc17e34165ed802daa",
+        "samples": 110540,
+        "nonzero_samples": 110495,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0046",
+        "wav_relpath": "mosei-audio-v1.0/sample_0046.wav",
+        "wav_sha256": "d04de227674e3f6969d1ec37f742670adad9c8d5c4378bf7a68d78e99646eabb",
+        "samples": 66742,
+        "nonzero_samples": 66717,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0047",
+        "wav_relpath": "mosei-audio-v1.0/sample_0047.wav",
+        "wav_sha256": "0cf14840a735408fee9b7eba6eb8c82e5d53b2d3f98cddadd3d8899ab6c76c7c",
+        "samples": 102160,
+        "nonzero_samples": 101820,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0048",
+        "wav_relpath": "mosei-audio-v1.0/sample_0048.wav",
+        "wav_sha256": "77ff44f4b87bd8bca48bf1a00171892968faeac0ce6e0178b978d4b3171a915f",
+        "samples": 90080,
+        "nonzero_samples": 87144,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0049",
+        "wav_relpath": "mosei-audio-v1.0/sample_0049.wav",
+        "wav_sha256": "3a3a4a237159fcaef7c014d39bdd34ca3aa89042e128450f606f2950ca43249b",
+        "samples": 272416,
+        "nonzero_samples": 268920,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0050",
+        "wav_relpath": "mosei-audio-v1.0/sample_0050.wav",
+        "wav_sha256": "c779ccfb3436542525c182099f48f667b4eada167fa2c42436c63af00129408e",
+        "samples": 105658,
+        "nonzero_samples": 105391,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0051",
+        "wav_relpath": "mosei-audio-v1.0/sample_0051.wav",
+        "wav_sha256": "62b1d6b2db1dfc861e3c11890a98eb171423cd953b42ae3b26b17f4e53d956e1",
+        "samples": 86048,
+        "nonzero_samples": 85990,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0052",
+        "wav_relpath": "mosei-audio-v1.0/sample_0052.wav",
+        "wav_sha256": "eefe278c2a9324e8818366dcfd7c7cde0ae90a950ac71be30f50657c6f6f1584",
+        "samples": 74848,
+        "nonzero_samples": 74773,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0053",
+        "wav_relpath": "mosei-audio-v1.0/sample_0053.wav",
+        "wav_sha256": "99ada5162a4ec64b711168611047cbb34d6c7f404d03cd9ad8188c6ffb1da327",
+        "samples": 187776,
+        "nonzero_samples": 187594,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0054",
+        "wav_relpath": "mosei-audio-v1.0/sample_0054.wav",
+        "wav_sha256": "7dfdfa63fdacca02f94f608751bd173ddc2b7f8707120dfb5e23aa434060413b",
+        "samples": 114224,
+        "nonzero_samples": 114084,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0055",
+        "wav_relpath": "mosei-audio-v1.0/sample_0055.wav",
+        "wav_sha256": "ba5cc5a5c1f7d3ac8a0282bdc900e63d144a85af42349aeb90b15304d5a1c41d",
+        "samples": 105101,
+        "nonzero_samples": 104992,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0056",
+        "wav_relpath": "mosei-audio-v1.0/sample_0056.wav",
+        "wav_sha256": "2dcae413d2c6a5f95c574e46c69774be1e2050e17cfb9438faac31e0836d5ae1",
+        "samples": 144592,
+        "nonzero_samples": 144471,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0057",
+        "wav_relpath": "mosei-audio-v1.0/sample_0057.wav",
+        "wav_sha256": "f036fdefbc5f85898450f5c027788c1a40bd31015570b044fe227a157f528e5c",
+        "samples": 95609,
+        "nonzero_samples": 95217,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0058",
+        "wav_relpath": "mosei-audio-v1.0/sample_0058.wav",
+        "wav_sha256": "c39533ae4a8a1f80c5f8ed757c76c51260a8078afbb7109a6aa7d4fd4e9431e8",
+        "samples": 108416,
+        "nonzero_samples": 108384,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0059",
+        "wav_relpath": "mosei-audio-v1.0/sample_0059.wav",
+        "wav_sha256": "9fe3a1a6f793e582bf1ed9876a604b878b8010464bccf725f255501c8f010813",
+        "samples": 52384,
+        "nonzero_samples": 52255,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0060",
+        "wav_relpath": "mosei-audio-v1.0/sample_0060.wav",
+        "wav_sha256": "6d1fc26cff49802120a8408233ff34e23b95388b352864dc6571a9a58fb62ae4",
+        "samples": 97598,
+        "nonzero_samples": 97572,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0061",
+        "wav_relpath": "mosei-audio-v1.0/sample_0061.wav",
+        "wav_sha256": "37e248fca2051fc6bb5d629bf95d4c40a58c289560f85bb29154ddd14a675cf3",
+        "samples": 104363,
+        "nonzero_samples": 104292,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0062",
+        "wav_relpath": "mosei-audio-v1.0/sample_0062.wav",
+        "wav_sha256": "bc219fb6fa98b2d0e6f3b93cc68203c0561e6460aa46e03e11400ed412ec43c2",
+        "samples": 107856,
+        "nonzero_samples": 107815,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0063",
+        "wav_relpath": "mosei-audio-v1.0/sample_0063.wav",
+        "wav_sha256": "68cce28fd7df6f9d4b4214c882724976d4bdbaf39b39d87026b6f990412f1981",
+        "samples": 126568,
+        "nonzero_samples": 126533,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0064",
+        "wav_relpath": "mosei-audio-v1.0/sample_0064.wav",
+        "wav_sha256": "de9766239e6988d20ecf4484434b17fec00ef620da1a820bc4f351af731b4832",
+        "samples": 96688,
+        "nonzero_samples": 96653,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0065",
+        "wav_relpath": "mosei-audio-v1.0/sample_0065.wav",
+        "wav_sha256": "9e5fe946c41d9b6d06f073cfd72df3d34fe722b2b09c3fcc7ade7fdd4a5d817a",
+        "samples": 79872,
+        "nonzero_samples": 78170,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0066",
+        "wav_relpath": "mosei-audio-v1.0/sample_0066.wav",
+        "wav_sha256": "fbf1619c0921d4d9c27a419222b6dbd1809bce64a97e9a1ac63feac0646fa2f7",
+        "samples": 241840,
+        "nonzero_samples": 240917,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0067",
+        "wav_relpath": "mosei-audio-v1.0/sample_0067.wav",
+        "wav_sha256": "9a5888b1284f229f38f79cf092082e85a404ed815b5d4c737f2486065b046cdd",
+        "samples": 119104,
+        "nonzero_samples": 118850,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0068",
+        "wav_relpath": "mosei-audio-v1.0/sample_0068.wav",
+        "wav_sha256": "0d1c446206c68b71e48e7124d5229b2b20ef702cf234d547ad523e3e02ff6300",
+        "samples": 143910,
+        "nonzero_samples": 143626,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0069",
+        "wav_relpath": "mosei-audio-v1.0/sample_0069.wav",
+        "wav_sha256": "41ea08868c9c3222c2948f8b7afd89ac0b2774b6a85e5f34773d48a22dfeb9aa",
+        "samples": 115872,
+        "nonzero_samples": 115128,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0070",
+        "wav_relpath": "mosei-audio-v1.0/sample_0070.wav",
+        "wav_sha256": "3b1b0829ab6e6287ebe016b5ac6d8ab2c4b263d5b872d234deb40f8bb9baa2bb",
+        "samples": 74896,
+        "nonzero_samples": 74737,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0071",
+        "wav_relpath": "mosei-audio-v1.0/sample_0071.wav",
+        "wav_sha256": "bf2248687c167702330ccbb014e784cb73830770c80fe67ae9812f19bac39867",
+        "samples": 116928,
+        "nonzero_samples": 116838,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0072",
+        "wav_relpath": "mosei-audio-v1.0/sample_0072.wav",
+        "wav_sha256": "dea89c0eb5ce941b2a5062ec3967952f358ee0c9808882ed2822c3a85edbe72a",
+        "samples": 101325,
+        "nonzero_samples": 101267,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0073",
+        "wav_relpath": "mosei-audio-v1.0/sample_0073.wav",
+        "wav_sha256": "fe863bf3131c4c516c49a652474d7971ab12588208885d5a555e597bdcd45513",
+        "samples": 73824,
+        "nonzero_samples": 73714,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0074",
+        "wav_relpath": "mosei-audio-v1.0/sample_0074.wav",
+        "wav_sha256": "528ab20c34ae5f7b0fbc1960ca93ee204d4da7cefde4fd2706e0af61c35503b7",
+        "samples": 94098,
+        "nonzero_samples": 94024,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0075",
+        "wav_relpath": "mosei-audio-v1.0/sample_0075.wav",
+        "wav_sha256": "e1c7993a254bc04414e9fba5303ce011f6d8a2a478d166f881c16158d22f119a",
+        "samples": 203808,
+        "nonzero_samples": 203654,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0076",
+        "wav_relpath": "mosei-audio-v1.0/sample_0076.wav",
+        "wav_sha256": "b17d5083b1b4181dbd3e2afde6d365b50bb358981c0207d7cf7f151b9bb0d8d1",
+        "samples": 108112,
+        "nonzero_samples": 107925,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0077",
+        "wav_relpath": "mosei-audio-v1.0/sample_0077.wav",
+        "wav_sha256": "3c7473c6fb70a279a063073635d7417b41b9722e707cbf98b4b23b65533df28e",
+        "samples": 42637,
+        "nonzero_samples": 42607,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0078",
+        "wav_relpath": "mosei-audio-v1.0/sample_0078.wav",
+        "wav_sha256": "0402cb5489c9a9c0540ba87e530a0f6dc5e718af9d523f5bd2f064119d63a110",
+        "samples": 78672,
+        "nonzero_samples": 78505,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0079",
+        "wav_relpath": "mosei-audio-v1.0/sample_0079.wav",
+        "wav_sha256": "00413f1063e0ed99197084ce6a3313e8fea7ca0cd7361179c0e9ed6d4c38aace",
+        "samples": 358473,
+        "nonzero_samples": 358290,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0080",
+        "wav_relpath": "mosei-audio-v1.0/sample_0080.wav",
+        "wav_sha256": "aa761cbbe916725b1786f81fb1279fceb1b15b3823cf48b600fad9e94b68c352",
+        "samples": 130414,
+        "nonzero_samples": 130128,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0081",
+        "wav_relpath": "mosei-audio-v1.0/sample_0081.wav",
+        "wav_sha256": "cab1e89e1e24c39e7f61a73794a48ceef4e305aa878dcec20391729f288db9f9",
+        "samples": 147488,
+        "nonzero_samples": 145861,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0082",
+        "wav_relpath": "mosei-audio-v1.0/sample_0082.wav",
+        "wav_sha256": "af3ee21f69d94c6cd2311f1e602f03a43ee581e91fb8d6ed2669f0acd4ea0975",
+        "samples": 84080,
+        "nonzero_samples": 83908,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0083",
+        "wav_relpath": "mosei-audio-v1.0/sample_0083.wav",
+        "wav_sha256": "7a381fe26753d24ca53a2bbf3e3da89fcb714a8b4b5ef0693235ae98eaebf309",
+        "samples": 166581,
+        "nonzero_samples": 166382,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0084",
+        "wav_relpath": "mosei-audio-v1.0/sample_0084.wav",
+        "wav_sha256": "dd2cbccf1e09ad693f3aaed5ee8b04a80ca0a9b5c58f5954cff0763406566e74",
+        "samples": 81184,
+        "nonzero_samples": 80461,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0085",
+        "wav_relpath": "mosei-audio-v1.0/sample_0085.wav",
+        "wav_sha256": "e038e655d09de97aab2ca6eeae4659a16be6512264d6c2fd0ff9ce6723499f9d",
+        "samples": 72512,
+        "nonzero_samples": 71945,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0086",
+        "wav_relpath": "mosei-audio-v1.0/sample_0086.wav",
+        "wav_sha256": "6829f6cac91376994c3875271d6ffe4943ac42edc046c6c81b403fe4e4fe7331",
+        "samples": 86269,
+        "nonzero_samples": 85691,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0087",
+        "wav_relpath": "mosei-audio-v1.0/sample_0087.wav",
+        "wav_sha256": "c59a89629b2dd29d70320212982216bb8b5095626c549fa789203e3a787c03a0",
+        "samples": 123712,
+        "nonzero_samples": 120745,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0088",
+        "wav_relpath": "mosei-audio-v1.0/sample_0088.wav",
+        "wav_sha256": "987f0d1d51f3657eff67085a254caf8b41208bcad422386fde00c6cdd8f7e0d6",
+        "samples": 44208,
+        "nonzero_samples": 44205,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0089",
+        "wav_relpath": "mosei-audio-v1.0/sample_0089.wav",
+        "wav_sha256": "e6f3259bb37bde9d07d74cb1b4ca23497e39ddb9e2aa514c17e28010ed81f0a2",
+        "samples": 94614,
+        "nonzero_samples": 94601,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0090",
+        "wav_relpath": "mosei-audio-v1.0/sample_0090.wav",
+        "wav_sha256": "7f1c4ee5f3525270026237e45bdd5984337109d025ea0e811ff1d94e3ddd7998",
+        "samples": 55036,
+        "nonzero_samples": 55018,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0091",
+        "wav_relpath": "mosei-audio-v1.0/sample_0091.wav",
+        "wav_sha256": "4df5192baaf778031e6220053c7834c63b75c9fd676322b488b2cfac7bbf27c7",
+        "samples": 74301,
+        "nonzero_samples": 74272,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0092",
+        "wav_relpath": "mosei-audio-v1.0/sample_0092.wav",
+        "wav_sha256": "288b3c5f141452513f4a115cf5612572bc3066e0e40cfcadcff1ec76c726a6ef",
+        "samples": 107360,
+        "nonzero_samples": 107282,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0093",
+        "wav_relpath": "mosei-audio-v1.0/sample_0093.wav",
+        "wav_sha256": "56358a33ef8c2edd7c43c1e58a72e5c3e65441ac65bcb645d87595498983a6c9",
+        "samples": 134366,
+        "nonzero_samples": 134319,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0094",
+        "wav_relpath": "mosei-audio-v1.0/sample_0094.wav",
+        "wav_sha256": "021ffe1eb21f8bad914cd6b122c469ef8f29978e49651a5f32c16d2ab93a3c25",
+        "samples": 67950,
+        "nonzero_samples": 67935,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0095",
+        "wav_relpath": "mosei-audio-v1.0/sample_0095.wav",
+        "wav_sha256": "db0387795e988e588ead9c4795c56e4753dd0f9c0c21fff2b4b5d25d30462ccd",
+        "samples": 109417,
+        "nonzero_samples": 109313,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0096",
+        "wav_relpath": "mosei-audio-v1.0/sample_0096.wav",
+        "wav_sha256": "fa96b28ee11dd18659121157168d6ae42970a816905d89578b9acce601a16420",
+        "samples": 37037,
+        "nonzero_samples": 36983,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0097",
+        "wav_relpath": "mosei-audio-v1.0/sample_0097.wav",
+        "wav_sha256": "4276e6d34417f1386c5cd97133735cb4ba972790469887966be1168a8b389608",
+        "samples": 50944,
+        "nonzero_samples": 50909,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0098",
+        "wav_relpath": "mosei-audio-v1.0/sample_0098.wav",
+        "wav_sha256": "8f8fe6c85cafc6ed36bed95f30d38c7b8481fbc8b7144165271aa45dc5012a2f",
+        "samples": 465744,
+        "nonzero_samples": 460952,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0099",
+        "wav_relpath": "mosei-audio-v1.0/sample_0099.wav",
+        "wav_sha256": "9f766a81f9f0da084e09e41ee561565cf135dc401ddf74f0bfcb992df86cb33f",
+        "samples": 208704,
+        "nonzero_samples": 206994,
+        "all_samples_zero": false
+      },
+      {
+        "sample": "sample_0100",
+        "wav_relpath": "mosei-audio-v1.0/sample_0100.wav",
+        "wav_sha256": "4718db25d221799769d9d5980ff5edd5d1388361346f88e49958624df0a78d7b",
+        "samples": 179872,
+        "nonzero_samples": 177651,
+        "all_samples_zero": false
+      }
+    ]
+  }
+}

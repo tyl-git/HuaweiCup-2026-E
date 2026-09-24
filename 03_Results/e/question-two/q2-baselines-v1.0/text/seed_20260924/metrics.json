@@ -1,0 +1,169 @@
+{
+  "model": "text",
+  "modalities": [
+    "text"
+  ],
+  "seed": 20260924,
+  "best_epoch": 1,
+  "epochs_run": 9,
+  "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1",
+  "config": {
+    "max_epochs": 40,
+    "patience": 8,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.2,
+    "hidden_dim": 64,
+    "fusion_dim": 128,
+    "classification_loss_weight": 1.0,
+    "regression_loss_weight": 1.0,
+    "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1"
+  },
+  "train_priors": {
+    "class_counts": [
+      967,
+      758,
+      1670
+    ],
+    "class_probabilities": [
+      0.2848306332842415,
+      0.2232695139911635,
+      0.49189985272459497
+    ],
+    "intensity_mean": 0.16583210777639465
+  },
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "valid": {
+    "cross_entropy": 0.8494915071424547,
+    "l1": 0.6091280690916292,
+    "selection_loss": 1.458619576234084,
+    "classification": {
+      "n": 728,
+      "accuracy": 0.6085164835164835,
+      "macro_f1": 0.4829048724038945,
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          127,
+          1,
+          78
+        ],
+        [
+          31,
+          9,
+          144
+        ],
+        [
+          27,
+          4,
+          307
+        ]
+      ],
+      "per_class": [
+        {
+          "id": 0,
+          "name": "Negative",
+          "support": 206,
+          "precision": 0.6864864864864865,
+          "recall": 0.616504854368932,
+          "f1": 0.649616368286445
+        },
+        {
+          "id": 1,
+          "name": "Neutral",
+          "support": 184,
+          "precision": 0.6428571428571429,
+          "recall": 0.04891304347826087,
+          "f1": 0.09090909090909091
+        },
+        {
+          "id": 2,
+          "name": "Positive",
+          "support": 338,
+          "precision": 0.5803402646502835,
+          "recall": 0.908284023668639,
+          "f1": 0.7081891580161477
+        }
+      ],
+      "zero_division_policy": 0
+    },
+    "regression": {
+      "n": 728,
+      "mae": 0.6091280567336951,
+      "pearson_r": 0.6332014584001359,
+      "pearson_status": "defined"
+    }
+  },
+  "train": {
+    "cross_entropy": 0.7326235568927209,
+    "l1": 0.5988676454076359,
+    "selection_loss": 1.3314912023003567,
+    "classification": {
+      "n": 3395,
+      "accuracy": 0.6701030927835051,
+      "macro_f1": 0.5217470118341784,
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          684,
+          15,
+          268
+        ],
+        [
+          137,
+          32,
+          589
+        ],
+        [
+          103,
+          8,
+          1559
+        ]
+      ],
+      "per_class": [
+        {
+          "id": 0,
+          "name": "Negative",
+          "support": 967,
+          "precision": 0.7402597402597403,
+          "recall": 0.7073422957600828,
+          "f1": 0.7234267583289264
+        },
+        {
+          "id": 1,
+          "name": "Neutral",
+          "support": 758,
+          "precision": 0.5818181818181818,
+          "recall": 0.04221635883905013,
+          "f1": 0.07872078720787208
+        },
+        {
+          "id": 2,
+          "name": "Positive",
+          "support": 1670,
+          "precision": 0.6452814569536424,
+          "recall": 0.9335329341317365,
+          "f1": 0.7630934899657367
+        }
+      ],
+      "zero_division_policy": 0
+    },
+    "regression": {
+      "n": 3395,
+      "mae": 0.598867645954085,
+      "pearson_r": 0.7047343699782515,
+      "pearson_status": "defined"
+    }
+  },
+  "checkpoint_reload_predictions_identical": true,
+  "checkpoint_sha256": "4d413bc13a48153a8ce93670a226adf44a9439013da35c2af5117fbe9f8641e0",
+  "prediction_files_sha256": {
+    "train": "526e06504e9383f6d37e95618659fefc164d633ba4eb87f1ef6d970f56082a7e",
+    "valid": "3f6bce3a736f80a911bbeeff67c7723826e54f638efead40c9d065982ba8d581"
+  },
+  "empty_observation_samples": {
+    "train": 0,
+    "valid": 0
+  },
+  "test_evaluated": false,
+  "specialists_evaluated": false
+}
