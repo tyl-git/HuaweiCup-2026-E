@@ -31,7 +31,13 @@ $$v_j=p_j-s_a.$$
 
 用相邻 PTS 构成帧显示区间；末帧采用其正持续时间。写清楚这避免把标称 FPS 当作精确时间。图 1 可以画原视频、WAV、逐帧 PTS、词区间到词级三模态向量的流程。
 
-**公式 (2)：给定文本的 CTC 强制对齐。** `facebook/wav2vec2-base-960h` 提供时格字符概率，`torchaudio.functional.forced_align` 在 CTC 约束下为**给定转写**求时间路径，不把 ASR 识别结果替换成原文。卷积总步长为 320 个采样，故时间格
+**公式 (2)：给定文本的 CTC 强制对齐。** `facebook/wav2vec2-base-960h` 提供时格字符概率，`torchaudio.functional.forced_align` 在 CTC 约束下为**给定转写**求时间路径，不把 ASR 识别结果替换成原文。
+
+若 $Y$ 是规范化后的给定字符序列，$\mathcal B$ 是 CTC 去重复并删空白的折叠算子，时格路径的目标可写为
+
+$$\pi^*=\arg\max_{\pi:\,\mathcal B(\pi)=Y}\sum_k\log P(\pi_k\mid A).$$
+
+这里 $A$ 为音频，路径只能与给定文本相容；即使文本与声音不符，算法仍可能分配一条路径，故所得边界须接受质量复核。卷积总步长为 320 个采样，故时间格为
 
 $$\delta=320/16000=0.02\;\mathrm{s},\qquad I_i^w=[k_i^{start}\delta,k_i^{end}\delta).$$
 
@@ -66,7 +72,7 @@ $$m_i^{all}=q_i m_i^t m_i^a m_i^v.$$
 
 | 编号和建议标题 | 画什么/填什么 | 仓库内来源和获取方式 |
 |---|---|---|
-| 图 1 多源特征到原词轴的处理流程 | 视频解码、CTC、BERT、openSMILE、OpenFace、PTS 汇聚和 mask；自行按公式绘图 | 方法稿和 `02_Drafts/e/src` 的各阶段脚本；流程图须自己绘制，不要把未核实流程画成已完成 |
+| 图 1 多源特征到原词轴的处理流程 | 视频解码、CTC、BERT、openSMILE、OpenFace、PTS 汇聚和 mask | 已生成 `03_Results/e/question-one/paper-assets-v1.0/q1_pipeline_v1.0.png` 和 `.svg`；按方法稿改为论文配色、中文图注即可 |
 | 图 2 典型样本的共同时间轴 | `sample_0013` 的 10 个词、声学窗口、视频帧及覆盖 | `02_Drafts/e/2026-09-24_q1-typical-example_v1.0.png` 和同名 `.md/.json`；图已生成，可直接插图并标注自动词时间 |
 | 图 3 异常与缺失示例 | 可从质量报告重画静音与缺失状态；不要把自动分配的词时间画成真值 | 本地 `02_Drafts/e/2026-09-24_q1-p1-review-contact_v1.0.png` 仅是抽帧联系图，不是波形图，也不随公开仓库上传；仓库内工作表和证据 JSON 提供统计依据 |
 | 表 1 三模态提取配置 | BERT 768、eGeMAPS 25、OpenFace 49；输入、时间单位、有效规则 | 方法稿、复现说明、BERT/对齐/合并 method JSON；openSMILE 配置见提取脚本 |
@@ -74,7 +80,9 @@ $$m_i^{all}=q_i m_i^t m_i^a m_i^v.$$
 | 表 3 典型词的可追溯计算 | `social` 对应 1 个 BERT token、25 个声音窗口、8 帧画面，边界帧权重较低 | `02_Drafts/e/2026-09-24_q1-typical-example_v1.0.md/.json`；可摘取 8 帧权重表 |
 | 附表 A 逐片段结果 | 样本身份、词数、三个模态有效词数、复核标志 | `03_Results/e/question-one/2026-09-24_q1_sample-summary_v1.0.tsv` 与 `..._sample-appendix_v1.0.md` |
 
-若需改图 2 的配色或尺寸，在具备上游中间特征的本机运行 `02_Drafts/e/src/2026-09-24_build-q1-example_v1.0.py` 重新生成。GitHub 精简包保留现成 PNG、报告和最终 100 个 NPZ；不含源视频、声音窗口全量 CSV、OpenFace 逐帧 CSV 或 BERT token 级中间数据，所以**仅从仓库克隆不能重新运行该绘图脚本或从原视频全流程重算**。可以直接引用已保存图、表、公式和最终 NPZ；若需重算，需要另行准备题目附件、固定模型及完整中间数据。本机完整路径和命令见复现说明。
+另已生成 `paper-assets-v1.0/q1_coverage_bars_v1.0.png/.svg`，可放在表 2 后对照历史掩码计数与静音排除候选计数；目录中的 `q1_words_v1.0.tsv` 给出 1,932 行逐词时间、掩码和覆盖率，便于筛选并自行作图。此计数图不替代图 3 的异常实例证据。
+
+若需改图 2 的配色或尺寸，在具备上游中间特征的本机运行 `02_Drafts/e/src/2026-09-24_build-q1-example_v1.0.py` 重新生成。GitHub 精简包保留现成 PNG、报告和最终 100 个 NPZ；不含源视频、声音窗口全量 CSV、OpenFace 逐帧 CSV 或 BERT token 级中间数据，所以**仅从仓库克隆不能重新运行该典型样本绘图脚本或从原视频全流程重算**。仓库中的 `02_Drafts/e/src/2026-09-24_export-q1-paper-assets_v1.0.py` 可从已上传的最终 NPZ 和审计报告生成论文用汇总表、统计图及流程图；它不重新提取特征，也不能替代原视频核验。完整命令见复现说明。
 
 ## 5. 数字怎样写才准确
 
@@ -89,3 +97,7 @@ $$m_i^{all}=q_i m_i^t m_i^a m_i^v.$$
 克隆后以仓库根目录为起点读 `README.md`，随后按这个顺序取材：`02_Drafts/e/2026-09-24_q1-model-method_v1.0.md` 看公式，`02_Drafts/e/2026-09-24_q1-typical-example_v1.0.md` 和 PNG 看图 2/表 3，`03_Results/e/question-one/2026-09-24_q1_audit_v1.0.json` 填表 2，`..._sample-summary_v1.0.tsv` 填附表，`02_Drafts/e/2026-09-24_q1-p1-review-worksheet_v1.0.md` 写异常与限制。TSV 用 UTF-8、制表符导入。`mosei-multimodal-aligned-v1.0/sample_0013.npz` 是紧凑的最终词级数组；字段字典和 NumPy 读取示例在复现说明中。
 
 正式出图、写结论前，再核对结果索引是否已有新于 v1.0 的质检版本；如有，以新版本状态为准并注明版本。论文所用图表、样本计数、模型 revision 和处理规则均应有指向文件的图注或附录出处，便于评审逐项追溯。
+
+## 7. 参考文献入口
+
+正式论文按竞赛模板补齐作者、卷页和引用编号，至少在相应方法首次出现处引用：Devlin 等（2019）的 *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*；Baevski 等（2020）的 *wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations*；Graves 等（2006）的 *Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks*；Eyben 等（2016）的 *The Geneva Minimalistic Acoustic Parameter Set (GeMAPS) for Voice Research and Affective Computing*；Eyben 等（2010）的 *openSMILE: The Munich Versatile and Fast Open-Source Audio Feature Extractor*；Baltrušaitis 等（2018）的 *OpenFace 2.0: Facial Behavior Analysis Toolkit*。模型或软件的具体版本与参数仍以本工程的复现说明和方法 JSON 为准。

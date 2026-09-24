@@ -2,6 +2,28 @@
 
 版本：v1.0；核对日期：2026-09-24。本文对应现有 100 条视频的 `mosei-multimodal-aligned-v1.0` 结果，说明结果读取、计算流程和复现边界。这里的特征与质量标记不构成情绪预测结果。
 
+## 0. 从 GitHub 精简包提取论文材料
+
+只使用仓库内的 100 个最终 NPZ、历史审计 JSON 和数字静音证据，即可生成逐词表、统计 JSON、流程图与计数图。此入口只需 Python 3.11+、NumPy，绘图另需 Matplotlib；复用已有环境即可。它不读取视频、不启动模型，也不进行训练。
+
+在克隆后的仓库根目录打开 PowerShell，运行：
+
+```powershell
+& 'D:\06_Apps\python-envs\huaweicup-e\Scripts\python.exe' -X utf8 '.\02_Drafts\e\src\2026-09-24_export-q1-paper-assets_v1.0.py'
+```
+
+另一台机器将解释器路径改为其已有 Python。脚本根据自身位置寻找仓库根目录，无需更改其源码中的绝对路径；也支持 `--root` 和 `--output-dir` 显式指定位置。
+
+输出在 `03_Results/e/question-one/paper-assets-v1.0/`：
+
+- `q1_words_v1.0.tsv`：1,932 行原词、自动起止时间、历史 mask、覆盖率、窗口/帧计数和静音敏感性标记。
+- `q1_summary_v1.0.json`：计数、输入文件 SHA-256 和解读边界。
+- `q1_pipeline_v1.0.png/.svg`：方法流程图，可作为写作指南中的图 1。
+- `q1_coverage_bars_v1.0.png/.svg`：历史掩码通过数与排静音候选数，可配合表 2；不是准确率图。
+- `q1_assets_notes_v1.0.md`：字段与使用说明。
+
+重复执行会替换上述专用目录内的同名派生材料，保留历史 NPZ 和审计原文。缺少 Matplotlib 时仍可生成表与 JSON，但不会新生成图。已上传的图表可直接取用。它核验最终文件的词轴、维度、掩码及计数一致性，不等于下文依赖本地完整数据的上游重建审计。
+
 ## 1. 可复现范围与数据位置
 
 项目根目录为 `D:\01_Projects\HuaweiCup-2026`；以下相对路径以 `02_Drafts\e` 为起点。原题及原始数据在 `01_Source\E` 中，复现流程只读原始材料。暂存视频与原视频通过 SHA-256 校验一致，英文暂存文件名用于避开 OpenFace 对中文路径的兼容性问题。

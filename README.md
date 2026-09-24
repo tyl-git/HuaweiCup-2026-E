@@ -1,5 +1,13 @@
 # HuaweiCup 2026 E
 
+## 写问题一论文，从这里开始
+
+先读[论文写作指南](02_Drafts/e/2026-09-24_q1-paper-writing-guide_v1.0.md)：它按正文小节列出该讲什么、放什么公式、用哪张图和哪份数据。再读[数学方法稿](02_Drafts/e/2026-09-24_q1-model-method_v1.0.md)与[复现说明](02_Drafts/e/2026-09-24_q1-reproduction_v1.0.md)。
+
+[论文图表材料](03_Results/e/question-one/paper-assets-v1.0/q1_assets_notes_v1.0.md)已包含流程图、计数图（PNG/SVG）、1,932 行逐词表和统计 JSON；[典型样本图](02_Drafts/e/2026-09-24_q1-typical-example_v1.0.png)也可直接取用。下载仓库后，复用已有 Python + NumPy + Matplotlib 环境运行 `python 02_Drafts/e/src/2026-09-24_export-q1-paper-assets_v1.0.py` 即可重新导出这些便携图表（不含依赖原始中间数据的典型样本图）。
+
+统计是历史自动掩码及静音排除后的候选数，不能写成对齐准确率。复核状态、原始数据缺口和如何取材均已在指南说明。
+
 This repository contains the current, reviewable E-problem work from the local project. The primary completed material is Question One: extraction of text, acoustic and visual features and their word-level temporal alignment. Question Two planning, audit reports and selected training summaries are included as supporting material.
 
 ## Start here
