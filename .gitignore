@@ -19,5 +19,8 @@
 03_Results/e/question-two/q2-baselines-v1.0/*/seed_*/*predictions*.npz
 03_Results/e/question-two/q2-robust-v1.0/*/seed_*/*predictions*.npz
 03_Results/e/question-two/q2-robust-v1.0/*/seed_*/*masks*.npz
+03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/best.pt
+03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/*predictions*.npz
+03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/*masks*.npz
 *.pyc
 *.pyo
