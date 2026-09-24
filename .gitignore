@@ -22,5 +22,8 @@
 03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/best.pt
 03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/*predictions*.npz
 03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/*masks*.npz
+03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/history.json
+03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/metrics.json
+03_Results/e/question-two/q2-temporal-final-v1.0/*predictions*.npz
 *.pyc
 *.pyo

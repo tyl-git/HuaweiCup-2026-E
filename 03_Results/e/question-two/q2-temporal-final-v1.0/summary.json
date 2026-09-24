@@ -1,0 +1,662 @@
+{
+  "schema": "q2_temporal_final_v1.0",
+  "feature_version": "aligned_50",
+  "selection_split": "valid",
+  "official_test_n": 727,
+  "specialist_n": 30,
+  "specialist_labels_used": false,
+  "specialist_primary": {
+    "model": "temporal",
+    "seed": 20260926,
+    "rule": "lowest temporal validation selection loss"
+  },
+  "text_missing_scope": "post-BERT feature masking in train/valid; attachment 3 tokens have no internal attention gaps",
+  "source_sha256": {
+    "official": {
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+    },
+    "attachment3": {
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_01.pkl": "b45b89a7eea55278abb130d44a6ee21128df5aa3239e68c968f9ac7743cfa0ea",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_02.pkl": "6a628897c4b8c5e94e37f23bce680aad500fa8545414234f3564a58577c1023b",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_03.pkl": "52bb6e11f4bba301e1bd90916dc9ad3a0d2d0885fec4598e3e737e2c4d100b6f",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_04.pkl": "ee1f4781ee7b7bc37e71a13e4bc53eedc8327d96a69c246964d0e84a8aa99f72",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_05.pkl": "9f8e5bae8488d8ee1576b1686864b7d8fc9970cfa720758fb040b9293b7e3619",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_06.pkl": "9e973621f141b1af24fc3686ac329a10b66ba2b84d18c21918e86bf0429f790d",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_07.pkl": "62dd394e23c80af2898e039d7eb6f47556d747887331fa2853dad72e13bb223b",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_08.pkl": "e668faea97f9a338051c19ee66383df799b2e461d6d079df8c5f92b32bd6437e",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_09.pkl": "ef57769eaa05f53a7d588948d565876356898658d9945202058ca763e53748b2",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_10.pkl": "7c87d84d69e0e68b9252c9839747558d07a91fd2d079a9a0850683d0d197241e",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_11.pkl": "10e9d5443cecf2de9170deaa56995de0cf9c52580a74cd334de8fea0e4a735f2",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_12.pkl": "d0342f4931a05e40fb0a3220010f1ac801a2f06d123bc4d9a7dc5355794347ba",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_13.pkl": "9e2144ab4385636b259d9e358c7e511be5242c89340f894473317b7757f218b7",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_14.pkl": "f6d45e8fa882062f70fd48ee1f7584b0a75ea0ed1c85a9eb218684e954dc1b82",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_15.pkl": "263b960d4d66b25a3db447fb7a16aee7b7d735e8bee3fe55c7869ad3103bf9d4",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_16.pkl": "df8b4c881e3fc971d532988bbd161d8d9bf8c5d16c3e7a559bb7a4045e96547f",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_17.pkl": "b6c64a55fb8050cb9fda15b0245df8f16b20d2a25d9368485dd1229e213fdba5",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_18.pkl": "dc8eb37586b93bdd4debe895041275fdabb94c3392bde667b4e0ccdc6429fab1",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_19.pkl": "d3a912bc3c70b60c1021babc521f28a6a34f9e916c164ad0191182e587c2385a",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_20.pkl": "bf24c7189bba3904e911dd452266078d8ff15768438a9069e6596ff73a4b925e",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_21.pkl": "c0605bd5757ff0c5dea345c96236ed7168ff976d37843572143efe11d6454600",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_22.pkl": "6f9dc33f9d3e5680ee3a3b2b0c53b1bac51fb98f1d75375a2cb1224cd7bd4d43",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_23.pkl": "5200bd05e2611777875eb1d88826bb56bb71dee4c708fec9d9f851222d243aae",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_24.pkl": "76b1c126e2043f90afd5af00d51299bc8f5bf1bee8148f5ff904ccbeb931a5e5",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_25.pkl": "88d52e2d0b0229ad6ec638e6e7463f6852f127ae9308fbee1cbc2405d8ebc4c8",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_26.pkl": "e483daa1391987552f9ee7f21bffec918dd61267af36885a9ae3073813193234",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_27.pkl": "27f16bbd4541196bb33f4caa36e038b2ff66fa72649f1b22f2328a5630de37ad",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_28.pkl": "81def781fa8fa5aebb555631b59ce48ee71a10c9e4226f1a5b6d91a2078f8f32",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_29.pkl": "8caf12e71117bd7334be12aba5af6322fb02a2397f8e2402e75391f4f9ef3686",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_30.pkl": "a6b272abb5d083804b6902054d4180d55d3c1d5822c483967e70e6a9657546d3"
+    }
+  },
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "bert_model": {
+    "snapshot": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "path": "D:\\06_Apps\\huggingface-data\\hub\\models--google-bert--bert-base-uncased\\snapshots\\86b5e0934494bd15c9632b12f734a8a67f723594",
+    "files": {
+      "config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+      "model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3"
+    }
+  },
+  "test_cache_sha256": "9587e338480f7ce5951714220739cc863fae5009803022f842d93f84241c50ed",
+  "results": [
+    {
+      "model": "temporal",
+      "seed": 20260924,
+      "checkpoint_sha256": "2babc44b52712f59ed0b3525cf2b554d775ae541289785517c44b02b1c971999",
+      "prediction_sha256": "12ad9423fe6a4819ba872814f2dd23a940c507378220cb953917ac52bc6d5e70",
+      "report": {
+        "cross_entropy": 0.7393548327922165,
+        "l1": 0.6138106245122225,
+        "selection_loss": 1.353165457304439,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.687757909215956,
+          "macro_f1": 0.6217436828399281,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              138,
+              33,
+              36
+            ],
+            [
+              27,
+              51,
+              80
+            ],
+            [
+              22,
+              29,
+              311
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.7379679144385026,
+              "recall": 0.6666666666666666,
+              "f1": 0.700507614213198
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.45132743362831856,
+              "recall": 0.3227848101265823,
+              "f1": 0.3763837638376384
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7283372365339579,
+              "recall": 0.8591160220994475,
+              "f1": 0.788339670468948
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6138106201925255,
+          "pearson_r": 0.7014915610825905,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "model": "temporal",
+      "seed": 20260925,
+      "checkpoint_sha256": "2823dcce4678585167cc6337419bfb5a8947b63ea4c354be0ed8678e72be7466",
+      "prediction_sha256": "ef36164bdc34c009d96de027d65d3703286205d525c8d0e9abd26abce80ff0a3",
+      "report": {
+        "cross_entropy": 0.7566074334607655,
+        "l1": 0.6264487664014142,
+        "selection_loss": 1.3830561998621798,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.6740027510316369,
+          "macro_f1": 0.5903275391992814,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              145,
+              14,
+              48
+            ],
+            [
+              38,
+              36,
+              84
+            ],
+            [
+              33,
+              20,
+              309
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.6712962962962963,
+              "recall": 0.7004830917874396,
+              "f1": 0.6855791962174941
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.5142857142857142,
+              "recall": 0.22784810126582278,
+              "f1": 0.3157894736842105
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7006802721088435,
+              "recall": 0.8535911602209945,
+              "f1": 0.7696139476961394
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6264487728912081,
+          "pearson_r": 0.6843901363270478,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "model": "temporal",
+      "seed": 20260926,
+      "checkpoint_sha256": "facfec6adfd1badd6af8e19e313c98ac1575d65af268e48cdb78ae006889dbbf",
+      "prediction_sha256": "d3b5c4863263dcfe7373e407d633ad97f915e1f9849ec06066477a643f07cb27",
+      "report": {
+        "cross_entropy": 0.7298907131735528,
+        "l1": 0.6156427443765381,
+        "selection_loss": 1.3455334575500908,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.7015130674002751,
+          "macro_f1": 0.6189071152289412,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              155,
+              12,
+              40
+            ],
+            [
+              34,
+              38,
+              86
+            ],
+            [
+              27,
+              18,
+              317
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.7175925925925926,
+              "recall": 0.748792270531401,
+              "f1": 0.7328605200945626
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.5588235294117647,
+              "recall": 0.24050632911392406,
+              "f1": 0.336283185840708
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7155756207674944,
+              "recall": 0.8756906077348067,
+              "f1": 0.7875776397515528
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6156427549221328,
+          "pearson_r": 0.6937946594003225,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "model": "no_temporal",
+      "seed": 20260924,
+      "checkpoint_sha256": "246dcdb393b684c07a52b780f5582b64c6094ca861c75bf68a0a5788c29a50e1",
+      "prediction_sha256": "d16d47f280206ba4f2af43de51cb1c11cefde9d0edc9b150f3282d7cc52f66bb",
+      "report": {
+        "cross_entropy": 0.7524450609083845,
+        "l1": 0.6264585602562234,
+        "selection_loss": 1.378903621164608,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.687757909215956,
+          "macro_f1": 0.5994625534736672,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              147,
+              18,
+              42
+            ],
+            [
+              34,
+              35,
+              89
+            ],
+            [
+              31,
+              13,
+              318
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.6933962264150944,
+              "recall": 0.7101449275362319,
+              "f1": 0.7016706443914081
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.5303030303030303,
+              "recall": 0.22151898734177214,
+              "f1": 0.3125
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7082405345211581,
+              "recall": 0.8784530386740331,
+              "f1": 0.7842170160295932
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6264585600077,
+          "pearson_r": 0.6769542995372094,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "model": "no_temporal",
+      "seed": 20260925,
+      "checkpoint_sha256": "584606cd5d2d98da37c515b85facc62cf2c61339baa3304480196c68ff051c2c",
+      "prediction_sha256": "c2d0cfea04507bdcbab0c74d94dbf0252b99d77497dc110d36312b3226d38e57",
+      "report": {
+        "cross_entropy": 0.7435750843242241,
+        "l1": 0.6207852501324808,
+        "selection_loss": 1.364360334456705,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.6767537826685007,
+          "macro_f1": 0.5907565717090675,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              146,
+              22,
+              39
+            ],
+            [
+              35,
+              35,
+              88
+            ],
+            [
+              31,
+              20,
+              311
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.6886792452830188,
+              "recall": 0.7053140096618358,
+              "f1": 0.6968973747016707
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.45454545454545453,
+              "recall": 0.22151898734177214,
+              "f1": 0.2978723404255319
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7100456621004566,
+              "recall": 0.8591160220994475,
+              "f1": 0.7775
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6207852368531275,
+          "pearson_r": 0.6957286298189528,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "model": "no_temporal",
+      "seed": 20260926,
+      "checkpoint_sha256": "7354dccb4dc2bf5d700cbd699a278faa33189cf215b55b2484ed6045fe67fc9d",
+      "prediction_sha256": "99619c8e85e38788ff34c6c4214844d2f6f27825d5b2c4fd3254dbd909cd515c",
+      "report": {
+        "cross_entropy": 0.7383407792166142,
+        "l1": 0.6284692913826755,
+        "selection_loss": 1.3668100705992896,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.6905089408528198,
+          "macro_f1": 0.5975217277247084,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              158,
+              14,
+              35
+            ],
+            [
+              44,
+              32,
+              82
+            ],
+            [
+              36,
+              14,
+              312
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.6638655462184874,
+              "recall": 0.7632850241545893,
+              "f1": 0.7101123595505618
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.5333333333333333,
+              "recall": 0.20253164556962025,
+              "f1": 0.29357798165137616
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7272727272727273,
+              "recall": 0.861878453038674,
+              "f1": 0.7888748419721872
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6284692838501078,
+          "pearson_r": 0.6835414830445047,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "model": "no_gap_signal",
+      "seed": 20260924,
+      "checkpoint_sha256": "681203ee7b4b9eba02e3c4908e95d2d97ea5449fcbef8d8c8bf06af85a627391",
+      "prediction_sha256": "f0bf70b307f147324843774a987eed0268bb19402f16e1a7b0a48a89b5092611",
+      "report": {
+        "cross_entropy": 0.7477002937495298,
+        "l1": 0.61482398677233,
+        "selection_loss": 1.3625242805218598,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.6850068775790922,
+          "macro_f1": 0.6121905770238238,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              136,
+              29,
+              42
+            ],
+            [
+              22,
+              45,
+              91
+            ],
+            [
+              22,
+              23,
+              317
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.7555555555555555,
+              "recall": 0.6570048309178744,
+              "f1": 0.7028423772609819
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.4639175257731959,
+              "recall": 0.2848101265822785,
+              "f1": 0.35294117647058826
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7044444444444444,
+              "recall": 0.8756906077348067,
+              "f1": 0.7807881773399015
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6148239860805635,
+          "pearson_r": 0.6887350096187544,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "model": "no_gap_signal",
+      "seed": 20260925,
+      "checkpoint_sha256": "4bdbe90fa5e70d67543571d8395cda71c2f3d793318297af900ff3e776800fc9",
+      "prediction_sha256": "d30ef7b71370aa7970c8b8fad65e9640a85887cbf54c32e1d7f253eb548e457b",
+      "report": {
+        "cross_entropy": 0.7460556371339906,
+        "l1": 0.6258191026060584,
+        "selection_loss": 1.371874739740049,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.6740027510316369,
+          "macro_f1": 0.5931657065013337,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              148,
+              22,
+              37
+            ],
+            [
+              36,
+              37,
+              85
+            ],
+            [
+              30,
+              27,
+              305
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.6915887850467289,
+              "recall": 0.714975845410628,
+              "f1": 0.7030878859857482
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.43023255813953487,
+              "recall": 0.23417721518987342,
+              "f1": 0.30327868852459017
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7142857142857143,
+              "recall": 0.8425414364640884,
+              "f1": 0.7731305449936628
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6258190929711293,
+          "pearson_r": 0.6855197744138182,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "model": "no_gap_signal",
+      "seed": 20260926,
+      "checkpoint_sha256": "2b7662d83625db88ef7eaa4e069b0c417173cdc67ca80556ab66be6ae83925ef",
+      "prediction_sha256": "f7b2b3ef045ed645cce8e7ca8db815cd9b5fd37289180686bc2943baa4aa3a1e",
+      "report": {
+        "cross_entropy": 0.742293259464563,
+        "l1": 0.627682519254199,
+        "selection_loss": 1.369975778718762,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.6808803301237965,
+          "macro_f1": 0.580882820853124,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              152,
+              10,
+              45
+            ],
+            [
+              37,
+              27,
+              94
+            ],
+            [
+              31,
+              15,
+              316
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.6909090909090909,
+              "recall": 0.7342995169082126,
+              "f1": 0.711943793911007
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.5192307692307693,
+              "recall": 0.17088607594936708,
+              "f1": 0.2571428571428571
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.6945054945054945,
+              "recall": 0.8729281767955801,
+              "f1": 0.773561811505508
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6276825096988551,
+          "pearson_r": 0.6866334402046269,
+          "pearson_status": "defined"
+        }
+      }
+    }
+  ],
+  "output_sha256": {
+    "attachment3_all_models.csv": "06e21c69153c3389ac9c312e79e775ac80cae2e3fab66f50e356772f0e309c44",
+    "attachment3_observation_audit.csv": "b7594323eb6864bab556d93aa32188e91120d02405b726ce624907e25af3804d",
+    "attachment3_predictions.csv": "063531ba56e58b4d9b6fc98d60073acaf8d9d963881283c904041d268ebf6007"
+  }
+}
