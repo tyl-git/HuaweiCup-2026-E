@@ -1,0 +1,3401 @@
+{
+  "title": "Multimodal feature extraction progress showcase",
+  "generated_on": "2026-09-23",
+  "language": "en",
+  "summary": {
+    "sample_count": 100,
+    "source_video_count": 37,
+    "source_video_count_label": "Distinct source video IDs; not a count of people.",
+    "total_duration_seconds": 787.498018,
+    "total_duration_minutes": 13.124967,
+    "duration_min_seconds": 2.257,
+    "duration_max_seconds": 29.288021,
+    "total_video_frames": 23241,
+    "detector_success_frames": 21967,
+    "valid_face_frames": 21896,
+    "valid_face_frame_rate_percent": 94.21,
+    "face_quality_categories": {
+      "coverage_at_least_80_percent": 88,
+      "partial_coverage_below_80_percent_but_nonzero": 8,
+      "no_valid_face_frames": 4
+    },
+    "transcript_qc_categories": {
+      "not_reviewed": 99,
+      "transcript_review_needed": 1
+    },
+    "all_video_frame_counts_match_media_check": true,
+    "all_staged_sha256_match_source": true,
+    "face_validity_rule": "success == 1 and confidence >= 0.8",
+    "duration_source_field": "media-check.container_duration (seconds)",
+    "detector_success_frame_rate_percent": 94.52,
+    "detector_success_rule": "OpenFace success == 1, regardless of confidence; valid_face_frames additionally requires confidence >= 0.8."
+  },
+  "sample_records": [
+    {
+      "sample_id": "sample_0001",
+      "source_video_id": "-3g5yACwYnA",
+      "clip_id": "13",
+      "source_video_file": "-3g5yACwYnA/13__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0001__normalized.mp4",
+      "duration_seconds": 5.513997,
+      "video_frames": 163,
+      "valid_face_frames": 163,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "transcript_review_needed"
+    },
+    {
+      "sample_id": "sample_0002",
+      "source_video_id": "-3g5yACwYnA",
+      "clip_id": "3",
+      "source_video_file": "-3g5yACwYnA/3__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0002__normalized.mp4",
+      "duration_seconds": 14.388997,
+      "video_frames": 431,
+      "valid_face_frames": 431,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0003",
+      "source_video_id": "-3g5yACwYnA",
+      "clip_id": "2",
+      "source_video_file": "-3g5yACwYnA/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0003__normalized.mp4",
+      "duration_seconds": 9.39401,
+      "video_frames": 278,
+      "valid_face_frames": 278,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0004",
+      "source_video_id": "-3g5yACwYnA",
+      "clip_id": "9",
+      "source_video_file": "-3g5yACwYnA/9__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0004__normalized.mp4",
+      "duration_seconds": 8.816992,
+      "video_frames": 263,
+      "valid_face_frames": 263,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0005",
+      "source_video_id": "-3nNcZdcdvU",
+      "clip_id": "5",
+      "source_video_file": "-3nNcZdcdvU/5__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0005__normalized.mp4",
+      "duration_seconds": 7.867969,
+      "video_frames": 236,
+      "valid_face_frames": 236,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0006",
+      "source_video_id": "-HwX2H8Z4hY",
+      "clip_id": "2",
+      "source_video_file": "-HwX2H8Z4hY/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0006__normalized.mp4",
+      "duration_seconds": 3.982031,
+      "video_frames": 119,
+      "valid_face_frames": 34,
+      "valid_face_frame_rate": 0.285714,
+      "visual_qc": "review_low_coverage",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0007",
+      "source_video_id": "-HwX2H8Z4hY",
+      "clip_id": "5",
+      "source_video_file": "-HwX2H8Z4hY/5__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0007__normalized.mp4",
+      "duration_seconds": 5.652995,
+      "video_frames": 168,
+      "valid_face_frames": 60,
+      "valid_face_frame_rate": 0.357143,
+      "visual_qc": "review_low_coverage",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0008",
+      "source_video_id": "-HwX2H8Z4hY",
+      "clip_id": "6",
+      "source_video_file": "-HwX2H8Z4hY/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0008__normalized.mp4",
+      "duration_seconds": 3.358008,
+      "video_frames": 99,
+      "valid_face_frames": 61,
+      "valid_face_frame_rate": 0.616162,
+      "visual_qc": "review_low_coverage",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0009",
+      "source_video_id": "-HwX2H8Z4hY",
+      "clip_id": "9",
+      "source_video_file": "-HwX2H8Z4hY/9__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0009__normalized.mp4",
+      "duration_seconds": 7.733984,
+      "video_frames": 232,
+      "valid_face_frames": 221,
+      "valid_face_frame_rate": 0.952586,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0010",
+      "source_video_id": "-NFrJFQijFE",
+      "clip_id": "1",
+      "source_video_file": "-NFrJFQijFE/1__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0010__normalized.mp4",
+      "duration_seconds": 5.746,
+      "video_frames": 142,
+      "valid_face_frames": 0,
+      "valid_face_frame_rate": 0.0,
+      "visual_qc": "no_valid_frames",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0011",
+      "source_video_id": "-NFrJFQijFE",
+      "clip_id": "2",
+      "source_video_file": "-NFrJFQijFE/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0011__normalized.mp4",
+      "duration_seconds": 6.856,
+      "video_frames": 169,
+      "valid_face_frames": 0,
+      "valid_face_frame_rate": 0.0,
+      "visual_qc": "no_valid_frames",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0012",
+      "source_video_id": "-THoVjtIkeU",
+      "clip_id": "12",
+      "source_video_file": "-THoVjtIkeU/12__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0012__normalized.mp4",
+      "duration_seconds": 14.896029,
+      "video_frames": 445,
+      "valid_face_frames": 445,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0013",
+      "source_video_id": "-THoVjtIkeU",
+      "clip_id": "2",
+      "source_video_file": "-THoVjtIkeU/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0013__normalized.mp4",
+      "duration_seconds": 4.291992,
+      "video_frames": 128,
+      "valid_face_frames": 128,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0014",
+      "source_video_id": "-THoVjtIkeU",
+      "clip_id": "6",
+      "source_video_file": "-THoVjtIkeU/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0014__normalized.mp4",
+      "duration_seconds": 8.097005,
+      "video_frames": 241,
+      "valid_face_frames": 240,
+      "valid_face_frame_rate": 0.995851,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0015",
+      "source_video_id": "-UuX1xuaiiE",
+      "clip_id": "1",
+      "source_video_file": "-UuX1xuaiiE/1__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0015__normalized.mp4",
+      "duration_seconds": 10.35,
+      "video_frames": 309,
+      "valid_face_frames": 309,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0016",
+      "source_video_id": "-UuX1xuaiiE",
+      "clip_id": "0",
+      "source_video_file": "-UuX1xuaiiE/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0016__normalized.mp4",
+      "duration_seconds": 3.633333,
+      "video_frames": 109,
+      "valid_face_frames": 109,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0017",
+      "source_video_id": "-UuX1xuaiiE",
+      "clip_id": "3",
+      "source_video_file": "-UuX1xuaiiE/3__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0017__normalized.mp4",
+      "duration_seconds": 4.130013,
+      "video_frames": 123,
+      "valid_face_frames": 123,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0018",
+      "source_video_id": "-UuX1xuaiiE",
+      "clip_id": "6",
+      "source_video_file": "-UuX1xuaiiE/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0018__normalized.mp4",
+      "duration_seconds": 8.113997,
+      "video_frames": 240,
+      "valid_face_frames": 240,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0019",
+      "source_video_id": "-a55Q6RWvTA",
+      "clip_id": "3",
+      "source_video_file": "-a55Q6RWvTA/3__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0019__normalized.mp4",
+      "duration_seconds": 22.153971,
+      "video_frames": 664,
+      "valid_face_frames": 664,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0020",
+      "source_video_id": "-aNfi7CP8vM",
+      "clip_id": "7",
+      "source_video_file": "-aNfi7CP8vM/7__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0020__normalized.mp4",
+      "duration_seconds": 8.694987,
+      "video_frames": 257,
+      "valid_face_frames": 257,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0021",
+      "source_video_id": "-aqamKhZ1Ec",
+      "clip_id": "0",
+      "source_video_file": "-aqamKhZ1Ec/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0021__normalized.mp4",
+      "duration_seconds": 10.966667,
+      "video_frames": 329,
+      "valid_face_frames": 329,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0022",
+      "source_video_id": "-dxfTGcXJoc",
+      "clip_id": "1",
+      "source_video_file": "-dxfTGcXJoc/1__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0022__normalized.mp4",
+      "duration_seconds": 16.161003,
+      "video_frames": 482,
+      "valid_face_frames": 482,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0023",
+      "source_video_id": "-dxfTGcXJoc",
+      "clip_id": "0",
+      "source_video_file": "-dxfTGcXJoc/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0023__normalized.mp4",
+      "duration_seconds": 20.5,
+      "video_frames": 615,
+      "valid_face_frames": 471,
+      "valid_face_frame_rate": 0.765854,
+      "visual_qc": "review_low_coverage",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0024",
+      "source_video_id": "-dxfTGcXJoc",
+      "clip_id": "2",
+      "source_video_file": "-dxfTGcXJoc/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0024__normalized.mp4",
+      "duration_seconds": 16.697982,
+      "video_frames": 500,
+      "valid_face_frames": 500,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0025",
+      "source_video_id": "-dxfTGcXJoc",
+      "clip_id": "6",
+      "source_video_file": "-dxfTGcXJoc/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0025__normalized.mp4",
+      "duration_seconds": 12.735026,
+      "video_frames": 381,
+      "valid_face_frames": 381,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0026",
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "26",
+      "source_video_file": "-egA8-b7-3M/26__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0026__normalized.mp4",
+      "duration_seconds": 6.03099,
+      "video_frames": 179,
+      "valid_face_frames": 179,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0027",
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "17",
+      "source_video_file": "-egA8-b7-3M/17__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0027__normalized.mp4",
+      "duration_seconds": 7.271029,
+      "video_frames": 215,
+      "valid_face_frames": 215,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0028",
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "18",
+      "source_video_file": "-egA8-b7-3M/18__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0028__normalized.mp4",
+      "duration_seconds": 8.386003,
+      "video_frames": 250,
+      "valid_face_frames": 250,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0029",
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "16",
+      "source_video_file": "-egA8-b7-3M/16__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0029__normalized.mp4",
+      "duration_seconds": 5.538021,
+      "video_frames": 166,
+      "valid_face_frames": 166,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0030",
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "13",
+      "source_video_file": "-egA8-b7-3M/13__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0030__normalized.mp4",
+      "duration_seconds": 4.183984,
+      "video_frames": 123,
+      "valid_face_frames": 123,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0031",
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "1",
+      "source_video_file": "-egA8-b7-3M/1__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0031__normalized.mp4",
+      "duration_seconds": 10.266016,
+      "video_frames": 306,
+      "valid_face_frames": 306,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0032",
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "6",
+      "source_video_file": "-egA8-b7-3M/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0032__normalized.mp4",
+      "duration_seconds": 6.264974,
+      "video_frames": 187,
+      "valid_face_frames": 187,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0033",
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "9",
+      "source_video_file": "-egA8-b7-3M/9__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0033__normalized.mp4",
+      "duration_seconds": 5.089974,
+      "video_frames": 150,
+      "valid_face_frames": 150,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0034",
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "20",
+      "source_video_file": "-egA8-b7-3M/20__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0034__normalized.mp4",
+      "duration_seconds": 6.644987,
+      "video_frames": 196,
+      "valid_face_frames": 196,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0035",
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "3",
+      "source_video_file": "-iRBcNs9oI8/3__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0035__normalized.mp4",
+      "duration_seconds": 5.621,
+      "video_frames": 167,
+      "valid_face_frames": 167,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0036",
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "7",
+      "source_video_file": "-iRBcNs9oI8/7__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0036__normalized.mp4",
+      "duration_seconds": 4.104,
+      "video_frames": 120,
+      "valid_face_frames": 120,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0037",
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "6",
+      "source_video_file": "-iRBcNs9oI8/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0037__normalized.mp4",
+      "duration_seconds": 2.903,
+      "video_frames": 85,
+      "valid_face_frames": 85,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0038",
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "9",
+      "source_video_file": "-iRBcNs9oI8/9__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0038__normalized.mp4",
+      "duration_seconds": 3.416,
+      "video_frames": 102,
+      "valid_face_frames": 91,
+      "valid_face_frame_rate": 0.892157,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0039",
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "8",
+      "source_video_file": "-iRBcNs9oI8/8__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0039__normalized.mp4",
+      "duration_seconds": 8.093,
+      "video_frames": 241,
+      "valid_face_frames": 241,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0040",
+      "source_video_id": "-lzEya4AM_4",
+      "clip_id": "5",
+      "source_video_file": "-lzEya4AM_4/5__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0040__normalized.mp4",
+      "duration_seconds": 7.675,
+      "video_frames": 229,
+      "valid_face_frames": 229,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0041",
+      "source_video_id": "-lzEya4AM_4",
+      "clip_id": "6",
+      "source_video_file": "-lzEya4AM_4/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0041__normalized.mp4",
+      "duration_seconds": 14.791992,
+      "video_frames": 443,
+      "valid_face_frames": 441,
+      "valid_face_frame_rate": 0.995485,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0042",
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "1",
+      "source_video_file": "-mJ2ud6oKI8/1__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0042__normalized.mp4",
+      "duration_seconds": 6.103,
+      "video_frames": 182,
+      "valid_face_frames": 0,
+      "valid_face_frame_rate": 0.0,
+      "visual_qc": "no_valid_frames",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0043",
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "2",
+      "source_video_file": "-mJ2ud6oKI8/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0043__normalized.mp4",
+      "duration_seconds": 5.731,
+      "video_frames": 171,
+      "valid_face_frames": 74,
+      "valid_face_frame_rate": 0.432749,
+      "visual_qc": "review_low_coverage",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0044",
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "6",
+      "source_video_file": "-mJ2ud6oKI8/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0044__normalized.mp4",
+      "duration_seconds": 2.257,
+      "video_frames": 67,
+      "valid_face_frames": 67,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0045",
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "9",
+      "source_video_file": "-mJ2ud6oKI8/9__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0045__normalized.mp4",
+      "duration_seconds": 7.033,
+      "video_frames": 208,
+      "valid_face_frames": 208,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0046",
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "8",
+      "source_video_file": "-mJ2ud6oKI8/8__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0046__normalized.mp4",
+      "duration_seconds": 4.192,
+      "video_frames": 125,
+      "valid_face_frames": 125,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0047",
+      "source_video_id": "-mqbVkbCndg",
+      "clip_id": "0",
+      "source_video_file": "-mqbVkbCndg/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0047__normalized.mp4",
+      "duration_seconds": 6.466667,
+      "video_frames": 194,
+      "valid_face_frames": 194,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0048",
+      "source_video_id": "-t217m2on-s",
+      "clip_id": "2",
+      "source_video_file": "-t217m2on-s/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0048__normalized.mp4",
+      "duration_seconds": 5.686003,
+      "video_frames": 170,
+      "valid_face_frames": 170,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0049",
+      "source_video_id": "-t217m2on-s",
+      "clip_id": "7",
+      "source_video_file": "-t217m2on-s/7__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0049__normalized.mp4",
+      "duration_seconds": 17.183008,
+      "video_frames": 512,
+      "valid_face_frames": 512,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0050",
+      "source_video_id": "-tANM6ETl_M",
+      "clip_id": "3",
+      "source_video_file": "-tANM6ETl_M/3__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0050__normalized.mp4",
+      "duration_seconds": 6.758008,
+      "video_frames": 200,
+      "valid_face_frames": 199,
+      "valid_face_frame_rate": 0.995,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0051",
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "11",
+      "source_video_file": "-tPCytz4rww/11__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0051__normalized.mp4",
+      "duration_seconds": 5.466992,
+      "video_frames": 164,
+      "valid_face_frames": 164,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0052",
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "10",
+      "source_video_file": "-tPCytz4rww/10__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0052__normalized.mp4",
+      "duration_seconds": 4.788997,
+      "video_frames": 142,
+      "valid_face_frames": 142,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0053",
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "12",
+      "source_video_file": "-tPCytz4rww/12__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0053__normalized.mp4",
+      "duration_seconds": 11.863997,
+      "video_frames": 353,
+      "valid_face_frames": 353,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0054",
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "16",
+      "source_video_file": "-tPCytz4rww/16__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0054__normalized.mp4",
+      "duration_seconds": 7.20599,
+      "video_frames": 216,
+      "valid_face_frames": 216,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0055",
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "18",
+      "source_video_file": "-tPCytz4rww/18__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0055__normalized.mp4",
+      "duration_seconds": 6.644987,
+      "video_frames": 199,
+      "valid_face_frames": 199,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0056",
+      "source_video_id": "-vxjVxOeScU",
+      "clip_id": "4",
+      "source_video_file": "-vxjVxOeScU/4__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0056__normalized.mp4",
+      "duration_seconds": 9.127018,
+      "video_frames": 272,
+      "valid_face_frames": 272,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0057",
+      "source_video_id": "-wMB_hJL-3o",
+      "clip_id": "7",
+      "source_video_file": "-wMB_hJL-3o/7__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0057__normalized.mp4",
+      "duration_seconds": 6.04401,
+      "video_frames": 181,
+      "valid_face_frames": 180,
+      "valid_face_frame_rate": 0.994475,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0058",
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "1",
+      "source_video_file": "-wny0OAz3g8/1__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0058__normalized.mp4",
+      "duration_seconds": 6.84401,
+      "video_frames": 205,
+      "valid_face_frames": 205,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0059",
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "0",
+      "source_video_file": "-wny0OAz3g8/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0059__normalized.mp4",
+      "duration_seconds": 3.333333,
+      "video_frames": 100,
+      "valid_face_frames": 100,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0060",
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "3",
+      "source_video_file": "-wny0OAz3g8/3__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0060__normalized.mp4",
+      "duration_seconds": 6.146029,
+      "video_frames": 184,
+      "valid_face_frames": 184,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0061",
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "2",
+      "source_video_file": "-wny0OAz3g8/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0061__normalized.mp4",
+      "duration_seconds": 6.686979,
+      "video_frames": 197,
+      "valid_face_frames": 197,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0062",
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "5",
+      "source_video_file": "-wny0OAz3g8/5__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0062__normalized.mp4",
+      "duration_seconds": 6.911979,
+      "video_frames": 204,
+      "valid_face_frames": 204,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0063",
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "7",
+      "source_video_file": "-wny0OAz3g8/7__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0063__normalized.mp4",
+      "duration_seconds": 8.067969,
+      "video_frames": 240,
+      "valid_face_frames": 240,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0064",
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "9",
+      "source_video_file": "-wny0OAz3g8/9__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0064__normalized.mp4",
+      "duration_seconds": 6.213021,
+      "video_frames": 183,
+      "valid_face_frames": 183,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0065",
+      "source_video_id": "-571d8cVauQ",
+      "clip_id": "0",
+      "source_video_file": "-571d8cVauQ/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0065__normalized.mp4",
+      "duration_seconds": 5.066667,
+      "video_frames": 152,
+      "valid_face_frames": 140,
+      "valid_face_frame_rate": 0.921053,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0066",
+      "source_video_id": "-571d8cVauQ",
+      "clip_id": "5",
+      "source_video_file": "-571d8cVauQ/5__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0066__normalized.mp4",
+      "duration_seconds": 15.272982,
+      "video_frames": 455,
+      "valid_face_frames": 455,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0067",
+      "source_video_id": "-I_e4mIh0yE",
+      "clip_id": "1",
+      "source_video_file": "-I_e4mIh0yE/1__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0067__normalized.mp4",
+      "duration_seconds": 7.622005,
+      "video_frames": 225,
+      "valid_face_frames": 225,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0068",
+      "source_video_id": "-I_e4mIh0yE",
+      "clip_id": "3",
+      "source_video_file": "-I_e4mIh0yE/3__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0068__normalized.mp4",
+      "duration_seconds": 9.163021,
+      "video_frames": 271,
+      "valid_face_frames": 271,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0069",
+      "source_video_id": "-UacrmKiTn4",
+      "clip_id": "10",
+      "source_video_file": "-UacrmKiTn4/10__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0069__normalized.mp4",
+      "duration_seconds": 7.361979,
+      "video_frames": 218,
+      "valid_face_frames": 218,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0070",
+      "source_video_id": "-UacrmKiTn4",
+      "clip_id": "4",
+      "source_video_file": "-UacrmKiTn4/4__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0070__normalized.mp4",
+      "duration_seconds": 4.741016,
+      "video_frames": 142,
+      "valid_face_frames": 142,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0071",
+      "source_video_id": "-hnBHBN8p5A",
+      "clip_id": "7",
+      "source_video_file": "-hnBHBN8p5A/7__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0071__normalized.mp4",
+      "duration_seconds": 7.372,
+      "video_frames": 176,
+      "valid_face_frames": 143,
+      "valid_face_frame_rate": 0.8125,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0072",
+      "source_video_id": "-hnBHBN8p5A",
+      "clip_id": "6",
+      "source_video_file": "-hnBHBN8p5A/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0072__normalized.mp4",
+      "duration_seconds": 6.401,
+      "video_frames": 153,
+      "valid_face_frames": 113,
+      "valid_face_frame_rate": 0.738562,
+      "visual_qc": "review_low_coverage",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0073",
+      "source_video_id": "-qDkUB0GgYY",
+      "clip_id": "6",
+      "source_video_file": "-qDkUB0GgYY/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0073__normalized.mp4",
+      "duration_seconds": 4.677995,
+      "video_frames": 140,
+      "valid_face_frames": 140,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0074",
+      "source_video_id": "-uywlfIYOS8",
+      "clip_id": "4",
+      "source_video_file": "-uywlfIYOS8/4__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0074__normalized.mp4",
+      "duration_seconds": 6.044987,
+      "video_frames": 179,
+      "valid_face_frames": 179,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0075",
+      "source_video_id": "-6rXp3zJ3kc",
+      "clip_id": "8",
+      "source_video_file": "-6rXp3zJ3kc/8__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0075__normalized.mp4",
+      "duration_seconds": 12.805013,
+      "video_frames": 384,
+      "valid_face_frames": 384,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0076",
+      "source_video_id": "-9y-fZ3swSY",
+      "clip_id": "0",
+      "source_video_file": "-9y-fZ3swSY/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0076__normalized.mp4",
+      "duration_seconds": 6.833333,
+      "video_frames": 205,
+      "valid_face_frames": 205,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0077",
+      "source_video_id": "-9y-fZ3swSY",
+      "clip_id": "4",
+      "source_video_file": "-9y-fZ3swSY/4__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0077__normalized.mp4",
+      "duration_seconds": 2.821029,
+      "video_frames": 81,
+      "valid_face_frames": 81,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0078",
+      "source_video_id": "-9y-fZ3swSY",
+      "clip_id": "8",
+      "source_video_file": "-9y-fZ3swSY/8__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0078__normalized.mp4",
+      "duration_seconds": 4.988997,
+      "video_frames": 149,
+      "valid_face_frames": 149,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0079",
+      "source_video_id": "-AUZQgSxyPQ",
+      "clip_id": "2",
+      "source_video_file": "-AUZQgSxyPQ/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0079__normalized.mp4",
+      "duration_seconds": 22.511003,
+      "video_frames": 674,
+      "valid_face_frames": 674,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0080",
+      "source_video_id": "-HeZS2-Prhc",
+      "clip_id": "2",
+      "source_video_file": "-HeZS2-Prhc/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0080__normalized.mp4",
+      "duration_seconds": 8.261979,
+      "video_frames": 246,
+      "valid_face_frames": 246,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0081",
+      "source_video_id": "-MeTTeMJBNc",
+      "clip_id": "0",
+      "source_video_file": "-MeTTeMJBNc/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0081__normalized.mp4",
+      "duration_seconds": 9.3,
+      "video_frames": 279,
+      "valid_face_frames": 267,
+      "valid_face_frame_rate": 0.956989,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0082",
+      "source_video_id": "-MeTTeMJBNc",
+      "clip_id": "13",
+      "source_video_file": "-MeTTeMJBNc/13__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0082__normalized.mp4",
+      "duration_seconds": 5.430013,
+      "video_frames": 159,
+      "valid_face_frames": 159,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0083",
+      "source_video_id": "-MeTTeMJBNc",
+      "clip_id": "7",
+      "source_video_file": "-MeTTeMJBNc/7__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0083__normalized.mp4",
+      "duration_seconds": 10.516992,
+      "video_frames": 314,
+      "valid_face_frames": 314,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0084",
+      "source_video_id": "-RfYyzHpjk4",
+      "clip_id": "11",
+      "source_video_file": "-RfYyzHpjk4/11__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0084__normalized.mp4",
+      "duration_seconds": 5.238997,
+      "video_frames": 154,
+      "valid_face_frames": 154,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0085",
+      "source_video_id": "-RfYyzHpjk4",
+      "clip_id": "8",
+      "source_video_file": "-RfYyzHpjk4/8__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0085__normalized.mp4",
+      "duration_seconds": 4.588997,
+      "video_frames": 137,
+      "valid_face_frames": 137,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0086",
+      "source_video_id": "-RfYyzHpjk4",
+      "clip_id": "2",
+      "source_video_file": "-RfYyzHpjk4/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0086__normalized.mp4",
+      "duration_seconds": 5.516016,
+      "video_frames": 164,
+      "valid_face_frames": 164,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0087",
+      "source_video_id": "-UUCSKoHeMA",
+      "clip_id": "0",
+      "source_video_file": "-UUCSKoHeMA/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0087__normalized.mp4",
+      "duration_seconds": 7.8,
+      "video_frames": 234,
+      "valid_face_frames": 222,
+      "valid_face_frame_rate": 0.948718,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0088",
+      "source_video_id": "-ri04Z7vwnc",
+      "clip_id": "0",
+      "source_video_file": "-ri04Z7vwnc/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0088__normalized.mp4",
+      "duration_seconds": 2.807,
+      "video_frames": 67,
+      "valid_face_frames": 0,
+      "valid_face_frame_rate": 0.0,
+      "visual_qc": "no_valid_frames",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0089",
+      "source_video_id": "-ri04Z7vwnc",
+      "clip_id": "2",
+      "source_video_file": "-ri04Z7vwnc/2__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0089__normalized.mp4",
+      "duration_seconds": 6.027,
+      "video_frames": 143,
+      "valid_face_frames": 47,
+      "valid_face_frame_rate": 0.328671,
+      "visual_qc": "review_low_coverage",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0090",
+      "source_video_id": "-ri04Z7vwnc",
+      "clip_id": "5",
+      "source_video_file": "-ri04Z7vwnc/5__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0090__normalized.mp4",
+      "duration_seconds": 3.545,
+      "video_frames": 83,
+      "valid_face_frames": 83,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0091",
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "1",
+      "source_video_file": "-s9qJ7ATP7w/1__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0091__normalized.mp4",
+      "duration_seconds": 4.791992,
+      "video_frames": 140,
+      "valid_face_frames": 140,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0092",
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "0",
+      "source_video_file": "-s9qJ7ATP7w/0__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0092__normalized.mp4",
+      "duration_seconds": 6.8,
+      "video_frames": 204,
+      "valid_face_frames": 203,
+      "valid_face_frame_rate": 0.995098,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0093",
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "5",
+      "source_video_file": "-s9qJ7ATP7w/5__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0093__normalized.mp4",
+      "duration_seconds": 8.561003,
+      "video_frames": 253,
+      "valid_face_frames": 253,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0094",
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "4",
+      "source_video_file": "-s9qJ7ATP7w/4__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0094__normalized.mp4",
+      "duration_seconds": 4.427018,
+      "video_frames": 129,
+      "valid_face_frames": 125,
+      "valid_face_frame_rate": 0.968992,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0095",
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "7",
+      "source_video_file": "-s9qJ7ATP7w/7__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0095__normalized.mp4",
+      "duration_seconds": 6.966016,
+      "video_frames": 207,
+      "valid_face_frames": 153,
+      "valid_face_frame_rate": 0.73913,
+      "visual_qc": "review_low_coverage",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0096",
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "6",
+      "source_video_file": "-s9qJ7ATP7w/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0096__normalized.mp4",
+      "duration_seconds": 2.475,
+      "video_frames": 71,
+      "valid_face_frames": 59,
+      "valid_face_frame_rate": 0.830986,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0097",
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "8",
+      "source_video_file": "-s9qJ7ATP7w/8__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0097__normalized.mp4",
+      "duration_seconds": 3.294987,
+      "video_frames": 97,
+      "valid_face_frames": 97,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0098",
+      "source_video_id": "-yRb-Jum7EQ",
+      "clip_id": "1",
+      "source_video_file": "-yRb-Jum7EQ/1__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0098__normalized.mp4",
+      "duration_seconds": 29.288021,
+      "video_frames": 875,
+      "valid_face_frames": 865,
+      "valid_face_frame_rate": 0.988571,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0099",
+      "source_video_id": "-yRb-Jum7EQ",
+      "clip_id": "5",
+      "source_video_file": "-yRb-Jum7EQ/5__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0099__normalized.mp4",
+      "duration_seconds": 13.16901,
+      "video_frames": 394,
+      "valid_face_frames": 394,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    },
+    {
+      "sample_id": "sample_0100",
+      "source_video_id": "-yRb-Jum7EQ",
+      "clip_id": "6",
+      "source_video_file": "-yRb-Jum7EQ/6__normalized.mp4",
+      "staged_video_file": "q1-manual-review-normalized-v1.0/sample_0100__normalized.mp4",
+      "duration_seconds": 11.241995,
+      "video_frames": 336,
+      "valid_face_frames": 336,
+      "valid_face_frame_rate": 1.0,
+      "visual_qc": "coverage_ok",
+      "transcript_qc": "not_reviewed"
+    }
+  ],
+  "source_video_files": [
+    {
+      "source_video_id": "-3g5yACwYnA",
+      "clip_id": "13",
+      "file": "-3g5yACwYnA/13__normalized.mp4"
+    },
+    {
+      "source_video_id": "-3g5yACwYnA",
+      "clip_id": "3",
+      "file": "-3g5yACwYnA/3__normalized.mp4"
+    },
+    {
+      "source_video_id": "-3g5yACwYnA",
+      "clip_id": "2",
+      "file": "-3g5yACwYnA/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-3g5yACwYnA",
+      "clip_id": "9",
+      "file": "-3g5yACwYnA/9__normalized.mp4"
+    },
+    {
+      "source_video_id": "-3nNcZdcdvU",
+      "clip_id": "5",
+      "file": "-3nNcZdcdvU/5__normalized.mp4"
+    },
+    {
+      "source_video_id": "-HwX2H8Z4hY",
+      "clip_id": "2",
+      "file": "-HwX2H8Z4hY/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-HwX2H8Z4hY",
+      "clip_id": "5",
+      "file": "-HwX2H8Z4hY/5__normalized.mp4"
+    },
+    {
+      "source_video_id": "-HwX2H8Z4hY",
+      "clip_id": "6",
+      "file": "-HwX2H8Z4hY/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-HwX2H8Z4hY",
+      "clip_id": "9",
+      "file": "-HwX2H8Z4hY/9__normalized.mp4"
+    },
+    {
+      "source_video_id": "-NFrJFQijFE",
+      "clip_id": "1",
+      "file": "-NFrJFQijFE/1__normalized.mp4"
+    },
+    {
+      "source_video_id": "-NFrJFQijFE",
+      "clip_id": "2",
+      "file": "-NFrJFQijFE/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-THoVjtIkeU",
+      "clip_id": "12",
+      "file": "-THoVjtIkeU/12__normalized.mp4"
+    },
+    {
+      "source_video_id": "-THoVjtIkeU",
+      "clip_id": "2",
+      "file": "-THoVjtIkeU/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-THoVjtIkeU",
+      "clip_id": "6",
+      "file": "-THoVjtIkeU/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-UuX1xuaiiE",
+      "clip_id": "1",
+      "file": "-UuX1xuaiiE/1__normalized.mp4"
+    },
+    {
+      "source_video_id": "-UuX1xuaiiE",
+      "clip_id": "0",
+      "file": "-UuX1xuaiiE/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-UuX1xuaiiE",
+      "clip_id": "3",
+      "file": "-UuX1xuaiiE/3__normalized.mp4"
+    },
+    {
+      "source_video_id": "-UuX1xuaiiE",
+      "clip_id": "6",
+      "file": "-UuX1xuaiiE/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-a55Q6RWvTA",
+      "clip_id": "3",
+      "file": "-a55Q6RWvTA/3__normalized.mp4"
+    },
+    {
+      "source_video_id": "-aNfi7CP8vM",
+      "clip_id": "7",
+      "file": "-aNfi7CP8vM/7__normalized.mp4"
+    },
+    {
+      "source_video_id": "-aqamKhZ1Ec",
+      "clip_id": "0",
+      "file": "-aqamKhZ1Ec/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-dxfTGcXJoc",
+      "clip_id": "1",
+      "file": "-dxfTGcXJoc/1__normalized.mp4"
+    },
+    {
+      "source_video_id": "-dxfTGcXJoc",
+      "clip_id": "0",
+      "file": "-dxfTGcXJoc/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-dxfTGcXJoc",
+      "clip_id": "2",
+      "file": "-dxfTGcXJoc/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-dxfTGcXJoc",
+      "clip_id": "6",
+      "file": "-dxfTGcXJoc/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "26",
+      "file": "-egA8-b7-3M/26__normalized.mp4"
+    },
+    {
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "17",
+      "file": "-egA8-b7-3M/17__normalized.mp4"
+    },
+    {
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "18",
+      "file": "-egA8-b7-3M/18__normalized.mp4"
+    },
+    {
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "16",
+      "file": "-egA8-b7-3M/16__normalized.mp4"
+    },
+    {
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "13",
+      "file": "-egA8-b7-3M/13__normalized.mp4"
+    },
+    {
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "1",
+      "file": "-egA8-b7-3M/1__normalized.mp4"
+    },
+    {
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "6",
+      "file": "-egA8-b7-3M/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "9",
+      "file": "-egA8-b7-3M/9__normalized.mp4"
+    },
+    {
+      "source_video_id": "-egA8-b7-3M",
+      "clip_id": "20",
+      "file": "-egA8-b7-3M/20__normalized.mp4"
+    },
+    {
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "3",
+      "file": "-iRBcNs9oI8/3__normalized.mp4"
+    },
+    {
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "7",
+      "file": "-iRBcNs9oI8/7__normalized.mp4"
+    },
+    {
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "6",
+      "file": "-iRBcNs9oI8/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "9",
+      "file": "-iRBcNs9oI8/9__normalized.mp4"
+    },
+    {
+      "source_video_id": "-iRBcNs9oI8",
+      "clip_id": "8",
+      "file": "-iRBcNs9oI8/8__normalized.mp4"
+    },
+    {
+      "source_video_id": "-lzEya4AM_4",
+      "clip_id": "5",
+      "file": "-lzEya4AM_4/5__normalized.mp4"
+    },
+    {
+      "source_video_id": "-lzEya4AM_4",
+      "clip_id": "6",
+      "file": "-lzEya4AM_4/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "1",
+      "file": "-mJ2ud6oKI8/1__normalized.mp4"
+    },
+    {
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "2",
+      "file": "-mJ2ud6oKI8/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "6",
+      "file": "-mJ2ud6oKI8/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "9",
+      "file": "-mJ2ud6oKI8/9__normalized.mp4"
+    },
+    {
+      "source_video_id": "-mJ2ud6oKI8",
+      "clip_id": "8",
+      "file": "-mJ2ud6oKI8/8__normalized.mp4"
+    },
+    {
+      "source_video_id": "-mqbVkbCndg",
+      "clip_id": "0",
+      "file": "-mqbVkbCndg/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-t217m2on-s",
+      "clip_id": "2",
+      "file": "-t217m2on-s/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-t217m2on-s",
+      "clip_id": "7",
+      "file": "-t217m2on-s/7__normalized.mp4"
+    },
+    {
+      "source_video_id": "-tANM6ETl_M",
+      "clip_id": "3",
+      "file": "-tANM6ETl_M/3__normalized.mp4"
+    },
+    {
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "11",
+      "file": "-tPCytz4rww/11__normalized.mp4"
+    },
+    {
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "10",
+      "file": "-tPCytz4rww/10__normalized.mp4"
+    },
+    {
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "12",
+      "file": "-tPCytz4rww/12__normalized.mp4"
+    },
+    {
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "16",
+      "file": "-tPCytz4rww/16__normalized.mp4"
+    },
+    {
+      "source_video_id": "-tPCytz4rww",
+      "clip_id": "18",
+      "file": "-tPCytz4rww/18__normalized.mp4"
+    },
+    {
+      "source_video_id": "-vxjVxOeScU",
+      "clip_id": "4",
+      "file": "-vxjVxOeScU/4__normalized.mp4"
+    },
+    {
+      "source_video_id": "-wMB_hJL-3o",
+      "clip_id": "7",
+      "file": "-wMB_hJL-3o/7__normalized.mp4"
+    },
+    {
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "1",
+      "file": "-wny0OAz3g8/1__normalized.mp4"
+    },
+    {
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "0",
+      "file": "-wny0OAz3g8/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "3",
+      "file": "-wny0OAz3g8/3__normalized.mp4"
+    },
+    {
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "2",
+      "file": "-wny0OAz3g8/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "5",
+      "file": "-wny0OAz3g8/5__normalized.mp4"
+    },
+    {
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "7",
+      "file": "-wny0OAz3g8/7__normalized.mp4"
+    },
+    {
+      "source_video_id": "-wny0OAz3g8",
+      "clip_id": "9",
+      "file": "-wny0OAz3g8/9__normalized.mp4"
+    },
+    {
+      "source_video_id": "-571d8cVauQ",
+      "clip_id": "0",
+      "file": "-571d8cVauQ/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-571d8cVauQ",
+      "clip_id": "5",
+      "file": "-571d8cVauQ/5__normalized.mp4"
+    },
+    {
+      "source_video_id": "-I_e4mIh0yE",
+      "clip_id": "1",
+      "file": "-I_e4mIh0yE/1__normalized.mp4"
+    },
+    {
+      "source_video_id": "-I_e4mIh0yE",
+      "clip_id": "3",
+      "file": "-I_e4mIh0yE/3__normalized.mp4"
+    },
+    {
+      "source_video_id": "-UacrmKiTn4",
+      "clip_id": "10",
+      "file": "-UacrmKiTn4/10__normalized.mp4"
+    },
+    {
+      "source_video_id": "-UacrmKiTn4",
+      "clip_id": "4",
+      "file": "-UacrmKiTn4/4__normalized.mp4"
+    },
+    {
+      "source_video_id": "-hnBHBN8p5A",
+      "clip_id": "7",
+      "file": "-hnBHBN8p5A/7__normalized.mp4"
+    },
+    {
+      "source_video_id": "-hnBHBN8p5A",
+      "clip_id": "6",
+      "file": "-hnBHBN8p5A/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-qDkUB0GgYY",
+      "clip_id": "6",
+      "file": "-qDkUB0GgYY/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-uywlfIYOS8",
+      "clip_id": "4",
+      "file": "-uywlfIYOS8/4__normalized.mp4"
+    },
+    {
+      "source_video_id": "-6rXp3zJ3kc",
+      "clip_id": "8",
+      "file": "-6rXp3zJ3kc/8__normalized.mp4"
+    },
+    {
+      "source_video_id": "-9y-fZ3swSY",
+      "clip_id": "0",
+      "file": "-9y-fZ3swSY/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-9y-fZ3swSY",
+      "clip_id": "4",
+      "file": "-9y-fZ3swSY/4__normalized.mp4"
+    },
+    {
+      "source_video_id": "-9y-fZ3swSY",
+      "clip_id": "8",
+      "file": "-9y-fZ3swSY/8__normalized.mp4"
+    },
+    {
+      "source_video_id": "-AUZQgSxyPQ",
+      "clip_id": "2",
+      "file": "-AUZQgSxyPQ/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-HeZS2-Prhc",
+      "clip_id": "2",
+      "file": "-HeZS2-Prhc/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-MeTTeMJBNc",
+      "clip_id": "0",
+      "file": "-MeTTeMJBNc/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-MeTTeMJBNc",
+      "clip_id": "13",
+      "file": "-MeTTeMJBNc/13__normalized.mp4"
+    },
+    {
+      "source_video_id": "-MeTTeMJBNc",
+      "clip_id": "7",
+      "file": "-MeTTeMJBNc/7__normalized.mp4"
+    },
+    {
+      "source_video_id": "-RfYyzHpjk4",
+      "clip_id": "11",
+      "file": "-RfYyzHpjk4/11__normalized.mp4"
+    },
+    {
+      "source_video_id": "-RfYyzHpjk4",
+      "clip_id": "8",
+      "file": "-RfYyzHpjk4/8__normalized.mp4"
+    },
+    {
+      "source_video_id": "-RfYyzHpjk4",
+      "clip_id": "2",
+      "file": "-RfYyzHpjk4/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-UUCSKoHeMA",
+      "clip_id": "0",
+      "file": "-UUCSKoHeMA/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-ri04Z7vwnc",
+      "clip_id": "0",
+      "file": "-ri04Z7vwnc/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-ri04Z7vwnc",
+      "clip_id": "2",
+      "file": "-ri04Z7vwnc/2__normalized.mp4"
+    },
+    {
+      "source_video_id": "-ri04Z7vwnc",
+      "clip_id": "5",
+      "file": "-ri04Z7vwnc/5__normalized.mp4"
+    },
+    {
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "1",
+      "file": "-s9qJ7ATP7w/1__normalized.mp4"
+    },
+    {
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "0",
+      "file": "-s9qJ7ATP7w/0__normalized.mp4"
+    },
+    {
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "5",
+      "file": "-s9qJ7ATP7w/5__normalized.mp4"
+    },
+    {
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "4",
+      "file": "-s9qJ7ATP7w/4__normalized.mp4"
+    },
+    {
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "7",
+      "file": "-s9qJ7ATP7w/7__normalized.mp4"
+    },
+    {
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "6",
+      "file": "-s9qJ7ATP7w/6__normalized.mp4"
+    },
+    {
+      "source_video_id": "-s9qJ7ATP7w",
+      "clip_id": "8",
+      "file": "-s9qJ7ATP7w/8__normalized.mp4"
+    },
+    {
+      "source_video_id": "-yRb-Jum7EQ",
+      "clip_id": "1",
+      "file": "-yRb-Jum7EQ/1__normalized.mp4"
+    },
+    {
+      "source_video_id": "-yRb-Jum7EQ",
+      "clip_id": "5",
+      "file": "-yRb-Jum7EQ/5__normalized.mp4"
+    },
+    {
+      "source_video_id": "-yRb-Jum7EQ",
+      "clip_id": "6",
+      "file": "-yRb-Jum7EQ/6__normalized.mp4"
+    }
+  ],
+  "pilot_sample": {
+    "source_video_id": "-THoVjtIkeU",
+    "clip_id": "2",
+    "transcript": "I think social justice is extremely important for young people.",
+    "dataset_sentiment_label": "Positive",
+    "label_note": "Dataset-provided label, not a model prediction.",
+    "transcript_review": "user_confirmed",
+    "exact_word_boundaries": "not_manually_verified",
+    "boundary_note": "Word timing is an automatic CTC alignment estimate; the user confirmed transcript content and overall pause/order/speaking-rate consistency by listening, but did not manually verify each exact boundary.",
+    "word_count": 10,
+    "bert_token_count_including_special_tokens_and_punctuation": 13,
+    "feature_shapes": {
+      "bert_word_embeddings": [
+        10,
+        768
+      ],
+      "audio_word_features": [
+        10,
+        25
+      ],
+      "visual_word_features": [
+        10,
+        49
+      ]
+    },
+    "aligned_npz_keys": [
+      "text",
+      "audio",
+      "vision",
+      "words",
+      "word_times_s",
+      "sequence_length",
+      "text_mask",
+      "audio_mask",
+      "vision_mask",
+      "audio_frame_count",
+      "vision_frame_count",
+      "audio_window_coverage",
+      "vision_coverage",
+      "audio_feature_names",
+      "vision_feature_names",
+      "video_id",
+      "clip_id",
+      "source_video_relpath",
+      "transcript",
+      "label",
+      "label_original",
+      "annotation",
+      "transcript_review",
+      "source_feature_files",
+      "text_model_id",
+      "text_model_revision",
+      "text_pooling",
+      "audio_pooling",
+      "vision_pooling",
+      "vision_confidence_threshold",
+      "time_origin"
+    ],
+    "text_embedding_note": "768 BERT embedding coordinates per word; the archive has no human-readable name for each embedding dimension.",
+    "audio_feature_names": [
+      "Loudness_sma3",
+      "alphaRatio_sma3",
+      "hammarbergIndex_sma3",
+      "slope0-500_sma3",
+      "slope500-1500_sma3",
+      "spectralFlux_sma3",
+      "mfcc1_sma3",
+      "mfcc2_sma3",
+      "mfcc3_sma3",
+      "mfcc4_sma3",
+      "F0semitoneFrom27.5Hz_sma3nz",
+      "jitterLocal_sma3nz",
+      "shimmerLocaldB_sma3nz",
+      "HNRdBACF_sma3nz",
+      "logRelF0-H1-H2_sma3nz",
+      "logRelF0-H1-A3_sma3nz",
+      "F1frequency_sma3nz",
+      "F1bandwidth_sma3nz",
+      "F1amplitudeLogRelF0_sma3nz",
+      "F2frequency_sma3nz",
+      "F2bandwidth_sma3nz",
+      "F2amplitudeLogRelF0_sma3nz",
+      "F3frequency_sma3nz",
+      "F3bandwidth_sma3nz",
+      "F3amplitudeLogRelF0_sma3nz"
+    ],
+    "visual_feature_names": [
+      "gaze_0_x",
+      "gaze_0_y",
+      "gaze_0_z",
+      "gaze_1_x",
+      "gaze_1_y",
+      "gaze_1_z",
+      "gaze_angle_x",
+      "gaze_angle_y",
+      "pose_Tx",
+      "pose_Ty",
+      "pose_Tz",
+      "pose_Rx",
+      "pose_Ry",
+      "pose_Rz",
+      "AU01_r",
+      "AU02_r",
+      "AU04_r",
+      "AU05_r",
+      "AU06_r",
+      "AU07_r",
+      "AU09_r",
+      "AU10_r",
+      "AU12_r",
+      "AU14_r",
+      "AU15_r",
+      "AU17_r",
+      "AU20_r",
+      "AU23_r",
+      "AU25_r",
+      "AU26_r",
+      "AU45_r",
+      "AU01_c",
+      "AU02_c",
+      "AU04_c",
+      "AU05_c",
+      "AU06_c",
+      "AU07_c",
+      "AU09_c",
+      "AU10_c",
+      "AU12_c",
+      "AU14_c",
+      "AU15_c",
+      "AU17_c",
+      "AU20_c",
+      "AU23_c",
+      "AU25_c",
+      "AU26_c",
+      "AU28_c",
+      "AU45_c"
+    ],
+    "audio_valid_words": 10,
+    "visual_valid_words": 10,
+    "minimum_audio_window_coverage": 1.0,
+    "minimum_visual_coverage": 1.0,
+    "words": [
+      {
+        "word": "I",
+        "start_seconds": 0.04,
+        "end_seconds": 0.06
+      },
+      {
+        "word": "think",
+        "start_seconds": 0.16,
+        "end_seconds": 0.38
+      },
+      {
+        "word": "social",
+        "start_seconds": 1.2,
+        "end_seconds": 1.44
+      },
+      {
+        "word": "justice",
+        "start_seconds": 1.5,
+        "end_seconds": 1.78
+      },
+      {
+        "word": "is",
+        "start_seconds": 1.86,
+        "end_seconds": 1.9
+      },
+      {
+        "word": "extremely",
+        "start_seconds": 1.98,
+        "end_seconds": 2.36
+      },
+      {
+        "word": "important",
+        "start_seconds": 2.42,
+        "end_seconds": 2.78
+      },
+      {
+        "word": "for",
+        "start_seconds": 2.86,
+        "end_seconds": 2.98
+      },
+      {
+        "word": "young",
+        "start_seconds": 3.08,
+        "end_seconds": 3.24
+      },
+      {
+        "word": "people",
+        "start_seconds": 3.32,
+        "end_seconds": 3.7
+      }
+    ]
+  },
+  "pilot_curves": {
+    "audio_loudness": {
+      "feature": "Loudness_sma3",
+      "sample_count": 200,
+      "source_window_count": 419,
+      "sampling": "200 uniformly spaced source windows selected from the 419-row eGeMAPS LLD output; no smoothing or interpolation.",
+      "x_axis": {
+        "name": "time",
+        "unit": "seconds",
+        "definition": "midpoint of each source analysis window"
+      },
+      "y_axis": {
+        "name": "openSMILE Loudness_sma3",
+        "unit": "native feature scale",
+        "definition": "Frame-level perceptual loudness descriptor; not decibels (dB) and not a calibrated sound-pressure measurement."
+      },
+      "points": [
+        {
+          "time_seconds": 0.01,
+          "value": 0.579345
+        },
+        {
+          "time_seconds": 0.03,
+          "value": 1.077076
+        },
+        {
+          "time_seconds": 0.05,
+          "value": 1.255742
+        },
+        {
+          "time_seconds": 0.07,
+          "value": 1.224855
+        },
+        {
+          "time_seconds": 0.09,
+          "value": 1.007485
+        },
+        {
+          "time_seconds": 0.12,
+          "value": 0.500118
+        },
+        {
+          "time_seconds": 0.14,
+          "value": 0.345134
+        },
+        {
+          "time_seconds": 0.16,
+          "value": 0.243942
+        },
+        {
+          "time_seconds": 0.18,
+          "value": 0.253486
+        },
+        {
+          "time_seconds": 0.2,
+          "value": 0.364361
+        },
+        {
+          "time_seconds": 0.22,
+          "value": 0.630451
+        },
+        {
+          "time_seconds": 0.24,
+          "value": 0.961471
+        },
+        {
+          "time_seconds": 0.26,
+          "value": 1.10023
+        },
+        {
+          "time_seconds": 0.28,
+          "value": 1.037485
+        },
+        {
+          "time_seconds": 0.3,
+          "value": 0.833129
+        },
+        {
+          "time_seconds": 0.33,
+          "value": 0.520998
+        },
+        {
+          "time_seconds": 0.35,
+          "value": 0.428951
+        },
+        {
+          "time_seconds": 0.37,
+          "value": 0.334596
+        },
+        {
+          "time_seconds": 0.39,
+          "value": 0.320238
+        },
+        {
+          "time_seconds": 0.41,
+          "value": 0.316481
+        },
+        {
+          "time_seconds": 0.43,
+          "value": 0.205149
+        },
+        {
+          "time_seconds": 0.45,
+          "value": 0.326747
+        },
+        {
+          "time_seconds": 0.47,
+          "value": 0.602401
+        },
+        {
+          "time_seconds": 0.49,
+          "value": 0.573393
+        },
+        {
+          "time_seconds": 0.51,
+          "value": 0.759406
+        },
+        {
+          "time_seconds": 0.54,
+          "value": 1.006351
+        },
+        {
+          "time_seconds": 0.56,
+          "value": 1.16004
+        },
+        {
+          "time_seconds": 0.58,
+          "value": 1.279797
+        },
+        {
+          "time_seconds": 0.6,
+          "value": 1.267456
+        },
+        {
+          "time_seconds": 0.62,
+          "value": 1.300364
+        },
+        {
+          "time_seconds": 0.64,
+          "value": 1.206915
+        },
+        {
+          "time_seconds": 0.66,
+          "value": 1.080068
+        },
+        {
+          "time_seconds": 0.68,
+          "value": 1.033501
+        },
+        {
+          "time_seconds": 0.7,
+          "value": 0.91566
+        },
+        {
+          "time_seconds": 0.72,
+          "value": 0.804428
+        },
+        {
+          "time_seconds": 0.75,
+          "value": 0.64767
+        },
+        {
+          "time_seconds": 0.77,
+          "value": 0.555613
+        },
+        {
+          "time_seconds": 0.79,
+          "value": 0.476229
+        },
+        {
+          "time_seconds": 0.81,
+          "value": 0.546446
+        },
+        {
+          "time_seconds": 0.83,
+          "value": 0.455256
+        },
+        {
+          "time_seconds": 0.85,
+          "value": 0.329772
+        },
+        {
+          "time_seconds": 0.87,
+          "value": 0.310738
+        },
+        {
+          "time_seconds": 0.89,
+          "value": 0.222264
+        },
+        {
+          "time_seconds": 0.91,
+          "value": 0.158197
+        },
+        {
+          "time_seconds": 0.93,
+          "value": 0.137725
+        },
+        {
+          "time_seconds": 0.96,
+          "value": 0.127714
+        },
+        {
+          "time_seconds": 0.98,
+          "value": 0.164361
+        },
+        {
+          "time_seconds": 1.0,
+          "value": 0.155604
+        },
+        {
+          "time_seconds": 1.02,
+          "value": 0.12432
+        },
+        {
+          "time_seconds": 1.04,
+          "value": 0.099764
+        },
+        {
+          "time_seconds": 1.06,
+          "value": 0.085552
+        },
+        {
+          "time_seconds": 1.08,
+          "value": 0.074785
+        },
+        {
+          "time_seconds": 1.1,
+          "value": 0.078472
+        },
+        {
+          "time_seconds": 1.12,
+          "value": 0.084554
+        },
+        {
+          "time_seconds": 1.14,
+          "value": 0.166087
+        },
+        {
+          "time_seconds": 1.17,
+          "value": 0.331551
+        },
+        {
+          "time_seconds": 1.19,
+          "value": 0.447945
+        },
+        {
+          "time_seconds": 1.21,
+          "value": 0.71534
+        },
+        {
+          "time_seconds": 1.23,
+          "value": 0.744387
+        },
+        {
+          "time_seconds": 1.25,
+          "value": 1.125691
+        },
+        {
+          "time_seconds": 1.27,
+          "value": 1.420633
+        },
+        {
+          "time_seconds": 1.29,
+          "value": 1.208066
+        },
+        {
+          "time_seconds": 1.31,
+          "value": 1.12646
+        },
+        {
+          "time_seconds": 1.33,
+          "value": 1.301516
+        },
+        {
+          "time_seconds": 1.35,
+          "value": 1.338531
+        },
+        {
+          "time_seconds": 1.38,
+          "value": 1.085691
+        },
+        {
+          "time_seconds": 1.4,
+          "value": 0.998029
+        },
+        {
+          "time_seconds": 1.42,
+          "value": 1.064345
+        },
+        {
+          "time_seconds": 1.44,
+          "value": 1.052665
+        },
+        {
+          "time_seconds": 1.46,
+          "value": 0.853812
+        },
+        {
+          "time_seconds": 1.48,
+          "value": 0.995349
+        },
+        {
+          "time_seconds": 1.5,
+          "value": 1.130327
+        },
+        {
+          "time_seconds": 1.52,
+          "value": 1.378155
+        },
+        {
+          "time_seconds": 1.54,
+          "value": 1.443433
+        },
+        {
+          "time_seconds": 1.56,
+          "value": 1.044083
+        },
+        {
+          "time_seconds": 1.59,
+          "value": 0.680311
+        },
+        {
+          "time_seconds": 1.61,
+          "value": 0.658461
+        },
+        {
+          "time_seconds": 1.63,
+          "value": 0.602423
+        },
+        {
+          "time_seconds": 1.65,
+          "value": 0.593465
+        },
+        {
+          "time_seconds": 1.67,
+          "value": 0.68396
+        },
+        {
+          "time_seconds": 1.69,
+          "value": 0.69985
+        },
+        {
+          "time_seconds": 1.71,
+          "value": 0.665045
+        },
+        {
+          "time_seconds": 1.73,
+          "value": 0.584733
+        },
+        {
+          "time_seconds": 1.75,
+          "value": 0.566538
+        },
+        {
+          "time_seconds": 1.77,
+          "value": 0.560495
+        },
+        {
+          "time_seconds": 1.8,
+          "value": 0.638664
+        },
+        {
+          "time_seconds": 1.82,
+          "value": 0.639439
+        },
+        {
+          "time_seconds": 1.84,
+          "value": 0.643157
+        },
+        {
+          "time_seconds": 1.86,
+          "value": 0.641749
+        },
+        {
+          "time_seconds": 1.88,
+          "value": 0.629066
+        },
+        {
+          "time_seconds": 1.9,
+          "value": 0.648168
+        },
+        {
+          "time_seconds": 1.92,
+          "value": 0.625068
+        },
+        {
+          "time_seconds": 1.94,
+          "value": 0.55947
+        },
+        {
+          "time_seconds": 1.96,
+          "value": 0.34736
+        },
+        {
+          "time_seconds": 1.98,
+          "value": 0.152029
+        },
+        {
+          "time_seconds": 2.01,
+          "value": 0.486445
+        },
+        {
+          "time_seconds": 2.03,
+          "value": 0.670645
+        },
+        {
+          "time_seconds": 2.05,
+          "value": 0.63084
+        },
+        {
+          "time_seconds": 2.07,
+          "value": 0.813001
+        },
+        {
+          "time_seconds": 2.09,
+          "value": 0.894221
+        },
+        {
+          "time_seconds": 2.11,
+          "value": 0.707958
+        },
+        {
+          "time_seconds": 2.13,
+          "value": 0.888702
+        },
+        {
+          "time_seconds": 2.15,
+          "value": 1.296075
+        },
+        {
+          "time_seconds": 2.17,
+          "value": 1.321042
+        },
+        {
+          "time_seconds": 2.19,
+          "value": 1.082399
+        },
+        {
+          "time_seconds": 2.22,
+          "value": 0.838023
+        },
+        {
+          "time_seconds": 2.24,
+          "value": 0.835264
+        },
+        {
+          "time_seconds": 2.26,
+          "value": 0.829849
+        },
+        {
+          "time_seconds": 2.28,
+          "value": 0.78386
+        },
+        {
+          "time_seconds": 2.3,
+          "value": 0.873946
+        },
+        {
+          "time_seconds": 2.32,
+          "value": 0.925671
+        },
+        {
+          "time_seconds": 2.34,
+          "value": 0.908192
+        },
+        {
+          "time_seconds": 2.36,
+          "value": 0.902303
+        },
+        {
+          "time_seconds": 2.38,
+          "value": 0.826081
+        },
+        {
+          "time_seconds": 2.4,
+          "value": 0.547325
+        },
+        {
+          "time_seconds": 2.43,
+          "value": 0.314564
+        },
+        {
+          "time_seconds": 2.45,
+          "value": 0.274072
+        },
+        {
+          "time_seconds": 2.47,
+          "value": 0.228836
+        },
+        {
+          "time_seconds": 2.49,
+          "value": 0.325839
+        },
+        {
+          "time_seconds": 2.51,
+          "value": 0.373838
+        },
+        {
+          "time_seconds": 2.53,
+          "value": 0.337858
+        },
+        {
+          "time_seconds": 2.55,
+          "value": 0.473363
+        },
+        {
+          "time_seconds": 2.57,
+          "value": 0.801663
+        },
+        {
+          "time_seconds": 2.59,
+          "value": 0.928239
+        },
+        {
+          "time_seconds": 2.61,
+          "value": 0.666495
+        },
+        {
+          "time_seconds": 2.64,
+          "value": 0.367098
+        },
+        {
+          "time_seconds": 2.66,
+          "value": 0.23292
+        },
+        {
+          "time_seconds": 2.68,
+          "value": 0.223614
+        },
+        {
+          "time_seconds": 2.7,
+          "value": 0.276595
+        },
+        {
+          "time_seconds": 2.72,
+          "value": 0.39673
+        },
+        {
+          "time_seconds": 2.74,
+          "value": 0.408565
+        },
+        {
+          "time_seconds": 2.76,
+          "value": 0.337154
+        },
+        {
+          "time_seconds": 2.78,
+          "value": 0.270172
+        },
+        {
+          "time_seconds": 2.8,
+          "value": 0.389058
+        },
+        {
+          "time_seconds": 2.82,
+          "value": 0.410567
+        },
+        {
+          "time_seconds": 2.85,
+          "value": 0.342937
+        },
+        {
+          "time_seconds": 2.87,
+          "value": 0.304849
+        },
+        {
+          "time_seconds": 2.89,
+          "value": 0.330418
+        },
+        {
+          "time_seconds": 2.91,
+          "value": 0.523478
+        },
+        {
+          "time_seconds": 2.93,
+          "value": 0.834364
+        },
+        {
+          "time_seconds": 2.95,
+          "value": 0.917758
+        },
+        {
+          "time_seconds": 2.97,
+          "value": 0.952274
+        },
+        {
+          "time_seconds": 2.99,
+          "value": 0.938967
+        },
+        {
+          "time_seconds": 3.01,
+          "value": 0.748848
+        },
+        {
+          "time_seconds": 3.03,
+          "value": 0.523517
+        },
+        {
+          "time_seconds": 3.06,
+          "value": 0.369867
+        },
+        {
+          "time_seconds": 3.08,
+          "value": 0.359924
+        },
+        {
+          "time_seconds": 3.1,
+          "value": 0.630563
+        },
+        {
+          "time_seconds": 3.12,
+          "value": 0.906317
+        },
+        {
+          "time_seconds": 3.14,
+          "value": 1.111458
+        },
+        {
+          "time_seconds": 3.16,
+          "value": 0.955957
+        },
+        {
+          "time_seconds": 3.18,
+          "value": 0.646061
+        },
+        {
+          "time_seconds": 3.2,
+          "value": 0.48588
+        },
+        {
+          "time_seconds": 3.22,
+          "value": 0.474676
+        },
+        {
+          "time_seconds": 3.24,
+          "value": 0.369802
+        },
+        {
+          "time_seconds": 3.27,
+          "value": 0.197549
+        },
+        {
+          "time_seconds": 3.29,
+          "value": 0.20855
+        },
+        {
+          "time_seconds": 3.31,
+          "value": 0.358654
+        },
+        {
+          "time_seconds": 3.33,
+          "value": 0.336707
+        },
+        {
+          "time_seconds": 3.35,
+          "value": 0.331958
+        },
+        {
+          "time_seconds": 3.37,
+          "value": 0.328026
+        },
+        {
+          "time_seconds": 3.39,
+          "value": 0.339925
+        },
+        {
+          "time_seconds": 3.41,
+          "value": 0.35052
+        },
+        {
+          "time_seconds": 3.43,
+          "value": 0.301686
+        },
+        {
+          "time_seconds": 3.45,
+          "value": 0.162829
+        },
+        {
+          "time_seconds": 3.48,
+          "value": 0.095757
+        },
+        {
+          "time_seconds": 3.5,
+          "value": 0.087327
+        },
+        {
+          "time_seconds": 3.52,
+          "value": 0.185926
+        },
+        {
+          "time_seconds": 3.54,
+          "value": 0.331153
+        },
+        {
+          "time_seconds": 3.56,
+          "value": 0.491856
+        },
+        {
+          "time_seconds": 3.58,
+          "value": 0.644626
+        },
+        {
+          "time_seconds": 3.6,
+          "value": 0.648512
+        },
+        {
+          "time_seconds": 3.62,
+          "value": 0.698184
+        },
+        {
+          "time_seconds": 3.64,
+          "value": 0.657907
+        },
+        {
+          "time_seconds": 3.66,
+          "value": 0.550406
+        },
+        {
+          "time_seconds": 3.69,
+          "value": 0.205943
+        },
+        {
+          "time_seconds": 3.71,
+          "value": 0.135342
+        },
+        {
+          "time_seconds": 3.73,
+          "value": 0.173108
+        },
+        {
+          "time_seconds": 3.75,
+          "value": 0.224514
+        },
+        {
+          "time_seconds": 3.77,
+          "value": 0.255957
+        },
+        {
+          "time_seconds": 3.79,
+          "value": 0.30167
+        },
+        {
+          "time_seconds": 3.81,
+          "value": 0.310662
+        },
+        {
+          "time_seconds": 3.83,
+          "value": 0.320227
+        },
+        {
+          "time_seconds": 3.85,
+          "value": 0.268975
+        },
+        {
+          "time_seconds": 3.87,
+          "value": 0.253038
+        },
+        {
+          "time_seconds": 3.9,
+          "value": 0.229692
+        },
+        {
+          "time_seconds": 3.92,
+          "value": 0.230702
+        },
+        {
+          "time_seconds": 3.94,
+          "value": 0.254955
+        },
+        {
+          "time_seconds": 3.96,
+          "value": 0.261534
+        },
+        {
+          "time_seconds": 3.98,
+          "value": 0.295024
+        },
+        {
+          "time_seconds": 4.0,
+          "value": 0.279629
+        },
+        {
+          "time_seconds": 4.02,
+          "value": 0.290508
+        },
+        {
+          "time_seconds": 4.04,
+          "value": 0.276282
+        },
+        {
+          "time_seconds": 4.06,
+          "value": 0.244168
+        },
+        {
+          "time_seconds": 4.08,
+          "value": 0.199579
+        },
+        {
+          "time_seconds": 4.11,
+          "value": 0.152087
+        },
+        {
+          "time_seconds": 4.13,
+          "value": 0.102794
+        },
+        {
+          "time_seconds": 4.15,
+          "value": 0.104343
+        },
+        {
+          "time_seconds": 4.17,
+          "value": 0.108732
+        },
+        {
+          "time_seconds": 4.205,
+          "value": 0.115383
+        }
+      ]
+    },
+    "facial_action_unit_12": {
+      "feature": "AU12_r",
+      "sample_count": 128,
+      "sampling": "All 128 decoded video-frame estimates; original frame-level values, no downsampling.",
+      "x_axis": {
+        "name": "time",
+        "unit": "seconds",
+        "definition": "OpenFace frame timestamp from video start"
+      },
+      "y_axis": {
+        "name": "AU12_r",
+        "unit": "OpenFace action-unit intensity estimate scale (not a physical unit)",
+        "definition": "Estimated intensity for Facial Action Unit 12, lip-corner puller; model estimate, not a direct measurement of emotion."
+      },
+      "points": [
+        {
+          "time_seconds": 0.0,
+          "value": 0.24
+        },
+        {
+          "time_seconds": 0.033,
+          "value": 0.11
+        },
+        {
+          "time_seconds": 0.067,
+          "value": 0.08
+        },
+        {
+          "time_seconds": 0.1,
+          "value": 0.14
+        },
+        {
+          "time_seconds": 0.133,
+          "value": 0.21
+        },
+        {
+          "time_seconds": 0.167,
+          "value": 0.23
+        },
+        {
+          "time_seconds": 0.2,
+          "value": 0.27
+        },
+        {
+          "time_seconds": 0.233,
+          "value": 0.27
+        },
+        {
+          "time_seconds": 0.267,
+          "value": 0.28
+        },
+        {
+          "time_seconds": 0.3,
+          "value": 0.23
+        },
+        {
+          "time_seconds": 0.333,
+          "value": 0.33
+        },
+        {
+          "time_seconds": 0.367,
+          "value": 0.43
+        },
+        {
+          "time_seconds": 0.4,
+          "value": 0.62
+        },
+        {
+          "time_seconds": 0.433,
+          "value": 0.63
+        },
+        {
+          "time_seconds": 0.467,
+          "value": 0.57
+        },
+        {
+          "time_seconds": 0.5,
+          "value": 0.45
+        },
+        {
+          "time_seconds": 0.533,
+          "value": 0.39
+        },
+        {
+          "time_seconds": 0.567,
+          "value": 0.39
+        },
+        {
+          "time_seconds": 0.6,
+          "value": 0.42
+        },
+        {
+          "time_seconds": 0.633,
+          "value": 0.4
+        },
+        {
+          "time_seconds": 0.667,
+          "value": 0.38
+        },
+        {
+          "time_seconds": 0.7,
+          "value": 0.35
+        },
+        {
+          "time_seconds": 0.733,
+          "value": 0.36
+        },
+        {
+          "time_seconds": 0.767,
+          "value": 0.37
+        },
+        {
+          "time_seconds": 0.8,
+          "value": 0.38
+        },
+        {
+          "time_seconds": 0.833,
+          "value": 0.39
+        },
+        {
+          "time_seconds": 0.867,
+          "value": 0.42
+        },
+        {
+          "time_seconds": 0.9,
+          "value": 0.44
+        },
+        {
+          "time_seconds": 0.933,
+          "value": 0.42
+        },
+        {
+          "time_seconds": 0.967,
+          "value": 0.38
+        },
+        {
+          "time_seconds": 1.0,
+          "value": 0.3
+        },
+        {
+          "time_seconds": 1.033,
+          "value": 0.32
+        },
+        {
+          "time_seconds": 1.067,
+          "value": 0.28
+        },
+        {
+          "time_seconds": 1.1,
+          "value": 0.26
+        },
+        {
+          "time_seconds": 1.133,
+          "value": 0.4
+        },
+        {
+          "time_seconds": 1.167,
+          "value": 0.67
+        },
+        {
+          "time_seconds": 1.2,
+          "value": 0.98
+        },
+        {
+          "time_seconds": 1.233,
+          "value": 1.01
+        },
+        {
+          "time_seconds": 1.267,
+          "value": 0.99
+        },
+        {
+          "time_seconds": 1.3,
+          "value": 0.93
+        },
+        {
+          "time_seconds": 1.333,
+          "value": 0.75
+        },
+        {
+          "time_seconds": 1.367,
+          "value": 0.55
+        },
+        {
+          "time_seconds": 1.4,
+          "value": 0.39
+        },
+        {
+          "time_seconds": 1.433,
+          "value": 0.44
+        },
+        {
+          "time_seconds": 1.467,
+          "value": 0.54
+        },
+        {
+          "time_seconds": 1.5,
+          "value": 0.62
+        },
+        {
+          "time_seconds": 1.533,
+          "value": 0.7
+        },
+        {
+          "time_seconds": 1.567,
+          "value": 0.71
+        },
+        {
+          "time_seconds": 1.6,
+          "value": 0.73
+        },
+        {
+          "time_seconds": 1.633,
+          "value": 0.71
+        },
+        {
+          "time_seconds": 1.667,
+          "value": 0.7
+        },
+        {
+          "time_seconds": 1.7,
+          "value": 0.67
+        },
+        {
+          "time_seconds": 1.733,
+          "value": 0.67
+        },
+        {
+          "time_seconds": 1.767,
+          "value": 0.69
+        },
+        {
+          "time_seconds": 1.8,
+          "value": 0.74
+        },
+        {
+          "time_seconds": 1.833,
+          "value": 0.69
+        },
+        {
+          "time_seconds": 1.867,
+          "value": 0.75
+        },
+        {
+          "time_seconds": 1.9,
+          "value": 0.79
+        },
+        {
+          "time_seconds": 1.933,
+          "value": 0.91
+        },
+        {
+          "time_seconds": 1.967,
+          "value": 0.87
+        },
+        {
+          "time_seconds": 2.0,
+          "value": 0.88
+        },
+        {
+          "time_seconds": 2.033,
+          "value": 0.78
+        },
+        {
+          "time_seconds": 2.067,
+          "value": 0.68
+        },
+        {
+          "time_seconds": 2.1,
+          "value": 0.62
+        },
+        {
+          "time_seconds": 2.133,
+          "value": 0.68
+        },
+        {
+          "time_seconds": 2.167,
+          "value": 0.77
+        },
+        {
+          "time_seconds": 2.2,
+          "value": 0.77
+        },
+        {
+          "time_seconds": 2.233,
+          "value": 0.53
+        },
+        {
+          "time_seconds": 2.267,
+          "value": 0.32
+        },
+        {
+          "time_seconds": 2.3,
+          "value": 0.14
+        },
+        {
+          "time_seconds": 2.333,
+          "value": 0.18
+        },
+        {
+          "time_seconds": 2.367,
+          "value": 0.15
+        },
+        {
+          "time_seconds": 2.4,
+          "value": 0.12
+        },
+        {
+          "time_seconds": 2.433,
+          "value": 0.14
+        },
+        {
+          "time_seconds": 2.467,
+          "value": 0.11
+        },
+        {
+          "time_seconds": 2.5,
+          "value": 0.08
+        },
+        {
+          "time_seconds": 2.533,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 2.567,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 2.6,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 2.633,
+          "value": 0.01
+        },
+        {
+          "time_seconds": 2.667,
+          "value": 0.04
+        },
+        {
+          "time_seconds": 2.7,
+          "value": 0.06
+        },
+        {
+          "time_seconds": 2.733,
+          "value": 0.05
+        },
+        {
+          "time_seconds": 2.767,
+          "value": 0.02
+        },
+        {
+          "time_seconds": 2.8,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 2.833,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 2.867,
+          "value": 0.01
+        },
+        {
+          "time_seconds": 2.9,
+          "value": 0.06
+        },
+        {
+          "time_seconds": 2.933,
+          "value": 0.12
+        },
+        {
+          "time_seconds": 2.967,
+          "value": 0.17
+        },
+        {
+          "time_seconds": 3.0,
+          "value": 0.11
+        },
+        {
+          "time_seconds": 3.033,
+          "value": 0.05
+        },
+        {
+          "time_seconds": 3.067,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 3.1,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 3.133,
+          "value": 0.06
+        },
+        {
+          "time_seconds": 3.167,
+          "value": 0.14
+        },
+        {
+          "time_seconds": 3.2,
+          "value": 0.14
+        },
+        {
+          "time_seconds": 3.233,
+          "value": 0.08
+        },
+        {
+          "time_seconds": 3.267,
+          "value": 0.02
+        },
+        {
+          "time_seconds": 3.3,
+          "value": 0.04
+        },
+        {
+          "time_seconds": 3.333,
+          "value": 0.07
+        },
+        {
+          "time_seconds": 3.367,
+          "value": 0.07
+        },
+        {
+          "time_seconds": 3.4,
+          "value": 0.07
+        },
+        {
+          "time_seconds": 3.433,
+          "value": 0.04
+        },
+        {
+          "time_seconds": 3.467,
+          "value": 0.02
+        },
+        {
+          "time_seconds": 3.5,
+          "value": 0.01
+        },
+        {
+          "time_seconds": 3.533,
+          "value": 0.01
+        },
+        {
+          "time_seconds": 3.567,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 3.6,
+          "value": 0.12
+        },
+        {
+          "time_seconds": 3.633,
+          "value": 0.17
+        },
+        {
+          "time_seconds": 3.667,
+          "value": 0.24
+        },
+        {
+          "time_seconds": 3.7,
+          "value": 0.16
+        },
+        {
+          "time_seconds": 3.733,
+          "value": 0.21
+        },
+        {
+          "time_seconds": 3.767,
+          "value": 0.22
+        },
+        {
+          "time_seconds": 3.8,
+          "value": 0.32
+        },
+        {
+          "time_seconds": 3.833,
+          "value": 0.26
+        },
+        {
+          "time_seconds": 3.867,
+          "value": 0.22
+        },
+        {
+          "time_seconds": 3.9,
+          "value": 0.09
+        },
+        {
+          "time_seconds": 3.933,
+          "value": 0.04
+        },
+        {
+          "time_seconds": 3.967,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 4.0,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 4.033,
+          "value": 0.0
+        },
+        {
+          "time_seconds": 4.067,
+          "value": 0.03
+        },
+        {
+          "time_seconds": 4.1,
+          "value": 0.07
+        },
+        {
+          "time_seconds": 4.133,
+          "value": 0.15
+        },
+        {
+          "time_seconds": 4.167,
+          "value": 0.16
+        },
+        {
+          "time_seconds": 4.2,
+          "value": 0.19
+        },
+        {
+          "time_seconds": 4.233,
+          "value": 0.23
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "data_definition": "The 100 sample rows are clips from 37 distinct source video IDs. Source video ID is not a person count.",
+    "original_source_files": [
+      "2026-09-23_mosei_sample-manifest_v1.0.csv",
+      "2026-09-23_mosei_media-check_v1.0.csv",
+      "2026-09-23_mosei-stage-map_v1.0.csv",
+      "2026-09-23_mosei-openface-qc_v1.0.csv",
+      "2026-09-23_pilot-multimodal-aligned_v1.0.npz",
+      "2026-09-23_pilot-text-bert_v1.0.npz",
+      "2026-09-23_pilot-audio-word-features_v1.0.npz",
+      "2026-09-23_pilot-vision-word-features_v1.0.npz",
+      "2026-09-23_pilot-audio-egemaps_v1.0.csv",
+      "2026-09-23_pilot-word-times_v1.0.csv",
+      "pilot-sample/openface-v1.0/2026-09-23_pilot-video_v1.0.csv",
+      "2026-09-23_pilot-qc_v1.0.json"
+    ],
+    "quality_rule": "A valid visual frame has OpenFace success == 1 and confidence >= 0.8. A sample with at least 80% valid frames is coverage_at_least_80_percent; a nonzero lower rate is partial coverage; zero valid frames is no valid face frames.",
+    "transcript_rule": "Only the pilot transcript is included, after user listening confirmation. Dataset transcripts/labels were not changed. One of 100 original transcript records remains marked transcript_review_needed.",
+    "feature_provenance": "Pilot features are locally extracted features and must not be described as the benchmark attachment feature arrays."
+  }
+}
+

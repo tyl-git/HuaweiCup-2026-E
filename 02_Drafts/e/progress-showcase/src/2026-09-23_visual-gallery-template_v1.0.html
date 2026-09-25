@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>100 个片段 · 视觉特征展示</title>
+<style>
+:root{--ink:#18324e;--muted:#5c6f82;--bg:#f3f6fa;--line:#d9e3ee;--blue:#2866cc;--green:#147969;--amber:#946510;--red:#b24e50}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Microsoft YaHei",Arial,sans-serif}main{max-width:1240px;margin:auto;padding:26px 22px 34px}h1{font-size:clamp(26px,3.8vw,38px);line-height:1.25;margin:7px 0 12px}h2{font-size:22px;margin:0 0 9px}h3{font-size:16px;margin:0}p{margin:0;color:var(--muted)}.eyebrow{font-size:13px;color:var(--blue);letter-spacing:.08em;font-weight:700}.intro{max-width:950px}.scope{margin:16px 0;padding:11px 15px;background:#e8f0fe;border-radius:12px;font-size:14px}.scope strong{color:var(--blue)}a{color:var(--blue)}.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin:15px 0 8px}label{font-size:14px}select,button{font:inherit;color:var(--ink);border:1px solid var(--line);border-radius:8px;background:white;padding:8px 12px;cursor:pointer}select{max-width:100%;font-size:14px}.picker{display:flex;flex-direction:column;gap:5px;flex:1 1 320px;max-width:640px}.presets{display:flex;flex-wrap:wrap;gap:8px}button:hover{border-color:var(--blue)}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #4488dd;outline-offset:3px}button.primary{background:var(--blue);border-color:var(--blue);color:white}button:disabled{opacity:.55;cursor:default}.dashboard{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(360px,.75fr);gap:16px;align-items:start}.video-card{grid-row:1 / span 2}.feature-card,.multimodal-card{min-width:0}.multimodal-card{margin-top:0;position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}.card{padding:17px;background:white;border:1px solid var(--line);border-radius:16px}.player{position:relative;width:100%;background:#162333;border-radius:12px;overflow:hidden;aspect-ratio:16/9}video{display:block;width:100%;height:100%;object-fit:contain}.overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.pill{display:inline-block;font-size:12px;background:#e8f5ef;color:var(--green);border-radius:99px;padding:4px 10px}.pill.bad{background:#fff2df;color:var(--amber)}.meta{font-size:13px;margin:9px 0}.controls{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:10px}.controls button{font-size:14px}.controls label{display:flex;gap:7px;align-items:center}.controls .toggle{margin-left:auto}.seek{width:100%;margin:11px 0 0;accent-color:var(--blue)}.time{display:flex;justify-content:space-between;gap:10px;font-size:13px;font-variant-numeric:tabular-nums;margin-top:3px}.measurement{margin:12px 0 15px}.measurement-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}.measurement-head strong{font-size:26px;font-variant-numeric:tabular-nums}.measurement p{font-size:12px}.track{height:8px;margin-top:6px;background:#edf2f7;border-radius:8px;overflow:hidden}.fill{height:100%;background:var(--blue);width:0}.fill.green{background:var(--green)}.fill.amber{background:#c28a27}.muted{color:var(--muted);font-size:13px}.hint{font-size:13px;background:#f3f6fa;padding:10px;border-radius:9px}.sample-note{font-size:13px;min-height:23px;margin-bottom:8px}.chart-wrap{margin-top:16px}.chart{width:100%;height:150px;display:block}.chart-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.chart-controls p{font-size:13px}.note{margin-top:11px;font-size:13px}.error{margin-top:8px;color:var(--red)}footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);margin-top:20px;padding-top:12px}.conclusion{margin-top:16px;font-size:15px}.screen-reader{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}[hidden]{display:none!important}
+@media(min-width:901px){body{overflow:hidden}main{height:100vh;overflow:hidden;padding:18px 22px 24px}h1{font-size:32px;margin:3px 0 7px}.scope{margin:9px 0;padding:9px 13px}.toolbar{margin:9px 0 4px}.sample-note{min-height:19px;margin-bottom:5px}.dashboard{width:min(920px,100%);height:min(calc(100vh - 245px),520px);min-height:440px;margin:0 auto;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:minmax(0,1.35fr) minmax(0,.65fr);overflow:hidden}.video-card{grid-column:1;grid-row:1;overflow:hidden}.video-card .player{height:210px;aspect-ratio:auto}.video-card .note{display:none}.feature-card{grid-column:2;grid-row:1 / span 2}.multimodal-card{grid-column:1;grid-row:2;padding:10px}.video-card,.feature-card,.multimodal-card{min-height:0;overflow:auto}.multimodal-card{position:static}.multimodal-card .word-grid{max-height:calc(100% - 70px);overflow-y:auto}.conclusion,footer{display:none}}
+@media(max-width:900px){.dashboard{grid-template-columns:1fr}.video-card{grid-row:auto}.multimodal-card{position:static;max-height:none}.measurements{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.measurement-head{display:block}.measurement-head strong{font-size:24px}.measurement{margin:8px 0 12px}.card{padding:17px}}
+@media(max-width:500px){main{padding:22px 13px}.measurements{grid-template-columns:1fr}.measurement-head{display:flex}.measurement{margin:10px 0}.controls .toggle{margin-left:0}.presets button{padding:8px;font-size:13px}.toolbar{gap:10px}.picker,#sample{min-width:0;width:100%}.chart{height:185px}.card{padding:13px}}
+</style>
+</head>
+<body><main>
+<header><div class="eyebrow">华为杯 E 题 · 已有结果实景演示 · 2026.09.23</div><h1>其他视频，也能看见处理结果</h1><p class="intro">切换片段、播放或拖动进度，观察画面中的眼部轮廓与面部动作数值。这里展示全部 100 个片段已经提取的视觉信息。</p></header>
+<div class="scope"><strong>三模态词级对齐：100 / 100 个片段已完成。</strong>每个片段都能按原始单词查看文字、声音和画面特征；绿色标记表示该词三路数据均有有效观测，黄色表示需要复核。</div>
+<div class="toolbar"><label class="picker" for="sample">选择视频片段<select id="sample"></select></label><div class="presets" aria-label="快速比较"><button type="button" data-sample="sample_0098">较长片段</button><button type="button" data-sample="sample_0006">部分画面可用</button><button type="button" data-sample="sample_0010">无有效帧示例</button></div></div>
+<p id="sample-note" class="sample-note"></p>
+<div class="dashboard">
+<section class="card video-card" aria-label="原视频与眼部跟踪">
+<div class="player" id="player"><video id="video" preload="metadata" playsinline aria-label="原始片段视频"></video><canvas class="overlay" id="overlay" aria-hidden="true"></canvas></div>
+<p class="meta" id="meta"></p>
+<div class="controls"><button type="button" class="primary" id="play">播放</button><button type="button" id="previous" aria-label="上一帧">上一帧</button><button type="button" id="next" aria-label="下一帧">下一帧</button><label>速度<select id="speed" aria-label="播放速度"><option value="0.5">0.5 倍</option><option value="0.75">0.75 倍</option><option selected value="1">正常</option></select></label><label class="toggle"><input id="landmarks" type="checkbox" checked>显示眼部轮廓</label></div>
+<label class="screen-reader" for="seek">视频时间</label><input id="seek" class="seek" type="range" min="0" max="1" step="0.001" value="0"><div class="time"><span id="clock">0.00 秒</span><span id="frame">第 1 帧</span></div>
+<p class="error" id="error" role="alert" hidden></p>
+<p class="note">青色点线标出 OpenFace 跟踪到的那张脸的两眼轮廓。多人画面中，不代表每个人都分别跟踪。没有通过质量筛选时，点线和动作数值会隐藏。视频声音为原始音轨。</p>
+</section>
+<section class="card feature-card" aria-label="当前画面和词级三模态特征"><div class="chart-controls"><h2>同步查看三模态</h2><span id="valid-state" class="pill">等待视频载入</span></div><p class="muted" id="frame-confidence">检测置信度 —</p>
+<div class="sync-panel" aria-live="polite"><div class="sync-word"><strong id="sync-word">等待播放</strong><span id="sync-time">—</span></div><p class="sync-caption" id="sync-caption">播放视频后，当前词会自动跟随高亮。</p><div class="sync-modalities"><div class="sync-modality text"><strong>文字 · 768维</strong><small id="sync-text-state">等待词级对齐</small></div><div class="sync-modality audio"><strong>声音 · 25维</strong><small id="sync-audio-state">等待词级对齐</small></div><div class="sync-modality vision"><strong>画面 · 49维</strong><small id="sync-vision-state">等待词级对齐</small></div></div><div class="sync-bars"><div class="sync-bar"><span>声音强度</span><div class="bar"><i id="sync-audio-bar"></i></div><b id="sync-audio-value">—</b></div><div class="sync-bar vision"><span>嘴唇动作</span><div class="bar"><i id="sync-vision-bar"></i></div><b id="sync-vision-value">—</b></div></div></div>
+<div class="measurements">
+<div class="measurement"><div class="measurement-head"><h3>嘴角向外上方拉动</h3><strong id="au12">—</strong></div><p>嘴角拉动 · AU12</p><div class="track"><div class="fill" id="bar12"></div></div></div>
+<div class="measurement"><div class="measurement-head"><h3>双唇分开</h3><strong id="au25">—</strong></div><p>双唇分离 · AU25</p><div class="track"><div class="fill green" id="bar25"></div></div></div>
+<div class="measurement"><div class="measurement-head"><h3>眨眼动作</h3><strong id="au45">—</strong></div><p>眼睑闭合相关 · AU45</p><div class="track"><div class="fill amber" id="bar45"></div></div></div>
+</div>
+<p class="hint">数值是检测器估计的动作强度，范围 0–5，越大表示该动作越明显。它们是后续分析的线索，不能直接当作开心、难过等情绪结论。</p>
+<div class="chart-wrap"><div class="chart-controls"><h3>双唇分离随时间的变化</h3><p>灰色竖线＝播放位置</p></div><canvas id="chart" class="chart" role="img" aria-label="整个片段的双唇分离强度随时间的变化，0到5，无效帧留空"></canvas><p class="muted">横轴：时间（秒） · 纵轴：动作强度（0–5）</p></div>
+</section>
+<section class="card multimodal-card" aria-label="当前片段的词级三模态对齐"><div class="chart-controls"><div><h2>词语时间轴</h2><p class="muted">播放时自动高亮当前词；点击词语可跳转。</p></div><span id="alignment-state" class="pill">等待选择</span></div><div id="word-grid" class="word-grid"></div><p id="alignment-detail" class="hint">选择上方视频片段后，这里会显示该片段的对齐结果。</p></section>
+</div>
+<p class="conclusion"><strong>当前成果：</strong>100 个片段已经完成三模态词级对齐。页面同时保留逐帧视觉播放，便于把词级结果回看至原始视频。</p>
+<footer>来源：暂存视频、OpenFace 逐帧结果、Wav2Vec2 词级时间、BERT 文本特征、openSMILE 音频特征和最终合并质量清单。有效视觉帧条件：success=1 且 confidence≥0.8。词级特征来自最终合并文件；缺失模态用掩码标记，不把零值解释为中性。需要复核的对齐标记会保留在片段和单词信息中。此页面使用项目中已有视频，移动或外发时需同时保留相邻的视频目录。</footer>
+</main>
+<style>.multimodal-card{margin-top:0}.word-grid{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;max-height:250px;overflow:auto;padding:2px}.word-chip{min-width:82px;flex:1 1 82px;text-align:left;border:1px solid var(--line);border-radius:9px;background:#f6f8fb;padding:8px 9px;font-size:13px}.word-chip strong{display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.word-chip small{display:block;color:var(--muted);font-size:11px}.word-chip.complete{background:#e8f5ef;border-color:#a8d8ca}.word-chip.partial{background:#fff5df;border-color:#e2c27b}.word-chip.missing{background:#f2f4f6;color:#7a8792}.word-chip.selected,.word-chip.active{outline:3px solid #4488dd;outline-offset:1px}.word-chip.active{box-shadow:0 0 0 2px #b7d2ff inset}.word-chip[disabled]{cursor:default}.sync-panel{margin:8px 0 10px;padding:11px;border:1px solid var(--line);border-radius:12px;background:#f7faff}.sync-word{display:flex;justify-content:space-between;align-items:baseline;gap:12px}.sync-word strong{font-size:26px;color:var(--blue);line-height:1.1}.sync-word span{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}.sync-caption{font-size:12px;color:var(--muted);margin:4px 0 8px}.sync-modalities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.sync-modality{padding:7px 8px;border-radius:8px;font-size:12px;background:white;border:1px solid var(--line)}.sync-modality strong{display:block;font-size:12px}.sync-modality small{display:block;color:var(--muted);margin-top:2px}.sync-modality.text strong{color:var(--blue)}.sync-modality.audio strong{color:var(--green)}.sync-modality.vision strong{color:#a16f16}.sync-bars{display:grid;gap:5px;margin-top:8px}.sync-bar{display:grid;grid-template-columns:58px 1fr 40px;gap:7px;align-items:center;font-size:11px;color:var(--muted)}.sync-bar .bar{height:7px;background:#e7edf3;border-radius:5px;overflow:hidden}.sync-bar .bar i{display:block;height:100%;width:0;background:var(--green);border-radius:5px}.sync-bar.vision .bar i{background:#c28a27}.sync-bar b{text-align:right;color:var(--ink);font-size:11px}@media(max-width:500px){.sync-modalities{grid-template-columns:1fr}.sync-word strong{font-size:24px}}</style>
+<script id="gallery-data" type="application/json">__GALLERY_DATA__</script>
+<script>
+(() => {
+  'use strict';
+  const data=JSON.parse(document.getElementById('gallery-data').textContent);
+  const el=id=>document.getElementById(id);
+  const video=el('video'), picker=el('sample'), seek=el('seek'), overlay=el('overlay'), chart=el('chart');
+  const oc=overlay.getContext('2d'), cc=chart.getContext('2d');
+  let sample, currentIndex=0, animation=0, frameCallback=null, chartBase=null;
+  const quality=s=>s.valid_frames===0?'无有效帧':s.valid_frame_rate<.8?'部分画面可用':'有效画面较完整';
+  data.samples.forEach(s=>{
+    const option=document.createElement('option');option.value=s.sample_id;
+    option.textContent=`${s.sample_id.replace('sample_','片段 ')} · ${s.duration_seconds.toFixed(1)} 秒 · 覆盖率 ${(s.valid_frame_rate*100).toFixed(1)}% · ${quality(s)}`;
+    picker.append(option);
+  });
+  function findFrame(time){
+    const t=time-sample.time_offset_seconds,a=sample.timestamps;
+    if(t<a[0]-.002)return -1;
+    let lo=0,hi=a.length;
+    while(lo<hi){const mid=(lo+hi)>>1;if(a[mid]<=t+.0005)lo=mid+1;else hi=mid;}
+    return Math.max(0,lo-1);
+  }
+  function buildChart(){
+    if(!sample)return;
+    const w=chart.clientWidth,h=chart.clientHeight,dpr=window.devicePixelRatio||1;
+    chart.width=Math.round(w*dpr);chart.height=Math.round(h*dpr);
+    cc.setTransform(dpr,0,0,dpr,0,0);
+    cc.clearRect(0,0,w,h);
+    const x=t=>42+(w-55)*t/sample.duration_seconds,y=v=>h-31-(h-50)*v/5;
+    cc.font='12px "Microsoft YaHei",sans-serif';cc.lineWidth=1;
+    [0,2.5,5].forEach(value=>{
+      cc.strokeStyle='#e2e9f0';cc.beginPath();cc.moveTo(42,y(value));cc.lineTo(w-13,y(value));cc.stroke();
+      cc.fillStyle='#556a7c';cc.textAlign='right';cc.fillText(String(value),35,y(value)+4);
+    });
+    [0,.5,1].forEach(f=>{
+      cc.textAlign=f===0?'left':f===1?'right':'center';cc.fillText((sample.duration_seconds*f).toFixed(1),x(sample.duration_seconds*f),h-10);
+    });
+    cc.strokeStyle='#147969';cc.lineWidth=1.7;cc.beginPath();let started=false;
+    sample.au25.forEach((v,i)=>{
+      if(v===null){started=false;return;}
+      const px=x(sample.timestamps[i]+sample.time_offset_seconds),py=y(v);
+      if(started)cc.lineTo(px,py);else cc.moveTo(px,py);started=true;
+    });cc.stroke();
+    if(sample.valid_frames===0){cc.textAlign='center';cc.fillStyle='#946510';cc.fillText('全片无通过筛选的动作数据',w/2,h/2);}
+    chartBase=cc.getImageData(0,0,chart.width,chart.height);drawCursor(video.currentTime);
+  }
+  function drawCursor(time){
+    if(!chartBase)return;cc.putImageData(chartBase,0,0);
+    const w=chart.clientWidth,h=chart.clientHeight,x=42+(w-55)*Math.min(sample.duration_seconds,Math.max(0,time))/sample.duration_seconds;
+    cc.strokeStyle='#66798a';cc.lineWidth=1.3;cc.beginPath();cc.moveTo(x,14);cc.lineTo(x,h-31);cc.stroke();
+  }
+  function syncWord(time){
+    if(!sample||!sample.multimodal)return;
+    const mm=sample.multimodal, relative=time-(sample.word_video_offset_seconds||0);
+    let active=-1;
+    for(let i=0;i<mm.word_times_s.length;i++){
+      const pair=mm.word_times_s[i];
+      if(Array.isArray(pair)&&pair.length===2&&Number.isFinite(pair[0])&&Number.isFinite(pair[1])&&relative>=pair[0]-.001&&relative<pair[1]-.001){active=i;break;}
+    }
+    const chips=[...document.querySelectorAll('.word-chip')];
+    chips.forEach((chip,i)=>{chip.classList.toggle('active',i===active);chip.setAttribute('aria-current',i===active?'true':'false');});
+    const word=active>=0?mm.words[active]:'（无词级时间）';
+    const pair=active>=0?mm.word_times_s[active]:null;
+    el('sync-word').textContent=word;
+    el('sync-time').textContent=pair?`${pair[0].toFixed(2)}–${pair[1].toFixed(2)} 秒`:'—';
+    if(active>=0){
+      const states=[['sync-text-state',mm.text_mask[active]?'有效文字特征':'文字缺失'],['sync-audio-state',mm.audio_mask[active]?'有效声音特征':'声音缺失'],['sync-vision-state',mm.vision_mask[active]?'有效画面特征':'画面缺失']];
+      states.forEach(([id,value])=>el(id).textContent=value);
+      const trace=sample.audio_trace||{}, times=trace.times||[];
+      let ti=0;if(times.length){for(let i=1;i<times.length;i++){if(Math.abs(times[i]-relative)<Math.abs(times[ti]-relative))ti=i;}}
+      const loud=times.length?Number(trace.loudness[ti]):NaN;
+      const au25=sample.au25[currentIndex];
+      el('sync-audio-value').textContent=Number.isFinite(loud)?loud.toFixed(2):'—';
+      el('sync-audio-bar').style.width=Number.isFinite(loud)?`${Math.max(0,Math.min(100,loud*100))}%`:'0%';
+      el('sync-vision-value').textContent=Number.isFinite(au25)?au25.toFixed(2):'—';
+      el('sync-vision-bar').style.width=Number.isFinite(au25)?`${Math.max(0,Math.min(100,au25/5*100))}%`:'0%';
+      const chip=chips[active];if(chip)chip.scrollIntoView({block:'nearest',inline:'nearest'});
+    } else {
+      ['sync-text-state','sync-audio-state','sync-vision-state'].forEach(id=>el(id).textContent='当前时间没有词');
+      el('sync-audio-value').textContent='—';el('sync-vision-value').textContent='—';el('sync-audio-bar').style.width='0%';el('sync-vision-bar').style.width='0%';
+    }
+  }
+  function render(time=video.currentTime){
+    if(!sample)return;
+    const idx=findFrame(time),valid=idx>=0&&Boolean(sample.valid[idx]);currentIndex=Math.max(0,idx);
+    const status=el('valid-state');status.textContent=valid?'当前帧通过筛选':'当前帧无有效数据';status.classList.toggle('bad',!valid);
+    el('frame-confidence').textContent=idx>=0?`检测置信度 ${sample.confidence[idx].toFixed(2)}（筛选线 0.80）`:'首个视频帧尚未开始';
+    ['12','25','45'].forEach(code=>{
+      const value=valid?sample['au'+code][idx]:null;el('au'+code).textContent=value===null?'—':value.toFixed(2);
+      el('bar'+code).style.width=value===null?'0%':Math.max(0,Math.min(100,value/5*100))+'%';
+    });
+    oc.clearRect(0,0,overlay.width,overlay.height);
+    const points=idx>=0?sample.eye_points[idx]:null;
+    if(valid&&points&&el('landmarks').checked){
+      oc.strokeStyle='#51ffd2';oc.fillStyle='#51ffd2';oc.lineWidth=Math.max(1.4,sample.width/600);
+      for(let group=0;group<2;group++){
+        oc.beginPath();for(let j=0;j<12;j++){const k=(group*12+j)*2;if(j===0)oc.moveTo(points[k],points[k+1]);else oc.lineTo(points[k],points[k+1]);}oc.closePath();oc.stroke();
+      }
+      for(let j=0;j<24;j++){oc.beginPath();oc.arc(points[j*2],points[j*2+1],Math.max(1.6,sample.width/480),0,Math.PI*2);oc.fill();}
+    }
+    seek.value=String(time);el('clock').textContent=`${time.toFixed(2)} / ${sample.duration_seconds.toFixed(2)} 秒`;
+    el('frame').textContent=`第 ${Math.max(0,idx+1)} / ${sample.frame_count} 帧`;
+    syncWord(time);
+    drawCursor(time);
+  }
+  function stopLoop(){cancelAnimationFrame(animation);animation=0;if(frameCallback!==null&&video.cancelVideoFrameCallback)video.cancelVideoFrameCallback(frameCallback);frameCallback=null;}
+  function schedule(){
+    if(video.paused||video.ended)return;
+    if(video.requestVideoFrameCallback){frameCallback=video.requestVideoFrameCallback((now,meta)=>{frameCallback=null;render(meta.mediaTime);schedule();});}
+    else animation=requestAnimationFrame(()=>{render();schedule();});
+  }
+  function select(id){
+    video.pause();stopLoop();sample=data.samples.find(s=>s.sample_id===id);picker.value=id;
+    overlay.width=sample.width;overlay.height=sample.height;el('player').style.aspectRatio=`${sample.width}/${sample.height}`;
+    seek.max=String(sample.duration_seconds);seek.value='0';currentIndex=0;
+    el('meta').textContent=`${sample.source_video_id} / ${sample.clip_id} · ${sample.frame_count} 帧 · 有效 ${sample.valid_frames} 帧（${(sample.valid_frame_rate*100).toFixed(1)}%）`;
+    const mm=sample.multimodal;
+    const complete=mm.all_modalities_mask.filter(Boolean).length;
+    el('sample-note').textContent=`该片段已完成词级三模态合并：${complete}/${mm.words.length} 个词同时有文本、音频和视觉有效数据。${mm.needs_review?'此片段带有质量复核标记。':'该片段当前无质量复核标记。'}`;
+    renderWords();
+    el('error').hidden=true;el('play').disabled=false;
+    video.poster=sample.poster;video.src=sample.video_src;video.load();video.playbackRate=Number(el('speed').value);buildChart();render(0);
+  }
+  function renderWords(selected=-1){
+    const box=el('word-grid'), state=el('alignment-state'), detail=el('alignment-detail'); box.innerHTML='';
+    if(!sample||!sample.multimodal){state.textContent='无合并数据';state.classList.add('bad');return;}
+    const mm=sample.multimodal, n=mm.words.length, complete=mm.all_modalities_mask.filter(Boolean).length;
+    state.textContent=`${complete}/${n} 词三模态有效`; state.classList.toggle('bad',complete<n);
+    mm.words.forEach((word,i)=>{
+      const t=mm.word_times_s[i], timed=Array.isArray(t)&&t.length===2&&t.every(Number.isFinite);
+      const button=document.createElement('button'); button.type='button'; button.className='word-chip '+(mm.all_modalities_mask[i]?'complete':(mm.timing_mask[i]?'partial':'missing')); button.setAttribute('aria-current','false');
+      button.disabled=!timed; button.setAttribute('aria-label',`${word}，${timed?t[0].toFixed(2)+'到'+t[1].toFixed(2)+'秒':'无有效时间'}`);
+      button.innerHTML=`<strong>${word}</strong><small>${timed?t[0].toFixed(2)+'–'+t[1].toFixed(2)+' 秒':'无时间'} · ${mm.all_modalities_mask[i]?'三模态':'有缺失'}</small>`;
+      button.addEventListener('click',()=>{box.querySelectorAll('.selected').forEach(x=>x.classList.remove('selected'));button.classList.add('selected');video.currentTime=t[0]+(sample.word_video_offset_seconds||0);detail.textContent=`${word}：${t[0].toFixed(2)}–${t[1].toFixed(2)} 秒；文本 ${mm.text_mask[i]?'有效':'缺失'}，音频 ${mm.audio_mask[i]?'有效':'缺失'}，视觉 ${mm.vision_mask[i]?'有效':'缺失'}。${mm.alignment_review_flags||mm.merge_review_flags?'该片段保留复核标记。':''}`;render(video.currentTime);video.play().catch(()=>{});});
+      box.append(button);
+    });
+    detail.textContent=`共 ${n} 个词，其中 ${complete} 个词三模态同时有效。绿色为三模态齐全，黄色为部分有效，灰色为无有效时间或模态。`;
+  }
+  function step(delta){video.pause();const next=Math.max(0,Math.min(sample.frame_count-1,currentIndex+delta));video.currentTime=sample.timestamps[next]+sample.time_offset_seconds;render(video.currentTime);}
+  picker.addEventListener('change',()=>select(picker.value));
+  document.querySelectorAll('[data-sample]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.sample)));
+  el('play').addEventListener('click',async()=>{
+    if(!video.paused){video.pause();return;}if(video.ended)video.currentTime=0;
+    try{await video.play();}catch(e){el('error').textContent='视频未能播放：'+e.message;el('error').hidden=false;}
+  });
+  el('previous').addEventListener('click',()=>step(-1));el('next').addEventListener('click',()=>step(1));
+  seek.addEventListener('input',()=>{video.pause();video.currentTime=Number(seek.value);render(video.currentTime);});
+  el('speed').addEventListener('change',()=>video.playbackRate=Number(el('speed').value));
+  el('landmarks').addEventListener('change',()=>render());
+  video.addEventListener('play',()=>{el('play').textContent='暂停';stopLoop();schedule();});
+  video.addEventListener('pause',()=>{el('play').textContent='播放';stopLoop();render();});
+  video.addEventListener('seeked',()=>render());video.addEventListener('loadedmetadata',()=>render());
+  video.addEventListener('timeupdate',()=>{if(video.paused)render();});
+  video.addEventListener('error',()=>{el('error').textContent='找不到标准化复核视频或格式无法播放。请保留页面上一级目录中的 q1-manual-review-normalized-v1.0 文件夹。';el('error').hidden=false;el('play').disabled=true;});
+  new ResizeObserver(buildChart).observe(chart);
+  select('sample_0044');
+})();
+</script></body></html>
