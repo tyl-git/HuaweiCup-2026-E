@@ -1,0 +1,24 @@
+{
+  "schema": "q2_text_safe_balanced_sqrt_v1.0",
+  "train_n": 3395,
+  "valid_n": 728,
+  "test_evaluated": false,
+  "specialists_evaluated": false,
+  "selection_split": "valid_complete",
+  "text_mask_scope": "input-level [MASK] before frozen BERT; removed rows unavailable after encoding",
+  "conditions": [
+    "20pct_start",
+    "20pct_middle",
+    "20pct_end",
+    "40pct_start",
+    "40pct_middle",
+    "40pct_end"
+  ],
+  "classification_weights": [
+    1.0379084348678589,
+    1.1722971200942993,
+    0.7897944450378418
+  ],
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "safe_manifest_sha256": "09982a0d3b5d25afeb802fb18c9fde685068985ec3c1b09a5e7740b324d7a76b"
+}

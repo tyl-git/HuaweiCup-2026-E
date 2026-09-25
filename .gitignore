@@ -26,5 +26,8 @@
 03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/history.json
 03_Results/e/question-two/q2-temporal-v1.0/*/seed_*/metrics.json
 03_Results/e/question-two/q2-temporal-final-v1.0/*predictions*.npz
+03_Results/e/question-two/q2-text-safe-v1.0/
+03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/*/seed_*/*masks.npz
+03_Results/e/question-two/q2-temporal-balanced-inverse-v1.0/*/seed_*/*masks.npz
 *.pyc
 *.pyo

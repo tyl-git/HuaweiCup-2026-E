@@ -1,0 +1,67 @@
+{
+  "schema": "q2_temporal_v1.0",
+  "aligned_source_sha256": {
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+  },
+  "bert_cache_sha256": {
+    "train": "8cbe458c1baeced964ce8dcb04a7b78f3ce769a509ccd66fbbf2b8a458647f03",
+    "valid": "b48450e04601502c5284d33be41584c8c4bc3b7870b09545737fa802ba74ce76"
+  },
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "model": "temporal",
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "config": {
+    "max_epochs": 40,
+    "patience": 8,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.2,
+    "hidden_dim": 64,
+    "fusion_dim": 128,
+    "classification_loss_weight": 1.0,
+    "regression_loss_weight": 1.0,
+    "augmentation_probability": 0.5,
+    "augmentation_fractions": [
+      0.2,
+      0.4
+    ],
+    "augmentation_positions": [
+      "start",
+      "middle",
+      "end",
+      "random"
+    ],
+    "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+    "temporal_width": 32,
+    "temporal_kernel": 3
+  },
+  "split_fit": "train",
+  "selection_split": "valid",
+  "plan_seed": 20260930,
+  "predictor_mask_inputs": [
+    "content",
+    "effective_observed"
+  ],
+  "audit_only_masks": [
+    "source_zero",
+    "injected_missing"
+  ],
+  "text_missing_scope": "post-BERT masking; context in retained rows may leak removed words",
+  "test_evaluated": false,
+  "specialists_evaluated": false,
+  "dependency_sha256": {
+    "2026-09-24_train-q2-temporal_v1.0.py": "0037da1d5c7a304a503277458c7eff2667960c389dce1ca321bb231551478035",
+    "2026-09-24_q2_data_v1.0.py": "9bffdfeac0f89d11b866bbe840b51b4cfd0f5125b8b4204bc0aaedee725c3def",
+    "2026-09-24_prepare-q2-text_v1.0.py": "9770536c9ba6d0b30f742c4e527edd4ca9b326922eb662807c621bc35f0d5db0",
+    "2026-09-24_q2-normalization_v1.0.py": "cc87cf139c7d291cc880e893c6b8001d44bc7731060448011d6e47cfae8ecf69",
+    "2026-09-24_train-q2-robust_v1.0.py": "1ae4848f06199b8b91bfb36a04dadac831601282fd0d068307ee0d548975bdb5",
+    "2026-09-24_train-q2-baselines_v1.0.py": "bbec8b183e5d8488f62afa747f16fc33bbe83d2b3e092522a57b4a492038d701",
+    "2026-09-24_q2-missing-intervals_v1.0.py": "741131efea16239e268344fdb1a8b50706fe721527d277c06f7da6ed98d70650",
+    "2026-09-24_q2-evaluation_v1.0.py": "c0b2dd6b59f5d340fa3ad373e7ed1f4822cb119ab2ab260fb9bd46be2b2cd79e"
+  }
+}

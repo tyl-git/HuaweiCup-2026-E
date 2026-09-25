@@ -1,0 +1,28 @@
+{
+  "schema": "q2_text_safe_final_protocol_v1.0",
+  "model": "input_level_text_gap_augmented_temporal_balanced_sqrt",
+  "feature_version": "official_aligned_50",
+  "selection_split": "official_valid",
+  "official_test_n": 727,
+  "attachment3_n": 30,
+  "ensemble_classification": "mean of three seed softmax probability vectors, then argmax",
+  "ensemble_regression": "arithmetic mean of three seed intensity predictions",
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "checkpoint_sha256": {
+    "20260924": "0a81361e85447931d0cb835a1f4ca79e809449d48e1ea1e9c3a8d153287e0fff",
+    "20260925": "b05f23ffd912bb71d8e7722017579d78e8dc48231d21f6773c6a749cf8b4725f",
+    "20260926": "b6ddf90cc25e49b23e3e2a2bace3dac09d3e36f730358b7d4c17f3960730743b"
+  },
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "validation_adoption": {
+    "rule": "six-condition mean input-level gap Macro-F1 gain >=0.02 and complete Macro-F1 change >=-0.02 versus balanced-sqrt-only, same seeds",
+    "gap_macro_f1_gain": 0.025418400913836514,
+    "complete_macro_f1_change": -0.00873268073657607
+  },
+  "test_tuning": false,
+  "specialist_labels_used": false
+}

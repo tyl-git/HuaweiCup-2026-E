@@ -1,0 +1,308 @@
+{
+  "schema": "q2_text_safe_final_v1.0",
+  "protocol_sha256": "dcf313b450234bc938f01ff12290de4ed6f92642f8b37bba103e16741a3133b8",
+  "test_tuning": false,
+  "specialist_labels_used": false,
+  "official_test_n": 727,
+  "attachment3_n": 30,
+  "input": "complete original frozen BERT test cache; no synthetic test gaps",
+  "source_sha256": {
+    "official": {
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+    },
+    "attachment3": {
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_01.pkl": "b45b89a7eea55278abb130d44a6ee21128df5aa3239e68c968f9ac7743cfa0ea",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_02.pkl": "6a628897c4b8c5e94e37f23bce680aad500fa8545414234f3564a58577c1023b",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_03.pkl": "52bb6e11f4bba301e1bd90916dc9ad3a0d2d0885fec4598e3e737e2c4d100b6f",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_04.pkl": "ee1f4781ee7b7bc37e71a13e4bc53eedc8327d96a69c246964d0e84a8aa99f72",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_05.pkl": "9f8e5bae8488d8ee1576b1686864b7d8fc9970cfa720758fb040b9293b7e3619",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_06.pkl": "9e973621f141b1af24fc3686ac329a10b66ba2b84d18c21918e86bf0429f790d",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_07.pkl": "62dd394e23c80af2898e039d7eb6f47556d747887331fa2853dad72e13bb223b",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_08.pkl": "e668faea97f9a338051c19ee66383df799b2e461d6d079df8c5f92b32bd6437e",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_09.pkl": "ef57769eaa05f53a7d588948d565876356898658d9945202058ca763e53748b2",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_10.pkl": "7c87d84d69e0e68b9252c9839747558d07a91fd2d079a9a0850683d0d197241e",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_11.pkl": "10e9d5443cecf2de9170deaa56995de0cf9c52580a74cd334de8fea0e4a735f2",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_12.pkl": "d0342f4931a05e40fb0a3220010f1ac801a2f06d123bc4d9a7dc5355794347ba",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_13.pkl": "9e2144ab4385636b259d9e358c7e511be5242c89340f894473317b7757f218b7",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_14.pkl": "f6d45e8fa882062f70fd48ee1f7584b0a75ea0ed1c85a9eb218684e954dc1b82",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_15.pkl": "263b960d4d66b25a3db447fb7a16aee7b7d735e8bee3fe55c7869ad3103bf9d4",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_16.pkl": "df8b4c881e3fc971d532988bbd161d8d9bf8c5d16c3e7a559bb7a4045e96547f",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_17.pkl": "b6c64a55fb8050cb9fda15b0245df8f16b20d2a25d9368485dd1229e213fdba5",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_18.pkl": "dc8eb37586b93bdd4debe895041275fdabb94c3392bde667b4e0ccdc6429fab1",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_19.pkl": "d3a912bc3c70b60c1021babc521f28a6a34f9e916c164ad0191182e587c2385a",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_20.pkl": "bf24c7189bba3904e911dd452266078d8ff15768438a9069e6596ff73a4b925e",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_21.pkl": "c0605bd5757ff0c5dea345c96236ed7168ff976d37843572143efe11d6454600",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_22.pkl": "6f9dc33f9d3e5680ee3a3b2b0c53b1bac51fb98f1d75375a2cb1224cd7bd4d43",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_23.pkl": "5200bd05e2611777875eb1d88826bb56bb71dee4c708fec9d9f851222d243aae",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_24.pkl": "76b1c126e2043f90afd5af00d51299bc8f5bf1bee8148f5ff904ccbeb931a5e5",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_25.pkl": "88d52e2d0b0229ad6ec638e6e7463f6852f127ae9308fbee1cbc2405d8ebc4c8",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_26.pkl": "e483daa1391987552f9ee7f21bffec918dd61267af36885a9ae3073813193234",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_27.pkl": "27f16bbd4541196bb33f4caa36e038b2ff66fa72649f1b22f2328a5630de37ad",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_28.pkl": "81def781fa8fa5aebb555631b59ce48ee71a10c9e4226f1a5b6d91a2078f8f32",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_29.pkl": "8caf12e71117bd7334be12aba5af6322fb02a2397f8e2402e75391f4f9ef3686",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_30.pkl": "a6b272abb5d083804b6902054d4180d55d3c1d5822c483967e70e6a9657546d3"
+    }
+  },
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "test_cache_sha256": "9587e338480f7ce5951714220739cc863fae5009803022f842d93f84241c50ed",
+  "per_seed": [
+    {
+      "seed": 20260924,
+      "prediction_sha256": "b4531edea542a595dd011dc98a8718711e8c1dc088f0153db1c57db618139f8f",
+      "report": {
+        "cross_entropy": 0.7511959626881259,
+        "l1": 0.6281903987081704,
+        "selection_loss": 1.3793863613962962,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.6740027510316369,
+          "macro_f1": 0.6319491139328041,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              133,
+              39,
+              35
+            ],
+            [
+              20,
+              70,
+              68
+            ],
+            [
+              25,
+              50,
+              287
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.7471910112359551,
+              "recall": 0.642512077294686,
+              "f1": 0.6909090909090909
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.44025157232704404,
+              "recall": 0.4430379746835443,
+              "f1": 0.4416403785488959
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.735897435897436,
+              "recall": 0.7928176795580111,
+              "f1": 0.7632978723404256
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6281903976167167,
+          "pearson_r": 0.6935679541049271,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "seed": 20260925,
+      "prediction_sha256": "55f7c2a6c665d0cdb853b33255dfc25568ff8b39eac0140bf9cefce89750fbc1",
+      "report": {
+        "cross_entropy": 0.7458851327594406,
+        "l1": 0.6091877479500751,
+        "selection_loss": 1.3550728807095158,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.6781292984869326,
+          "macro_f1": 0.6455279723276736,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              141,
+              38,
+              28
+            ],
+            [
+              19,
+              77,
+              62
+            ],
+            [
+              23,
+              64,
+              275
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.7704918032786885,
+              "recall": 0.6811594202898551,
+              "f1": 0.7230769230769231
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.4301675977653631,
+              "recall": 0.4873417721518987,
+              "f1": 0.456973293768546
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7534246575342466,
+              "recall": 0.7596685082872928,
+              "f1": 0.7565337001375516
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6091877653467196,
+          "pearson_r": 0.6972155591263597,
+          "pearson_status": "defined"
+        }
+      }
+    },
+    {
+      "seed": 20260926,
+      "prediction_sha256": "d1cdc5b4cddc0b48d68a5daba2636234d392238c917516704197261819fec55f",
+      "report": {
+        "cross_entropy": 0.7421979943528628,
+        "l1": 0.6277046098669753,
+        "selection_loss": 1.3699026042198381,
+        "classification": {
+          "n": 727,
+          "accuracy": 0.6740027510316369,
+          "macro_f1": 0.6108051242769741,
+          "confusion_matrix_true_rows_predicted_columns": [
+            [
+              156,
+              21,
+              30
+            ],
+            [
+              42,
+              48,
+              68
+            ],
+            [
+              43,
+              33,
+              286
+            ]
+          ],
+          "per_class": [
+            {
+              "id": 0,
+              "name": "Negative",
+              "support": 207,
+              "precision": 0.6473029045643154,
+              "recall": 0.7536231884057971,
+              "f1": 0.6964285714285714
+            },
+            {
+              "id": 1,
+              "name": "Neutral",
+              "support": 158,
+              "precision": 0.47058823529411764,
+              "recall": 0.3037974683544304,
+              "f1": 0.36923076923076925
+            },
+            {
+              "id": 2,
+              "name": "Positive",
+              "support": 362,
+              "precision": 0.7447916666666666,
+              "recall": 0.7900552486187845,
+              "f1": 0.7667560321715817
+            }
+          ],
+          "zero_division_policy": 0
+        },
+        "regression": {
+          "n": 727,
+          "mae": 0.6277046096568832,
+          "pearson_r": 0.6880470189357761,
+          "pearson_status": "defined"
+        }
+      }
+    }
+  ],
+  "ensemble_report": {
+    "classification": {
+      "n": 727,
+      "accuracy": 0.6808803301237965,
+      "macro_f1": 0.6313603828790596,
+      "confusion_matrix_true_rows_predicted_columns": [
+        [
+          146,
+          31,
+          30
+        ],
+        [
+          31,
+          61,
+          66
+        ],
+        [
+          25,
+          49,
+          288
+        ]
+      ],
+      "per_class": [
+        {
+          "id": 0,
+          "name": "Negative",
+          "support": 207,
+          "precision": 0.7227722772277227,
+          "recall": 0.7053140096618358,
+          "f1": 0.7139364303178484
+        },
+        {
+          "id": 1,
+          "name": "Neutral",
+          "support": 158,
+          "precision": 0.4326241134751773,
+          "recall": 0.3860759493670886,
+          "f1": 0.4080267558528428
+        },
+        {
+          "id": 2,
+          "name": "Positive",
+          "support": 362,
+          "precision": 0.75,
+          "recall": 0.7955801104972375,
+          "f1": 0.7721179624664879
+        }
+      ],
+      "zero_division_policy": 0
+    },
+    "regression": {
+      "n": 727,
+      "mae": 0.6118456353314933,
+      "pearson_r": 0.7026361500301804,
+      "pearson_status": "defined"
+    }
+  },
+  "output_sha256": {
+    "attachment3_all_models.csv": "73d85884f3c93a994d5bc9a3a407497952e5493f7b570cf632487c8a9e04cdf2",
+    "attachment3_ensemble_predictions.csv": "1b39e3ca0b1ff63518388d87f6758ad807afa76bf5970542e45ce9ad0787545d",
+    "attachment3_observation_audit.csv": "b7594323eb6864bab556d93aa32188e91120d02405b726ce624907e25af3804d",
+    "ensemble_test_predictions.npz": "3dae6bdfda7f151af23a71a94b3a69a9920bab54eacfb1bdfdcf2069a63d7f09",
+    "seed_20260924_test_predictions.npz": "b4531edea542a595dd011dc98a8718711e8c1dc088f0153db1c57db618139f8f",
+    "seed_20260925_test_predictions.npz": "55f7c2a6c665d0cdb853b33255dfc25568ff8b39eac0140bf9cefce89750fbc1",
+    "seed_20260926_test_predictions.npz": "d1cdc5b4cddc0b48d68a5daba2636234d392238c917516704197261819fec55f"
+  }
+}

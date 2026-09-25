@@ -1,0 +1,26 @@
+{
+  "schema": "q2_temporal_balanced_v1.0",
+  "weight_mode": "sqrt",
+  "weight_formula": "(1/sqrt(pi_c))/mean(1/sqrt(pi))",
+  "train_class_counts": [
+    967,
+    758,
+    1670
+  ],
+  "train_class_probabilities": [
+    0.2848306332842415,
+    0.2232695139911635,
+    0.49189985272459497
+  ],
+  "classification_weights": [
+    1.0379084348678589,
+    1.1722971200942993,
+    0.7897944450378418
+  ],
+  "weighted_scope": "optimizer classification CE only",
+  "validation_selection": "ordinary validation cross_entropy + L1 on complete input",
+  "test_evaluated": false,
+  "specialists_evaluated": false,
+  "source_script": "D:\\01_Projects\\HuaweiCup-2026\\02_Drafts\\e\\src\\2026-09-24_train-q2-temporal_v1.0.py",
+  "source_script_sha256": "0037da1d5c7a304a503277458c7eff2667960c389dce1ca321bb231551478035"
+}

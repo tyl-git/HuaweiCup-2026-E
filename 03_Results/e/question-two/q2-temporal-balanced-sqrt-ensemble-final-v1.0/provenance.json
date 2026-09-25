@@ -1,0 +1,35 @@
+{
+  "schema": "q2_temporal_balanced_sqrt_equal_ensemble_v1.0",
+  "feature_version": "aligned_50",
+  "selection_split": "valid",
+  "test_tuning": false,
+  "specialist_labels_used": false,
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "weights": {
+    "20260924": 0.3333333333333333,
+    "20260925": 0.3333333333333333,
+    "20260926": 0.3333333333333333
+  },
+  "official_test_rule": "arithmetic mean of frozen seed logits and intensity",
+  "attachment3_rule": "arithmetic mean of frozen seed probabilities and intensity",
+  "selection_rule": "equal weights fixed before reading official-test labels",
+  "source_files": {
+    "20260924": {
+      "valid_prediction": "594c8e70355bc65208f10d634c5c42619a6a38b1ef44bf7431c44056918801ca",
+      "test_prediction": "9844951922759d5e40246eb2f8ba2342d283c65b1821798e6b96c2a23ca5fe8d"
+    },
+    "20260925": {
+      "valid_prediction": "b672a564c717ce6fbeb8d9d0ac3dd3938dae503f1fbe163c1f191901e1c7f741",
+      "test_prediction": "a83f93d920212b2788b5d1eed18b926606a3712ae2ae4b65880915d88fd4b0f8"
+    },
+    "20260926": {
+      "valid_prediction": "c8739603203a1a954c5d83da93e3a4aa69951bdaa20a1be80ff502435007507d",
+      "test_prediction": "0f94148ec32e2b3a1a780ca1c5605a8ba27f49727e2ad588aecbc77e3828af7f"
+    }
+  },
+  "attachment3_source": "18be1d8efef3ac3bd88c4ba558dced93343d186b6dc53be6b154a21b54f9a07a"
+}

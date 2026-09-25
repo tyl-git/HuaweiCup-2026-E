@@ -1,0 +1,10 @@
+{
+  "split": "official_test",
+  "official_test_n": 727,
+  "attachment3_n": 30,
+  "variant": "temporal_balanced_sqrt",
+  "weight_mode": "sqrt",
+  "selection_split": "valid",
+  "seeds": [20260924, 20260925, 20260926],
+  "test_tuning": false
+}

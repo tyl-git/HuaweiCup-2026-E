@@ -5,15 +5,15 @@
 | 问题 | 已完成成果 | 结果入口 |
 | --- | --- | --- |
 | 一：三模态特征提取与词级时序对齐 | 附件一 100 条片段的词级 `768/25/49` 维 NPZ、自动质量审计、流程图和典型样本图 | [问题一指南](02_Drafts/e/2026-09-24_q1-paper-writing-guide_v1.0.md)、[100 条 NPZ](02_Drafts/e/mosei-multimodal-aligned-v1.0/)、[图表](03_Results/e/question-one/paper-assets-v1.0/) |
-| 二：局部连续缺失下的情感识别 | 官方 `aligned_50` 的 `3395/728/727` 划分；三种子时序模型、基线和消融；727 条官方 test 与附件三 30 条无标签预测 | [测试与专项结果](03_Results/e/question-two/q2-temporal-final-v1.0/summary.json)、[附件三预测](03_Results/e/question-two/q2-temporal-final-v1.0/attachment3_predictions.csv)、[训练统计](03_Results/e/question-two/2026-09-24_q2-normalization_v1.0.npz) |
+| 二：局部连续缺失下的情感识别 | 官方 `aligned_50` 的 `3395/728/727` 划分；类别均衡 temporal、三种子等权集成、基线和消融；727 条官方 test 与附件三 30 条无标签预测 | [最终集成结果](03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/summary.json)、[改进记录](docs/2026-09-25_model-improvement-summary_v1.0.md)、[附件三预测](03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/attachment3_ensemble_predictions.csv)、[训练统计](03_Results/e/question-two/2026-09-24_q2-normalization_v1.0.npz) |
 | 三：可解释预测 | 附件四 20 条极性/强度、模态影响、1,662 条位置遮挡、自动音视频时间候选；100 条固定 valid 的遮挡对照 | [预测](03_Results/e/question-three/q3-explanations-v1.0/attachment4_predictions.csv)、[解释](03_Results/e/question-three/q3-explanations-v1.0/attachment4_explanations.csv)、[时间质量](03_Results/e/question-three/q3-evidence-time-v1.0/attachment4_time_quality.csv) |
 
-问题一自提特征与问题二、三的官方 `768/74/35` 维特征来自不同附件，不能混作同一模型输入。问题二的主模型由验证集选择为 `temporal/20260926`，其官方 test Accuracy `0.7015`、Macro-F1 `0.6189`、MAE `0.6156`、Pearson r `0.6938`；三种子均值及消融见论文指南与[论文图表](03_Results/e/paper-assets-v1.0/)。主[checkpoint](03_Results/e/question-two/q2-temporal-v1.0/temporal/seed_20260926/best.pt)与训练统计包已归档。附件三、四没有情感真值，因此不报告其预测准确率。
+问题一自提特征与问题二、三的官方 `768/74/35` 维特征来自不同附件，不能混作同一模型输入。问题二当前推荐最终结果是三个类别均衡 temporal checkpoint 的固定等权集成：官方 test Accuracy `0.690509`、Macro-F1 `0.647076`、MAE `0.606778`、Pearson r `0.703049`；模型和权重只按 valid 固定。历史单 seed temporal 结果仍保留用于对照。新增的输入级文本缺失对照表明，post-BERT 清零会高估文本缺失鲁棒性，详见[改进记录](docs/2026-09-25_model-improvement-summary_v1.0.md)。附件三、四没有情感真值，因此不报告其预测准确率。
 
 ## 复现入口
 
 - [问题一方法与版本](02_Drafts/e/2026-09-24_q1-reproduction_v1.0.md)，[问题一结果边界](03_Results/e/question-one/2026-09-24_q1_results-index_v1.0.md)。
-- [问题二输入接口](02_Drafts/e/2026-09-24_q2-input-evaluation-protocol_v1.0.md)、[训练脚本](02_Drafts/e/src/2026-09-24_train-q2-temporal_v1.0.py)、[官方测试脚本](02_Drafts/e/src/2026-09-24_eval-q2-temporal-final_v1.0.py)、[独立审计脚本](02_Drafts/e/src/2026-09-24_audit-q2-temporal-final_v1.0.py)。
+- [问题二输入接口](02_Drafts/e/2026-09-24_q2-input-evaluation-protocol_v1.0.md)、[类别均衡训练](02_Drafts/e/src/2026-09-25_train-q2-temporal-balanced_v1.0.py)、[固定集成](02_Drafts/e/src/2026-09-25_aggregate-q2-balanced-ensemble_v1.0.py)、[独立审计](02_Drafts/e/src/2026-09-25_audit-q2-balanced-ensemble_v1.0.py)、[改进图表](03_Results/e/paper-assets-v1.0/q2_balanced_and_text_safe_test_v1.0.png)。
 - [问题三解释脚本](02_Drafts/e/src/2026-09-24_eval-q3-explanations_v1.0.py)、[自动时间回映脚本](02_Drafts/e/src/2026-09-24_map-q3-evidence-time_v1.0.py)、[图表导出脚本](02_Drafts/e/src/2026-09-24_export-q23-paper-assets_v1.0.py)。
 - Python 包版本见[主环境清单](02_Drafts/e/2026-09-23_environment_requirements_v1.2.txt)及[提取环境清单](02_Drafts/e/2026-09-23_extraction_requirements_v1.0.txt)。脚本中仍有本机绝对路径；在其他机器上要配置原附件、FFmpeg、OpenFace 与冻结 BERT/CTC 权重路径。预训练工具的 snapshot 和文件哈希见结果 JSON。
 

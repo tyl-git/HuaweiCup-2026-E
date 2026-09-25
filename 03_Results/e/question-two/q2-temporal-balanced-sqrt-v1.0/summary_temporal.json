@@ -1,0 +1,197 @@
+[
+  {
+    "model": "temporal",
+    "seed": 20260924,
+    "best_epoch": 4,
+    "valid_complete": {
+      "cross_entropy": 0.8145980468163123,
+      "l1": 0.5662338550274189,
+      "selection_loss": 1.3808319018437312,
+      "classification": {
+        "n": 728,
+        "accuracy": 0.6318681318681318,
+        "macro_f1": 0.6125499361644368,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            128,
+            47,
+            31
+          ],
+          [
+            28,
+            94,
+            62
+          ],
+          [
+            37,
+            63,
+            238
+          ]
+        ],
+        "per_class": [
+          {
+            "id": 0,
+            "name": "Negative",
+            "support": 206,
+            "precision": 0.6632124352331606,
+            "recall": 0.6213592233009708,
+            "f1": 0.6416040100250626
+          },
+          {
+            "id": 1,
+            "name": "Neutral",
+            "support": 184,
+            "precision": 0.46078431372549017,
+            "recall": 0.5108695652173914,
+            "f1": 0.4845360824742268
+          },
+          {
+            "id": 2,
+            "name": "Positive",
+            "support": 338,
+            "precision": 0.7190332326283988,
+            "recall": 0.7041420118343196,
+            "f1": 0.7115097159940209
+          }
+        ],
+        "zero_division_policy": 0
+      },
+      "regression": {
+        "n": 728,
+        "mae": 0.5662338541319164,
+        "pearson_r": 0.6842874464271488,
+        "pearson_status": "defined"
+      }
+    }
+  },
+  {
+    "model": "temporal",
+    "seed": 20260925,
+    "best_epoch": 3,
+    "valid_complete": {
+      "cross_entropy": 0.8182633499522786,
+      "l1": 0.5780493702207293,
+      "selection_loss": 1.396312720173008,
+      "classification": {
+        "n": 728,
+        "accuracy": 0.6277472527472527,
+        "macro_f1": 0.6046866151188058,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            139,
+            36,
+            31
+          ],
+          [
+            39,
+            83,
+            62
+          ],
+          [
+            43,
+            60,
+            235
+          ]
+        ],
+        "per_class": [
+          {
+            "id": 0,
+            "name": "Negative",
+            "support": 206,
+            "precision": 0.6289592760180995,
+            "recall": 0.6747572815533981,
+            "f1": 0.6510538641686182
+          },
+          {
+            "id": 1,
+            "name": "Neutral",
+            "support": 184,
+            "precision": 0.46368715083798884,
+            "recall": 0.45108695652173914,
+            "f1": 0.4573002754820937
+          },
+          {
+            "id": 2,
+            "name": "Positive",
+            "support": 338,
+            "precision": 0.7164634146341463,
+            "recall": 0.6952662721893491,
+            "f1": 0.7057057057057057
+          }
+        ],
+        "zero_division_policy": 0
+      },
+      "regression": {
+        "n": 728,
+        "mae": 0.5780493683887871,
+        "pearson_r": 0.6737981100971445,
+        "pearson_status": "defined"
+      }
+    }
+  },
+  {
+    "model": "temporal",
+    "seed": 20260926,
+    "best_epoch": 3,
+    "valid_complete": {
+      "cross_entropy": 0.8053279709029983,
+      "l1": 0.5614784183083,
+      "selection_loss": 1.3668063892112983,
+      "classification": {
+        "n": 728,
+        "accuracy": 0.6428571428571429,
+        "macro_f1": 0.6125121489590261,
+        "confusion_matrix_true_rows_predicted_columns": [
+          [
+            144,
+            36,
+            26
+          ],
+          [
+            42,
+            76,
+            66
+          ],
+          [
+            40,
+            50,
+            248
+          ]
+        ],
+        "per_class": [
+          {
+            "id": 0,
+            "name": "Negative",
+            "support": 206,
+            "precision": 0.6371681415929203,
+            "recall": 0.6990291262135923,
+            "f1": 0.6666666666666666
+          },
+          {
+            "id": 1,
+            "name": "Neutral",
+            "support": 184,
+            "precision": 0.4691358024691358,
+            "recall": 0.41304347826086957,
+            "f1": 0.4393063583815029
+          },
+          {
+            "id": 2,
+            "name": "Positive",
+            "support": 338,
+            "precision": 0.7294117647058823,
+            "recall": 0.7337278106508875,
+            "f1": 0.7315634218289085
+          }
+        ],
+        "zero_division_policy": 0
+      },
+      "regression": {
+        "n": 728,
+        "mae": 0.5614784080279316,
+        "pearson_r": 0.6877272582049359,
+        "pearson_status": "defined"
+      }
+    }
+  }
+]
