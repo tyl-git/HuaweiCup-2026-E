@@ -1,0 +1,91 @@
+{
+  "schema": "q2_model_search_audit_v1.0",
+  "split_used_for_candidate_selection": "official_valid",
+  "valid_n": 728,
+  "seeds": [20260924, 20260925, 20260926],
+  "candidate_test_evaluated": false,
+  "candidate_specialist_evaluated": false,
+  "checkpoints_and_full_prediction_arrays_in_repository": false,
+  "official_test_previously_viewed": true,
+  "selection_gate": {
+    "macro_f1_gain_minimum": 0.01,
+    "mae_worsening_maximum": 0.01,
+    "comparison": "three-seed arithmetic-mean logits/intensity on the same complete official validation rows"
+  },
+  "locked_reference": {
+    "model": "sqrt-balanced temporal mask-aware gate ensemble",
+    "accuracy": 0.6401098901,
+    "macro_f1": 0.6173517341,
+    "neutral_f1": 0.4743935310,
+    "mae": 0.5610498847,
+    "pearson_r": 0.6895738516
+  },
+  "candidates": [
+    {
+      "name": "modality_independent_temporal_convolution",
+      "result_directory": "q2-modality-temporal-v1.1",
+      "accuracy": 0.6456043956,
+      "macro_f1": 0.6177002499,
+      "neutral_f1": 0.4588235294,
+      "mae": 0.5643821805,
+      "pearson_r": 0.6903875847,
+      "macro_f1_delta": 0.0003485159,
+      "decision": "not_promoted",
+      "reason": "Macro-F1 gain below gate; Neutral F1 and MAE worse; extra model complexity not justified"
+    },
+    {
+      "name": "balanced_validation_checkpoint_selection",
+      "source": "02_Drafts/e/src/2026-09-25_train-q2-balanced-selection_v1.0.py",
+      "source_result_directory": "q2-balanced-selection-v1.2",
+      "accuracy": 0.6401098901,
+      "macro_f1": 0.6173517341,
+      "neutral_f1": 0.4743935310,
+      "mae": 0.5610498847,
+      "pearson_r": 0.6895738516,
+      "single_seed_macro_f1_mean": 0.6099162334,
+      "single_seed_macro_f1_sample_sd": 0.0045290217,
+      "single_seed_mae_mean": 0.5685872102,
+      "decision": "not_promoted",
+      "reason": "Three-seed ensemble equals locked reference on reported metrics"
+    },
+    {
+      "name": "sqrt_balanced_weighted_focal_loss_gamma_2",
+      "source": "02_Drafts/e/src/2026-09-25_train-q2-focal-balanced_v1.0.py",
+      "result_directory": "q2-focal-balanced-v1.0",
+      "accuracy": 0.6346153846,
+      "macro_f1": 0.6124800489,
+      "neutral_f1": 0.4582210243,
+      "mae": 0.5574171282,
+      "pearson_r": 0.6924293705,
+      "macro_f1_delta": -0.0048716851,
+      "mae_delta": -0.0036327564,
+      "single_seed_macro_f1_mean": 0.5958321266,
+      "single_seed_macro_f1_sample_sd": 0.0127907112,
+      "single_seed_neutral_f1_mean": 0.4408924112,
+      "single_seed_neutral_f1_sample_sd": 0.0338958378,
+      "decision": "not_promoted",
+      "reason": "Slight MAE gain does not compensate for lower Macro-F1 and Neutral F1"
+    }
+  ],
+  "protocol": {
+    "input": "official aligned_50 only",
+    "normalization": "fit on official train valid observations only",
+    "external_emotion_datasets": false,
+    "mask_semantics_preserved": [
+      "content_mask",
+      "source_observation_mask",
+      "injected_missing_mask",
+      "effective_mask"
+    ],
+    "selection_rule": "No candidate was evaluated on official test or unlabeled specialist samples; no candidate replaces the locked model"
+  },
+  "additional_diagnostics": {
+    "validation_logit_bias_calibration": {
+      "whole_validation_macro_f1": 0.62676,
+      "five_fold_oof_macro_f1": 0.59989,
+      "decision": "not_used",
+      "reason": "Full-validation gain did not reproduce out of fold; fold-specific biases were unstable"
+    }
+  },
+  "conclusion": "Keep the existing balanced temporal ensemble as the frozen main result. Further search on the same small validation set is not justified without a pre-registered hypothesis and independent evaluation data."
+}
