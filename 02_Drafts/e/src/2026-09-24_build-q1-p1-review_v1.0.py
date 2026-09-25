@@ -11,6 +11,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 DRAFT = Path(__file__).resolve().parents[1]
 FFMPEG = Path(r"D:\06_Apps\ffmpeg\bin\ffmpeg.exe")
+REVIEW_VIDEO_DIR = DRAFT / "q1-manual-review-normalized-v1.0"
 IDS = [f"sample_{i:04d}" for i in [1, 6, 10, 11, 42, 43, 88]]
 OUT = DRAFT / "2026-09-24_q1-p1-review-evidence_v1.0.json"
 SHEET = DRAFT / "2026-09-24_q1-p1-review-contact_v1.0.png"
@@ -41,9 +42,10 @@ for row, sample in enumerate(IDS):
         pcm = np.frombuffer(wav.readframes(wav.getnframes()), dtype="<i2").astype(np.float64) / 32768.0
     direct_check = None
     if not np.any(pcm):
-        decoded = subprocess.run([str(FFMPEG), "-hide_banner", "-loglevel", "error", "-nostdin", "-i", str(DRAFT / "mosei-stage-v1.0" / f"{sample}.mp4"), "-map", "0:a:0", "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], check=True, capture_output=True)
+        video_path = REVIEW_VIDEO_DIR / f"{sample}__normalized.mp4"
+        decoded = subprocess.run([str(FFMPEG), "-hide_banner", "-loglevel", "error", "-nostdin", "-i", str(video_path), "-map", "0:a:0", "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], check=True, capture_output=True)
         direct_pcm = np.frombuffer(decoded.stdout, dtype="<i2")
-        native = subprocess.run([str(FFMPEG), "-hide_banner", "-loglevel", "error", "-nostdin", "-i", str(DRAFT / "mosei-stage-v1.0" / f"{sample}.mp4"), "-map", "0:a:0", "-f", "f32le", "-"], check=True, capture_output=True)
+        native = subprocess.run([str(FFMPEG), "-hide_banner", "-loglevel", "error", "-nostdin", "-i", str(video_path), "-map", "0:a:0", "-f", "f32le", "-"], check=True, capture_output=True)
         native_pcm = np.frombuffer(native.stdout, dtype="<f4")
         direct_check = dict(samples=int(direct_pcm.size), nonzero_samples=int(np.count_nonzero(direct_pcm)), same_as_saved_wav=bool(np.array_equal(direct_pcm.astype(np.float64) / 32768.0, pcm)), native_no_downmix_float_values=int(native_pcm.size), native_no_downmix_nonzero_values=int(np.count_nonzero(native_pcm)), native_no_downmix_peak=float(np.max(np.abs(native_pcm))))
     duration = float(detail["audio_duration_s"])
@@ -52,7 +54,7 @@ for row, sample in enumerate(IDS):
     draw.text((20, y), f"{sample} | audio {duration:.3f}s | valid visual frames {stats['valid_frames']}/{stats['frames']}", fill="#15253b", font=font)
     times = [round(duration * ratio, 3) for ratio in [.1, .35, .65, .9]]
     for column, seconds in enumerate(times):
-        cp = subprocess.run([str(FFMPEG), "-hide_banner", "-loglevel", "error", "-nostdin", "-ss", str(seconds), "-i", str(DRAFT / "mosei-stage-v1.0" / f"{sample}.mp4"), "-frames:v", "1", "-vf", "scale=318:180:force_original_aspect_ratio=decrease,pad=318:180:(ow-iw)/2:(oh-ih)/2", "-f", "image2pipe", "-vcodec", "png", "-"], check=True, capture_output=True)
+        cp = subprocess.run([str(FFMPEG), "-hide_banner", "-loglevel", "error", "-nostdin", "-ss", str(seconds), "-i", str(REVIEW_VIDEO_DIR / f"{sample}__normalized.mp4"), "-frames:v", "1", "-vf", "scale=318:180:force_original_aspect_ratio=decrease,pad=318:180:(ow-iw)/2:(oh-ih)/2", "-f", "image2pipe", "-vcodec", "png", "-"], check=True, capture_output=True)
         frame = Image.open(io.BytesIO(cp.stdout)).convert("RGB")
         x = 20 + column * 324
         sheet.paste(frame, (x, y + 32))
