@@ -17,4 +17,14 @@
 - [问题三解释脚本](02_Drafts/e/src/2026-09-24_eval-q3-explanations_v1.0.py)、[自动时间回映脚本](02_Drafts/e/src/2026-09-24_map-q3-evidence-time_v1.0.py)、[图表导出脚本](02_Drafts/e/src/2026-09-24_export-q23-paper-assets_v1.0.py)。
 - Python 包版本见[主环境清单](02_Drafts/e/2026-09-23_environment_requirements_v1.2.txt)及[提取环境清单](02_Drafts/e/2026-09-23_extraction_requirements_v1.0.txt)。脚本中仍有本机绝对路径；在其他机器上要配置原附件、FFmpeg、OpenFace 与冻结 BERT/CTC 权重路径。预训练工具的 snapshot 和文件哈希见结果 JSON。
 
+## 中文论文图表
+
+中文排版图表已按问题分目录保存，英文原图继续保留：
+
+- [问题一：特征提取与时序对齐](03_Results/e/问题一_特征提取与时序对齐/)
+- [问题二：局部缺失情感识别](03_Results/e/问题二_局部缺失情感识别/)
+- [问题三：可解释预测](03_Results/e/问题三_可解释预测/)
+- [中文图表索引与数据来源](03_Results/e/2026-09-26_中文图表索引_v1.0.md)
+- [中文图表导出脚本](02_Drafts/e/src/2026-09-26_export-chinese-figures_v1.0.py)
+
 原始视频/PKL、音频、整套 BERT 中间缓存和其他大体积训练产物不上传。问题一 65 条自动复核标记尚未逐条人工验收；历史三模态 mask 数量不等于对齐准确率。问题三的秒数与视频帧是自动候选，20 条中 8 条带复核标记、9 个标点位置无法回映，均不得当成人工确认的精确证据。正式竞赛附件另需满足题面的 50 MB、匿名和文件清单要求。
