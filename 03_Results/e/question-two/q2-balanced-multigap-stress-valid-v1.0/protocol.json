@@ -1,0 +1,388 @@
+{
+  "schema": "q2_balanced_multigap_stress_valid_v1.0",
+  "date": "2026-09-25",
+  "evaluation_split": "valid",
+  "n": 728,
+  "conditions": [
+    {
+      "name": "text_audio_missing_20pct_start",
+      "modalities": [
+        "text",
+        "audio"
+      ],
+      "fraction": 0.2,
+      "position": "start"
+    },
+    {
+      "name": "text_audio_missing_20pct_middle",
+      "modalities": [
+        "text",
+        "audio"
+      ],
+      "fraction": 0.2,
+      "position": "middle"
+    },
+    {
+      "name": "text_audio_missing_20pct_end",
+      "modalities": [
+        "text",
+        "audio"
+      ],
+      "fraction": 0.2,
+      "position": "end"
+    },
+    {
+      "name": "text_audio_missing_40pct_start",
+      "modalities": [
+        "text",
+        "audio"
+      ],
+      "fraction": 0.4,
+      "position": "start"
+    },
+    {
+      "name": "text_audio_missing_40pct_middle",
+      "modalities": [
+        "text",
+        "audio"
+      ],
+      "fraction": 0.4,
+      "position": "middle"
+    },
+    {
+      "name": "text_audio_missing_40pct_end",
+      "modalities": [
+        "text",
+        "audio"
+      ],
+      "fraction": 0.4,
+      "position": "end"
+    },
+    {
+      "name": "text_vision_missing_20pct_start",
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "fraction": 0.2,
+      "position": "start"
+    },
+    {
+      "name": "text_vision_missing_20pct_middle",
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "fraction": 0.2,
+      "position": "middle"
+    },
+    {
+      "name": "text_vision_missing_20pct_end",
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "fraction": 0.2,
+      "position": "end"
+    },
+    {
+      "name": "text_vision_missing_40pct_start",
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "fraction": 0.4,
+      "position": "start"
+    },
+    {
+      "name": "text_vision_missing_40pct_middle",
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "fraction": 0.4,
+      "position": "middle"
+    },
+    {
+      "name": "text_vision_missing_40pct_end",
+      "modalities": [
+        "text",
+        "vision"
+      ],
+      "fraction": 0.4,
+      "position": "end"
+    },
+    {
+      "name": "audio_vision_missing_20pct_start",
+      "modalities": [
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.2,
+      "position": "start"
+    },
+    {
+      "name": "audio_vision_missing_20pct_middle",
+      "modalities": [
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.2,
+      "position": "middle"
+    },
+    {
+      "name": "audio_vision_missing_20pct_end",
+      "modalities": [
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.2,
+      "position": "end"
+    },
+    {
+      "name": "audio_vision_missing_40pct_start",
+      "modalities": [
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.4,
+      "position": "start"
+    },
+    {
+      "name": "audio_vision_missing_40pct_middle",
+      "modalities": [
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.4,
+      "position": "middle"
+    },
+    {
+      "name": "audio_vision_missing_40pct_end",
+      "modalities": [
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.4,
+      "position": "end"
+    },
+    {
+      "name": "text_audio_vision_missing_20pct_start",
+      "modalities": [
+        "text",
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.2,
+      "position": "start"
+    },
+    {
+      "name": "text_audio_vision_missing_20pct_middle",
+      "modalities": [
+        "text",
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.2,
+      "position": "middle"
+    },
+    {
+      "name": "text_audio_vision_missing_20pct_end",
+      "modalities": [
+        "text",
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.2,
+      "position": "end"
+    },
+    {
+      "name": "text_audio_vision_missing_40pct_start",
+      "modalities": [
+        "text",
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.4,
+      "position": "start"
+    },
+    {
+      "name": "text_audio_vision_missing_40pct_middle",
+      "modalities": [
+        "text",
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.4,
+      "position": "middle"
+    },
+    {
+      "name": "text_audio_vision_missing_40pct_end",
+      "modalities": [
+        "text",
+        "audio",
+        "vision"
+      ],
+      "fraction": 0.4,
+      "position": "end"
+    }
+  ],
+  "conditions_frozen_before_task_predictions": true,
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "operator": "arithmetic_mean_logits_and_intensity_then_softmax",
+  "no_training_or_tuning": true,
+  "official_test_predictions_used": false,
+  "one_shot_holdout_claim": false,
+  "plan_seed": 20260924,
+  "span_rule": "one shared content-coordinate interval per sample; ceil(fraction * content_length), start/middle/end; all selected modalities use identical begin/end",
+  "rounding_note": "Very short samples may lose all observed positions in a selected modality through ceiling or pre-existing holes; this is a local-interval test, not a whole-modality dropout design.",
+  "mask_contract": "missing_m=shared_interval & source_observed_m for selected modalities; effective_m=content & source_observed_m & ~missing_m; source/padding masks unchanged",
+  "comparison_boundary": "Older single-modality conditions target observed positions. This audit targets content positions for a common simultaneous time interval. Do not present these as identical mask interventions.",
+  "text_scope": "post-BERT feature masking, not raw-text loss",
+  "feature_version": "aligned_50",
+  "feature_dimensions": [
+    768,
+    74,
+    35
+  ],
+  "sources": [
+    {
+      "path": "02_Drafts/e/src/2026-09-25_eval-q2-balanced-multigap_v1.0.py",
+      "sha256": "0d778d06261999d85d1eb509f3afa3b21c958c2f0b9044773408d20acbb943ea"
+    },
+    {
+      "path": "02_Drafts/e/src/2026-09-25_aggregate-q2-balanced-ensemble_v1.1.py",
+      "sha256": "d1d6f63bde62f2e404faeeb859ef428dca75790800fdd372465005eeb7062e0c"
+    },
+    {
+      "path": "02_Drafts/e/src/2026-09-24_q2-missing-intervals_v1.0.py",
+      "sha256": "741131efea16239e268344fdb1a8b50706fe721527d277c06f7da6ed98d70650"
+    },
+    {
+      "path": "03_Results/e/question-two/2026-09-24_q2-normalization_v1.0.npz",
+      "sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/provenance.json",
+      "sha256": "daec955573aa68901b8a8cd0dbc9a661bd532409a392eb3bfb3a5a599b81165e"
+    }
+  ],
+  "checkpoint_records": [
+    {
+      "seed": 20260924,
+      "checkpoint": {
+        "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/best.pt",
+        "sha256": "49b468e8b3360a4ea33906b7f042ed72fa57a6ad451d3b355c32f7a09f9330b3"
+      },
+      "best_epoch": 4,
+      "config": {
+        "max_epochs": 40,
+        "patience": 8,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.2,
+        "hidden_dim": 64,
+        "fusion_dim": 128,
+        "classification_loss_weight": 1.0,
+        "regression_loss_weight": 1.0,
+        "augmentation_probability": 0.5,
+        "augmentation_fractions": [
+          0.2,
+          0.4
+        ],
+        "augmentation_positions": [
+          "start",
+          "middle",
+          "end",
+          "random"
+        ],
+        "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+        "temporal_width": 32,
+        "temporal_kernel": 3
+      }
+    },
+    {
+      "seed": 20260925,
+      "checkpoint": {
+        "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/best.pt",
+        "sha256": "d35dc7654633673a260adb89450e9dda8025a6864f7934aea6f8d37a7c9975fc"
+      },
+      "best_epoch": 3,
+      "config": {
+        "max_epochs": 40,
+        "patience": 8,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.2,
+        "hidden_dim": 64,
+        "fusion_dim": 128,
+        "classification_loss_weight": 1.0,
+        "regression_loss_weight": 1.0,
+        "augmentation_probability": 0.5,
+        "augmentation_fractions": [
+          0.2,
+          0.4
+        ],
+        "augmentation_positions": [
+          "start",
+          "middle",
+          "end",
+          "random"
+        ],
+        "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+        "temporal_width": 32,
+        "temporal_kernel": 3
+      }
+    },
+    {
+      "seed": 20260926,
+      "checkpoint": {
+        "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/best.pt",
+        "sha256": "21972a61c2b5ca684704038b7ab9719475d28a303a96b0a08b730462fd940738"
+      },
+      "best_epoch": 3,
+      "config": {
+        "max_epochs": 40,
+        "patience": 8,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.2,
+        "hidden_dim": 64,
+        "fusion_dim": 128,
+        "classification_loss_weight": 1.0,
+        "regression_loss_weight": 1.0,
+        "augmentation_probability": 0.5,
+        "augmentation_fractions": [
+          0.2,
+          0.4
+        ],
+        "augmentation_positions": [
+          "start",
+          "middle",
+          "end",
+          "random"
+        ],
+        "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+        "temporal_width": 32,
+        "temporal_kernel": 3
+      }
+    }
+  ],
+  "source_sha256": {
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+  },
+  "valid_cache_sha256": "b48450e04601502c5284d33be41584c8c4bc3b7870b09545737fa802ba74ce76",
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521"
+}

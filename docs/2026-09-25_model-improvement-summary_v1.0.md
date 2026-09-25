@@ -2,7 +2,7 @@
 
 日期：2026-09-25
 
-本文记录在统一 `aligned_50` 输入接口下完成的模型改进、验证规则和最终结果。所有模型只使用题目给出的官方训练集、验证集和测试集；没有引入其他情感数据集。训练集用于拟合标准化和类别权重，验证集用于选择 epoch 与冻结集成规则，官方测试集只在方案冻结后进行一次最终报告。
+本文记录在统一 `aligned_50` 输入接口下完成的模型改进、验证规则和最终结果。所有模型只使用题目给出的官方训练集、验证集和测试集；没有引入其他情感数据集。训练集用于拟合标准化和类别权重，验证集用于选择 epoch 与冻结集成规则。官方测试集在历史开发中已经被查看，因此不能称为全程未触碰的一次性 holdout；本轮没有用测试结果调整权重、epoch 或 seed。
 
 ## 1. 改进目标
 
@@ -32,13 +32,13 @@ $$w_c=\frac{1/\sqrt{\pi_c}}{\frac{1}{3}\sum_j1/\sqrt{\pi_j}}.$$
 
 ## 3. 固定三种子等权集成
 
-在查看官方测试标签以前，依据验证集结果固定三个类别均衡 temporal checkpoint 等权集成：
+依据验证集结果固定三个类别均衡 temporal checkpoint 等权集成；测试集历史上已被查看，本轮没有根据其结果修改集成规则：
 
 $$z=\frac{1}{3}\sum_{s=1}^{3}z_s,\qquad \hat y=\arg\max z.$$
 
 回归强度同样取三个 checkpoint 输出的算术平均。该规则不是根据测试成绩调出的，脚本会检查 ID 顺序、标签一致性、有限值和来源哈希。
 
-最终集成测试结果：
+最终集成测试结果。v1.1 对 valid、test、附件三统一使用三个 seed 的 logits 算术平均后 softmax，回归强度仍取算术平均；test 数组与 v1.0 逐元素一致，附件三的 30 个预测类别均未改变：
 
 | 指标 | 数值 |
 |---|---:|
@@ -72,7 +72,7 @@ $$z=\frac{1}{3}\sum_{s=1}^{3}z_s,\qquad \hat y=\arg\max z.$$
 
 ### 第二轮：输入级文本缺失增强
 
-在冻结 BERT 前，对训练集的连续文本 token 区间使用 `[MASK]`，并在编码后把同一区间标为缺失；其余音视频和标准化沿用原协议。独立训练的三个 seed 只按完整输入 valid 的普通 CE+L1 保存 checkpoint。事先设定的验证准入规则是：六种输入级文本缺口的平均 Macro-F1 比同 seed 类别均衡模型至少提高 `0.02`，且完整输入平均 Macro-F1 下降不超过 `0.02`。实际为 `+0.025418` 和 `-0.008733`，所以冻结三 seed 等权概率/强度集成后进行了一次官方测试。
+在冻结 BERT 前，对训练集的连续文本 token 区间使用 `[MASK]`，并在编码后把同一区间标为缺失；其余音视频和标准化沿用原协议。独立训练的三个 seed 只按完整输入 valid 的普通 CE+L1 保存 checkpoint。事先设定的验证准入规则是：六种输入级文本缺口的平均 Macro-F1 比同 seed 类别均衡模型至少提高 `0.02`，且完整输入平均 Macro-F1 下降不超过 `0.02`。实际为 `+0.025418` 和 `-0.008733`。该方案作为鲁棒性补充保留；其完整 test 结果是历史开发结果，不能据此重新选择模型或权重。
 
 | 方案 | 官方 test Accuracy | Macro-F1 | Neutral F1 | MAE | Pearson r |
 |---|---:|---:|---:|---:|---:|
@@ -82,6 +82,12 @@ $$z=\frac{1}{3}\sum_{s=1}^{3}z_s,\qquad \hat y=\arg\max z.$$
 第二轮提高了验证集真实文本缺口鲁棒性，却没有提高完整官方 test 指标。它说明缺失鲁棒性与完整输入性能存在权衡，不应因为已看见 test 结果再改变集成权重或反选 seed。附件3的 30 条特征中 `text_zero_content_positions` 均为 0，不能把第二轮写成“直接修复附件3文本缺失”；附件3主要表现为音频/视觉局部零区间。
 
 第二轮的冻结协议为 `03_Results/e/question-two/q2-text-safe-final-protocol-v1.0.json`，独立审计覆盖三个 seed 的 checkpoint/预测哈希、727 个唯一 test ID、30 条附件3预测以及集成逐元素平均。
+
+### 后续审计与同时缺失压力测试
+
+一致化集成见 `03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.1/`。从已保存的单 seed 输出生成的配对比较、混淆矩阵、学习曲线和 239 个原视频为抽样单位的 1000 次 valid bootstrap，见 `q2-improvement-evidence-v1.1/`。类别均衡减原 temporal 的 valid Macro-F1 差值百分位区间为 `[+0.0160,+0.0596]`，Neutral F1 为 `[+0.0616,+0.1621]`；区间仅条件于这些已训练模型和复用的验证数据，不是确认性泛化置信区间。
+
+另以共享 content 时间段注入 24 种两模态/三模态局部连续缺失，见 `q2-balanced-multigap-stress-valid-v1.0/`。完整 valid Macro-F1 为 `0.617352`；文本+视觉 40% 末段缺失降至 `0.572036`，三模态 40% 中段缺失为 `0.579666`。模型明显依赖文本，不能宣传在所有缺失组合下都保持性能。本次共享区间按 content 长度计算；旧单模态测试按各模态原始可观察位置数计算，两组干预不可直接逐项对比。文本缺失仍是 BERT 后特征遮挡，输入级重编码实验另列。
 
 论文图：`03_Results/e/paper-assets-v1.0/q2_balanced_and_text_safe_test_v1.0.png` 对比完整输入 test 指标，其中原模型是三 seed **指标均值**，两个改进模型是三 seed **预测集成**，图中已逐项标注，不能称完全同一汇总方式。`q2_text_gap_protocol_comparison_v1.0.png` 在同一批 valid 样本、同一文本区间和同一类别均衡 checkpoint 上比较两种缺失注入阶段。两图同时提供 SVG，生成脚本为 `02_Drafts/e/src/2026-09-25_plot-q2-improvements_v1.0.py`。
 
@@ -96,8 +102,10 @@ $$z=\frac{1}{3}\sum_{s=1}^{3}z_s,\qquad \hat y=\arg\max z.$$
 - 类别均衡训练：`02_Drafts/e/src/2026-09-25_train-q2-temporal-balanced_v1.0.py`
 - 文本输入级缓存：`02_Drafts/e/src/2026-09-25_q2-text-safe-prep_v1.0.py`
 - 文本协议对照：`02_Drafts/e/src/2026-09-25_eval-q2-text-safe_v1.0.py`
-- 三种子集成：`02_Drafts/e/src/2026-09-25_aggregate-q2-balanced-ensemble_v1.0.py`
-- 集成结果：`03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/summary.json`
+- 三种子一致化集成：`02_Drafts/e/src/2026-09-25_aggregate-q2-balanced-ensemble_v1.1.py`
+- 集成结果：`03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.1/summary.json`
+- 固定模型配对证据：`02_Drafts/e/src/2026-09-25_build-q2-evidence_v1.1.py`
+- 同时缺失压力测试及审计：`02_Drafts/e/src/2026-09-25_eval-q2-balanced-multigap_v1.0.py`、`2026-09-25_audit-q2-balanced-multigap_v1.0.py`
 - 文本对照结果：`03_Results/e/question-two/q2-text-safe-eval-v1.0/report.json`
 - 输入级增强训练：`02_Drafts/e/src/2026-09-25_train-q2-text-safe-balanced_v1.0.py`
 - 输入级增强最终评估与审计：`02_Drafts/e/src/2026-09-25_eval-q2-text-safe-final_v1.0.py`

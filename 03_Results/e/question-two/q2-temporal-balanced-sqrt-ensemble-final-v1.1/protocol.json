@@ -1,0 +1,468 @@
+{
+  "schema": "q2_balanced_ensemble_correction_v1.1",
+  "date": "2026-09-25",
+  "correction_reason": "v1.0 used different classification aggregation for official and attachment3 inputs",
+  "operator_all_splits": "arithmetic_mean_logits_and_intensity_then_softmax",
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "classification": "argmax(mean(seed_logits)); probabilities=softmax(mean(seed_logits))",
+  "regression": "mean(seed_intensity)",
+  "accumulation_dtype": "float32 (matching frozen official v1.0)",
+  "feature_version": "aligned_50",
+  "feature_dimensions": [
+    768,
+    74,
+    35
+  ],
+  "checkpoint_selection_split": "valid",
+  "official_test_already_viewed": true,
+  "one_shot_holdout_claim": false,
+  "retraining": false,
+  "weight_or_seed_tuning": false,
+  "correction_uses_test_metric_comparison_to_choose_rule": false,
+  "rule_basis": "preserve the existing official mean-logits rule and apply it consistently to attachment3",
+  "attachment3_labels_available": false,
+  "attachment3_accuracy_reported": false,
+  "mask_contract": "content_mask excludes padding/special tokens; source_observed is loader observation; source_unavailable=content & ~source_observed; artificial_missing is zero for this inference; effective=content & source_observed & ~artificial_missing",
+  "source_unavailable_caveat": "A zero-valued source observation does not prove the cause of unavailability.",
+  "validation_robustness_scope": "18 existing saved post-BERT feature-masking conditions; no new masks or condition selection; not equivalent to missing raw text",
+  "code": {
+    "path": "02_Drafts/e/src/2026-09-25_aggregate-q2-balanced-ensemble_v1.1.py",
+    "sha256": "d1d6f63bde62f2e404faeeb859ef428dca75790800fdd372465005eeb7062e0c"
+  },
+  "sources": [
+    {
+      "path": "03_Results/e/question-two/2026-09-24_q2-normalization_v1.0.npz",
+      "sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/provenance.json",
+      "sha256": "daec955573aa68901b8a8cd0dbc9a661bd532409a392eb3bfb3a5a599b81165e"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/balanced_experiment.json",
+      "sha256": "c42b9d4e70e27b713e19d9ffeafa1946686ade117639d95e93d1dea3001e80c6"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-final-v1.0/summary.json",
+      "sha256": "68e315c9c1c7c4e9b455fc5f739d38f3ab80a92aa602759826647cbf0b5e7de5"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/summary.json",
+      "sha256": "adc105c41a166a7547a5284966c477c55527c606c1484239f98afcec7ca37d33"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/provenance.json",
+      "sha256": "25cbfb744601c93283c967e3af0e04d0464589c7785a2589064fb0c9f61ca613"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_complete_predictions.npz",
+      "sha256": "594c8e70355bc65208f10d634c5c42619a6a38b1ef44bf7431c44056918801ca"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-final-v1.0/temporal_balanced_sqrt_seed_20260924_test_predictions.npz",
+      "sha256": "9844951922759d5e40246eb2f8ba2342d283c65b1821798e6b96c2a23ca5fe8d"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_complete_predictions.npz",
+      "sha256": "b672a564c717ce6fbeb8d9d0ac3dd3938dae503f1fbe163c1f191901e1c7f741"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-final-v1.0/temporal_balanced_sqrt_seed_20260925_test_predictions.npz",
+      "sha256": "a83f93d920212b2788b5d1eed18b926606a3712ae2ae4b65880915d88fd4b0f8"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_complete_predictions.npz",
+      "sha256": "c8739603203a1a954c5d83da93e3a4aa69951bdaa20a1be80ff502435007507d"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-final-v1.0/temporal_balanced_sqrt_seed_20260926_test_predictions.npz",
+      "sha256": "0f94148ec32e2b3a1a780ca1c5605a8ba27f49727e2ad588aecbc77e3828af7f"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_text_missing_20pct_start_predictions.npz",
+      "sha256": "794933df3c564cd186ca2af4c6b88df086cb45cdb874fb1fd8db5e9a5e0a7124"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_text_missing_20pct_start_predictions.npz",
+      "sha256": "dcc3edfdb8a15e030923e961ba992c1cbe464e0b9db9f7e56332250b06eb4b4f"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_text_missing_20pct_start_predictions.npz",
+      "sha256": "0ba873933c4982b87bc3dea749b90d75ad1f6b78f24dd92743df069d9bf397fd"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_text_missing_20pct_middle_predictions.npz",
+      "sha256": "3787526bfbee4e9a5710850480edf9eca789d5803b4523bdf19905b2bdc73ad4"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_text_missing_20pct_middle_predictions.npz",
+      "sha256": "af0a3837335f48c97c80885bc292d308bb347e160de40122693e5486ccbe1162"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_text_missing_20pct_middle_predictions.npz",
+      "sha256": "b66ce3f35ec7f2df1c40e1a65dd66349c75c8237a2e4b232368f68b9a79a470f"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_text_missing_20pct_end_predictions.npz",
+      "sha256": "95d80350eb7edf2288b22f82b2aa69cdc182aa38b1f28b9f6a3fce37d650eaa2"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_text_missing_20pct_end_predictions.npz",
+      "sha256": "d390a194454f4c6a20d2b5baf8c84fbf99ceca1b2d3394b2dcefbba7ee974d2d"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_text_missing_20pct_end_predictions.npz",
+      "sha256": "1507f518f383a419a8ff755b740996fc863d6d39086e148b6a9e4be6b50b151e"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_text_missing_40pct_start_predictions.npz",
+      "sha256": "979b93ea6cec12d114512c44602d86ef2ed74f95a6fd5f7ec528014ec3cf2ced"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_text_missing_40pct_start_predictions.npz",
+      "sha256": "978e0ba2c28b4a926e83abb9fb52458dc6c4b604357878f5f11c4bedd95500bf"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_text_missing_40pct_start_predictions.npz",
+      "sha256": "37d0e6cb77e05fded5a7484ceafef17beaa9f2b2538ca66525939ee36ef8e2a2"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_text_missing_40pct_middle_predictions.npz",
+      "sha256": "88464368bdec7f6674160f9703a1418da32a8f8755be06bc8f27fe9cf2a2e639"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_text_missing_40pct_middle_predictions.npz",
+      "sha256": "854b63e58ae4cf1b18b35bb6e95645f52c39020432025b5448b08373df3b6e01"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_text_missing_40pct_middle_predictions.npz",
+      "sha256": "52244806f79b58f727d17fffa3816ab0f6554f0a9362bef5d513b9641f1d2820"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_text_missing_40pct_end_predictions.npz",
+      "sha256": "a311156e10bb12ebf795819e9d50f7ae652e27371f9b98e9eccc6a587d03e815"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_text_missing_40pct_end_predictions.npz",
+      "sha256": "c3b01dbe150322ba395ecd37467c1a0dc692568825d3d0ed8deab56cb3675f1e"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_text_missing_40pct_end_predictions.npz",
+      "sha256": "5168732d27435f8c2596b136debd25d403255ab72e56d7433182a488cadcba85"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_audio_missing_20pct_start_predictions.npz",
+      "sha256": "25495fa061141504df34d9251a6e355a749e89d7c78cad5d8f3a011422f5e4d8"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_audio_missing_20pct_start_predictions.npz",
+      "sha256": "c54a246a414c7556f22bcc3e302a9ffe295377f7705c3e4391c2f753ecbfdf6d"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_audio_missing_20pct_start_predictions.npz",
+      "sha256": "765511472f57fb7f1465e6b1c50c30bdee55d5766621c2cac0f0c95d465c6ebb"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_audio_missing_20pct_middle_predictions.npz",
+      "sha256": "64cfe418cac397c365dac91c024c239710af6347ab11ebcd9e53f1e0aa770af1"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_audio_missing_20pct_middle_predictions.npz",
+      "sha256": "489d94b4b443be43e6daf2369628453d3865587f05e6c53917538126174a88e2"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_audio_missing_20pct_middle_predictions.npz",
+      "sha256": "79f867113cf96fd97a55e7239bc97e9cf60ccfa0666f96f378b5905e35235e1e"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_audio_missing_20pct_end_predictions.npz",
+      "sha256": "759d9e0da60b5bfb01c2879f14333528a610543b237859e663d8896c038ec056"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_audio_missing_20pct_end_predictions.npz",
+      "sha256": "1fa19e159fc6f4a983cff340c6a267c343f47da6f4d5d23a0cdf5b1a27656faa"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_audio_missing_20pct_end_predictions.npz",
+      "sha256": "d9528a794bcb2e1f988d587d0e56da2c58f2ad5f0882e9600975489ef799fa94"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_audio_missing_40pct_start_predictions.npz",
+      "sha256": "3c3adc85a55b095b9946bce7a94a6c5a1ba6f2978b13272acfe0af747965063b"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_audio_missing_40pct_start_predictions.npz",
+      "sha256": "1efa9607930570d41487e3cca2d7f87d3e979f8225dfc6f49218237114977f9b"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_audio_missing_40pct_start_predictions.npz",
+      "sha256": "6242519f94b7dd648653e55946d8d939a3c18f6ddc6025cb4e1b91419227e89d"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_audio_missing_40pct_middle_predictions.npz",
+      "sha256": "7334524cfd3539909eadba29319169485750bb5e1ab155268acb1ebc24d045b2"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_audio_missing_40pct_middle_predictions.npz",
+      "sha256": "f129c2d31d478696fd64e9deadcf220c2470f8ce8cab298f6452ca31c60e1e53"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_audio_missing_40pct_middle_predictions.npz",
+      "sha256": "e4eb58c04a63afd41ff9a115b5c1afaed9592eb6bf3ed5d50c11279e10f7bd03"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_audio_missing_40pct_end_predictions.npz",
+      "sha256": "8ec2793326efc4f48be4c767bf416343ee28bd4824e2ae697c330564cc745347"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_audio_missing_40pct_end_predictions.npz",
+      "sha256": "2eafd5f505d8848846e42a774e2c20892aa5e3a217b4b7a6897b4c9475b5baac"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_audio_missing_40pct_end_predictions.npz",
+      "sha256": "fce52be18cb42d3ec3a5b0137251236fd64145f1b3aa2f2a4ec379b8d792cc9f"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_vision_missing_20pct_start_predictions.npz",
+      "sha256": "6d6a8a6513adc2be00f2efff9ecc5eea5a59e713aee472afa559ca797f374965"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_vision_missing_20pct_start_predictions.npz",
+      "sha256": "959e0b01f6869b27005b014c12dd87eadc468a4dd3111b97440577d80f58a3a2"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_vision_missing_20pct_start_predictions.npz",
+      "sha256": "9fb70ac60b5781884cdac236785e0dbb7e31f4a28729ca0d5f56ba1a522ba9a1"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_vision_missing_20pct_middle_predictions.npz",
+      "sha256": "eccd2d97f8de331d3fa5a1341e348fc8e2a1054897bfa7f5d1c2e9d11b80167c"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_vision_missing_20pct_middle_predictions.npz",
+      "sha256": "a97579ee1ffd2ca3c393ea9223210d3d3b56fe34303ee9a1d6d3e3892b7aedaa"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_vision_missing_20pct_middle_predictions.npz",
+      "sha256": "d3ae363d1fd9655de1f09cbaeab97207711489d1926dddc9a00be57fa179838e"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_vision_missing_20pct_end_predictions.npz",
+      "sha256": "a2094420f43746867e51e16b3a4464c7489407d8a79f70b90e0eeef274593eb2"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_vision_missing_20pct_end_predictions.npz",
+      "sha256": "59ab416de089610976c9a243ab8e1863c8c2ac510a83974c7e08202116691e8d"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_vision_missing_20pct_end_predictions.npz",
+      "sha256": "4a41af1b3b8180c228b74e940ef61681362d5f3709b105fad4effad864bec2b3"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_vision_missing_40pct_start_predictions.npz",
+      "sha256": "3877388fda54205f6aa746c703790adeca4ef12885e8566064d1f32a46321946"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_vision_missing_40pct_start_predictions.npz",
+      "sha256": "467febcf30d11e94b757da476d2e3ce5c94a57dea7943b01e2999fcae8f5fc7f"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_vision_missing_40pct_start_predictions.npz",
+      "sha256": "7f43717001e0c6185ff8057834d0013f1cc6a93eb5b14b77aebf7252737b76ea"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_vision_missing_40pct_middle_predictions.npz",
+      "sha256": "056cf1f8439d711ec8988755d7a894f41b576f856f1def3b5a66408ce864a5b6"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_vision_missing_40pct_middle_predictions.npz",
+      "sha256": "9222ff5dc84dc3cf81f499d7bedd8c8880fc0abe1f2e025ff221cadd02b8f101"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_vision_missing_40pct_middle_predictions.npz",
+      "sha256": "e901dce29ed3d2294b021c375fc02deabac470081d00b1d3701dae9acd5ed993"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_vision_missing_40pct_end_predictions.npz",
+      "sha256": "8119518e187cb0b934b627a138ac2e2b14d25c25d81cb7be76d60f87c546b5b2"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_vision_missing_40pct_end_predictions.npz",
+      "sha256": "89059541344d9694e4fccee0cbef0c6c035b2b1d067b2dadb8d89833f2b77c54"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_vision_missing_40pct_end_predictions.npz",
+      "sha256": "fe2637cd79ea637974ee5f3277ce427099d2d31e21cc7245f4efc16ea4693855"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/balanced_sqrt_ensemble_test_predictions.npz",
+      "sha256": "7e847f024f27c87c0a02c19bbcd5ae04fe12fbe902ddf451b28411af7625e40f"
+    },
+    {
+      "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/attachment3_ensemble_predictions.csv",
+      "sha256": "9aaae35d0545600342601a1585bd0f8048b9d866b1a36bf19efc8831885ba7ec"
+    }
+  ],
+  "checkpoints": [
+    {
+      "seed": 20260924,
+      "checkpoint": {
+        "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/best.pt",
+        "sha256": "49b468e8b3360a4ea33906b7f042ed72fa57a6ad451d3b355c32f7a09f9330b3"
+      },
+      "best_epoch": 4,
+      "config": {
+        "max_epochs": 40,
+        "patience": 8,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.2,
+        "hidden_dim": 64,
+        "fusion_dim": 128,
+        "classification_loss_weight": 1.0,
+        "regression_loss_weight": 1.0,
+        "augmentation_probability": 0.5,
+        "augmentation_fractions": [
+          0.2,
+          0.4
+        ],
+        "augmentation_positions": [
+          "start",
+          "middle",
+          "end",
+          "random"
+        ],
+        "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+        "temporal_width": 32,
+        "temporal_kernel": 3
+      }
+    },
+    {
+      "seed": 20260925,
+      "checkpoint": {
+        "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/best.pt",
+        "sha256": "d35dc7654633673a260adb89450e9dda8025a6864f7934aea6f8d37a7c9975fc"
+      },
+      "best_epoch": 3,
+      "config": {
+        "max_epochs": 40,
+        "patience": 8,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.2,
+        "hidden_dim": 64,
+        "fusion_dim": 128,
+        "classification_loss_weight": 1.0,
+        "regression_loss_weight": 1.0,
+        "augmentation_probability": 0.5,
+        "augmentation_fractions": [
+          0.2,
+          0.4
+        ],
+        "augmentation_positions": [
+          "start",
+          "middle",
+          "end",
+          "random"
+        ],
+        "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+        "temporal_width": 32,
+        "temporal_kernel": 3
+      }
+    },
+    {
+      "seed": 20260926,
+      "checkpoint": {
+        "path": "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/best.pt",
+        "sha256": "21972a61c2b5ca684704038b7ab9719475d28a303a96b0a08b730462fd940738"
+      },
+      "best_epoch": 3,
+      "config": {
+        "max_epochs": 40,
+        "patience": 8,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.2,
+        "hidden_dim": 64,
+        "fusion_dim": 128,
+        "classification_loss_weight": 1.0,
+        "regression_loss_weight": 1.0,
+        "augmentation_probability": 0.5,
+        "augmentation_fractions": [
+          0.2,
+          0.4
+        ],
+        "augmentation_positions": [
+          "start",
+          "middle",
+          "end",
+          "random"
+        ],
+        "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+        "temporal_width": 32,
+        "temporal_kernel": 3
+      }
+    }
+  ],
+  "normalization": {
+    "path": "03_Results/e/question-two/2026-09-24_q2-normalization_v1.0.npz",
+    "sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521"
+  },
+  "bert_model": {
+    "snapshot": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "path": "D:\\06_Apps\\huggingface-data\\hub\\models--google-bert--bert-base-uncased\\snapshots\\86b5e0934494bd15c9632b12f734a8a67f723594",
+    "files": {
+      "config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+      "model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3"
+    }
+  },
+  "source_sha256": {
+    "official": {
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件2-数据集特征文件\\aligned_50.pkl": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+    },
+    "attachment3": {
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_01.pkl": "b45b89a7eea55278abb130d44a6ee21128df5aa3239e68c968f9ac7743cfa0ea",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_02.pkl": "6a628897c4b8c5e94e37f23bce680aad500fa8545414234f3564a58577c1023b",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_03.pkl": "52bb6e11f4bba301e1bd90916dc9ad3a0d2d0885fec4598e3e737e2c4d100b6f",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_04.pkl": "ee1f4781ee7b7bc37e71a13e4bc53eedc8327d96a69c246964d0e84a8aa99f72",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_05.pkl": "9f8e5bae8488d8ee1576b1686864b7d8fc9970cfa720758fb040b9293b7e3619",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_06.pkl": "9e973621f141b1af24fc3686ac329a10b66ba2b84d18c21918e86bf0429f790d",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_07.pkl": "62dd394e23c80af2898e039d7eb6f47556d747887331fa2853dad72e13bb223b",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_08.pkl": "e668faea97f9a338051c19ee66383df799b2e461d6d079df8c5f92b32bd6437e",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_09.pkl": "ef57769eaa05f53a7d588948d565876356898658d9945202058ca763e53748b2",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_10.pkl": "7c87d84d69e0e68b9252c9839747558d07a91fd2d079a9a0850683d0d197241e",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_11.pkl": "10e9d5443cecf2de9170deaa56995de0cf9c52580a74cd334de8fea0e4a735f2",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_12.pkl": "d0342f4931a05e40fb0a3220010f1ac801a2f06d123bc4d9a7dc5355794347ba",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_13.pkl": "9e2144ab4385636b259d9e358c7e511be5242c89340f894473317b7757f218b7",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_14.pkl": "f6d45e8fa882062f70fd48ee1f7584b0a75ea0ed1c85a9eb218684e954dc1b82",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_15.pkl": "263b960d4d66b25a3db447fb7a16aee7b7d735e8bee3fe55c7869ad3103bf9d4",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_16.pkl": "df8b4c881e3fc971d532988bbd161d8d9bf8c5d16c3e7a559bb7a4045e96547f",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_17.pkl": "b6c64a55fb8050cb9fda15b0245df8f16b20d2a25d9368485dd1229e213fdba5",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_18.pkl": "dc8eb37586b93bdd4debe895041275fdabb94c3392bde667b4e0ccdc6429fab1",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_19.pkl": "d3a912bc3c70b60c1021babc521f28a6a34f9e916c164ad0191182e587c2385a",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_20.pkl": "bf24c7189bba3904e911dd452266078d8ff15768438a9069e6596ff73a4b925e",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_21.pkl": "c0605bd5757ff0c5dea345c96236ed7168ff976d37843572143efe11d6454600",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_22.pkl": "6f9dc33f9d3e5680ee3a3b2b0c53b1bac51fb98f1d75375a2cb1224cd7bd4d43",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_23.pkl": "5200bd05e2611777875eb1d88826bb56bb71dee4c708fec9d9f851222d243aae",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_24.pkl": "76b1c126e2043f90afd5af00d51299bc8f5bf1bee8148f5ff904ccbeb931a5e5",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_25.pkl": "88d52e2d0b0229ad6ec638e6e7463f6852f127ae9308fbee1cbc2405d8ebc4c8",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_26.pkl": "e483daa1391987552f9ee7f21bffec918dd61267af36885a9ae3073813193234",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_27.pkl": "27f16bbd4541196bb33f4caa36e038b2ff66fa72649f1b22f2328a5630de37ad",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_28.pkl": "81def781fa8fa5aebb555631b59ce48ee71a10c9e4226f1a5b6d91a2078f8f32",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_29.pkl": "8caf12e71117bd7334be12aba5af6322fb02a2397f8e2402e75391f4f9ef3686",
+      "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件3-模态缺失特征样本\\对齐版本\\附件3_30.pkl": "a6b272abb5d083804b6902054d4180d55d3c1d5822c483967e70e6a9657546d3"
+    }
+  }
+}

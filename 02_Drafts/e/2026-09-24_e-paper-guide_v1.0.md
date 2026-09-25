@@ -4,7 +4,7 @@
 
 ## 总体论证线
 
-先用问题一回答“原始视频的三种信息如何落到共同词轴”，再用问题二回答“对齐特征遇到局部连续缺失时如何预测情感”，最后用问题三回答“预测依据能否回到文本、音频、画面中的具体位置”。三问使用同一情感任务，但**数据产品不同**：问题一从附件一 100 条视频自提 `768/25/49` 维词级特征；问题二、三使用附件二至四的 `aligned_50` 官方 `768/74/35` 维特征，绝不可写成把问题一特征直接送入问题二模型。附件二官方划分 `3395/728/727`，附件三 30 条，附件四 20 条。官方 train/valid/test 的样本 ID 和视频 ID 无跨划分重合。所有任务训练与标准化仅用 train；valid 选模型；test 最终一次性报告。
+先用问题一回答“原始视频的三种信息如何落到共同词轴”，再用问题二回答“对齐特征遇到局部连续缺失时如何预测情感”，最后用问题三回答“预测依据能否回到文本、音频、画面中的具体位置”。三问使用同一情感任务，但**数据产品不同**：问题一从附件一 100 条视频自提 `768/25/49` 维词级特征；问题二、三使用附件二至四的 `aligned_50` 官方 `768/74/35` 维特征，绝不可写成把问题一特征直接送入问题二模型。附件二官方划分 `3395/728/727`，附件三 30 条，附件四 20 条。官方 train/valid/test 的样本 ID 和视频 ID 无跨划分重合。所有任务训练与标准化仅用 train；valid 选模型。测试集在历史开发中已被查看，本轮不得写成全程盲测或一次性独立 holdout。
 
 ## 建议章节、公式与图表
 
@@ -16,11 +16,11 @@
 | 问题二输入 | `aligned_50` 内容位置、原始观测、注入缺口、有效观测四层定义；train-only 标准化 | 下节 Q2 掩码公式、输入表 | `03_Results/e/question-two/2026-09-24_special-input-contract_v1.0.md`；标准化 JSON/NPZ |
 | 问题二模型 | 逐模态投影和门控、缺失信号、局部时间卷积、时间汇聚、极性/强度双头 | Q2 模型和联合损失公式、超参数表 | `02_Drafts/e/src/2026-09-24_train-q2-temporal_v1.0.py` |
 | 问题二实验 | 简单融合基线、门控基线、`no_temporal` 与 `no_gap_signal` 消融；固定三种子；完整输入和 18 种局部缺口 | test 均值/标准差与单种子表，valid 缺失热图 | `03_Results/e/paper-assets-v1.0/q2_test_ablation_v1.0.png`、`q2_missing_heatmap_v1.0.png`；test 总结 JSON |
-| 问题二误差 | 中性类混淆、模态缺失位置差异、过拟合和输入级文本遮挡边界 | 集成混淆矩阵和逐类 F1 | `03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/summary.json` |
-| 问题三解释 | 冻结原时序单模型作为解释参考；模态整体遮挡的影响；gate×time 候选；逐位置遮挡验证；自动时间回映 | Q3 影响度、候选和保真度公式 | `03_Results/e/paper-assets-v1.0/q3_modality_influence_v1.0.png`、`q3_occlusion_fidelity_v1.0.png` |
+| 问题二误差 | 中性类混淆、模态缺失位置差异、过拟合和输入级文本遮挡边界 | 集成混淆矩阵和逐类 F1 | `03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.1/summary.json` |
+| 问题三解释 | 冻结类别均衡三种子集成作为解释参考；模态整体遮挡的影响；gate×time 候选；逐位置遮挡验证；自动时间回映 | Q3 影响度、候选和保真度公式 | `03_Results/e/question-three/q3-balanced-ensemble-figures-v1.1/q3_modality_influence_20.png`、`q3_gate_candidate_vs_random_valid.png` |
 | 问题三案例 | 20 条附件四极性、强度、主参考模态、局部文本/声音/画面证据；说明无标签不能算准确率 | 样例 04 解释卡、时间质量表 | `03_Results/e/question-three/q3-explanations-v1.0/`、`q3-evidence-time-v1.0/` |
 
-四张 Q2/Q3 图均有 PNG 和 SVG，生成脚本为 `02_Drafts/e/src/2026-09-24_export-q23-paper-assets_v1.0.py`。图注须写明 test、valid、无标签专项三种来源；不要将它们混为同一评价集。
+四张 Q2/Q3 图均有 PNG 和 SVG，生成脚本为 `02_Drafts/e/src/2026-09-24_export-q23-paper-assets_v1.0.py`；新增固定模型配对证据图见 `03_Results/e/question-two/q2-improvement-evidence-v1.1/`。图注须写明 test、valid、无标签专项三种来源；不要将它们混为同一评价集。
 
 ## 问题一：可落笔的数学主干
 
@@ -42,9 +42,9 @@ $$e_{it}^m=c_{it}\land o_{it}^m\land\neg d_{it}^m,\qquad g_{it}^m=c_{it}\land\ne
 
 `e` 是模型实际看见的观测，`g` 是位置内不可用信号。保存的审计掩码区分原始零和注入缺口；模型只看到统一的不可用信号，不能推断零的来源。padding 由 `c=0` 排除。附件三的缺失是**局部连续时间段全部为零**，不是整个模态被移除；专项原始零的真实成因不能从数值本身唯一确定。归一化均值/方差只由 train 的有效观测估计，空位仍为零。
 
-模型为每模态 `LayerNorm -> Linear(32) -> ReLU`，对已观测模态计算位置门控 `\alpha_{it}^m`；三位缺失信号的线性投影加入融合表示，随后用 kernel=3 的 1D 卷积处理邻近位置，再用时间 softmax 汇聚成片段表示。最后以一个分类头输出三类极性、一个回归头输出强度。损失为 `L=CE(y,\hat y)+|s-\hat s|`。优化器 AdamW，学习率 `1e-3`、weight decay `1e-4`、batch 64、dropout `0.2`，训练最多 40 epoch、patience 8；每轮对部分样本随机设置单模态 20%/40% 起/中/末/随机的**连续局部**缺口。三个固定种子为 20260924/25/26，各自以完整输入 valid `CE+L1` 最小选 `best.pt`，不能用 test 挑种子。消融保持其余协议一致，分别移除时间卷积或缺失信号。
+模型为每模态 `LayerNorm -> Linear(32) -> ReLU`，对已观测模态计算位置门控 `\alpha_{it}^m`；三位缺失信号的线性投影加入融合表示，随后用 kernel=3 的 1D 卷积处理邻近位置，再用时间 softmax 汇聚成片段表示。最后以一个分类头输出三类极性、一个回归头输出强度。原 temporal 的训练目标为 `L=CE(y,\hat y)+|s-\hat s|`；类别均衡主模型训练时将 CE 替换为平方根逆频率加权 `CE_w`，即 `L=CE_w(y,\hat y)+|s-\hat s|`。无论训练目标是哪一种，checkpoint 选择统一使用未加权的完整 valid `CE+L1`，以保持模型间可比，不能用 test 挑选。优化器 AdamW，学习率 `1e-3`、weight decay `1e-4`、batch 64、dropout `0.2`，训练最多 40 epoch、patience 8；每轮对部分样本随机设置单模态 20%/40% 起/中/末/随机的**连续局部**缺口。三个固定种子为 20260924/25/26。消融保持其余协议一致，分别移除时间卷积或缺失信号。
 
-类别均衡 temporal 的三个冻结 seed 先在 valid 上固定为等权集成，再在官方 test 上一次性报告。最终集成结果为 Accuracy `0.690509`、Macro-F1 `0.647076`、MAE `0.606778`、Pearson r `0.703049`；Neutral F1 为 `0.445183`。集成规则、来源哈希和独立复算见 `03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/summary.json`。这组结果应作为问题二正文的主要结果，旧 temporal 单 seed 和三种子均值保留为消融/历史对照。
+类别均衡 temporal 的三个冻结 seed 依据 valid 固定为等权集成。官方 test 在历史开发中已被查看，本轮只做集成算子一致化和审计，没有按 test 反选 seed 或权重。最终集成结果为 Accuracy `0.690509`、Macro-F1 `0.647076`、MAE `0.606778`、Pearson r `0.703049`；Neutral F1 为 `0.445183`。集成规则、来源哈希和独立复算见 `03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.1/summary.json`。这组结果应作为问题二正文的主要结果，旧 temporal 单 seed 和三种子均值保留为消融/历史对照。
 
 | 模型 | Accuracy | Macro-F1 | MAE | Pearson r |
 | --- | ---: | ---: | ---: | ---: |
@@ -54,11 +54,13 @@ $$e_{it}^m=c_{it}\land o_{it}^m\land\neg d_{it}^m,\qquad g_{it}^m=c_{it}\land\ne
 
 测试集集成的 Neutral 召回为 `0.424051`，仍是主要误差来源，应同时报告逐类 F1 和混淆矩阵。验证缺失热图展示每个模态×20/40%×起/中/末的 Macro-F1 相对完整输入变化。音频/视觉部分条件的差值接近零或为正，不应解释为“缺失有益”；相关分布差异与小样本波动没有被排除。旧的 post-BERT 文本遮挡只作为补充审计；严格输入级对照在 BERT 前使用 `[MASK]`，结果见 `03_Results/e/question-two/q2-text-safe-eval-v1.0/report.json`，不能把旧协议直接称为原始文本缺失。
 
-附件三 30 条为无标签专项预测，集成极性、强度与三类概率见 `03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.0/attachment3_ensemble_predictions.csv`，原始零位置审计见同目录 `attachment3_observation_audit.csv`。不要给附件三编造 Accuracy。
+附件三 30 条为无标签专项预测，集成极性、强度与三类概率见 `03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.1/attachment3_ensemble_predictions.csv`，原始零位置审计见同目录 `attachment3_observation_audit.csv`。不要给附件三编造 Accuracy。
 
 ## 问题三：解释、证据与案例
 
-问题三现有解释冻结的是原时序单模型 `temporal/20260926`，**不是问题二后来新增的类别均衡三种子集成**。因此问题三表格解释的只能是该参考模型的预测；不能把这些位置效应当作最终集成预测的解释。对附件四 20 条无标签样本输出极性和连续强度。令 `p_k(x)` 为原输入预测类 `k` 的概率，把模态 `m` 的全部已观测位置设为不可用后，定义有符号影响 `\Delta_m=p_k(x)-p_k(x_{\setminus m})`，相对绝对影响 `r_m=|\Delta_m|/\sum_j|\Delta_j|`。主参考模态是 `r_m` 最大者；符号另存，避免把抑制性证据错误称为支持性证据。20 条中主参考文本 16、音频 4、视觉 0；这只是**当前模型的影响结构**，不是心理学上的模态因果份额。全零的附件四 `13.pkl` 视觉贡献为零。
+当前推荐的 Q3 解释使用与 Q2 主结果一致的 balanced 三 seed temporal ensemble，输出见 `03_Results/e/question-three/q3-balanced-ensemble-explanations-v1.1/` 及 `q3-balanced-ensemble-figures-v1.1/`。旧 temporal/20260926 单模型结果只作为历史参考，不得与新版 ensemble 的解释结果混称。
+
+问题三解释冻结的是与问题二主结果一致的 balanced 三种子 temporal ensemble，对附件四 20 条无标签样本输出极性和连续强度。令 `p_k(x)` 为原输入预测类 `k` 的概率，把模态 `m` 的全部已观测位置设为不可用后，定义有符号影响 `\Delta_m=p_k(x)-p_k(x_{\setminus m})`，相对绝对影响 `r_m=|\Delta_m|/\sum_j|\Delta_j|`。主参考模态是 `r_m` 最大者；符号另存，避免把抑制性证据错误称为支持性证据。20 条中主参考文本 16、音频 4、视觉 0；这只是**当前模型的影响结构**，不是心理学上的模态因果份额。全零的附件四 `13.pkl` 视觉贡献为零。
 
 对模态 `m` 的位置 `t`，`gate_{tm} * timeweight_t` 仅产生候选；对每个已观测位置重新前向推理，计算 `p_k(x)-p_k(x_{\setminus(m,t)})` 才作为实际模型效应。验证集按样本 ID SHA-256 固定选 100 条，仅比较文本位置：候选首位遮挡后预测类概率平均下降 `0.04269`，固定随机位置下降 `0.00738`，69% 样本候选位下降更大。报告时注明只验证了**该模型的局部保真度**，不是注意力即解释，也不是情绪因果证明。
 

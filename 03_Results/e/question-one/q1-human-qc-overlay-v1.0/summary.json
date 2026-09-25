@@ -1,0 +1,45 @@
+{
+  "schema": "q1_human_qc_overlay_v1.0",
+  "evidence_date": "2026-09-25",
+  "samples": 100,
+  "source_sample_count_unchanged": true,
+  "original_feature_files_modified": 0,
+  "manual_unsupported_samples": 5,
+  "not_adjudicated_in_this_overlay_samples": 95,
+  "positively_timing_supported_samples_in_this_overlay": 0,
+  "unsupported_word_counts_by_sample": {
+    "sample_0010": 16,
+    "sample_0011": 18,
+    "sample_0042": 13,
+    "sample_0043": 11,
+    "sample_0088": 8
+  },
+  "word_counts": {
+    "automatic_timing_words": 1923,
+    "automatic_text_words": 1932,
+    "automatic_audio_words": 1923,
+    "automatic_vision_words": 1828,
+    "automatic_all_modalities_words": 1828,
+    "source_words": 1932,
+    "human_timing_unsupported_words": 66,
+    "human_timing_unknown_words": 1866,
+    "human_timing_supported_words": 0,
+    "review_filtered_timing_candidate_words": 1857,
+    "review_filtered_audio_word_candidate_words": 1857,
+    "review_filtered_vision_word_candidate_words": 1821,
+    "review_filtered_multimodal_candidate_words": 1821,
+    "strict_human_confirmed_timing_words": 0
+  },
+  "count_semantics": "Availability and review-filter counts only; not alignment accuracy. Unknown does not mean verified.",
+  "review_scope": "Only the five no-person-speaking observations in manual_review_evidence.tsv; no new listening, boundaries, or emotion labels.",
+  "existing_statistics_policy": "Original Q1 summary and all 100 original NPZ retained byte-for-byte; new counts are a separate companion policy.",
+  "word_state_values": {
+    "-1": "not_adjudicated_in_this_overlay",
+    "0": "unsupported_for_speech",
+    "1": "positively_supported_by_human"
+  },
+  "derivation": {
+    "candidate": "automatic_timing AND human_state != 0",
+    "strict_confirmed": "automatic_timing AND human_state == 1"
+  }
+}

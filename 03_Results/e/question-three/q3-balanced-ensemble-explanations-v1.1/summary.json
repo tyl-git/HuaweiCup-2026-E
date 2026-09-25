@@ -1,0 +1,140 @@
+{
+  "schema": "q3_balanced_ensemble_explanations_v1.1",
+  "seeds": [
+    20260924,
+    20260925,
+    20260926
+  ],
+  "checkpoints": [
+    {
+      "seed": 20260924,
+      "checkpoint": "D:\\01_Projects\\HuaweiCup-2026\\03_Results\\e\\question-two\\q2-temporal-balanced-sqrt-v1.0\\temporal\\seed_20260924\\best.pt",
+      "checkpoint_sha256": "49b468e8b3360a4ea33906b7f042ed72fa57a6ad451d3b355c32f7a09f9330b3",
+      "best_epoch": 4,
+      "config": {
+        "max_epochs": 40,
+        "patience": 8,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.2,
+        "hidden_dim": 64,
+        "fusion_dim": 128,
+        "classification_loss_weight": 1.0,
+        "regression_loss_weight": 1.0,
+        "augmentation_probability": 0.5,
+        "augmentation_fractions": [
+          0.2,
+          0.4
+        ],
+        "augmentation_positions": [
+          "start",
+          "middle",
+          "end",
+          "random"
+        ],
+        "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+        "temporal_width": 32,
+        "temporal_kernel": 3
+      }
+    },
+    {
+      "seed": 20260925,
+      "checkpoint": "D:\\01_Projects\\HuaweiCup-2026\\03_Results\\e\\question-two\\q2-temporal-balanced-sqrt-v1.0\\temporal\\seed_20260925\\best.pt",
+      "checkpoint_sha256": "d35dc7654633673a260adb89450e9dda8025a6864f7934aea6f8d37a7c9975fc",
+      "best_epoch": 3,
+      "config": {
+        "max_epochs": 40,
+        "patience": 8,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.2,
+        "hidden_dim": 64,
+        "fusion_dim": 128,
+        "classification_loss_weight": 1.0,
+        "regression_loss_weight": 1.0,
+        "augmentation_probability": 0.5,
+        "augmentation_fractions": [
+          0.2,
+          0.4
+        ],
+        "augmentation_positions": [
+          "start",
+          "middle",
+          "end",
+          "random"
+        ],
+        "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+        "temporal_width": 32,
+        "temporal_kernel": 3
+      }
+    },
+    {
+      "seed": 20260926,
+      "checkpoint": "D:\\01_Projects\\HuaweiCup-2026\\03_Results\\e\\question-two\\q2-temporal-balanced-sqrt-v1.0\\temporal\\seed_20260926\\best.pt",
+      "checkpoint_sha256": "21972a61c2b5ca684704038b7ab9719475d28a303a96b0a08b730462fd940738",
+      "best_epoch": 3,
+      "config": {
+        "max_epochs": 40,
+        "patience": 8,
+        "batch_size": 64,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "dropout": 0.2,
+        "hidden_dim": 64,
+        "fusion_dim": 128,
+        "classification_loss_weight": 1.0,
+        "regression_loss_weight": 1.0,
+        "augmentation_probability": 0.5,
+        "augmentation_fractions": [
+          0.2,
+          0.4
+        ],
+        "augmentation_positions": [
+          "start",
+          "middle",
+          "end",
+          "random"
+        ],
+        "checkpoint_selection": "minimum_valid_cross_entropy_plus_l1_on_complete_input",
+        "temporal_width": 32,
+        "temporal_kernel": 3
+      }
+    }
+  ],
+  "normalization_sha256": "5045b8ac22a1070d1d22111307c7a872c513cdfa05ee360c53114c93d4425521",
+  "aligned_only": true,
+  "test_evaluated": false,
+  "specialist_label_use": false,
+  "explanation_rule": "arithmetic mean ensemble prediction followed by leave-one-position and leave-one-modality occlusion; gate/time are candidates only",
+  "text_occlusion_caveat": "feature-level occlusion after frozen BERT, not raw-text causal deletion",
+  "time_mapping_status": "automatic candidate only; exact seconds unverified",
+  "attachment4_source_sha256": {
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\01.pkl": "5a08410ee779863238edcf349556a2f8e10490a70e02fc95001a64f6c8d17452",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\02.pkl": "88ed34a500bd7f11027ffc97205e23fdcde162b32bee9c447367b026b41608ac",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\03.pkl": "237a657ffb78b451b4e504ab8021e6072de404afd83d3b08be1560e98ca62860",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\04.pkl": "f7d7291b6ed0050ad3fd439bd3f85ce6fafb230a6399366a76e0b52f017bf4a7",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\05.pkl": "c6948e101e25656832290edf03daaf400b9a566e912775193d5f3ecdf9388eec",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\06.pkl": "8c432420054ac28bfcacbbee18d0e8397bc87fa0c7e8cbb11f525d6e366fdd57",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\07.pkl": "f16e44523bd82862435489552910ef3b801dd5b7501d67b84b83ee1496b0c5a0",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\08.pkl": "a1cccd885234d22478f30d0a3b253277e0567abaecc6ac683734b7e3dfc255c4",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\09.pkl": "f00ad50bdc14a4c9fe58fb4e421d6c8ee052d281d917766314f2846e48af8ff7",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\10.pkl": "693326817b8253fc907a3c1df1b05dd1f10c7bc756a86ce125bb903b01eaf571",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\11.pkl": "6e4c4b2fe76d6bbc56d1d21447ec9dff5309adb1227de8adab116ff703f42ffb",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\12.pkl": "5d003f471f20ac8d51553c3b217fc594075067a4c806fc07139839d681a97032",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\13.pkl": "e2d3d3c55bc52e7178e6e7f9b28e677018f14c76966d9ec5ac486d8fbbfd8281",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\14.pkl": "5a07719d0610e979be9cc58f4137c951259048fe6ab9918cafd9e27d62f0b5dd",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\15.pkl": "1fd8521f61b769038a991088f11a9693e0ad9f05ad92f9924d502cc147a7cd1f",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\16.pkl": "5528f121c021c3648f41e013e829c0a73870eafbbde73415147a074be81d722f",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\17.pkl": "7b841ea3fdea42ef7d0ba607d90ea61a86a44066eb4ee3d1a70e8180a7b47796",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\18.pkl": "1fc0a00c832183dceeae626937716da6c4c096f621a7706c9268b76dedfa7f06",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\19.pkl": "ef099682c44a9e6ba5135a74d4babf12a91ba5ee2895b32d191679244dd1c221",
+    "D:\\01_Projects\\HuaweiCup-2026\\01_Source\\E\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\20.pkl": "c9aed197e075fa99518e71cbb2ed17406178d9237d40c785409eacf1fa7f1a68"
+  },
+  "output_sha256": {
+    "attachment4_explanations.csv": "298a4feb0751ea442fe0910e35d4c10d85dd943d38319e3c183b8ce21d455450",
+    "attachment4_position_effects.csv": "f4187dd26f69bf8f86058417bca97dc6f76270b41997ae62176ea996b00a6bb6",
+    "attachment4_predictions.csv": "0eb932405ba6b0fb52d30c73f292a00add13e8ed15ce64e15290e2f406b32053"
+  }
+}

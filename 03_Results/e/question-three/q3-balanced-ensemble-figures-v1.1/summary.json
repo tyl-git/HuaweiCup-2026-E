@@ -1,0 +1,13 @@
+{
+  "schema": "q3_balanced_ensemble_figures_v1.1",
+  "source_explanations_sha256": "298a4feb0751ea442fe0910e35d4c10d85dd943d38319e3c183b8ce21d455450",
+  "source_position_effects_sha256": "f4187dd26f69bf8f86058417bca97dc6f76270b41997ae62176ea996b00a6bb6",
+  "validation_audit_n": 100,
+  "candidate_rule": "highest mean modality_gate times time_weight among observed text positions",
+  "random_rule": "deterministic id-hash sampled observed text position",
+  "candidate_mean_signed_delta": 0.04430221617221832,
+  "random_mean_signed_delta": 0.011291111856698989,
+  "candidate_above_random_fraction": 0.65,
+  "causal_claim": "none; occlusion is predictor sensitivity and gate/time is a candidate ranking",
+  "time_mapping_status": "aligned position only; seconds unverified"
+}

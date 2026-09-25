@@ -1,0 +1,90 @@
+{
+  "schema": "q2_improvement_evidence_v1.1",
+  "aggregation": "mean_of_individual_seed_metrics",
+  "official_test_previously_viewed": true,
+  "new_training": false,
+  "model_selection": false,
+  "bootstrap": {
+    "split": "valid",
+    "unit": "source_video_id",
+    "video_count": 239,
+    "resamples": 1000,
+    "seed": 20260925,
+    "quantity": "paired_mean_seed_metric_balanced_minus_original",
+    "interval_scope": "conditional on fixed models and reused validation data; not confirmatory and not training uncertainty",
+    "metrics": {
+      "accuracy": {
+        "percentile_95_interval": [
+          -0.014114416157352443,
+          0.025294006879896944
+        ],
+        "finite_resamples": 1000
+      },
+      "macro_f1": {
+        "percentile_95_interval": [
+          0.01601311590399454,
+          0.0596057095333492
+        ],
+        "finite_resamples": 1000
+      },
+      "neutral_f1": {
+        "percentile_95_interval": [
+          0.06158876725438434,
+          0.16214318521556678
+        ],
+        "finite_resamples": 1000
+      },
+      "mae": {
+        "percentile_95_interval": [
+          -0.007500029098764271,
+          0.0030397258097058827
+        ],
+        "finite_resamples": 1000
+      },
+      "pearson_r": {
+        "percentile_95_interval": [
+          -0.00409836686719027,
+          0.0063429727671586444
+        ],
+        "finite_resamples": 1000
+      }
+    }
+  },
+  "sources": {
+    "03_Results/e/question-two/q2-temporal-v1.0/temporal/seed_20260924/valid_complete_predictions.npz": "454d4425caba1b5e562e3a08333bc516bb1be83d510556b358c4b4d011c7c4d8",
+    "03_Results/e/question-two/q2-temporal-v1.0/temporal/seed_20260925/valid_complete_predictions.npz": "0ae3038d1daf2c653ca0791622f3a319af2990f8d682c796f1329a922a304d5e",
+    "03_Results/e/question-two/q2-temporal-v1.0/temporal/seed_20260926/valid_complete_predictions.npz": "9b1483760fc6a2d9c6636e4cd28efd3ec25eea0fae27c2ddc9168532c12bd99d",
+    "03_Results/e/question-two/q2-temporal-final-v1.0/temporal_seed_20260924_test_predictions.npz": "12ad9423fe6a4819ba872814f2dd23a940c507378220cb953917ac52bc6d5e70",
+    "03_Results/e/question-two/q2-temporal-final-v1.0/temporal_seed_20260925_test_predictions.npz": "ef36164bdc34c009d96de027d65d3703286205d525c8d0e9abd26abce80ff0a3",
+    "03_Results/e/question-two/q2-temporal-final-v1.0/temporal_seed_20260926_test_predictions.npz": "d3b5c4863263dcfe7373e407d633ad97f915e1f9849ec06066477a643f07cb27",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/valid_complete_predictions.npz": "594c8e70355bc65208f10d634c5c42619a6a38b1ef44bf7431c44056918801ca",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/valid_complete_predictions.npz": "b672a564c717ce6fbeb8d9d0ac3dd3938dae503f1fbe163c1f191901e1c7f741",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/valid_complete_predictions.npz": "c8739603203a1a954c5d83da93e3a4aa69951bdaa20a1be80ff502435007507d",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-final-v1.0/temporal_balanced_sqrt_seed_20260924_test_predictions.npz": "9844951922759d5e40246eb2f8ba2342d283c65b1821798e6b96c2a23ca5fe8d",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-final-v1.0/temporal_balanced_sqrt_seed_20260925_test_predictions.npz": "a83f93d920212b2788b5d1eed18b926606a3712ae2ae4b65880915d88fd4b0f8",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-final-v1.0/temporal_balanced_sqrt_seed_20260926_test_predictions.npz": "0f94148ec32e2b3a1a780ca1c5605a8ba27f49727e2ad588aecbc77e3828af7f",
+    "03_Results\\e\\question-two\\q2-text-safe-balanced-sqrt-v1.0\\seed_20260924\\metrics.json": "e3f3f2ac08ec905b13a93601a39e09ff5bd6f06df0831bca4e0dc90fbb5f10cd",
+    "03_Results\\e\\question-two\\q2-text-safe-balanced-sqrt-v1.0\\seed_20260925\\metrics.json": "e707b1ad0e0677cd6f6b45e87927f92c50d28020ce25d8548bdd44730717e247",
+    "03_Results\\e\\question-two\\q2-text-safe-balanced-sqrt-v1.0\\seed_20260926\\metrics.json": "78a415551aebaae76488ee64b194da8795da62a0de0b9992281fc91f5565ba38",
+    "03_Results/e/question-two/q2-text-safe-final-v1.0/seed_20260924_test_predictions.npz": "b4531edea542a595dd011dc98a8718711e8c1dc088f0153db1c57db618139f8f",
+    "03_Results/e/question-two/q2-text-safe-final-v1.0/seed_20260925_test_predictions.npz": "55f7c2a6c665d0cdb853b33255dfc25568ff8b39eac0140bf9cefce89750fbc1",
+    "03_Results/e/question-two/q2-text-safe-final-v1.0/seed_20260926_test_predictions.npz": "d1cdc5b4cddc0b48d68a5daba2636234d392238c917516704197261819fec55f",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260924/history.json": "b216677a934918329c017302a3dca786464b72e425fee17560a4c3d7f7fb4dd9",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260925/history.json": "261bf0928a5d7092dbe843796eaa0bb2fd8d601ba6be7fe47b3727d4c904341c",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-v1.0/temporal/seed_20260926/history.json": "b23c9295326940787251a9d8c4448acd70d9a1508aebb904da7bea4b2730ba47",
+    "03_Results/e/question-two/q2-temporal-balanced-sqrt-ensemble-final-v1.1/summary.json": "59cf5112a9b555aaa51b86bb38c314cde72f92df8c6fa4d7582514c293430a6a"
+  },
+  "artifacts": {
+    "matched_seed_summary.csv": "389085cfe6d2c304625aad9894bd62a748198c6253d501ff16d27edca4412eff",
+    "q2_balanced_learning_curves.png": "3def9cc4c0c354d6e09edfe3dcc34bee0531f7c2348eb136e8800ae00f315d2f",
+    "q2_balanced_learning_curves.svg": "d2c895da2abb3e4f1ba0b6acd6442e30183a4359d5767e110d06ac36282cf73e",
+    "q2_current_confusion.png": "5b52d64568d992a5d7af6852e4a27834ed45f64e094059d1b881ebcd9039ad40",
+    "q2_current_confusion.svg": "503e5aa64a823c65a4f67cc4503354eb1aa93bd580400282252f6ec3a932e35e",
+    "q2_current_single_gap_heatmap.png": "595cfea7118c30e656193b41daed8270a70e3386b06ae4949973ff3ef0322a8e",
+    "q2_current_single_gap_heatmap.svg": "888f109008e8ae516ff77025ec5c6b9eabb968800a564d51c02441ef545bbcd8",
+    "q2_matched_comparison.png": "c52da207e0fe4b0a12ffb76fac9fe1b1541120c3eeaec2d3119775baf4c4a5ee",
+    "q2_matched_comparison.svg": "cb67222a702950956e4a4eb9c32e0b0389db1a8257cc2a58d579d486c82dde26",
+    "seed_metrics.csv": "8fd075aef672df0aad4d3d502ec4557d35a62cbea3703ec44035ed2d035546ae",
+    "valid_cluster_bootstrap.npz": "0663ca2050ab2ec5b9f2476ee0d6b8840e85bc59fdfd61e628a30f9fd8d3a44b"
+  }
+}

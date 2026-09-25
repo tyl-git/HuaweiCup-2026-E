@@ -1,0 +1,11 @@
+{
+  "method": "wav2vec2-base-960h CTC forced alignment of provided transcript",
+  "model_snapshot": "D:\\06_Apps\\huggingface-data\\hub\\models--facebook--wav2vec2-base-960h\\snapshots\\22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+  "model_config_sha256": "d3ec255c063d9f95057b553b19c20135b259875834a4fe9deb218a6be25b4cf3",
+  "explanation_source_sha256": "4ec490681592ebce1b8abb1075fe0ccc827b14ec51ba80d4b10d4d74c886db1d",
+  "video_count": 20,
+  "position_rows": 1662,
+  "mapped_position_rows": 1651,
+  "failures": [],
+  "interpretation": "Automatic word-time candidates. CTC can force an incorrect transcript; video frame number assumes constant frame rate. Review against original video before claiming exact evidence timing."
+}
