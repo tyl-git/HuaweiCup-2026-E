@@ -1,0 +1,8 @@
+sample_id,audio_status,transcript_status,timing_status,visual_status,review_status,notes
+sample_0001,voice_present,word_revision_answers_to_matters,approximately_aligned,speaker_visible,reviewed,"Transcript word heard as matters rather than answers; full sentence broadly matches. Preserve original transcript and create a revised processing copy only if needed."
+sample_0006,voice_present,annotation_not_spoken,approximately_aligned,speaker_visible,reviewed,"President Ronald Reagan label is metadata/annotation, not spoken; Look at the record is heard and its timing is usable."
+sample_0010,background_music_no_speech,mismatch,unsupported,no_usable_speaker_face,reviewed,"No speech; background music only. Original transcript and forced word times are not supported by audio."
+sample_0011,partial_voice_late_only,mismatch,unsupported,no_usable_speaker_face,reviewed,"Early section has background sound; later speech does not match the supplied transcript."
+sample_0042,digital_silence,unverified,unsupported,no_usable_speaker_face,reviewed,"No speech, background sound, or music; direct native decode is all zero samples. Not suitable for word-level alignment."
+sample_0043,digital_silence,unverified,unsupported,face_present_no_speech,reviewed,"No speech, background sound, or music; a person is visible but does not speak. Native audio decode is all zero samples."
+sample_0088,music_no_speech,mismatch,unsupported,no_usable_speaker_face,reviewed,"Music only; supplied transcript and married word occurrences are not heard."

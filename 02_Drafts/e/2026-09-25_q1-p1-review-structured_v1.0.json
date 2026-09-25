@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "review_scope": "manual_reviewed_subset",
+  "review_date": "2026-09-25",
+  "source_worksheet": "2026-09-24_q1-p1-review-worksheet_v1.0.md",
+  "source_evidence": "2026-09-24_q1-p1-review-evidence_v1.0.json",
+  "raw_data_modified": false,
+  "samples": [
+    {"sample_id":"sample_0001","audio_status":"voice_present","transcript_status":"word_revision_answers_to_matters","timing_status":"approximately_aligned","visual_status":"speaker_visible","review_status":"reviewed","notes":"Transcript word heard as matters rather than answers; full sentence broadly matches. Preserve original transcript and create a revised processing copy only if needed."},
+    {"sample_id":"sample_0006","audio_status":"voice_present","transcript_status":"annotation_not_spoken","timing_status":"approximately_aligned","visual_status":"speaker_visible","review_status":"reviewed","notes":"President Ronald Reagan label is metadata/annotation, not spoken; Look at the record is heard and its timing is usable."},
+    {"sample_id":"sample_0010","audio_status":"background_music_no_speech","transcript_status":"mismatch","timing_status":"unsupported","visual_status":"no_usable_speaker_face","review_status":"reviewed","notes":"No speech; background music only. Original transcript and forced word times are not supported by audio."},
+    {"sample_id":"sample_0011","audio_status":"partial_voice_late_only","transcript_status":"mismatch","timing_status":"unsupported","visual_status":"no_usable_speaker_face","review_status":"reviewed","notes":"Early section has background sound; later speech does not match the supplied transcript."},
+    {"sample_id":"sample_0042","audio_status":"digital_silence","transcript_status":"unverified","timing_status":"unsupported","visual_status":"no_usable_speaker_face","review_status":"reviewed","notes":"No speech, background sound, or music; direct native decode is all zero samples. Not suitable for word-level alignment."},
+    {"sample_id":"sample_0043","audio_status":"digital_silence","transcript_status":"unverified","timing_status":"unsupported","visual_status":"face_present_no_speech","review_status":"reviewed","notes":"No speech, background sound, or music; a person is visible but does not speak. Native audio decode is all zero samples."},
+    {"sample_id":"sample_0088","audio_status":"music_no_speech","transcript_status":"mismatch","timing_status":"unsupported","visual_status":"no_usable_speaker_face","review_status":"reviewed","notes":"Music only; supplied transcript and married word occurrences are not heard."}
+  ],
+  "summary": {
+    "reviewed_samples": 7,
+    "timing_unsupported": 5,
+    "transcript_mismatch": 3,
+    "transcript_revision_candidates": 1,
+    "audio_nonstandard_or_unsupported": 5,
+    "visual_not_usable_for_speaker_alignment": 5
+  },
+  "interpretation": "These counts describe the manually reviewed subset only and must not be reported as full-dataset alignment accuracy."
+}
