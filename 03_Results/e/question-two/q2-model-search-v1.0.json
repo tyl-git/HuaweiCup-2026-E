@@ -65,6 +65,22 @@
       "single_seed_neutral_f1_sample_sd": 0.0338958378,
       "decision": "not_promoted",
       "reason": "Slight MAE gain does not compensate for lower Macro-F1 and Neutral F1"
+    },
+    {
+      "name": "ordinal_balanced_auxiliary_bce",
+      "source": "02_Drafts/e/src/2026-09-25_train-q2-ordinal-balanced_v1.0.py",
+      "result_directory": "q2-ordinal-balanced-v1.0",
+      "ordinal_loss_weight": 0.35,
+      "seed_results": {
+        "20260924": {"accuracy": 0.6277472527, "macro_f1": 0.6054456489, "neutral_f1": 0.4569892473, "mae": 0.5670192565, "pearson_r": 0.6847989349},
+        "20260925": {"accuracy": 0.6318681319, "macro_f1": 0.6108182948, "neutral_f1": 0.4693333333, "mae": 0.5839133074, "pearson_r": 0.6699997254},
+        "20260926": {"accuracy": 0.6291208791, "macro_f1": 0.5979081303, "neutral_f1": 0.4183381089, "mae": 0.5634641225, "pearson_r": 0.6871025390}
+      },
+      "three_seed_macro_f1_mean": 0.6047240247,
+      "three_seed_neutral_f1_mean": 0.4482202304,
+      "three_seed_mae_mean": 0.5714652955,
+      "decision": "not_promoted",
+      "reason": "Ordinal auxiliary loss reduced validation Macro-F1 and did not stabilize Neutral F1 or MAE; test and specialist splits were untouched"
     }
   ],
   "protocol": {

@@ -101,10 +101,11 @@ $$z=\frac{1}{3}\sum_{s=1}^{3}z_s,\qquad \hat y=\arg\max z.$$
 | 模态独立时间卷积，三 seed 集成 | 0.64560 | 0.61770 | 0.45882 | 0.56438 | Macro-F1 仅 `+0.00035`，未达门槛，Neutral F1 与 MAE 变差 |
 | Balanced-selection，三 seed 集成 | 0.64011 | 0.61735 | 0.47439 | 0.56105 | 与锁定集成持平；不晋级 |
 | Weighted focal loss，三 seed 集成 | 0.63462 | 0.61248 | 0.45822 | 0.55742 | MAE 改善 `0.00363`，Macro-F1 下降 `0.00487`，不晋级 |
+| 有序辅助 BCE，三 seed 独立结果均值 | 0.62958 | 0.60472 | 0.44822 | 0.57147 | 利用 Negative<Neutral<Positive 顺序的受控消融；Macro-F1、Neutral F1 和 MAE 均未达晋级线 |
 
 Focal 候选三个单模型 Macro-F1 均值为 `0.59583`（样本标准差 `0.01279`），Neutral F1 均值为 `0.44089`（标准差 `0.03390`），seed 间波动没有支持稳定改进。模态卷积候选增加了参数与分支，但三 seed 集成几乎没有 Macro-F1 收益；这与验证集上的有限样本和过拟合风险一致。Balanced-selection 使用加权 CE+L1 选择 epoch，虽是合理的受控消融，但集成类别结果与锁定基准完全相同，不能据此宣称性能提升。
 
-logit 类别偏置在整份 valid 上曾提高 Macro-F1，但五折 out-of-fold Macro-F1 只有 `0.59989` 且折间偏置不稳定，因此不采用。候选的紧凑指标和拒绝理由保存在[模型搜索审计 JSON](../03_Results/e/question-two/q2-model-search-v1.0.json)；完整 checkpoint、epoch 记录和 NPZ 预测保存在运行机器对应的 `03_Results/e/question-two/` 目录中，因体积和数据管理策略未放进仓库。它们支持当前停止扩大模型搜索：现有 valid 只有 728 条且按原视频分组后有效独立单位更少，test 也有历史查看，继续追逐同一 valid 分数会扩大选择偏差。除非出现有明确题意依据、事先固定假设并可用新增独立数据验证的方案，否则主模型维持冻结。
+logit 类别偏置在整份 valid 上曾提高 Macro-F1，但五折 out-of-fold Macro-F1 只有 `0.59989` 且折间偏置不稳定，因此不采用。有序辅助 BCE 也按预先固定的序数假设完成三 seed train/valid-only 检验，但 Macro-F1 均值仅 `0.60472`，因此拒绝。候选的紧凑指标和拒绝理由保存在[模型搜索审计 JSON](../03_Results/e/question-two/q2-model-search-v1.0.json)；完整 checkpoint、epoch 记录和 NPZ 预测保存在运行机器对应的 `03_Results/e/question-two/` 目录中，因体积和数据管理策略未放进仓库。它们支持当前停止扩大模型搜索：现有 valid 只有 728 条且按原视频分组后有效独立单位更少，test 也有历史查看，继续追逐同一 valid 分数会扩大选择偏差。除非出现有明确题意依据、事先固定假设并可用新增独立数据验证的方案，否则主模型维持冻结。
 
 - Q1 自提特征是 `768/25/49`，Q2/Q3使用题目附件的 `aligned_50` 官方 `768/74/35`，两者不能混写成同一输入。
 - 附件3和附件4没有情感真值，只报告预测和掩码/解释审计，不报告准确率。
@@ -126,4 +127,5 @@ logit 类别偏置在整份 valid 上曾提高 Macro-F1，但五折 out-of-fold 
 - 输入级增强最终评估与审计：`02_Drafts/e/src/2026-09-25_eval-q2-text-safe-final_v1.0.py`
 - 输入级增强结果：`03_Results/e/question-two/q2-text-safe-final-v1.0/summary.json`
 - 模型搜索候选：`02_Drafts/e/src/2026-09-25_train-q2-balanced-selection_v1.0.py`、`02_Drafts/e/src/2026-09-25_train-q2-focal-balanced_v1.0.py`
+- 序数结构消融：`02_Drafts/e/src/2026-09-25_train-q2-ordinal-balanced_v1.0.py`
 - 紧凑模型搜索结果：`03_Results/e/question-two/q2-model-search-v1.0.json`
